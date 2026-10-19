@@ -24,7 +24,7 @@ The thread explored firmware modifications, HCA/DSR mixing, and later an externa
 
 ## Open preparation gates
 
-- REA connectivity is ready. Firmware decompilation is not yet ready: Ghidra is unconfigured, and no CPU-specific import profile has been verified. Hopper availability does not establish support for this rack.
+- Ghidra 12.1.4 with a native arm64 decompiler is installed and passes REA prerequisite checks. Codex's REA registration is configured; reconnect/restart is needed for its existing MCP process to inherit the settings. The CLI launcher works immediately. Firmware decompilation remains blocked on the raw import route and verified CPU/memory settings.
 - Identify the correct hardware/update variant and retain exact FRF -> ODX -> flash-block -> binary lineage.
 - Confirm the CPU, endianness, base addresses, entry points, and code/data boundaries from evidence. Do not choose TriCore or V850 based on folder names or copied manuals.
 - Preserve the distinction between an update payload and a full hardware flash dump.
@@ -32,9 +32,13 @@ The thread explored firmware modifications, HCA/DSR mixing, and later an externa
 
 ## Next concrete work
 
-1. Inventory the selected 1061 ODX files by flash block, explicit target metadata, declared addresses, encoding/compression, size, and checksum fields. Compare their decoded bytes with the historical H1/H7 binaries without changing originals.
+1. Extend the initial ODX block inventory in `evidence/odx-block-inventory-2026-10-19.json`. H1 historical binary matches FD_0DATA exactly; H7 historical binary has a one-byte size discrepancy and does not match. Resolve block purpose, encoding, mapping, and checksum fields before import.
 2. Resolve CPU/import settings using those bytes, documentation, and any applicable hardware photographs. Record competing explanations until evidence selects one.
-3. Prepare the smallest appropriate REA provider configuration after choosing the architecture. No Ghidra installation or global MCP configuration change has been made.
+3. Reconnect the configured REA MCP server and resolve V850/TriCore raw import support. Do not select a false architecture or assume a language override bypasses admission.
 4. Start focused static analysis with exact artifact identity. Validate the older security-table location before relying on it, then trace relevant data and functions. Export REA evidence and update the ledger.
 
 Current work has not flashed a rack, sent CAN messages, tested steering behavior, or demonstrated a torque modification.
+
+## Follow-up configuration findings
+
+REA 6.7.0's raw-binary admission excludes V850 and TriCore and explicitly rejects a Ghidra language override for raw imports. This is an additional blocker beyond installing Ghidra. Ghidra 12.1.4 has been downloaded, hash-verified, installed, and built for Apple Silicon under `analysis/tools/`. REA's Ghidra checks pass and Codex registration is configured with a verified backup. Configuration details are in REA_READINESS.md. Do not treat engine setup as completed rack decompilation.

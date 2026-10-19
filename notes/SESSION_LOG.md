@@ -13,3 +13,17 @@ Results: no reproducible firmware torque modification was established by this pr
 Validation: regenerated the manifest with identical output and matching archive hashes. Verified the SHA-256 of each staged Git blob against all 694 archive records. Added .gitattributes to preserve imported bytes and original line endings. New files passed git diff --cached --check and JSON parsing.
 
 Next action: compare the selected 1061 ODX flash-block metadata and extracted bytes; determine CPU/import settings and provider requirements from exact artifacts. See STATUS.md for outstanding gates and the final Git history for the bootstrap snapshot.
+
+## October 19, 2026: configure the decompiler
+
+Request: help configure software decompilation with REA and identify what remains outstanding.
+
+Confirmed live REA 6.7.0 provider state and inspected its installed raw-import code. V850 and TriCore are absent from raw-binary admission; the Ghidra profile also rejects language overrides on raw imports. Installing an engine does not resolve this API limitation.
+
+Downloaded official Ghidra 12.1.4, checked its release API SHA-256, extracted under ignored `analysis/tools/`, restored archive permissions, and built its missing macOS arm64 decompiler using existing clang/make/bison. Existing OpenJDK 25.0.2 meets the installation's Java bounds. All Ghidra prerequisite checks passed through the new project CLI launcher, scripts/rea-ghidra.
+
+Prepared the scoped Codex setup dry run with skill replacement disabled, then applied the same configuration under the user's request. Setup returned ready. Verified the pre-change backup exists and that unrelated TOML settings are unchanged. Existing live MCP process still needs reconnect/restart; CLI is usable now.
+
+Also parsed selected 1061 ODX flash blocks without changing originals. H1 binary matches its ODX FD_0DATA exactly; H7 binary is one byte longer and has a different hash. Recorded block identities and limits in evidence/odx-block-inventory-2026-10-19.json.
+
+Remaining: restart/reconnect MCP, resolve supported firmware raw import, establish CPU and memory mapping, characterize H7 extraction, and obtain actual target decompilation evidence. No rack firmware was executed, modified, or flashed.

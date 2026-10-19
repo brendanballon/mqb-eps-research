@@ -1,0 +1,10 @@
+#!/bin/sh
+# Use the project Ghidra install with the pinned REA release.
+set -eu
+project_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+export GHIDRA_INSTALL_DIR="$project_root/analysis/tools/ghidra_12.1.4_PUBLIC"
+if [ ! -f "$GHIDRA_INSTALL_DIR/Ghidra/application.properties" ]; then
+    echo "Project Ghidra installation is missing: $GHIDRA_INSTALL_DIR" >&2
+    exit 1
+fi
+exec npx -y rea-agents@6.7.0 "$@"

@@ -1,0 +1,83 @@
+{
+  "source": "Local XML parsing and byte hashing, not REA decompilation",
+  "limitations": [
+    "ODX declarations and block labels do not establish CPU identity or runtime memory mapping.",
+    "Only selected 5Q0909144R 1061 ODX files were examined."
+  ],
+  "files": [
+    {
+      "odx": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H1_1061.odx",
+      "odx_sha256": "a2f2620ae33701e9b5b1b2e193d6cb68a8dd2ec23cfff5870ab0069ef7923b6e",
+      "flashdata": [
+        {
+          "id": "EMEM_3Q0909144HH15061.FD_0ERASEDATA",
+          "short_name": "FD_0ERASEDATA",
+          "bytes": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+          "first_16_bytes": "00"
+        },
+        {
+          "id": "EMEM_3Q0909144HH15061.FD_0DATA",
+          "short_name": "FD_0DATA",
+          "bytes": 462848,
+          "sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641",
+          "first_16_bytes": "323031342f30352f31332031373a3534"
+        }
+      ],
+      "historical_binary": {
+        "path": "EPS_research/MQB/5Q0, 3Q0/3_bin/FL_5Q0909144R_H1_1061.bin",
+        "bytes": 462848,
+        "sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641",
+        "matches_blocks": [
+          "EMEM_3Q0909144HH15061.FD_0DATA"
+        ]
+      }
+    },
+    {
+      "odx": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H2_1061.odx",
+      "odx_sha256": "8c00f9bd1103deef9db0d6e07477787d35ca06c5b0d9717334b818bbb4bb2baa",
+      "flashdata": [
+        {
+          "id": "EMEM_3Q0909144HH25061.FD_0ERASEDATA",
+          "short_name": "FD_0ERASEDATA",
+          "bytes": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+          "first_16_bytes": "00"
+        },
+        {
+          "id": "EMEM_3Q0909144HH25061.FD_0DATA",
+          "short_name": "FD_0DATA",
+          "bytes": 53248,
+          "sha256": "6da9a40580a2bd49b5097f6c7363a2080a76575e230b7cf8fe54a3f7a61ce5f7",
+          "first_16_bytes": "0e7a0000ec7a00007c7b0000c47a0000"
+        }
+      ]
+    },
+    {
+      "odx": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H7_1061.odx",
+      "odx_sha256": "c9265268aa6305c3a563f33e4c1af5ea664f5e04c6bef4d64d01d37f27855e60",
+      "flashdata": [
+        {
+          "id": "EMEM_3Q0909144HH75061.FD_0ERASEDATA",
+          "short_name": "FD_0ERASEDATA",
+          "bytes": 1,
+          "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+          "first_16_bytes": "00"
+        },
+        {
+          "id": "EMEM_3Q0909144HH75061.FD_0DATA",
+          "short_name": "FD_0DATA",
+          "bytes": 24576,
+          "sha256": "10c11c159565aeff7750a8c4ebe67b2ef25e44e1ce599dbec54c42a85bbbf64a",
+          "first_16_bytes": "4d51425f42425f31385f303120202000"
+        }
+      ],
+      "historical_binary": {
+        "path": "EPS_research/MQB/5Q0, 3Q0/3_bin/FL_5Q0909144R_H7_1061.bin",
+        "bytes": 24577,
+        "sha256": "391f6fc7872966a3f980e21534853c0b13164d9b084d6d513fde978178e2a40d",
+        "matches_blocks": []
+      }
+    }
+  ]
+}

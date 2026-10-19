@@ -1,6 +1,6 @@
 # REA preparation
 
-Checked October 19, 2026. This is a current setup snapshot, not a completed firmware analysis.
+Checked October 19, 2026. This is a setup record, not a completed firmware analysis. The bootstrap snapshot below precedes the follow-up configuration work recorded at the end.
 
 ## Verified
 
@@ -30,3 +30,42 @@ A bounded filesystem search under `/Applications`, `~/Applications`, `~/Tools`, 
 4. Once a provider is configured, open the selected artifact with its explicit path and import profile. Keep analysis identity, hashes, limitations, and exports in the ledger.
 
 The installed skill and running server agree, so a setup rewrite or upgrade was not performed. REA package readiness does not mean firmware-provider readiness. Future configuration repair should follow the skill's read-only setup-plan procedure and existing user authorization.
+
+## Follow-up: decompiler configuration
+
+The user requested software/decompiler configuration on October 19, 2026.
+
+An additional compatibility gate was confirmed in the actual connected tool schema and installed REA 6.7.0 code:
+
+- `open_binary(format="raw-binary")` admits only x86, x86_64, arm, arm64, 6502, and m68k.
+- Neither V850 nor TriCore is an admitted raw architecture.
+- `dist/ghidra/GhidraAnalysisProfile.js` explicitly rejects `REA_GHIDRA_LANGUAGE_ID` overrides for raw-binary targets. An environment override does not solve this gate.
+- Do not mislabel the rack firmware as ARM to force it through admission.
+
+Official Ghidra release selected: 12.1.4, asset `ghidra_12.1.4_PUBLIC_20260921.zip`, release tag `Ghidra_12.1.4_build`. The downloaded ZIP matched the release API's SHA-256 `ddac49f903da9d5bac833e5cc79395098b9c33cfd3279be5f31bd00387d2d4db`.
+
+Project-local installation: `analysis/tools/ghidra_12.1.4_PUBLIC/`. This ignored directory holds software and build products. `scripts/rea-ghidra` selects this installation for the pinned REA CLI. The existing JDK is OpenJDK 25.0.2 arm64; Ghidra declares Java minimum 21 with no maximum.
+
+Ghidra includes V850 and TriCore language definitions. Their presence establishes Ghidra language availability, not the correct CPU for this firmware or an admitted REA raw route.
+
+The release archive does not include a macOS decompiler. Native build command, using existing tools:
+
+```sh
+make -C analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/src/decompile/cpp \
+  -j 6 ghidra_opt 'ARCH_TYPE=-arch arm64' OSDIR=mac_arm_64
+```
+
+Upstream references: [REA installation and Ghidra configuration](https://github.com/morluto/rea/blob/main/docs/installation.md), [official Ghidra release](https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_12.1.4_build). Installed REA source is authoritative for its current admission limits.
+
+Outstanding firmware route: confirm CPU and memory mapping, then establish supported V850/TriCore raw-image admission in REA or use an explicitly documented direct Ghidra workflow. Neither route has been verified for this firmware. A synthetic executable carrier, if considered later, must preserve provenance and be validated; it is not currently an established solution.
+
+### Configuration result
+
+- Native arm64 decompiler built and installed at `Ghidra/Features/Decompiler/os/mac_arm_64/decompile`; `file` identifies Mach-O arm64.
+- `scripts/rea-ghidra doctor --provider ghidra --json` passed all eight Ghidra checks: configuration, host platform, architecture, installation, version, headless launcher, native decompiler, and Java. Report: `evidence/rea-ghidra-doctor-2026-10-19.json`. This checks prerequisites; no firmware decompilation has yet run.
+- Reviewed `setup --client codex --skill=false --dry-run --json`, then applied the same scope under the user's configuration request. Setup returned `ready` and `configured_codex`.
+- Updated only the REA registration in `/Users/brendanballon/.codex/config.toml` with the project Ghidra path and existing Java home. Hopper configuration retained. No skill replacement or other client configuration was requested.
+- Verified all unrelated TOML configuration was identical to the pre-change backup: `/Users/brendanballon/.codex/config.toml.rea.backup.db4f3e5c9001372832581c6585947b6dd92a51137f0ffa3f871a42ab617c818d.recovery`.
+- The existing MCP server retains its launch environment. Restart/reconnect Codex's REA server before expecting the in-chat MCP provider to see Ghidra. The project CLI launcher works immediately.
+
+Use `scripts/rea-ghidra doctor --provider ghidra --json` to recheck the engine. The project-local Ghidra software is ignored by Git and must remain at the configured path. Its archive and build log are also under `analysis/tools/`.

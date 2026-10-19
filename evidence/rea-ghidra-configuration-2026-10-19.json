@@ -1,0 +1,20 @@
+{
+  "status": "ready",
+  "plannedActions": [
+    {
+      "id": "configure_client:codex",
+      "kind": "configure_client",
+      "label": "Codex",
+      "target": "/Users/brendanballon/.codex/config.toml",
+      "detail": "Add the REA MCP registration for Codex; preserve unrelated configuration. The backup path reflects the configuration inspected for this plan; if that file changes before execution, setup will select a recovery path for its current contents. Command: \"npx\" \"-y\" \"rea-agents@6.7.0\" \"mcp\". Detected provider environment: GHIDRA_INSTALL_DIR=/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC, HOPPER_LAUNCHER_PATH=/Users/brendanballon/Applications/Hopper Disassembler.app/Contents/MacOS/hopper, JAVA_HOME=/Users/brendanballon/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home. Existing server environment overrides are retained; detected values replace matching keys.",
+      "external": false,
+      "operation": "update",
+      "backupPath": "/Users/brendanballon/.codex/config.toml.rea.backup.db4f3e5c9001372832581c6585947b6dd92a51137f0ffa3f871a42ab617c818d.recovery"
+    }
+  ],
+  "appliedActions": [
+    "configured_codex"
+  ],
+  "unrelated_configuration_verified_unchanged": true,
+  "restart_required_for_existing_mcp_process": true
+}
