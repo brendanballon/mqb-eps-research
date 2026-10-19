@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XML Light Scheme Configuration file. VAGHelper .neXt-->
+<!--http://skodapilot.com-->
+<Data Crc="9D76">
+  <ConfigBrand>SKODA</ConfigBrand>
+  <ConfigModel>YETI</ConfigModel>
+  <ConfigYear>2014</ConfigYear>
+  <ConfigDesc>LED, XENON</ConfigDesc>
+  <ConfigBCM pn="1K0937087AK" hw="112" sw="0771" />
+  <LongCoding>40000ABCE85BF1C0400800C0510089E44B7000AE726D8D60808140040040</LongCoding>
+  <Adaptation />
+  <EEPROM>
+    <Section address="1963" contacts="c27" byte0="FF" byte1="FF" byte2="FF" location="plate" type="c5w" functions="license" desc="Лампы подсветки номерного знака" />
+    <Section address="3073" contacts="c47" byte0="32" byte1="82" byte2="43" location="front" side="right" type="led" functions="drl,position,parking" desc="Светодиодный модуль правого переднего габарита/ДХО" />
+    <Section address="3076" contacts="a6" byte0="32" byte1="82" byte2="43" location="front" side="left" type="led" functions="drl,position,parking" desc="Светодиодный модуль левого переднего габарита/ДХО" />
+    <Section address="3079" contacts="c28" byte0="80" byte1="21" byte2="20" location="rear" side="right" type="p21w" functions="fog" desc="Лампа заднего хода правая" />
+    <Section address="3082" contacts="a28" byte0="80" byte1="21" byte2="20" location="rear" side="left" type="p21w" functions="fog" desc="Лампа заднего хода левая" />
+    <Section address="3085" contacts="c4,a26" byte0="08" byte1="A1" byte2="5A" location="rear" side="left,right" type="led" functions="position,parking,stop" desc="Светодиодные модули задних габаритов/стоп-сигналов" />
+    <Section address="3088" contacts="c3,a27" byte0="31" byte1="A1" byte2="4F" location="rear" side="left,right" type="led" functions="position,parking" desc="Светодиодные модули задних габаритов" />
+    <Section address="3091" contacts="c26,a44" byte0="32" byte1="9C" byte2="42" location="front" side="left,right" type="led" functions="drl,position,parking" desc="Светодиодные модули передних габаритов/ДХО" />
+    <Section address="3094" contacts="a7,a8" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3097" contacts="a10,c50" byte0="04" byte1="01" byte2="2C" location="front" side="left,right" type="hpc24wy" functions="turn" desc="Лампы передних указателей поворота" />
+    <Section address="3100" contacts="a9,c51" byte0="04" byte1="21" byte2="36" location="rear" side="left,right" type="p21w" functions="fog" desc="Лампы задних указателей поворота" />
+    <Section address="3103" contacts="b50" byte0="40" byte1="21" byte2="24" location="rear" side="left" type="p21w" functions="fog" desc="Лампа задней ПТФ" />
+    <Section address="3106" contacts="b47,b48" byte0="00" byte1="00" byte2="1F" />
+    <Section address="3109" contacts="c48,c49" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3112" contacts="a3,a4" byte0="00" byte1="00" byte2="3F" functions="heater" desc="Подогрев форсунок омывателя лобового стекла" />
+    <Section address="3115" contacts="c43,a2" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3118" contacts="PSEUDO" byte0="14" byte1="00" byte2="00" />
+    <Section address="3119" contacts="PSEUDO" byte0="B4" byte1="00" byte2="00" />
+  </EEPROM>
+</Data>

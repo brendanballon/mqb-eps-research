@@ -1,0 +1,1523 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VAGHelper
+</name>
+</assembly>
+<members>
+<member name="T:VAGHelper.My.Resources.Language">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.about">
+<summary>
+  Ищет локализованную строку, похожую на About.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.addresses">
+<summary>
+  Ищет локализованную строку, похожую на Addresses.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.bit">
+<summary>
+  Ищет локализованную строку, похожую на Bit.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.brightness">
+<summary>
+  Ищет локализованную строку, похожую на Brightness.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Button_Cancel">
+<summary>
+  Ищет локализованную строку, похожую на Cancel.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Button_OK">
+<summary>
+  Ищет локализованную строку, похожую на OK.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.checkUpdates">
+<summary>
+  Ищет локализованную строку, похожую на Check for updates.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_ExportFail">
+<summary>
+  Ищет локализованную строку, похожую на Following error has occurred during EEPROM Data export: .
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_InvalidActivationKey">
+<summary>
+  Ищет локализованную строку, похожую на Activation key is invalid!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_InvalidEmail">
+<summary>
+  Ищет локализованную строку, похожую на Email address is invalid!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_InvalidLicense">
+<summary>
+  Ищет локализованную строку, похожую на License Key is invalid!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_InvalidLicenseEmailOrHwId">
+<summary>
+  Ищет локализованную строку, похожую на Email address or hardware ID is invalid for this license!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_OfDumpLoading">
+<summary>
+  Ищет локализованную строку, похожую на Unexpected error has occured during data loading.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_Signature_of_remote_and_local_copy_of_installer_are_different">
+<summary>
+  Ищет локализованную строку, похожую на Signature of remote and local copy of installer are different.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_Update_error">
+<summary>
+  Ищет локализованную строку, похожую на Update error.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Error_WrongDumpSize">
+<summary>
+  Ищет локализованную строку, похожую на File size of EEPROM dump should be 4096 or 8192 bytes.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FileType_BCM1">
+<summary>
+  Ищет локализованную строку, похожую на VAG CAN Pro (*.bcm1)|*.bcm1.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FileType_BIN">
+<summary>
+  Ищет локализованную строку, похожую на BIN file|*.bin.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FileType_ODIS_E_Preset">
+<summary>
+  Ищет локализованную строку, похожую на ODIS E Preset (*.pre)|*.pre.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FileType_VAGHelper_XML">
+<summary>
+  Ищет локализованную строку, похожую на VAGHelper (.xml)|*.xml.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormLic_IsBusy">
+<summary>
+  Ищет локализованную строку, похожую на VAGHelper is busy. Please wait until the thread finishes..
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormLic_NotRegistred">
+<summary>
+  Ищет локализованную строку, похожую на NOT ACTIVATED.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormLic_ReadingHWID">
+<summary>
+  Ищет локализованную строку, похожую на Reading....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormLic_ReadingStatus">
+<summary>
+  Ищет локализованную строку, похожую на Reading status....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormLic_Registred">
+<summary>
+  Ищет локализованную строку, похожую на ACTIVATED.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormLic_VerifiengHWID">
+<summary>
+  Ищет локализованную строку, похожую на Verifieng....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormUpdate_Installation_are_skipped__Please__try_to_run_update_once_again">
+<summary>
+  Ищет локализованную строку, похожую на Installation are skipped! Please, try to run update once again.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormUpdate_Local_MD5">
+<summary>
+  Ищет локализованную строку, похожую на Local MD5.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FormUpdate_Remote_MD5">
+<summary>
+  Ищет локализованную строку, похожую на Remote MD5.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfDrl">
+<summary>
+  Ищет локализованную строку, похожую на DRL.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfFog">
+<summary>
+  Ищет локализованную строку, похожую на Fog.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfFootwell">
+<summary>
+  Ищет локализованную строку, похожую на Footwell.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfLicensePlate">
+<summary>
+  Ищет локализованную строку, похожую на license plate.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfParking">
+<summary>
+  Ищет локализованную строку, похожую на Parking.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfPosition">
+<summary>
+  Ищет локализованную строку, похожую на Position.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfReverse">
+<summary>
+  Ищет локализованную строку, похожую на Reverse.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfStop">
+<summary>
+  Ищет локализованную строку, похожую на Stop.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfTurn">
+<summary>
+  Ищет локализованную строку, похожую на Turn signal.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.FunctionOfUnused">
+<summary>
+  Ищет локализованную строку, похожую на Unused.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.fwPath">
+<summary>
+  Ищет локализованную строку, похожую на Path to Firmware folder (*.sgo files).
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Label_CheckNewVersion">
+<summary>
+  Ищет локализованную строку, похожую на Checking new Version on server....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Label_NewVersion">
+<summary>
+  Ищет локализованную строку, похожую на New Version is available!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Label_NoNewVersion">
+<summary>
+  Ищет локализованную строку, похожую на The last Version is installed! Update is not required..
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.lampSideInstallation">
+<summary>
+  Ищет локализованную строку, похожую на Side of lamp installation.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_ActivatedOK">
+<summary>
+  Ищет локализованную строку, похожую на VAGHelper was successfully activated!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Could_not_find_out_any_active_network_connection_Check_available_connections_and_try_again">
+<summary>
+  Ищет локализованную строку, похожую на Could not find out any active network connection! Check available connections and try again.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_DownloadCompleted">
+<summary>
+  Ищет локализованную строку, похожую на Download is completed....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_DownloadMD5Err">
+<summary>
+  Ищет локализованную строку, похожую на Verifieng of MD5: Error.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_DownloadMD5OK">
+<summary>
+  Ищет локализованную строку, похожую на Verifieng of MD5: OK.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_EEPROM_data_successfuly_exported_as_ODIS_Preset_files">
+<summary>
+  Ищет локализованную строку, похожую на EEPROM data successfuly exported as ODIS Preset file(s).
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_EEPROM_data_successfuly_exported_as_VCP_file_BCM1">
+<summary>
+  Ищет локализованную строку, похожую на EEPROM data successfuly exported as VCP file.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_File_could_not_be_loaded">
+<summary>
+  Ищет локализованную строку, похожую на File could not be loaded.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_of_downloading_active_server_address">
+<summary>
+  Ищет локализованную строку, похожую на Error of downloading active server address.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_of_export_data_as_ODIS_Preset_file">
+<summary>
+  Ищет локализованную строку, похожую на Error of export data as ODIS Preset file (PRE)....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_of_export_data_as_VCP_file_BCM1">
+<summary>
+  Ищет локализованную строку, похожую на Error of export data as VCP file (BCM1)....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_of_file_writing">
+<summary>
+  Ищет локализованную строку, похожую на Error of writing file to disk.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_of_loading_ODIS_E_file_PRE">
+<summary>
+  Ищет локализованную строку, похожую на Error of loading ODIS E file (PRE)....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_of_loading_VCP_file_BCM1">
+<summary>
+  Ищет локализованную строку, похожую на Error of loading VCP file (BCM1)....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_Selected_path_do_not_exist">
+<summary>
+  Ищет локализованную строку, похожую на Selected path do not exist....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_Unable_to_load_BIN_file">
+<summary>
+  Ищет локализованную строку, похожую на Unable to load BIN file.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Error_Unsupported_format_of_ODIS_E_preset_file">
+<summary>
+  Ищет локализованную строку, похожую на Unsupported format of ODIS E preset file.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_ExportSuccess">
+<summary>
+  Ищет локализованную строку, похожую на EEPROM data was successfully exported.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_File_was_successfully_stored_in">
+<summary>
+  Ищет локализованную строку, похожую на File was successfully stored in .
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_FuelCurveExportErr">
+<summary>
+  Ищет локализованную строку, похожую на Following error has occurred during Curve Data export:.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_FuelCurveExportOk">
+<summary>
+  Ищет локализованную строку, похожую на Curve Data was successfully exported to .
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_MultiDropNotAllow">
+<summary>
+  Ищет локализованную строку, похожую на Drop of file group is not supported. Please, drop single file....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_NoUpdateAvailable">
+<summary>
+  Ищет локализованную строку, похожую на There is no any updates on server....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_ParsingXML">
+<summary>
+  Ищет локализованную строку, похожую на Parsing update map....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Ping_is_too_large_2000ms_Check_available_connections_and_try_again">
+<summary>
+  Ищет локализованную строку, похожую на Ping is too large (&gt;2000ms)! Check available connections and try again.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_ReadyToSetup">
+<summary>
+  Ищет локализованную строку, похожую на Restarting....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Server_error_could_not_observe_active_server_IP">
+<summary>
+  Ищет локализованную строку, похожую на Server error: could not observe active server IP.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Server_error_could_parse_update_map">
+<summary>
+  Ищет локализованную строку, похожую на Server error: could parse update map.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Server_error_Error_of_downloading_update_map">
+<summary>
+  Ищет локализованную строку, похожую на Server error: Error of downloading update map.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_StartDownload">
+<summary>
+  Ищет локализованную строку, похожую на Downloading update file....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_StartUpdate">
+<summary>
+  Ищет локализованную строку, похожую на Start update....
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_ThankForPurshase">
+<summary>
+  Ищет локализованную строку, похожую на Thank You for purchasing!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_Update_reasdy_to_install">
+<summary>
+  Ищет локализованную строку, похожую на Download and setup update now? VDOEditor will be automatical closed after download completed to run setup..
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Message_UpdateAvailable">
+<summary>
+  Ищет локализованную строку, похожую на Download and setup update now? VAGHelper will be automatical closed after download completed to run setup..
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.modification">
+<summary>
+  Ищет локализованную строку, похожую на Modification.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Msg_ActivatedOK">
+<summary>
+  Ищет локализованную строку, похожую на VAGHelper.X was successfully activated!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Msg_ThankForPurshase">
+<summary>
+  Ищет локализованную строку, похожую на Thank You for purchasing!.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Msg_UpdateAvailable">
+<summary>
+  Ищет локализованную строку, похожую на Download and setup update now? VAGHelper.X will be automatical closed after download completed to run setup..
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.newSettings">
+<summary>
+  Ищет локализованную строку, похожую на New values.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.noUpdate">
+<summary>
+  Ищет локализованную строку, похожую на No new releases.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.open">
+<summary>
+  Ищет локализованную строку, похожую на Open.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.outputDiagDisable">
+<summary>
+  Ищет локализованную строку, похожую на Diagnostics is disabled.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.outputDiagEnable">
+<summary>
+  Ищет локализованную строку, похожую на Diagnostics is enabled.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Save_As_BIN_file">
+<summary>
+  Ищет локализованную строку, похожую на Save As .BIN.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Save_As_ODIS_E_Preset">
+<summary>
+  Ищет локализованную строку, похожую на Save As .PRE.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.saveAs">
+<summary>
+  Ищет локализованную строку, похожую на Save as.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.saveSTTfile">
+<summary>
+  Ищет локализованную строку, похожую на Save STT file.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.selectFolder">
+<summary>
+  Ищет локализованную строку, похожую на Select folder.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.selectionOfPatch">
+<summary>
+  Ищет локализованную строку, похожую на Selection of modification.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.selectLamp">
+<summary>
+  Ищет локализованную строку, похожую на Selection of lamp (BCM output).
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.selectOfSGOfile">
+<summary>
+  Ищет локализованную строку, похожую на Selection of SGO file.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.settings">
+<summary>
+  Ищет локализованную строку, похожую на Settings.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.sttFile">
+<summary>
+  Ищет локализованную строку, похожую на STT file.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.sttGenerator">
+<summary>
+  Ищет локализованную строку, похожую на STT Generator.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.sttOutText">
+<summary>
+  Ищет локализованную строку, похожую на STT file content.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Title_Attention">
+<summary>
+  Ищет локализованную строку, похожую на Attention.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Title_Error">
+<summary>
+  Ищет локализованную строку, похожую на Error.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Title_Info">
+<summary>
+  Ищет локализованную строку, похожую на Information.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.Title_Success">
+<summary>
+  Ищет локализованную строку, похожую на Success.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.turnOffColdDiagnostic">
+<summary>
+  Ищет локализованную строку, похожую на Disable &quot;cold&quot; diagnostic.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.turnOffWarmDiagnostic">
+<summary>
+  Ищет локализованную строку, похожую на Disable &quot;warm&quot; diagnostic.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.turnOffWhenTrunk">
+<summary>
+  Ищет локализованную строку, похожую на Turn off when trunk lid is opened.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.turnSignal">
+<summary>
+  Ищет локализованную строку, похожую на Turn signal.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.ucg_adaptations">
+<summary>
+  Ищет локализованную строку, похожую на Adaptations channels.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.ucg_advancedfeatures">
+<summary>
+  Ищет локализованную строку, похожую на Additional features.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.ucg_logins">
+<summary>
+  Ищет локализованную строку, похожую на Logins.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.ucg_longcoding">
+<summary>
+  Ищет локализованную строку, похожую на Long coding.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.ucgTask">
+<summary>
+  Ищет локализованную строку, похожую на Operations.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Language.withoutModification">
+<summary>
+  Ищет локализованную строку, похожую на Without modification.
+</summary>
+</member>
+<member name="T:VAGHelper.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Resources.Actions_edit_undo">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Resources.Actions_export">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Resources.Actions_import">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Resources.Actions_save">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VAGHelper.My.Resources.Resources.Categories_help">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VAGHelper.Core.DataTypes.Curve.Minimum">
+ <summary>
+ минимальное значение кривой
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.DataTypes.Curve.Maximum">
+ <summary>
+ максимальное значение кривой
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.DataTypes.DataPackage.OffSet">
+ <summary>
+ смещение блока данных
+ </summary>
+ <returns></returns>
+</member>
+<member name="F:VAGHelper.Core.DataTypes.DataPackage._name">
+ <summary>
+ имя блока данных
+ </summary>
+</member>
+<member name="P:VAGHelper.Core.DataTypes.DataPackage.Name">
+ <summary>
+ имя блока данных
+ </summary>
+ <returns>Имя блока данных</returns>
+</member>
+<member name="T:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV2">
+ <summary>
+ Класс взаимодействия с файлами VCP XML
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV2.Containers">
+ <summary>
+ Контейнеры из файла пресета VCP
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV2.Load">
+ <summary>
+ Загрузка данных из файла пресета VCP
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV2.Save">
+ <summary>
+ Запись файла в формате ODIS E
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV2.#ctor(System.String)">
+ <summary>
+ создание файла с загрузкой данных с диска
+ </summary>
+ <param name="sourcePath"></param>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfHex.Data">
+ <summary>
+ Содержимое бинарного файла
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfHex.Load">
+ <summary>
+ Загружает набор байт
+ </summary>
+ <returns>результат чтения</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfHex.#ctor(System.String,System.Collections.IEnumerable)">
+ <summary>
+ создание файла с указанием имени и набора данных
+ </summary>
+ <param name="destinationPath"></param>
+ <param name="bytes"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfHex.#ctor(System.String,System.Byte)">
+ <summary>
+ создание файла с указанием имени и набора данных
+ </summary>
+ <param name="destinationPath"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfHex.InitByHex(System.String)">
+ <summary>
+ создание файла с загрузкой данных с диска
+ </summary>
+ <param name="sourcePath"></param>
+ <remarks></remarks>
+</member>
+<member name="T:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV1">
+ <summary>
+ Класс взаимодействия с файлами VCP XML
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV1.Containers">
+ <summary>
+ Контейнеры из файла пресета VCP
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV1.Load">
+ <summary>
+ Загрузка данных из файла пресета VCP
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV1.Save">
+ <summary>
+ Запись файла в файла пресета VCP
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeXmlV1.#ctor(System.String)">
+ <summary>
+ создание файла с загрузкой данных с диска
+ </summary>
+ <param name="sourcePath"></param>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfSgo.SizeOf">
+ <summary>
+ Размер файла в байтах
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfSgo.Save(System.String@)">
+ <summary>
+ запись файла SGO в файл
+ </summary>
+ <param name="pathTo">путь к файлу</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfBin.Data">
+ <summary>
+ Содержимое бинарного файла
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfBin.Load">
+ <summary>
+ Загружает набор байт
+ </summary>
+ <returns>результат чтения</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfBin.#ctor(System.String,System.Byte[])">
+ <summary>
+ создание файла с указанием имени и набора данных
+ </summary>
+ <param name="destinationPath"></param>
+ <param name="bytes"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfBin.#ctor(System.String)">
+ <summary>
+ создание файла
+ </summary>
+ <param name="destinationPath"></param>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOf.SystemPath">
+ <summary>
+ Полный путь к файлу
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOf.Description">
+ <summary>
+ Описание файла
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOf.SystemSize">
+ <summary>
+ Размер файла в байтах
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOf.DateOf">
+ <summary>
+ Дата создания файла
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOf.IsLoaded">
+ <summary>
+ Флаг загруженных данных
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOf.GetAsInteger(System.String,System.Int32)">
+ <summary>
+ преобразование String в Integer с заданным основанием 
+ </summary>
+ <param name="inData">входная строка</param>
+ <param name="base">результат преобразования</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:VAGHelper.Core.FileTypes.FileOfOdisPreset">
+ <summary>
+ Класс взаимодействия с файлами пресетов ODIS E
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfOdisPreset.Data">
+ <summary>
+ Данные EEPROM из файла пресета ODIS в виде набора байт
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfOdisPreset.Load">
+ <summary>
+ Загрузка данных из файла пресета ODIS E
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfOdisPreset.Save">
+ <summary>
+ Запись файла в формате ODIS E
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfOdisPreset.#ctor(System.String)">
+ <summary>
+ создание файла с загрузкой данных с диска
+ </summary>
+ <param name="sourcePath"></param>
+ <remarks></remarks>
+</member>
+<member name="T:VAGHelper.Core.FileTypes.FileOfOdisRdks">
+ <summary>
+ Класс взаимодействия с файлами RDKS ODIS E
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfOdisRdks.Data">
+ <summary>
+ Данные EEPROM из файла пресета ODIS в виде набора байт
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfOdisRdks.Load">
+ <summary>
+ Загрузка данных из файла пресета ODIS E
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfOdisRdks.Save">
+ <summary>
+ Запись файла в формате ODIS E
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfOdisRdks.#ctor(System.String)">
+ <summary>
+ создание файла с загрузкой данных с диска
+ </summary>
+ <param name="sourcePath"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeBcm1.LoadConfigurationVcp(System.String)">
+ <summary>
+ загрузка конфигурации из VCP файла
+ </summary>
+ <param name="fileName">путь к файлу BCM1</param>
+ <returns>результат выполнения</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfVcpTypeBcm1.SaveConfigurationVcp(System.Object)">
+ <summary>
+ сохранение текущей конфигурации в формате VCP
+ </summary>
+ <param name="fileName">путь к сохраняемому файлу</param>
+ <returns>результат выполнения</returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.FileTypes.FileOfLightScheme.Crc">
+ <summary>
+ контрольная сумма световой схемы
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfLightScheme.Load">
+ <summary>
+ загрузка схемы из XML файла
+ </summary>
+ <returns>результат выполнения</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfLightScheme.Save">
+ <summary>
+ сохранение текущей конфигурации в формате XML
+ </summary>
+ <returns>результат выполнения</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.FileTypes.FileOfLightScheme.#ctor(System.String)">
+ <summary>
+ создание файла с загрузкой данных с диска
+ </summary>
+ <param name="sourcePath"></param>
+ <remarks></remarks>
+</member>
+<member name="T:VAGHelper.Core.EditorOfLightScheme.OutputOfBcm">
+ <summary>
+ описание выхода BCM
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.OutputsOfBcm.Add(System.Int32,System.String,System.Int32)">
+ <summary>
+ добавление контакта в список доступных
+ </summary>
+ <param name="add">адрес в области EEPROM</param>
+ <param name="nums">номера контактов</param>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme._defaultsSchemes">
+ <summary>
+ список доступных заводских схем
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme._patchesSchemes">
+ <summary>
+ список доступных патчей
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme.LoadSchemes(System.Collections.Generic.List{VAGHelper.Core.FileTypes.FileOfLightScheme},System.String)">
+ <summary>
+ Загрузка световых схем в указанный ListOf из указанной папки
+ </summary>
+ <param name="schemes">Имя ListOf</param>
+ <param name="subPath">Путь к файлам XML</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme.LoadDefaults">
+ <summary>
+ загрузка заводских световых схем
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme.LoadPatches">
+ <summary>
+ загрузка схем с модификациями
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme.Brands">
+ <summary>
+ возвращает список доступных брендов
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme.Models">
+ <summary>
+ возвращает список доступных моделей
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme.Years">
+ <summary>
+ возвращает список доступных годов для активной марки и модели
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Core.EditorOfLightScheme.EditorOfLightScheme.OpticsTypes">
+ <summary>
+ возвращает список доступных версий для активной марки, модели и года 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.LightScheme.ReplaceElement(System.Int32@,System.Int32@,System.Int32@)">
+ <summary>
+ Установка значения для заданного адреса прямой передачей всех параметров
+ </summary>
+ <param name="byte0">значение +0 байта</param>
+ <param name="byte1">значение +1 байта</param>
+ <param name="byte2">значение +2 байта</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.LightScheme.UpdateElement(System.Int32@,System.Int32@,System.Boolean@)">
+ <summary>
+ Установка значения для заданного адреса прямой передачей всех параметров
+ </summary>
+ <param name="byteNum">номер байта</param>
+ <param name="bitNum">номер бита</param>
+ <param name="state">значение бита</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.LightElementOfEeprom.Replace(System.Int32@,System.Int32@,System.Int32@)">
+ <summary>
+ обновление значений всех элементов световой схемы EEPROM
+ </summary>
+ <param name="value0">значение нулевого байта</param>
+ <param name="value1">значение первого байта</param>
+ <param name="value2">значение второго байта</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.EditorOfLightScheme.LightElementOfEeprom.Update(System.Int32@,System.Int32@,System.Boolean@)">
+ <summary>
+ обновление значения элемента световой схемы EEPROM
+ </summary>
+ <param name="position">номер байта</param>
+ <param name="bitNum">номер бита</param>
+ <param name="state">значение бита</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Core.Utils.Tools.GetDataAsInteger(System.String,System.Int32)">
+ <summary>
+ преобразование String в Integer с заданным основанием 
+ </summary>
+ <param name="inData">входная строка</param>
+ <param name="base">результат преобразования</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:VAGHelper.Editors.EditorOfSteering.DataSetOfSteeringMqb.Curve(System.Int32)">
+ <summary>
+ возвращает кривую по указанному смещению
+ </summary>
+ <param name="offsetOfCurve">смещение кривой</param>
+ <returns></returns>
+</member>
+<member name="P:VAGHelper.Editors.EditorOfSteering.DataSetOfSteeringApa.Curve(System.Int32)">
+ <summary>
+ возвращает кривую по указанному смещению
+ </summary>
+ <param name="offsetOfCurve">смещение кривой</param>
+ <returns></returns>
+</member>
+<member name="P:VAGHelper.Editors.EditorOfSteering.DataSetOfSteeringZf.Curve(System.Int32)">
+ <summary>
+ возвращает кривую по указанному смещению
+ </summary>
+ <param name="offsetOfCurve">смещение кривой</param>
+ <returns></returns>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.#ctor">
+ <summary>
+ инициализация класса
+ </summary>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.ReloadFiles">
+ <summary>
+ перезагрузка доступных кривых из рабочей директории
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.ListOfAvailableFiles">
+ <summary>
+ Построение списка имен доступных кривых в соответствии с активным режимом
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.LoadBase(System.String)">
+ <summary>
+ загрузка данных из заданного файла
+ </summary>
+ <param name="nameOfFile"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.Copy">
+ <summary>
+ копирует текущую кривую в буфер
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.IsCopyExist">
+ <summary>
+ возвращает статус буфера обмена
+ </summary>
+ <returns>TRUE - есть копия в буфере,
+ FALSE - буфер пуст</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.GetSelectedCurve">
+ <summary>
+ возвращает активную кривую
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.IsActiveExist">
+ <summary>
+ возвращает статус активной кривой
+ </summary>
+ <returns>TRUE - есть активная кривая,
+ FALSE - нет активной кривой</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Editors.EditorOfSteering.Steering.SelectCurve(System.String)">
+ <summary>
+ устанавливает активную кривую из списка доступных
+ </summary>
+ <param name="nameOfCurve">имя кривой</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.UCG.LoadXMLlist(System.String)">
+ <summary>
+ загрузка списка файлов с описанием блоков
+ </summary>
+ <param name="langID">Языковая схема</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.UCG.loadDescription(System.String)">
+ <summary>
+ загрузка описания блока из XML
+ </summary>
+ <param name="pn">партномер блока</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.UCG.Parse(System.String)">
+ <summary>
+ разбор длинного кодирования
+ </summary>
+ <param name="indata"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:VAGHelper.LCbit">
+ <summary>
+ класс описывающий отдельный бит (функцию) в длинном кодировании
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.LCbit.byteNum">
+ <summary>
+ порядковый номер байта
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.LCbit.bitNum">
+ <summary>
+ порядковый номер бита 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.LCbit.description">
+ <summary>
+ текстовое описание бита
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.LCbit.#ctor(System.Int32,System.Int32,System.String,System.String)">
+ <summary>
+ Инициализатор
+ </summary>
+ <param name="n">номер бита</param>
+ <param name="desc">описание</param>
+ <param name="gr">состояние</param>
+ <remarks></remarks>
+</member>
+<member name="T:VAGHelper.LCvaluePercent">
+ <summary>
+ класс описывающий набор битов, кодирующих процент в длинном кодировании
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.LCvaluePercent.position">
+ <summary>
+ порядковый номер байта
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.LCvaluePercent.number">
+ <summary>
+ порядковый номер старшего бита 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.UnitLogin.clearTasks">
+ <summary>
+ очищает список задач, которые могут быть выполнены с использованием этого логина
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.UnitLogin.addTask(System.String)">
+ <summary>
+ добавляет название задачи, которая может быть выполнена с помощью логина
+ </summary>
+ <param name="tskName"></param>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.Unit.longCodings">
+ <summary>
+ список объектов длинного кодирования
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.Unit.logins">
+ <summary>
+ список доступных логинов
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.Unit.adaptations">
+ <summary>
+ список доступных каналов адаптации
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VAGHelper.Unit.tasks">
+ <summary>
+ список доступных задач по работе с блоком
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Unit.getLC">
+ <summary>
+ функция получения всех элементов длинного кодирования
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.Unit.LoadConfigurationXML(System.String)">
+ <summary>
+ загрузка описательной части из XML файла
+ </summary>
+ <param name="fileName">путь к файлу XML</param>
+ <returns>результат выполнения</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.RegistryTools.RegistrySetValue(System.String,System.Int32)">
+ <summary>
+ Запись переменной в реестр
+ </summary>
+ <param name="valName">Имя переменной</param>
+ <param name="valData">Значение переменной</param>
+ <remarks>String</remarks>
+</member>
+<member name="M:VAGHelper.RegistryTools.RegistrySetValue(System.String,System.String)">
+ <summary>
+ Запись переменной в реестр
+ </summary>
+ <param name="valName">Имя переменной</param>
+ <param name="valData">Значение переменной</param>
+ <remarks>String</remarks>
+</member>
+<member name="M:VAGHelper.RegistryTools.RegistrySetValue(System.String,System.Boolean)">
+ <summary>
+ Запись переменной в реестр
+ </summary>
+ <param name="valName">Имя переменной</param>
+ <param name="valData">Значение переменной</param>
+ <remarks>Boolean</remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ReloadListBox(System.Windows.Forms.ListBox@,System.String[],System.String)">
+ <summary>
+ перезагружает указанный ListBox и выделяет указанный элемент
+ </summary>
+ <param name="listBox">Название ListBox</param>
+ <param name="newItems">Список элементов</param>
+ <param name="selectedElement">Выделяемый элемент</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ReloadAvailableSchemes">
+ <summary>
+ перезагрузка доступных конфигурационных файлов
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.FormMain_Load(System.Object,System.EventArgs)">
+ <summary>
+ загрузка формы приложения
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.menuSettingsLangRU_Click(System.Object,System.EventArgs)">
+ <summary>
+ обработчик выбора русского интерфейса в меню программы
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.menuSettingsLangEN_Click(System.Object,System.EventArgs)">
+ <summary>
+ обработчик выбора английского интерфейса в меню программы
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain._CheckboxFromByte(System.Windows.Forms.CheckBox@,System.Int32,System.Int32)">
+ <summary>
+ установка состояния заданного чекбокса путем сравнения переданного значения с маской
+ </summary>
+ <param name="checkbox">ID чекбокса</param>
+ <param name="value">сравниваемое значение</param>
+ <param name="mask">маска</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.buttonReloadConfig_Click(System.Object,System.EventArgs)">
+ <summary>
+ повторная загрузка значений по-умолчанию в новую конфигурацию
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ButtonImportLCG_Click(System.Object,System.EventArgs)">
+ <summary>
+ Нажата кнопка импорта данных световой конфигурации. 
+ Вызов контекстного меню для выбора формата даных.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ButtonExportLCG_Click(System.Object,System.EventArgs)">
+ <summary>
+ Нажата кнопка экспорта данных.
+ Вызов контекстного меню для выбора формата данных.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.MenuEEPROMImportFromVcpBcm1_Click(System.Object,System.EventArgs)">
+ <summary>
+ обработчик меню импорта световой конфигурации из файла BCM1 VCP
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.MenuEEPROMImportFromOdis_Click(System.Object,System.EventArgs)">
+ <summary>
+ обработчик меню импорта световой конфигурации из файла PRE ODIS E
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.MenuEEPROMExportAsVcpBcm1_Click(System.Object,System.EventArgs)">
+ <summary>
+ обработчик меню экспорта световой конфигурации в формат VCP BCM1
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ButtonODISSource_Click(System.Object,System.EventArgs)">
+ <summary>
+ Обработчик выбора файла конвертора ODIS E preset - BIN
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.menuInfoPage_Click(System.Object,System.EventArgs)">
+ <summary>
+ вызов формы с информацией о программе 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.UpdateChart(System.Windows.Forms.DataVisualization.Charting.Chart@,VAGHelper.Core.DataTypes.Curve2D@,System.Double@,System.Double@)">
+ <summary>
+ обновление графиков на диаграмме
+ </summary>
+ <param name="chartName">имя диаграммы</param>
+ <param name="valueOfX">значение по оси X</param>
+ <param name="valueOfY">значение по оси Y</param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ChartOfCurve_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ обновление диаграммы по движению мыши
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ChartOfCurve_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ вход в режим редактирования кривой
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ChartOfCurve_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ обработчик движения курсора на графике кривой
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.GetColorByValue(System.Int32@,System.Int32@)">
+ <summary>
+ возвращает цвет в зависимости от переденного значения
+ </summary>
+ <param name="value"></param>
+ <param name="mxValue"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.UpdateChartOfSteeringCurves">
+ <summary>
+ перерисовка всех кривых на диаграмме
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.MenuOfSteering_VisibleChanged(System.Object,System.EventArgs)">
+ <summary>
+ обработчик вывода контектсного меню кривых рулевого управления
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:VAGHelper.FormMain.ComboBoxSteeringType_SelectedIndexChanged(System.Windows.Forms.ComboBox,System.EventArgs)">
+ <summary>
+ обработчик смены режима работы редактора характеристик рулевого управления
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:VAGHelper.FormMain.ComboBoxCurveSelection_SelectionChangeCommitted(System.Windows.Forms.ComboBox,System.EventArgs)">
+ <summary>
+ обработчик выбора файлов с параметриями рулевого управления
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

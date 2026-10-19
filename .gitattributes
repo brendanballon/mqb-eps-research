@@ -1,0 +1,2 @@
+# Preserve imported evidence bytes, including original line endings.
+EPS_research/** -text -diff

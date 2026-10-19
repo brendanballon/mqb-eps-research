@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XML Light Scheme Configuration file. VAGHelper .neXt-->
+<!--http://skodapilot.com-->
+<Data Crc="5B88">
+  <ConfigBrand>VW</ConfigBrand>
+  <ConfigModel>GOLF 6</ConfigModel>
+  <ConfigYear>2010</ConfigYear>
+  <ConfigDesc></ConfigDesc>
+  <ConfigBCM pn="1K0937086M" hw="110" sw="0651" />
+  <LongCoding>40180A3A84251AC0400800C1740089E44BAD0488736D8D60E48400240040</LongCoding>
+  <Adaptation />
+  <EEPROM>
+    <Section address="1963" contacts="c27" byte0="FF" byte1="FF" byte2="FF" location="plate" type="halogen" functions="license" desc="Лампы подсветки номерного знака" />
+    <Section address="3073" contacts="c47" byte0="40" byte1="C1" byte2="62" location="rear" side="left" type="halogen" functions="fog" desc="Лампа задней ПТФ" />
+    <Section address="3076" contacts="a6" byte0="33" byte1="A2" byte2="44" location="front" side="right" type="halogen" functions="drl" desc="Лампа правого ДХО" />
+    <Section address="3079" contacts="c28" byte0="80" byte1="61" byte2="20" location="rear" side="right" type="halogen" functions="reverse" desc="Лампа заднего хода" />
+    <Section address="3082" contacts="a28" byte0="33" byte1="A2" byte2="44" location="front" side="left" type="halogen" functions="drl" desc="Лампа левого ДХО" />
+    <Section address="3085" contacts="c4,a26" byte0="39" byte1="AA" byte2="5A" location="rear" side="left,right" type="halogen" functions="position,parking,stop" desc="Лампы задних габаритов/стоп-сигналов" />
+    <Section address="3088" contacts="c3,a27" byte0="21" byte1="FE" byte2="4F" location="rear" side="left,right" type="halogen" functions="position,parking" desc="Лампы задних габаритов" />
+    <Section address="3091" contacts="c26,a44" byte0="33" byte1="AA" byte2="42" location="front" side="left,right" type="halogen" functions="drl,position,parking" desc="Светодиодные модули ДХО/габаритов" />
+    <Section address="3094" contacts="a7,a8" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3097" contacts="a10,c50" byte0="04" byte1="21" byte2="2C" location="front" side="left,right" type="halogen" functions="turn" desc="Лампы передних указателей поворота" />
+    <Section address="3100" contacts="a9,c51" byte0="04" byte1="21" byte2="36" location="rear" side="left,right" type="halogen" functions="turn" desc="Лампы задних указателей поворота" />
+    <Section address="3103" contacts="b50" byte0="00" byte1="01" byte2="16" location="salon"  type="halogen" functions="footwell" desc="Лампы подсветки ног" />
+    <Section address="3106" contacts="b47,b48" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3109" contacts="c48,c49" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3112" contacts="a3,a4" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3115" contacts="c43,a2" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3118" contacts="PSEUDO" byte0="00" byte1="00" byte2="00" />
+    <Section address="3119" contacts="PSEUDO" byte0="78" byte1="00" byte2="00" />
+  </EEPROM>
+</Data>

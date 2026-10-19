@@ -1,0 +1,11 @@
+1. Take your desired .frf file (original update files)
+2. Install setup_frf_decoder.exe (located in tools > SGO FRF tools)
+3. Run the .frf file thru the decoder. It will probably crash but output the decoded .odx file in its install directory.
+3. Open the .odx files in a text editor of your choice.
+You'll see some long strings of hex code in <FLASHDATAS>.
+/UNVERIFIED You'll want to aim for the longest one, usually labelled DATA or something similar, this should be the main part of the FW.
+4. Copy the hex string.
+5. Open WinHex (again, full unlocked portable version is in tools folder)
+6. Paste the copied code as hex (otherwise it pastes as regular unicode and translates it as unicode text)
+7. Save the result
+8. Open in ghidra

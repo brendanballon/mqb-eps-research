@@ -1,0 +1,252 @@
+{
+  "captured_date": "2026-10-19",
+  "snapshot_kind": "Selected binary_session status fields; not an analysis Evidence record",
+  "request": {
+    "expected_package_version": "6.7.0"
+  },
+  "open": false,
+  "server_identity": {
+    "package": {
+      "name": "rea-agents",
+      "version": "6.7.0",
+      "root_path": "/Users/brendanballon/.npm/_npx/a1722018f28f9df2/node_modules/rea-agents",
+      "build_commit": null
+    },
+    "server": {
+      "name": "rea",
+      "version": "6.7.0",
+      "started_at": "2026-10-19T16:38:54.974Z",
+      "command_path": "/Users/brendanballon/.npm/_npx/a1722018f28f9df2/node_modules/.bin/rea"
+    },
+    "sdk": {
+      "server": "2.3.1",
+      "client_test": "2.3.1",
+      "core": "2.3.1"
+    },
+    "negotiated_protocol_version": "2025-06-18",
+    "client": {
+      "name": "codex-mcp-client",
+      "version": "0.163.0-alpha.10.2"
+    },
+    "skill": {
+      "name": "reverse-engineer-anything",
+      "expected_version": "42"
+    },
+    "catalog": {
+      "counts": {
+        "cli_commands": 153,
+        "mcp_tools": 207,
+        "mcp_prompts": 6
+      },
+      "digests": {
+        "tools_sha256": "af39310c9591bb981893ec0d2188b1bcf6e9cc8ba3ac513d5bbefc8ddcb85639",
+        "prompts_sha256": "7152916ab48bd2a9677a5ad9cdbde0a51dc53c113934952ad096e93f5f18aa7e",
+        "combined_sha256": "96d8f6e6ea1b1ba13557216624a3461c738729d53c79b4b0100d1f3a3a32441c"
+      }
+    },
+    "protocol_features": {
+      "progress": true,
+      "cancellation": true,
+      "elicitation": false
+    },
+    "alignment": {
+      "state": "aligned",
+      "reasons": [],
+      "remediation": null
+    }
+  },
+  "analysis_provider_binding": null,
+  "analysis_provider_candidates": [
+    {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": null
+      },
+      "availability": {
+        "status": "unavailable",
+        "code": "not_configured",
+        "reason": "Set GHIDRA_INSTALL_DIR to an extracted Ghidra 12.1.x release directory.",
+        "diagnostics": {
+          "install_dir": null,
+          "analyze_headless_path": null,
+          "native_decompiler_path": null,
+          "application_properties_path": null,
+          "provider_version": null,
+          "java_command": "java",
+          "java_home": "/Users/brendanballon/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home",
+          "java_version": "25.0.2",
+          "java_vm_name": "OpenJDK 64-Bit Server VM",
+          "java_os_arch": "aarch64",
+          "java_os_name": "Mac OS X",
+          "platform": "darwin",
+          "architecture": "arm64",
+          "checks": [
+            {
+              "name": "configuration",
+              "ok": false,
+              "code": "not_configured",
+              "detail": "GHIDRA_INSTALL_DIR is not set"
+            },
+            {
+              "name": "platform",
+              "ok": true,
+              "code": null,
+              "detail": "darwin"
+            },
+            {
+              "name": "architecture",
+              "ok": true,
+              "code": null,
+              "detail": "arm64"
+            },
+            {
+              "name": "installation",
+              "ok": false,
+              "code": "executable_missing",
+              "detail": "Ghidra application properties unavailable"
+            },
+            {
+              "name": "version",
+              "ok": false,
+              "code": "version_unresolved",
+              "detail": "unknown"
+            },
+            {
+              "name": "headless",
+              "ok": false,
+              "code": "executable_missing",
+              "detail": "analyzeHeadless unavailable"
+            },
+            {
+              "name": "native_decompiler",
+              "ok": false,
+              "code": "executable_missing",
+              "detail": "Matching native decompiler for darwin/arm64 was not found"
+            },
+            {
+              "name": "java",
+              "ok": false,
+              "code": "version_unresolved",
+              "detail": "25.0.2; 64-bit; JDK; /Users/brendanballon/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home; accepted a 64-bit full JDK matching the installation's declared Java bounds"
+            }
+          ]
+        }
+      },
+      "target_support": {
+        "status": "unknown",
+        "code": null,
+        "reason": "No target is open.",
+        "diagnostics": {}
+      },
+      "selected": false
+    },
+    {
+      "provider": {
+        "id": "hopper",
+        "name": "Hopper Disassembler",
+        "version": null
+      },
+      "availability": {
+        "status": "available",
+        "code": null,
+        "reason": null,
+        "diagnostics": {
+          "launcher_path": "/Users/brendanballon/Applications/Hopper Disassembler.app/Contents/MacOS/hopper",
+          "platform": "darwin"
+        }
+      },
+      "target_support": {
+        "status": "unknown",
+        "code": null,
+        "reason": "No target is open.",
+        "diagnostics": {}
+      },
+      "selected": false
+    },
+    {
+      "provider": {
+        "id": "ida",
+        "name": "IDA MCP adapter",
+        "version": "1"
+      },
+      "availability": {
+        "status": "unavailable",
+        "code": "not_configured",
+        "reason": "Set REA_IDA_MCP_CONFIG to an upstream IDA MCP JSON registration; see docs/ida-provider.md.",
+        "diagnostics": {
+          "configured": false,
+          "live_connection_probed": false
+        }
+      },
+      "target_support": {
+        "status": "unknown",
+        "code": null,
+        "reason": "No target is open.",
+        "diagnostics": {}
+      },
+      "selected": false
+    },
+    {
+      "provider": {
+        "id": "kuna",
+        "name": "Kuna",
+        "version": null
+      },
+      "availability": {
+        "status": "unavailable",
+        "code": "not_configured",
+        "reason": "Set REA_KUNA_COMMAND to the absolute path of a caller-supplied kuna executable (verified with 1.833). REA does not download, install or update Kuna.",
+        "diagnostics": {
+          "configured": false,
+          "version_probed": false
+        }
+      },
+      "target_support": {
+        "status": "unknown",
+        "code": null,
+        "reason": "No target is open.",
+        "diagnostics": {}
+      },
+      "selected": false
+    }
+  ],
+  "firmware_tools": [
+    {
+      "names": [
+        "extract_firmware"
+      ],
+      "surface": "firmware-provider",
+      "effects": [
+        "mutatesSession",
+        "writesFilesystem",
+        "launchesProcess"
+      ],
+      "annotations": [
+        "open_world"
+      ],
+      "available": false,
+      "reason": "provider_missing",
+      "remediation": "On Linux, provide an absolute REA_BINWALK_COMMAND (Binwalk 3.1.x, verified with 3.1.0) or REA_UNBLOB_COMMAND (Unblob 26.6.x, verified with 26.6.4) path and util-linux prlimit. Extraction also requires the selected format’s external extractor."
+    },
+    {
+      "names": [
+        "inspect_firmware_regions"
+      ],
+      "surface": "firmware-provider",
+      "effects": [
+        "mutatesSession",
+        "writesFilesystem",
+        "launchesProcess",
+        "idempotent"
+      ],
+      "annotations": [
+        "idempotent",
+        "open_world"
+      ],
+      "available": false,
+      "reason": "provider_missing",
+      "remediation": "On Linux, provide an absolute REA_BINWALK_COMMAND (Binwalk 3.1.x, verified with 3.1.0) or REA_UNBLOB_COMMAND (Unblob 26.6.x, verified with 26.6.4) path and util-linux prlimit. Extraction also requires the selected format’s external extractor."
+    }
+  ]
+}

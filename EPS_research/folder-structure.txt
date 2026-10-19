@@ -1,0 +1,9 @@
+Each rack will have its separate folder (apart from semi-identical ones).
+Folder structure of each rack P/N:
+
+0_dump-files		bin files dumped directly from a rack
+1_original-update-files	original update files
+2_odx			files converted into .odx (usually from .frf)
+3_bin			binaries extracted from .odx files
+
+Every file will follow the naming of the original update file, except dumps which will follow the format: PN_FWversion_username

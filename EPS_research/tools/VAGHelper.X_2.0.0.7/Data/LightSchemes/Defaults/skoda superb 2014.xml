@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--XML Light Scheme Configuration file. VAGHelper .neXt-->
+<!--http://skodapilot.com-->
+<Data Crc="AA12">
+  <ConfigBrand>SKODA</ConfigBrand>
+  <ConfigModel>SUPERB</ConfigModel>
+  <ConfigYear>2014</ConfigYear>
+  <ConfigDesc>LED</ConfigDesc>
+  <ConfigBCM pn="1KO937087AN" hw="112" sw="0771" />
+  <LongCoding></LongCoding>
+  <Adaptation />
+  <EEPROM>
+    <Section address="1963" contacts="c27" byte0="FF" byte1="FF" byte2="FF" location="plate" type="c5w"  functions="license" desc="Лампы подсветки номерного знака" />
+    <Section address="3073" contacts="c47" byte0="40" byte1="E1" byte2="62" location="rear" side="left" type="led" functions="fog" desc="Светодиодный модуль правой задней ПТФ" />
+    <Section address="3076" contacts="a6" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3079" contacts="c28" byte0="80" byte1="E1" byte2="5F" location="rear" side="right" type="led" functions="reverse" desc="Светодиодный модуль заднего хода правый" />
+    <Section address="3082" contacts="a28" byte0="80" byte1="E1" byte2="5F" location="rear" side="left" type="led" functions="reverse" desc="Светодиодный модуль заднего хода левый" />
+    <Section address="3085" contacts="c4,a26" byte0="08" byte1="A1" byte2="5A" location="rear" side="left,right" type="led" functions="stop" desc="Светодиодный модуль стоп-сигналов" />
+    <Section address="3088" contacts="c3,a27" byte0="31" byte1="A1" byte2="4F" location="rear" side="left,right" type="led" functions="position,parking" desc="Светодиодный модуль задних габаритов" />
+    <Section address="3091" contacts="c26,a44" byte0="32" byte1="82" byte2="C2" location="front" side="left,right" type="led" functions="drl,position,parking" desc="Светодиодный модуль передних габаритов/ДХО" />
+    <Section address="3094" contacts="a7,a8" byte0="32" byte1="02" byte2="43" location="front" side="left,right" type="led" functions="position,parking" desc="Светодиодный модуль передних габаритов/ДХО" />
+    <Section address="3097" contacts="a10,c50" byte0="04" byte1="02" byte2="6C" location="front" side="left,right" type="led" functions="turn" desc="Светодиодный модуль передних указателей поворота" />
+    <Section address="3100" contacts="a9,c51" byte0="04" byte1="A1" byte2="76" location="rear" side="left,right" type="led" functions="turn" desc="Светодиодный модуль задних указателей поворота" />
+    <Section address="3103" contacts="b50" byte0="00" byte1="01" byte2="17" location="salon" functions="footwell" type="w5w"  desc="Лампы подсветки ног" />
+    <Section address="3106" contacts="b47,b48" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3109" contacts="c48,c49" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3112" contacts="a3,a4" byte0="00" byte1="00" byte2="3F" />
+    <Section address="3115" contacts="c43,a2" byte0="00" byte1="00" byte2="3F" />
+  </EEPROM>
+</Data>

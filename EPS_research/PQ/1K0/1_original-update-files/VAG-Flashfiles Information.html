@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        @media print {
+
+            form, p, ul, il {
+                display: none;
+            }
+
+            table, td {
+                /*width: 100px;*/
+                margin-left: 1000px;
+            }
+
+        }
+
+        h3.brand {
+            text-align: center;
+        }
+
+        .result table, .result td, .result th {
+            border: 1px grey dotted;
+        }
+
+        .result table {
+            width: 50%;
+            margin-left: 25%;
+        }
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords"
+          content="vag,flashdisc,flash,update,volkswagen,vw,skoda,seat,audi,flashfiles,flashinfo,updatecheck,versioncheck">
+    <meta name="description"
+          content="VAG Flashfiles Informations - Version check of VAG ECUs - Update check for Audi, Seat, Skoda and Volkswagen">
+    <title>VAG-Flashfiles Information</title>
+    <script>window.onload = function () {
+            document.getElementById("partno").focus();
+        }</script>
+</head>
+<body>
+<a href="index.php" title="Go to Home"><img src="favicon-96x96.png"/></a> <span style="float: right;"><a
+            href="https://www.netcup.de" target="_blank"><img
+                src="https://www.netcup.de/static/assets/images/promotion/netcup-hlogo-2019-b220h100.png" width="220"
+                height="100" alt="netcup.de"/></a></span>
+<p>Please enter a partnumber (SW-number)!</p>
+<form action="index.php" method="get" enctype="multipart/form-data">
+    <table style="width: 800px;">
+        <tr>
+            <td>Show files for BCM's</td>
+            <td><input type="checkbox" onclick="partno = document.getElementById('partno');
+							if (this.checked) {
+								partno.value = 'Simply submit the form now.';
+								partno.disabled = 'diasbled';
+							} else {
+								partno.disabled = '';
+								partno.value = '';
+							}" name="bcm"  /></td>
+        </tr>
+        <tr>
+            <td>Partnumber</td>
+            <td>
+                <div class="input-group mb-3"><input type="text" class="form-control" id="partno"
+                                                     name="partno" value="1k0909144" style="width: 260px;" placeholder="SW part number. Details? Hover --->"/>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><abbr style="cursor: pointer;"
+                                                             title="Just type something in. Spaces are ignored. Auto wildcard."
+                                                             onclick="alert('Just type something in. Spaces are ignored. Auto wildcard.');">?</abbr></span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input class="btn btn-primary" type="submit" value="Search" onclick="this.disabled = 'disabled';
+							this.value = 'Stand by...';
+							this.form.submit();"/></td>
+        <tr>
+        </tr>
+    </table>
+</form>
+<p>
+    <!--Array
+(
+    [V] => Array
+        (
+        )
+
+    [A] => Array
+        (
+        )
+
+    [C] => Array
+        (
+        )
+
+    [E] => Array
+        (
+        )
+
+    [L] => Array
+        (
+        )
+
+    [N] => Array
+        (
+            [0] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [1] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [2] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [3] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [4] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [5] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [6] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [7] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [8] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [9] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [10] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [11] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [12] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [13] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [14] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [15] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [16] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [17] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [18] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [19] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [20] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [21] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [22] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+            [23] =>     <file name="1K0909144B_Y107_140_140_140.sgo"/>
+
+        )
+
+    [S] => Array
+        (
+        )
+
+)
+--><hr /><small id="1K0909144">Search results for: 1K0909144 (3)</small><ul><li><a href="#Nutzfahrzeuge">Nutzfahrzeuge</a> (1)</li><li><a href="#Volkswagen">Volkswagen</a> (1)</li><li><a href="#Additional STT files (v3 from Xs4)">Additional STT files (v3 from Xs4)</a> (35)</li></ul><div class="result"><h3 class="brand" id="Nutzfahrzeuge">Nutzfahrzeuge</h3><table><tr><th>Part</th><th>Version</th></tr><tr><td>1K0909144B_Y107_140_140_140</td><td>1K0909144B_Y107_140_140_140 <sup class="text-muted">1)</sup> <small></small><br /></td></tr></table><br /><br /><h3 class="brand" id="Volkswagen">Volkswagen</h3><table><tr><th>Part</th><th>Version</th></tr><tr><td>1K0909144B_Y107_140_140_140</td><td>1K0909144B_Y107_140_140_140  <small></small><br /></td></tr></table><br /><br /><h3 class="brand" id="Additional STT files (v3 from Xs4)">Additional STT files (v3 from Xs4)</h3><table><tr><th>Part</th><th>Version</th></tr><tr><td>lkh_44.stt</td><td><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000001</i> via <i> lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(40).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(27).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(39).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(19).stt</td><td><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000001</i> via <i> lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(32).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(20).stt</td><td><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000001</i> via <i> lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(36).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(31).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000035</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000428</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000035</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000428</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(43).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(44).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(3).stt</td><td><i>1K0909144C</i> @ <i> 2001</i> to <i> DUM000046</i> via <i> v074L1591K0___Lenkung_2301.sgo</i>  <small></small><br /><i>1K0909144E</i> @ <i> 2501</i> to <i> DUM000045</i> via <i> v074L1591K0___Lenkung_2301.sgo</i>  <small></small><br /><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000047</i> via <i> v074N1591K0___Lenkung_Reibung.sgo</i>  <small></small><br /><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000048</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144J</i> @ <i> 3001</i> to <i> DUM000048</i> via <i> v074N1591K0___Lenkung_Reibung.sgo</i>  <small></small><br /><i>1K0909144M</i> @ <i> 3201</i> to <i> DUM000044</i> via <i> v074N1591K0___Lenkung_Reibung.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000079</i> via <i> lh0013102_VW428.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(37).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(18).stt</td><td><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000001</i> via <i> lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(34).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(28).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(38).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(26).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(29).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>LKH_44(5).stt</td><td><i>1K0909144C  </i> @ <i>2301        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144E  </i> @ <i>2501        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144Z  </i> @ <i>2901        </i> to <i>1K0909144H    </i> via <i>lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(46).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(42).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>LKH_44(7).stt</td><td><i>1K0909144C  </i> @ <i>2301        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144E  </i> @ <i>2501        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144Z  </i> @ <i>2901        </i> to <i>1K0909144H    </i> via <i>lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(25).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>LKH_44(47).stt</td><td><i>1K0909144C  </i> @ <i>2301        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144E  </i> @ <i>2501        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144Z  </i> @ <i>2901        </i> to <i>1K0909144H    </i> via <i>lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(33).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(30).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000197</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000041</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000197</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(45).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(4).stt</td><td><i>1K0909144C</i> @ <i> 2001</i> to <i> DUM000057</i> via <i> v074L1591K0___Lenkung_2301.sgo</i>  <small></small><br /><i>1K0909144E</i> @ <i> 2501</i> to <i> DUM000056</i> via <i> v074L1591K0___Lenkung_2301.sgo</i>  <small></small><br /><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000058</i> via <i> v074N1591K0___Lenkung_Reibung.sgo</i>  <small></small><br /><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000059</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144J</i> @ <i> 3001</i> to <i> DUM000059</i> via <i> v074N1591K0___Lenkung_Reibung.sgo</i>  <small></small><br /><i>1K0909144M</i> @ <i> 3201</i> to <i> DUM000055</i> via <i> v074N1591K0___Lenkung_Reibung.sgo</i>  <small></small><br /><i>1K0909144N</i> @ <i> 3301</i> to <i> DUM000142</i> via <i> lh0023305.sgo</i>  <small></small><br /><i>1K0909144P</i> @ <i> 3305</i> to <i> DUM000140</i> via <i> v074N0651K0___Lenkung_Reibung.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000140</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(21).stt</td><td><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000001</i> via <i> lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(22).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> DUM000001</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> DUM000001</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>LKH_44(6).stt</td><td><i>1K0909144C  </i> @ <i>2301        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144E  </i> @ <i>2501        </i> to <i>1K0909144Z    </i> via <i>lh0022901.sgo</i>  <small></small><br /><i>1K0909144Z  </i> @ <i>2901        </i> to <i>1K0909144H    </i> via <i>lh0012901.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(2).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(41).stt</td><td><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> DUM000009</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr><tr><td>lkh_44(35).stt</td><td><i>1K0909144H</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144Z</i> @ <i> 2901</i> to <i> 1K0909144J</i> via <i> lh0013001.sgo</i>  <small></small><br /><i>1K0909144ZA</i> @ <i> 3305</i> to <i> 1K0909144P</i> via <i> lh0013305.sgo</i>  <small></small><br /></td></tr></table><br /><br /></div><br /><br /><hr />
+
+</p>
+
+<div class="row">
+
+    <div class="col-12 col-lg-5">
+        <div class="card">
+            <h5 class="card-header">Info</h5>
+            <div class="card-body">
+
+                <ul>
+                    <li><b>Always ensure, that you have a <abbr
+                                    title="Technical Product Information / Technische Produktinformation -> Handbuch Service Technik">TPI</abbr>
+                            for finding correct Flashfile!</b></li>
+                    <li>Part No. is case insensitive</li>
+                    <li>Information provided without guarantee</li>
+                    <li><b>It is <u>NOT</u> possible to download <u>ANY</u> of these file here!<br />Dont send mails about asking
+                            this!</b></li>
+
+                    <li>Source of data: Flashdiscs from erWin-Portal and community contributed <sup class="text-muted">1)</sup>:
+                        <ul>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <li><a href="https://erwin.volkswagen.de/erwin/performDownloadODISAction.do"
+                                               target="_blank" title="erWin VW">Volkswagen</a></li>
+                                    </td>
+                                    <td id="dt_vw">2022-04-12</td>
+                                    <td>(<a href="?getListForV">Filelist</a>)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li><a href="https://erwin.volkswagen.de/erwin/performDownloadODISAction.do"
+                                               target="_blank" title="erWin VW">Nutzfahrzeuge</a></li>
+                                    </td>
+                                    <td id="dt_vwn">2022-04-12</td>
+                                    <td>(<a href="?getListForN">Filelist</a>)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li><a href="https://erwin.audi.com/erwin/performDownloadODISAction.do"
+                                               target="_blank" title="erWin Audi">Audi</a></li>
+                                    </td>
+                                    <td id="dt_audi">2022-04-12</td>
+                                    <td>(<a href="?getListForA">Filelist</a>)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li><a href="https://erwin.skoda-auto.cz/erwin/performDownloadODISAction.do"
+                                               target="_blank" title="erWin Skoda">Skoda</a></li>
+                                    </td>
+                                    <td id="dt_skoda">2022-04-12</td>
+                                    <td>(<a href="?getListForC">Filelist</a>)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li><a href="https://erwin.seat.com/erwin/performDownloadODISAction.do"
+                                               target="_blank" title="erWin SEAT">Seat</a></li>
+                                    </td>
+                                    <td id="dt_seat">2022-04-12</td>
+                                    <td>(<a href="?getListForS">Filelist</a>)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li><a href="https://erwin.bentleymotors.com/erwin/performDownloadODISAction.do"
+                                               target="_blank" title="erWin Bentley">Bentley</a></li>
+                                    </td>
+                                    <td id="dt_bent">2022-04-12</td>
+                                    <td>(<a href="?getListForE">Filelist</a>)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li><a href="https://erwin.lamborghini.com/erwin/performDownloadODISAction.do"
+                                               target="_blank" title="erWin Lamborghini">Lamborghini</a></li>
+                                    </td>
+                                    <td id="dt_lamb">2022-04-12</td>
+                                    <td>(<a href="?getListForL">Filelist</a>)
+                                    </td>
+                                </tr>
+                            </table>
+                            <small>Updated: <u><b>13.04.2022</b></u></small><br/><br/>
+                        </ul>
+                    </li>
+                    <li><a href="https://kluthr.de/?mail">Questions?</a></li>
+                    <li>Want to thank me?
+                        <ul>
+                            <li><a href="https://paypal.me/robinkluth" target="_blank">PayPal Donation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-12 col-lg-6">
+
+        <div class="card">
+
+            <h5 class="card-header">News (09.02.2022) - Some fresh air!</h5>
+            <div class="card-body">Iam working on v2 of the website:<br /><img style="height: auto; width: 100%" src="data:image/png;base64,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" />
+            <br /><br />No ETA, its done when its done. Stay tuned.<br /><br />
+            Ah, efore I forget it: Please dont ask for file downloads or specific files via the survey. Its not thought for those questions. And to answer those questions: No.</div>
+        </div>
+      
+        <div class="card">
+
+            <h5 class="card-header">News (11.01.2022) - Survey</h5>
+            <div class="card-body">If you have a minute, feel free to participate: <a class="btn btn-success" href="https://speakneon.com/uycgwMQc9" target="_blank">Open survey</a></div>
+        </div>
+
+        <div class="card text-muted">
+
+            <h5 class="card-header">News (03.01.2022) - Happy new year!</h5>
+            <div class="card-body">Since moths, I wanted to update the page to deal with a new data source. Well, now its in place and working, hopefully. If anyone notices errors, mail me.</div>
+        </div>
+
+        <div class="card text-muted">
+
+            <h5 class="card-header">News (08.08.2021) - Search engine update!</h5>
+            <div class="card-body">Due to the change on VW side, I created a static database file which holds all filenames. This is now the source for the search engine. (I had a copy of all file previously and searched within the file system)</div>
+        </div>
+
+        <div class="card text-muted">
+
+            <h5 class="card-header">News (29.06.2021) - No more flashdisc updates - Again!</h5>
+            <div class="card-body">VW also closed the new source as well -  For all brands. This means no more updates for now. :(</div>
+        </div>
+
+        <div class="card text-muted">
+
+            <h5 class="card-header">News (05.04.2021) - We're back in business!</h5>
+            <div class="card-body">The updates are working again!<br /><br />With big thanks to "fantomel" I have access to genuine and public flash files directly from VW again! I use official data, so there should be no problem to use them.<br /><br />The auto-updater started its job already ;)</div>
+        </div>
+
+        <div class="card text-muted">
+
+            <h5 class="card-header">News (16.03.2021) - No more flashdisc updates</h5>
+            <div class="card-body">
+                VW decided to push an update to their erWin instances on sunday (I guess). I noticed that via my downloader program which was sending error mails.<br />
+                The flashdisc download links are only available now after purchasing a flatrate (the one with Org-ID). All known .do-pages (downloadODISSoftware, downloadODISFlash, performDownloadODISAction,..) redirect to an error page if not yet paid.<br />
+                This forces me to stop the automatic downloader for now. <strike>Maybe I download newer files time to time for VW and Skoda, because I have to open ElsaPro (and therefore purchase a one hour flat and can prove this).</strike> - no, because the flat I need is the one with Org-ID which I dont own.<br />
+                Any other way would be "illegal" since I only offer flash informations from official erWin offered data.<br /><br />
+                So long...
+
+            </div>
+        </div>
+
+        <div class="card">
+
+            <h5 class="card-header">News (17.11.2017)</h5>
+            <div class="card-body">
+                There will be no MAN at this moment, because the erWin-Portal is not accessible right now. I only list
+                data which comes from erWin for public, so we have to wait.
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<br/> <br/>
+
+
+<p>v. 1.8.0 &nbsp;&nbsp;<sup>03.01.2022</sup><span class="text-muted"> - made with ❤️</span></p>
+<small style="color: grey;">
+    <ul>
+        <li>1.8.0 (03.01.2022)
+            <ul>
+                <li>Happy new year!</li>
+                <li>Removed VCDS Upload entirely, I do not maintain the code any longer, sorry. Please check ECU by ECU :/</li>
+                <li>The results are now sorted correct again alphabetically.</li>
+                <li>The data are now updated again with another data source.</li>
+                <li>Cleaned up the code a bit, nothing which anyone else would notice, really!</li>
+            </ul>
+        </li>
+        <li>1.7.1 (27.08.2021)
+            <ul>
+                <li>Fixed VCDS AutoScan Upload. Should work again now.</li>
+            </ul>
+        </li>
+        <li>1.7.0 (08.08.2021)
+            <ul>
+                <li>Updated search engine to use a static file with a file listing.</li>
+            </ul>
+        </li>
+        <li>1.6.1 (08.11.2020)
+            <ul>
+                <li>Fixed some start-issues for the new updater. It now handles interrupted downloads, caused by closed
+                    connections during download from VW. Should work better now..
+                </li>
+            </ul>
+        </li>
+        <li>1.6.0 (07.11.2020)
+            <ul>
+                <li>Completely new full automatic updater with live infos!
+                </li>
+            </ul>
+        </li>
+        <li>1.5.2 (03.02.2020)
+            <ul>
+                <li>New little helper which automatically fetches latest FTP-Links from erWin-Web. Makes future
+                    disc-updates easier for me :)
+                </li>
+            </ul>
+        </li>
+        <li>1.5.1 (20.01.2020)
+            <ul>
+                <li><b>Basic API function</b>: Simply add a "&json" to the request to receive JSON-data for any
+                    integration. <b>This may change in the future</b> due to a planned bigger update of the whole
+                    application
+                </li>
+            </ul>
+        </li>
+        <li>1.5.0 (18.09.2019)
+            <ul>
+                <li>History-Feature: Vag-Flashinfo now only ADD files to the database, never removes entries. THX to
+                    "Red John" for the older file-database<br/><small>I started with an older archive of combined
+                        flashdiscs. Starting today, the updater only add new files from the flashdisc-archive to the
+                        database.</small></li>
+                <li>"New on this disc"-feature: Shows what is new since the last update.</li>
+            </ul>
+        </li>
+        <li>1.4.0 (12.07.2018)
+            <ul>
+                <li>Changed code, to deal with the new .zip structure</li>
+                <li>The Filelists have a new design</li>
+            </ul>
+        </li>
+        <li>1.3.10 (29.06.2018)
+            <ul>
+                <li>Added PHP7 compatibility</li>
+            </ul>
+        </li>
+        <li>1.3.9 (09.06.2017)
+            <ul>
+                <li>Got additional stt files (thanks to Xs4) and added them to a separate database.</li>
+                <li>Later this year, I'll try to recode the page and add some tools and colors (uhh, colors!). Own
+                    domain registered already ;)
+                </li>
+            </ul>
+        </li>
+        <li>1.3.8 (08.12.2016)
+            <ul>
+                <li>Got additional stt files (thanks to S. F.) and added them to a separate database.<br/>Results from
+                    this database are marked with "Additional STT files (not in flashdiscs anymore)" because these files
+                    are not in the current flashdiscs <a
+                            href="https://vag-flashinfo.de/index.php?partno=03G906016AP">Wanna try it?</a></li>
+                <li>Uuhh, a new icon!</li>
+            </ul>
+        </li>
+        <li>1.3.7 (07.012.2016)
+            <ul>
+                <li>Now searching in .stt files too. <a
+                            href="https://vag-flashinfo.de/index.php?partno=5K0907044CM">Wanna try it?</a></li>
+            </ul>
+        </li>
+        <li>1.3.6 (22.09.2016)
+            <ul>
+                <li>Re-activated GBox-search, no warranty, dont know if provided data are correct (<b>Data with "n/a"
+                        are from second source file.</b>).
+                </li>
+            </ul>
+        </li>
+        <li>1.3.5 (18.10.2015)
+            <ul>
+                <li>File date and filesize shown in resulttable</li>
+            </ul>
+        </li>
+        <li>1.3.4 (27.03.2015)
+            <ul>
+                <li>Added support for new VCDS-Version (and added fallback for newer ones)</li>
+            </ul>
+        </li>
+        <li>1.3.3 (24.02.2015)
+            <ul>
+                <li>Added handling for interesting non-tabbed format (maybe only for 12.12.3.0)</li>
+                <li><b><i>REMEBER: No</i></b> support for VCP AutoScans. Maybe someday... Maybe not.. I dont know.</li>
+            </ul>
+        </li>
+        <li>1.3.2 (22.02.2015)
+            <ul>
+                <li>Fixed unwanted message "You did not provided a partnumber" if using AutoScan with ECU which could
+                    not be reached.
+                </li>
+            </ul>
+        </li>
+        <li>1.3.1 (21.02.2015)
+            <ul>
+                <li>Overhaul of VCDS AutoScan Upload</li>
+            </ul>
+        </li>
+        <li>1.3.0 (30.11.2014)
+            <ul>
+                <li>VCDS AutoScan Upload
+                    <ul>
+                        <li>Currently supported: 12.12.0.0, 12.12.2.0, 12.12.3.0, 14.10.0.0</li>
+                        <li>Found bug? Mail me with Scan.</li>
+                        <li>The AutoScan is uploaded and processed via PHP's upload handling ($_FILES).<br/>I read the
+                            file directly from $_FILES["as"]["tmp_name"]. This means, that PHP deletes the Scan
+                            immediately after loading the result-page! Nothing is saved (VIN;Scan)!
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>1.2.2 (13.11.2014)
+            <ul>
+                <li>Fixed non-functional GBox-search due to changes in v. 1.2.0 - sorry!</li>
+            </ul>
+        </li>
+        <li>1.2.1 (31.10.2014)
+            <ul>
+                <li>Added Bentley's 2013 flashdisc</li>
+                <li>Fixed wrong placing of additional underscore after FL_</li>
+            </ul>
+        </li>
+        <li>1.2.0 (28.10.2014)
+            <ul>
+                <li>No need to select brand before searching.<sup>BETA :P</sup></li>
+            </ul>
+        </li>
+        <li>1.1.1 (21.10.2014)
+            <ul>
+                <li>Fixed partial partnumber search (like ...035161...) - Has no one recognized this mistake?! :)</li>
+                <li>Some UI changes</li>
+            </ul>
+        </li>
+        <li>1.1.0 (03.10.2014)
+            <ul>
+                <li>Gearbox/DSG files are now translated (based on a text-file which I've found on the www...).<br/>You
+                    dont have to select a brand.<br/>You can search for partnumber in filename (e.g. 0698V4102) or
+                    translated partnumber (02E300011CJ).
+                </li>
+            </ul>
+        </li>
+        <li>1.0.6 (12.09.2014)
+            <ul>
+                <li>Hover version to get the file "Last changed" date (dd.mm.yyyy)</li>
+            </ul>
+        </li>
+        <li>1.0.5 (07.09.2014)
+            <ul>
+                <li>Some UI changes</li>
+            </ul>
+        </li>
+        <li>1.0.4 (<b>06</b>.08.2014)
+            <ul>
+                <li><i>Uh.. overdue update, right? - whatever:</i></li>
+                <li>Some search optimizations. Additional part info's should now be displayed correctly (e.g. Lenkung or
+                    DSG stuff.)
+                </li>
+                <li>If partnumber is not available, the whole filename is displayed instead</li>
+                <li>Partnumber is now really case insensitive</li>
+                <li>If you find some mistakes within the updated search, let me know ;)</li>
+                <li><b>Revised on 6th August! -> BCM-files now displayed correctly again ;)</b>
+            </ul>
+        </li>
+        <li>1.0.3 (28.12.2013)
+            <ul>
+                <li>Hint about still enabled BCM-field after submit.</li>
+            </ul>
+        </li>
+        <li>1.0.2 (27.12.2013)
+            <ul>
+                <li>Another filename fix for multiple placeholders</li>
+                <li>New font: Exo2 (<a href="http://www.google.com/fonts/specimen/Exo+2" target="_blank">Google
+                        Fonts</a>) for better reading
+                </li>
+            </ul>
+        </li>
+        <li>1.0.1 (27.12.2013)
+            <ul>
+                <li>Filename fix for files like XXXXXXXXX_X_VERSION (e.g. 5K0907044)</li>
+            </ul>
+        </li>
+        <li>1.0.0
+            <ul>
+                <li>Initial release</li>
+            </ul>
+        </li>
+
+    </ul>
+    Icon from: <a
+            href="http://2.bp.blogspot.com/-SfNS-rkRKBM/VDa9YTXgcvI/AAAAAAAADFQ/hCORkVsOXRo/s1600/FirmwareUpdateIconX.png">here</a>
+</small>
+
+
+<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        return false;
+        $("td[id^='dt']").each(function (index) {
+            console.log("Checking", $(this).attr('id'));
+            if ($(this).html() === "") {
+                $(this).html('Update | Downloading...');
+            }
+            if ($(this).html().length > 10) {
+                console.log('... is propably updating, enabling live update');
+                window.setInterval(function () {
+                    $.getJSON('index.php?lu_status', function (data) {
+                        $.each(data.brands, function (key, val) {
+                            if (val === "") {
+                                return;
+                            }
+                            $('#dt_' + key).html(val);
+                        });
+                    });
+                }, 10000);
+                return false;
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+coding II in ECU module
+test radar compatibility 
+
+disable CC BEFORE changing to normal CC/ACC
+disable CC: 16167
+enable CC: 11463
+enable ACC: 13377
+
+so to test radar
+code 16167
+then 13377
+then power cycle car, you should have flashing glow plug light on dash
+if no flashing glowplug light, or coding is refused, it wont work
+
+thanks khonsu!

@@ -1,0 +1,3480 @@
+{
+  "schema_version": 1,
+  "scope": "All regular files under EPS_research except .DS_Store",
+  "provenance": "Pre-existing local archive. Upstream completeness and authenticity unverified.",
+  "file_count": 694,
+  "total_bytes": 356747307,
+  "unique_sha256_count": 559,
+  "files": [
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144F_6013__V001.frf",
+      "size_bytes": 460401,
+      "sha256": "ed7d4a7fa5bbbe565e3af811ebf8bb2bcac914440395014d8feb0e2cd100a9c6"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144J_6030__V001.frf",
+      "size_bytes": 479072,
+      "sha256": "a6706b6043b55bfc8b6d3b54960727e35689aa247db0e76e946b83b75255dfaa"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144M_6041__V001.frf",
+      "size_bytes": 489159,
+      "sha256": "ea1a06438f8dc59a95ea9066485b4f00b12dbf08fc79aa037e9d13250a0a7b0a"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144S_6042__V001.frf",
+      "size_bytes": 490455,
+      "sha256": "df2273840aaef12b256cc8e7279e3430dcae168ce2d04f4571747592abf29cf6"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144T_6213__V001.frf",
+      "size_bytes": 481560,
+      "sha256": "a06df2badff5e854211a31152e5cf32a8649e9ead37b41f55f72cca124705bea"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144ZT_BOOT__V001.frf",
+      "size_bytes": 105828,
+      "sha256": "a12cdc15b75b6079f4bdeab1fe6411dfd56e13aa2598911d99006354e28ee5ac"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144ZU_BOOT__V001.frf",
+      "size_bytes": 105705,
+      "sha256": "fc35c64b7da5a459b81ac64da054041b293d7af32ff4b0c48a77039ff0808965"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144ZX_BPLD__V001.frf",
+      "size_bytes": 53175,
+      "sha256": "120a0099db71112482a13e3f52dee71e092232a006dd16f808b9aec78310fe85"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/1_original-update-files/FL_2Q1909144ZX_BPLD__V002.frf",
+      "size_bytes": 53164,
+      "sha256": "92b6e13aa57cc1561abeaf97be2bd0564f203f1989b4fe5340de3d7f4262f62e"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/2_odx/FL_2Q1909144M_6041__V001.odx",
+      "size_bytes": 3676194,
+      "sha256": "3bfa29385dfad39038973d998ba043954bb35bac9c911019aabcf9fead1333bc"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/2_odx/FL_2Q1909144T_6213__V001.odx",
+      "size_bytes": 3675818,
+      "sha256": "85b6aace140857f23e10d610b731bf05734b181bb4dcee0a4ff6ba06d527ac5e"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/3_bin/M_main_code.hex",
+      "size_bytes": 3537408,
+      "sha256": "fc1b22fa9a4572fadc8f8d160e18b62777a0be6a6763fdb259cc8b99da0eb65b"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/3_bin/M_small_Bootloader_or_Watchdog.hex",
+      "size_bytes": 129024,
+      "sha256": "2fa53094e630a841798d0170012f91e1311d71917013c4be7a73c6981e48ac46"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/3_bin/big.bin",
+      "size_bytes": 1768704,
+      "sha256": "451219e4662efb4901ef808689ca2899bad8f19a0a3281bd3ece4c336281a3ad"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/3_bin/small.bin",
+      "size_bytes": 64512,
+      "sha256": "bbb5ebe2d8642849f444aabb055e45f3ba39231596b5bb816d978afa0f74aaa2"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/EPS_firmware_help.txt",
+      "size_bytes": 133,
+      "sha256": "b08c52987d58c18860d64aa896604f111f27c28ee6148362b762137de20d57a3"
+    },
+    {
+      "path": "EPS_research/MQB/2Q1 (V850)/Infineon-XC236XE-DS-v01_02-en.pdf",
+      "size_bytes": 3654394,
+      "sha256": "2af0c82b5ca4120f03d6e3d53987137c08028d0aeab7bb94236076eb19229eee"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144FH15043.frf",
+      "size_bytes": 254697,
+      "sha256": "bb1da839bb2f635b0174d3d2e21caa428c3842d994b336648eafb925e4f5b1e1"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144FH25043.frf",
+      "size_bytes": 19030,
+      "sha256": "c1d65987c96bf81c114525d0bfb40e3d066ef4f9c33595ab7f519d22439f84cf"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144H_H1_5061.frf",
+      "size_bytes": 263045,
+      "sha256": "abc37a53658a8d10d88dc243e6267c1b3f71251a796ce5da184202cd2d247a46"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144H_H2_5061.frf",
+      "size_bytes": 36677,
+      "sha256": "9a5abc703e0e3b8f52b2af4559ecb495e404c1fb21c16f727f86ea1cb6f34f93"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144H_H7_5061.frf",
+      "size_bytes": 19131,
+      "sha256": "5d47ee6d575192b808931ea6a3c146fd64a96df6652198c881d8c17cc8675090"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144JH1_5063.frf",
+      "size_bytes": 263204,
+      "sha256": "c49121b707ff2b6a302721ab951f5c0edb93cf0fe8b92297b5d7c7e87d0c86ee"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144JH2_5063.frf",
+      "size_bytes": 36703,
+      "sha256": "c17842a77b30b6eaee6fc6e10cb081f09a7663798a05fffec0cab94f234d777a"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144JH7_5063.frf",
+      "size_bytes": 19140,
+      "sha256": "af690ba9f67709b1c9b8a6a773472531fbc64f395f7cc393ebaa1d301b23a751"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144KH1_5072.frf",
+      "size_bytes": 267295,
+      "sha256": "5ef784b2de90096488e7ae5c5db3f14f4ef0e77ac83326450d416e1c2a13ddda"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144KH2_5072.frf",
+      "size_bytes": 37192,
+      "sha256": "e0e01ce43f75ed3d3ce2be37c390e45a6b7c45187050f8630609cbe8dad2f769"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144MH15082_.frf",
+      "size_bytes": 275691,
+      "sha256": "84ac918e02e4876c506fd2d86079c345e16b316f406ca88166e2a74c66448d52"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144MH25082_.frf",
+      "size_bytes": 37561,
+      "sha256": "dd68377eb7357c7a086eec78fb15b03a7c89f977d03fabb24331f9acbc5139fa"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144XX_H2_Y006-Y007.frf",
+      "size_bytes": 19144,
+      "sha256": "7423e580af4e93142fe0db96a5cee959f40c1d58cf2d9d2b8dd1df9b32685061"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_3Q0909144YF_9999.frf",
+      "size_bytes": 19127,
+      "sha256": "3ec799314568c2c40b8bdad0570051a7137c6aff6c5e9b8235a536f88d039a3d"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144AA_H1_1081.frf",
+      "size_bytes": 275696,
+      "sha256": "35e86bde95b195eea59fe142ddb1eb7145860445a191a0ebc21637a386fa09e5"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144AA_H2_1081.frf",
+      "size_bytes": 37540,
+      "sha256": "95b1b1adebaf2cd4ad8307ba44c2c62d621709acc73837a1759f59f39b68bdab"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144ABH1_1082.frf",
+      "size_bytes": 275693,
+      "sha256": "915c2f22ac51da3a1c8d54aeee7c98d84c7075a6d73ea7e94a794cef0725658f"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144ABH2_1082.frf",
+      "size_bytes": 37568,
+      "sha256": "63d5b968bb1577e27317be5f720ceb1e8f67611afe8d98f6ed22457e9c374b33"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144H1_1021.frf",
+      "size_bytes": 276014,
+      "sha256": "f1fc939452f33aadf4fccfa8e8e6e08fb74cdd3471f496ad495f04c4f2247f98"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144PH11043.frf",
+      "size_bytes": 254699,
+      "sha256": "dea02791f33cc7801a2c0e8193172d4df4ac2d2e6dcc0344ffa19ed1e5cfac78"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144PH21043.frf",
+      "size_bytes": 19031,
+      "sha256": "2eefc4aaf6c8e51420722f2bdf52ea60703488522fe4d2c438e5e16ae8dd2efe"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144R_H1_1061.frf",
+      "size_bytes": 263054,
+      "sha256": "6bf8e39c9ea7e0acab2251407db8e65eb8803a6e1ce606166907cbe998c92e54"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144R_H2_1061.frf",
+      "size_bytes": 36685,
+      "sha256": "f309ecfca6b4d79d5e48dc5812c89ac587e506c15c53c80d6d27c1ce49c90fcc"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144R_H7_1061.frf",
+      "size_bytes": 19151,
+      "sha256": "7ec18f1fbbde971f1fa0f06122342f013cf4cfe4981ee67a835cd0e5a4d25d38"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144SH1_1063.frf",
+      "size_bytes": 263214,
+      "sha256": "661af8fa196cd07adf38174da5af219d7d3eb5dd730cf79adec5ebe2638f51bb"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144SH2_1063.frf",
+      "size_bytes": 36711,
+      "sha256": "4d20a724d5ac582f93df47c91e7301dcbc77904633c74d723a0c442b76d2b3e7"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144SH7_1063.frf",
+      "size_bytes": 19142,
+      "sha256": "7f19d6f13c9c7263228190ee86530ff9090d6a4f7bec05b0671cdf1daf4cd43b"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144TH1_1072.frf",
+      "size_bytes": 267299,
+      "sha256": "9465be5146a155225f6482e934dc4cdb5e0de5c2f9956443786b79287b738553"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144TH2_1072.frf",
+      "size_bytes": 37208,
+      "sha256": "ce0f5ab44ac9ce9a09d8f5465fdc6f46cdd53a009a2ad77cab89eb90aa483da0"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144XDH1_P810.frf",
+      "size_bytes": 276944,
+      "sha256": "925da31a3d129b277a925f83cbfbe779340bba33f9a3d4e96f559c3bf4f453ef"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144XX_H2_X037-X039.frf",
+      "size_bytes": 19142,
+      "sha256": "45d616383f73a1c0921af62ec6054825c4f21e1baa14ce25f03a9d3e564e5654"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144YF_9999.frf",
+      "size_bytes": 19115,
+      "sha256": "e8ae6dd651250531388449b4ae2314ba88e45bd688d644d8721c26d7f0bbda43"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144YF_B001.frf",
+      "size_bytes": 19120,
+      "sha256": "98846e5bab71c7bbf8d450a5382e95e6baac572640d7bc8e8a5daeae04006065"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_3Q0909144JH1_5063.odx",
+      "size_bytes": 940687,
+      "sha256": "d5ba64c7683d0861466ad7a94bee0d0131b63134c1cd30dfcb43c203032a90d2"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H1_1061.odx",
+      "size_bytes": 937733,
+      "sha256": "a2f2620ae33701e9b5b1b2e193d6cb68a8dd2ec23cfff5870ab0069ef7923b6e"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H2_1061.odx",
+      "size_bytes": 120939,
+      "sha256": "8c00f9bd1103deef9db0d6e07477787d35ca06c5b0d9717334b818bbb4bb2baa"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H7_1061.odx",
+      "size_bytes": 61276,
+      "sha256": "c9265268aa6305c3a563f33e4c1af5ea664f5e04c6bef4d64d01d37f27855e60"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/3_bin/FL_3Q0909144JH1_5063",
+      "size_bytes": 462848,
+      "sha256": "fc9a02378dab334a3ebfa472623fb1e2727dc4eaae8eae07ea7b576398535f3b"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/3_bin/FL_5Q0909144R_H1_1061.bin",
+      "size_bytes": 462848,
+      "sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/3_bin/FL_5Q0909144R_H7_1061.bin",
+      "size_bytes": 24577,
+      "sha256": "391f6fc7872966a3f980e21534853c0b13164d9b084d6d513fde978178e2a40d"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/README.md",
+      "size_bytes": 1964,
+      "sha256": "3d2701a7f5fbf0b1bcc94c53dbb0395da19b0b2fa41cb3ff9855b579b01c2d63"
+    },
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/TriCore Instruction set.pdf",
+      "size_bytes": 13383574,
+      "sha256": "f4306e5d3fab89108ae912cc628920f99ec90ca318f62688b8493cb8a31fe951"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/1_original-update-files/FL_6C1909144AJ_3242.frf",
+      "size_bytes": 440700,
+      "sha256": "1494ae1ad77d3f6acc8436c0535e0d650b083ea6f2fc8c425fd5bb5e2212f8cf"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/1_original-update-files/FL_6C1909144AK_3250.frf",
+      "size_bytes": 440809,
+      "sha256": "5c98a6f9002e480c18bd89587fe5b395e3a9e3ef092f8e8ab88b790b5a846193"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/1_original-update-files/FL_6C1909144M__3211.frf",
+      "size_bytes": 400985,
+      "sha256": "bcf3ce15d8290b5d0902045bde47c66281d84e8e4d921e17beb0fdf5dc48dbed"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/2_odx/FL_6C1909144AJ_3242.odx",
+      "size_bytes": 2004249,
+      "sha256": "44ef31852d2cc748dd0c7b1efc540d1ea8ba356f7c09e67274da14935f5bf089"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/2_odx/FL_6C1909144AK_3250.odx",
+      "size_bytes": 2004117,
+      "sha256": "a68232abcd47d2704e30f165e85e6cabfa397d943aca7c0f2c554ce3543bbc4a"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/2_odx/FL_6C1909144M__3211.odx",
+      "size_bytes": 2001757,
+      "sha256": "218a92b58c79f4192f2a6788e8d55175660afc35ebbac5b49ace45f5ef0bd9d2"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/3_bin/3242_50data",
+      "size_bytes": 995329,
+      "sha256": "3558218539dda240ac243e3d912068038f35832e5160d0f99a8e1f56f2c4ae86"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/3_bin/3250_50data",
+      "size_bytes": 995329,
+      "sha256": "d923424f31f781828e0eb03598b49329bb55b06e9c7a8e9e2e1662d536d2cae3"
+    },
+    {
+      "path": "EPS_research/MQB/6C1/3_bin/3250_driver.bin",
+      "size_bytes": 1048,
+      "sha256": "cfc9a45241a9eefbaf65d42bc8a0474bdf660a6d06017780279c651e0257c601"
+    },
+    {
+      "path": "EPS_research/MQB/candumps/candump-2024-01-11_173717.log",
+      "size_bytes": 2342153,
+      "sha256": "ef52549dfd5d52f85c3c38c889a7e3b30afa86e29fdcc723bb46880bdbf5d528"
+    },
+    {
+      "path": "EPS_research/MQB/candumps/candump-2024-01-11_174149.log",
+      "size_bytes": 3224953,
+      "sha256": "6e6219cdaf311d5b463801ad141f2826940a02585df230db59f1ea35ef41cd63"
+    },
+    {
+      "path": "EPS_research/MQB/candumps/candump-2024-01-11_174525.log",
+      "size_bytes": 1359395,
+      "sha256": "99fab5f27af6854d8cfaf352ae66646a7980d69b524c2250475a9f27264c6173"
+    },
+    {
+      "path": "EPS_research/MQB/candumps/candump-2024-01-11_175029.log",
+      "size_bytes": 1599861,
+      "sha256": "087e51ffdcfbb8b2d8a52e37eff6a9a9b9fea8d140f345315e1b8b62b9d7d134"
+    },
+    {
+      "path": "EPS_research/MQB/candumps/readme.docx",
+      "size_bytes": 535928,
+      "sha256": "1516969e6e5892ada0285d4c57fdc1a4f3873120ece431cd28c0bd5c7bb19687"
+    },
+    {
+      "path": "EPS_research/MQB/golf-mk7_can-traffic_init.csv",
+      "size_bytes": 2107817,
+      "sha256": "d1e0875e0d78c53a7bab5e6e080594d2f6d3b4816f5154f9f97c8f96e1228db8"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/0_dump-files/1k0 rack fw orig dump (should be 2501).bin",
+      "size_bytes": 393216,
+      "sha256": "957166d4f3d38a1ef0d6387be5bf897dc76c2974333873d7cdfeea8e7c34b909"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/0_dump-files/3305.bin",
+      "size_bytes": 393216,
+      "sha256": "67d26c928660cbb258b42b126dcb7e9f84016c1cced99f89c2d8ce402d16889d"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/0_dump-files/3501.bin",
+      "size_bytes": 393216,
+      "sha256": "957166d4f3d38a1ef0d6387be5bf897dc76c2974333873d7cdfeea8e7c34b909"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/1K0909144B_Y107_140_140_140.sgo",
+      "size_bytes": 7812,
+      "sha256": "e7d98e48a7dae18fd6856bf9323d15b2694394f520bbb0576156cd5f86b1f116"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/VAG-Flashfiles Information.html",
+      "size_bytes": 49436,
+      "sha256": "99091edc1ee65a22428dde2047b28bc9df8a7af4435ba749bc380b32269dbd83"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0012501.sgo",
+      "size_bytes": 352930,
+      "sha256": "99bbaadd7838ef1e516906f1317c4067a5548c6d683c208b886a0b92de36a848"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0012901.sgo",
+      "size_bytes": 353041,
+      "sha256": "ab9e39afbe4d7ed514998d88c0169f8df24495467209526868f053b3b93cd6ab"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0012901_TT.sgo",
+      "size_bytes": 353041,
+      "sha256": "b7c8c23e5401eba41bd8f4a2753af5eb3e1b54af771b75658ed8d00c70786e8f"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0013001.sgo",
+      "size_bytes": 353041,
+      "sha256": "67aa65522abea0dbc97a9097a14724ad17ed08ca438b1f7c02bc7ba67104f2c7"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0013001_TT.sgo",
+      "size_bytes": 353041,
+      "sha256": "7e990cd1a164a511a8324c5c9c18824996a069ba54998440c9c41d8c9aba4efa"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0013305.sgo",
+      "size_bytes": 353041,
+      "sha256": "f9bc5815dda4be9b0d43cef2268372e9b57d82cae8f1e88c12a8f5c0b76256c9"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0013305_TT.sgo",
+      "size_bytes": 353041,
+      "sha256": "d400de58aee5d7f383b3894c613cf21c7c09e2f66c0fafd80296ca2db83552ab"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0013305_VW416.sgo",
+      "size_bytes": 353041,
+      "sha256": "140c67743825b884ce9db2e0928af4462fa8b204bbd30d9d7cf82526f5acfdf8"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0013501.sgo",
+      "size_bytes": 353041,
+      "sha256": "a07a09063c82601443c1d7de2261623a800958ded357957f12eea6f427161bf0"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0022901.sgo",
+      "size_bytes": 37357,
+      "sha256": "b2b49eea36d29306cb1f8430823b70735e072bcf63f7485acdaba02983a9b1e9"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/lh0022901_TT.sgo",
+      "size_bytes": 37357,
+      "sha256": "6053604be577e2a5c1e6352aa7128a691eb77093e2da04d59c02fc7601ef57be"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/1_original-update-files/v074L1591K0___Lenkung_2301.sgo",
+      "size_bytes": 4589,
+      "sha256": "e693c4f62d54bc7fb3c8bb6c7a62a7de419aeecc25a48c8ba24225f269512a01"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/2_0xff-outputs/lh0012501.sgo.out",
+      "size_bytes": 352930,
+      "sha256": "9f61533920c34e46cf210813d38dcbfa14fa1de97f34350920a3d5f3446fbceb"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/3501_annotated_20221024.bin.gzf",
+      "size_bytes": 1845777,
+      "sha256": "8e11080d5292db86100405b31ee1645ae494afcbbde52969a7d4635b160f1d20"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/3501fw.gzf",
+      "size_bytes": 2173644,
+      "sha256": "d1c5c3c64ccad1a7df027381aef038c79a9c5100e2aa1022ea195312f924f759"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/lh0012501.sgo.out.hex",
+      "size_bytes": 1058789,
+      "sha256": "500d7e61c1bc7ac4f06c68adb9235db3fe122d1deb2bbbc68ef8eb7ae56b23c6"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/lh0012501.sgo.out.hex_2",
+      "size_bytes": 705860,
+      "sha256": "5b7fa050bc3fba0af7ac457c4d876aabaa8ba670e311e29304367dbb0a2b6876"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--0/qcamera.ts",
+      "size_bytes": 2234756,
+      "sha256": "fe21a961a4306643572006ae33224b8c2061b6a9366e513a928297160d05b132"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--0/qlog.bz2",
+      "size_bytes": 694860,
+      "sha256": "ec0515c2bee8e0433b199f31f882ef5819aa3b4945f41052b45fd03d54a80c3b"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--0/rlog.bz2",
+      "size_bytes": 7051411,
+      "sha256": "ba0e2af575fac7a4869c3923ee8e4e7cad4f6976b81582fd19bb1e22ad7c361c"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--1/qcamera.ts",
+      "size_bytes": 2205616,
+      "sha256": "7995e4002bd56722a53ce8ccdf5283af5085174c1576b7d7ced41d7d30c3d5dc"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--1/qlog.bz2",
+      "size_bytes": 676821,
+      "sha256": "007e295a121956f411ac6253dcdc039c6a7d635628376319c59ecf87a93b0654"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--1/rlog.bz2",
+      "size_bytes": 6847816,
+      "sha256": "4af09b7666869f025a5f211e184be78c985f18c45df6aa9a6b92576ed70f6be2"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--10/qcamera.ts",
+      "size_bytes": 2224604,
+      "sha256": "548920d4988fcc1cdd64debc23f133881b5fb37c19513bdd5f20d240a523c5fa"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--10/qlog.bz2",
+      "size_bytes": 897821,
+      "sha256": "30942699cec55940d9a7395577983d49d9b5a7434431141067eef8e5cb3790cf"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--10/rlog.bz2",
+      "size_bytes": 8685679,
+      "sha256": "0e0fdc6a945e10a2d5b5c1ddd1447bd871491584aba7b79f45e3c9c2c986c935"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--11/qcamera.ts",
+      "size_bytes": 2224792,
+      "sha256": "27d1309413939d78f33514150fe0e743af64db64de8fa25db9298cf76434d271"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--11/qlog.bz2",
+      "size_bytes": 895928,
+      "sha256": "4cf4859b5288b93396279583b94c6030a59c0f6eb22575eeb3af5a66377c8ef5"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--11/rlog.bz2",
+      "size_bytes": 8759516,
+      "sha256": "82fe0f81aa73517a9f7c3b21d120a3e72724e636a5f67fa40169323991cae99d"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--12/qcamera.ts",
+      "size_bytes": 2224040,
+      "sha256": "061d011cf2c6b3f4404c9f2689c7a19a3c43adf840fcdd79f9ae9de3a1dca2f3"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--12/qlog.bz2",
+      "size_bytes": 893099,
+      "sha256": "f672926810cdea9046b3b25d0a24519d46878b556c98fdd24eba3224040e4e80"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--12/rlog.bz2",
+      "size_bytes": 8749554,
+      "sha256": "56e59673e7986211a6259b6345549b4f1255e02457cf021c0ead052ebbcd1caf"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--13/qcamera.ts",
+      "size_bytes": 2225168,
+      "sha256": "1e02ff237f7ac36c33c66832a1d200fa29b1edc410165ac6d372e5cd6a24e6c2"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--13/qlog.bz2",
+      "size_bytes": 890850,
+      "sha256": "cb22f6f5e641f206ba5c12dad59ff677302fbf91ab9468b6a22a85ad8017017a"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--13/rlog.bz2",
+      "size_bytes": 8763647,
+      "sha256": "8e14a47e8d80134039892917d5886f0a3828edd92b94c2c824308fa928ed743e"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--14/qcamera.ts",
+      "size_bytes": 2216144,
+      "sha256": "613fb30c9052f5efde62acb6a8ae9ce2fff457225269ac68b179c418c2de0555"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--14/qlog.bz2",
+      "size_bytes": 875051,
+      "sha256": "7abe58d73a62468f4fb23fcd1e96b6144777af5c762b4cdd9fe1e98296c5d25c"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--14/rlog.bz2",
+      "size_bytes": 8544384,
+      "sha256": "4f8899b6eee58b2f8d04deea09a45bfb2591f17e747be28d887f7453bc519b63"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--15/qcamera.ts",
+      "size_bytes": 2224040,
+      "sha256": "8d8748aa15966ab3bdbb8756f8818c1dce10cedc69e9a95b74e2f5c335bfa020"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--15/qlog.bz2",
+      "size_bytes": 883591,
+      "sha256": "5b3ea1c50b460bbfcf0b4feb5fc698fbe2a1973a97927b513c40365914b04b0d"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--15/rlog.bz2",
+      "size_bytes": 8803620,
+      "sha256": "693214c579c0bd8703543b9fb75498f7445f0eafaa9aa7658a711bd6d4cae7c5"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--16/qcamera.ts",
+      "size_bytes": 195896,
+      "sha256": "9082d03f59e3ae759b9cb13d217b2b3e0c9f5bdadb5b1429e6c816a73a44a932"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--16/qlog.bz2",
+      "size_bytes": 97153,
+      "sha256": "5d24a88eb5b8d1755a15680c6ceb03b7f76b5bc0a17e7a527836efb0f72b26e4"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--16/rlog.bz2",
+      "size_bytes": 774389,
+      "sha256": "097d5bad02d3066b14cef8c3f6148b7b7d69b81cb0568af13b271201cee9d5e1"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--2/qcamera.ts",
+      "size_bytes": 2196968,
+      "sha256": "9e7c9da7fc4e7e3df49ae79b5da1d6bb708f5a6ce1eaf5af8a0710e3e2882a76"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--2/qlog.bz2",
+      "size_bytes": 679418,
+      "sha256": "a4fc16c00707a03a80be01653f7479c80465b31554245291bab2c3b41bfc4ac2"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--2/rlog.bz2",
+      "size_bytes": 6842385,
+      "sha256": "227a9af32fbc233c8f1ed741890269e349306a3aa03227303822a51e8535e843"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--3/qcamera.ts",
+      "size_bytes": 2218588,
+      "sha256": "8a52b88fde455e07c845ff010ec5bc80b4529a76a5f3e2df8990cfff700fafdd"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--3/qlog.bz2",
+      "size_bytes": 819283,
+      "sha256": "6f55ea73e81c29262fc75285e6cd6303332c2ffcbd9623d2a5d11ed31c92836b"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--3/rlog.bz2",
+      "size_bytes": 8164354,
+      "sha256": "4c106c310a870e59dabc52b28a2e76fd5e002f73cd99ea36cba52f4665a24111"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--4/qcamera.ts",
+      "size_bytes": 2226672,
+      "sha256": "a33c701650fac536383a9369965d4888da5d34e4c3c043f8bf3c69f0d4e0b8d4"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--4/qlog.bz2",
+      "size_bytes": 843397,
+      "sha256": "ebce3cc80ce286ae8edcd6d66cca31cae5312770e4abaaa2ada1bae067e16889"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--4/rlog.bz2",
+      "size_bytes": 8240584,
+      "sha256": "c9f42220475103a369959f535951e95a9f2ae54e27a2d354f7c0c6f51b281b94"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--5/qcamera.ts",
+      "size_bytes": 2228928,
+      "sha256": "e97b228d5ca5d6b0b601c2ff9a6058e16c1b0fb8970c8d9b4a0309d3762595a5"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--5/qlog.bz2",
+      "size_bytes": 768224,
+      "sha256": "ac54651669cb996a83e14da27eba162dace7cbf73a2ec6a7e02f62c08592de2d"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--5/rlog.bz2",
+      "size_bytes": 7556810,
+      "sha256": "86424f5260d49bfbb811d696b4eafdd581aee3fdab35dd20017f135b4718cbe8"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--6/qcamera.ts",
+      "size_bytes": 2221032,
+      "sha256": "37a47f1619373229c00e8ce864a8a51fbe5d4db3db839bf6f60dd6a5f594f77a"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--6/qlog.bz2",
+      "size_bytes": 887657,
+      "sha256": "ff7037bec5ecf431573f0a8f02d83208e9bcd325935b5dc050e00c9bdc8e7f4f"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--6/rlog.bz2",
+      "size_bytes": 8678296,
+      "sha256": "b438fa335b3d26318ddae5c75a901096c85b6a241b62fb082b5e6e800258969a"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--7/qcamera.ts",
+      "size_bytes": 2224228,
+      "sha256": "701b391092b6325926b40cd25a42eb6994b88bcf73e9d6229ac74942d73dc52f"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--7/qlog.bz2",
+      "size_bytes": 841089,
+      "sha256": "6478afcd383225faa7ed06ab7d879459532be44f30ff2f41921a2caa20afa25f"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--7/rlog.bz2",
+      "size_bytes": 8158111,
+      "sha256": "8ab8c70d726bb14860d57a23ceba01a37cecd993d5d5d3b131fbd993172fc4f4"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--8/qcamera.ts",
+      "size_bytes": 2223100,
+      "sha256": "16df32eac99b3d7f5ac86bf5af6652a1d965833eaa343d375c3e7e173df2d579"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--8/qlog.bz2",
+      "size_bytes": 894780,
+      "sha256": "a02bd544d38177a178ecf8584ffcef553209b11c1ed7d67ef0eac446d6e6731b"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--8/rlog.bz2",
+      "size_bytes": 8676761,
+      "sha256": "1a96489e332d40ef2ac7c61097ea51f59205780bdb418e5d0bcb5f008428fcff"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--9/qcamera.ts",
+      "size_bytes": 2227612,
+      "sha256": "b2e0c4231c3c0d5cfcf803e377d472b128a05c8ff6009262aa24ac29a1bad97d"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--9/qlog.bz2",
+      "size_bytes": 895095,
+      "sha256": "7dbf67cac77978cb94c7c758bf17dfb626d4a85180839b95e176aea7ea51b89d"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/op_drive_logs_kamold/0.8.13 rack/2022-05-24--10-55-31--9/rlog.bz2",
+      "size_bytes": 8771234,
+      "sha256": "d14404e1df738b577ee36765a8607aa819881fa1f703823b0445f5cbd90ebcc3"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/3501 torque value address bruteforce test.xlsx",
+      "size_bytes": 11068,
+      "sha256": "b4c210e47a6e399a37ed10d97042692b6e2c145656b1f21d95274e17c82ca186"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D051.bin",
+      "size_bytes": 393216,
+      "sha256": "f52184948da5c682ba74ce379c013afa705c371c1ffb943e216bde92781ca4a1"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D0E9.bin",
+      "size_bytes": 393216,
+      "sha256": "5c324ba0c5b0a925d6fdd9aba7e2ed728df5bec1581600864986e5f12da1062f"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D103.bin",
+      "size_bytes": 393216,
+      "sha256": "8f1364c5aa4b2698a7207614434ff27ad1f018e44dad15431dd3659374ffc421"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D105.bin",
+      "size_bytes": 393216,
+      "sha256": "8f5e14f9761cf166f2a81d6b4db62e1d89a7f420798ed5ceebdf87c66644502e"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D124.bin",
+      "size_bytes": 393216,
+      "sha256": "95bd740ef8ec618eb6516474727d2bb4e2a3b4ba871f09c2d5b9da63614c13c8"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D16F.bin",
+      "size_bytes": 393216,
+      "sha256": "634e978b9c7fabd9e1d8ea702a5685cb4c34ca51ce064db98757e7d118e0a8aa"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D18A.bin",
+      "size_bytes": 393216,
+      "sha256": "2750972df74f4fed80b8987860530137f3f3392dab14de46aa9bd71eda2fbb23"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D1AC.bin",
+      "size_bytes": 393216,
+      "sha256": "c1dd821de31926cdd70fd620c2749a8feec703554610d11278bff5753ffc6228"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D1D8.bin",
+      "size_bytes": 393216,
+      "sha256": "bb29715145f0ec5183558b27d53d1e00bf917db58414ebf591cc9073efa88cfe"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D1E5.bin",
+      "size_bytes": 393216,
+      "sha256": "bb97ddbf450aa8191374e8ae9c9e4d9bfc03a28334204a77f5c5290b3e9beb1c"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D1E8.bin",
+      "size_bytes": 393216,
+      "sha256": "845cfda4e70adff31c9cfa6b1d43622debc5b0cb1916296ff185ecdda9297e75"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D1F8.bin",
+      "size_bytes": 393216,
+      "sha256": "1b79cc5554051c64eeddfbdd9ad2d058370ba3f38e8485b70cc0accf69542e71"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D20E.bin",
+      "size_bytes": 393216,
+      "sha256": "10e25fcd1a7062059d937a798a882d6a8a330a14ef4824ea88e3fed261c80c76"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D21A.bin",
+      "size_bytes": 393216,
+      "sha256": "3343d9e5ea8860c6e5aadf32534df7f4e2808e112391b3d757f771536d40df5c"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D266.bin",
+      "size_bytes": 393216,
+      "sha256": "e0e6bbfc6bd842d3a7cb96b3978eaea36fa27f3c2da91cca91e839b2861ed08c"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D27A.bin",
+      "size_bytes": 393216,
+      "sha256": "4564ba667b5e264ec2ba2b53e72da895d346054dfdb9993fe26632b2d3b4cfda"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D2A3.bin",
+      "size_bytes": 393216,
+      "sha256": "3c768a510f63e3bd7fd02ee1dc46ff572f712fc98a0d230b1fe21e2ae868df04"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D2AC.bin",
+      "size_bytes": 393216,
+      "sha256": "a412a816e52fafe6a8a48dba7f5ccddd052a0829430d390115de1708834f0e5a"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D2B4.bin",
+      "size_bytes": 393216,
+      "sha256": "bb7b981d600ae9fe1a74b8d9638256144fabdad7cc8e9e2244b5a5dbb1b0c8c3"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D2C8.bin",
+      "size_bytes": 393216,
+      "sha256": "52cc2d38184fa7b2602cab2323226f496f1670c563d98ffa1876ea28f5228948"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D2CA.bin",
+      "size_bytes": 393216,
+      "sha256": "e5a3a80eb61553df49ee5599067614aec52fbf205d8a1d4b18b7a4295a99e577"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D312.bin",
+      "size_bytes": 393216,
+      "sha256": "1678d4d902f542931c3ff6358cdcbef3636c60c30a2760d48442f657bb0965ae"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D320.bin",
+      "size_bytes": 393216,
+      "sha256": "c3e92d262a5127b2198a1ccce010e732d0f80b1f0c799711f24a5ea8ac2357e9"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D41C.bin",
+      "size_bytes": 393216,
+      "sha256": "808571f390799119dca4c1185be93d104158baea54ed679f43839237a8adefed"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D430.bin",
+      "size_bytes": 393216,
+      "sha256": "d741edf0cd6a8c628a7e39b835c6884ebd5d2237c24a198b41f525cf34d53b86"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D444.bin",
+      "size_bytes": 393216,
+      "sha256": "e7f59a9b81a99b04db49cdb8cf2ae3996463ec5fdf7e93b5b60f560df9915bf8"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D44B.bin",
+      "size_bytes": 393216,
+      "sha256": "4997e41481a99f855816b363e2a4df24a76f4e42d9c674ef0d9ea1e48b61cdfe"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D490.bin",
+      "size_bytes": 393216,
+      "sha256": "5171e636b400a290376d61896037a1271cd2d0fce2f81ccdc9ef80ff31b57e59"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D4F8.bin",
+      "size_bytes": 393216,
+      "sha256": "88aecc311a3c4dbbebb4c515f7e69e514cdc9f7a2398d90fb7cbfb4272e920ea"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D55D.bin",
+      "size_bytes": 393216,
+      "sha256": "b8acbf222767abf6b11bcc598bfda28c6df6bd3100e9093d6dce30693ce3a46b"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D599.bin",
+      "size_bytes": 393216,
+      "sha256": "474a9bd02ec1c04eb628274cb382169aa1852561c5476762e798f0dd47334dd0"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D6A8.bin",
+      "size_bytes": 393216,
+      "sha256": "d6c36c19285b95e5ca3431e264ffb915906bf792aba66ee0927c5a9e35f609fc"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D754.bin",
+      "size_bytes": 393216,
+      "sha256": "504102f79d380d0ef2ed70bb77aea6641fe13e7ab943666479225cd399e1a3ef"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D86A.bin",
+      "size_bytes": 393216,
+      "sha256": "0ae6f151c812115a0ca80f0bca8f6f9a7abfb09fb0160f01cbc87f8b8fdb3751"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D899.bin",
+      "size_bytes": 393216,
+      "sha256": "0253945c4642dc130e8b11b0f771508e8826cd4004ff6626ee4b9b5e423acf72"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D8A7.bin",
+      "size_bytes": 393216,
+      "sha256": "344e862d07c5dcc65623f406d56dec951a0b0d8d2164deca77a134f15dcf5f4a"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D8AB.bin",
+      "size_bytes": 393216,
+      "sha256": "c8a24c93cd46bef4732780c6f23942d9d48a07965012bb1e03e8f53e89b4eac2"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5D8AE.bin",
+      "size_bytes": 393216,
+      "sha256": "6e87a076c38074f7ca0c651ee6302097ec87102f129409c61b5d7946441d3aa8"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/patched-fw-bruteforce-test/5d429.bin",
+      "size_bytes": 393216,
+      "sha256": "25dcce423fe7b1b6ae717973dc24de09ea339151af4f92ab117444deb364b2f3"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/real_lh0012501.sgo.out.bin",
+      "size_bytes": 1401506,
+      "sha256": "305346ed5f59f8351fa10ba1af0eecaf8d413df6f534eff7d7817c3d30b8b2e8"
+    },
+    {
+      "path": "EPS_research/PQ/1K0/renesas_v850_docs.pdf",
+      "size_bytes": 701363,
+      "sha256": "08a225aa9f97f3c0ec3585756afb9b1f584323c56a86fd52c43b1485bde210a6"
+    },
+    {
+      "path": "EPS_research/PQ/5N1/1_original-update-files/5N1909144M_1002.sgo",
+      "size_bytes": 273293,
+      "sha256": "b43754a723896ccbd35730a88959a6a95f7d90965d836b6d728665e553db88b6"
+    },
+    {
+      "path": "EPS_research/PQ/5N1/1_original-update-files/5N1909144N_1101.sgo",
+      "size_bytes": 273293,
+      "sha256": "3dcbf4bb1c9140320ee7f07e0d28aa9325f94786f1442c38c603ff4ddd925d2a"
+    },
+    {
+      "path": "EPS_research/PQ/5N1/1_original-update-files/5N1909144N_1101_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "886667e88f7027d4c9c45654301b9f96cfaf39db43502840896f78f3d4b22d30"
+    },
+    {
+      "path": "EPS_research/PQ/5N1/1_original-update-files/5N1909144P_1202_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "e03cc687518c1249967882785359a3876235e32878053efc8c0708810778afa9"
+    },
+    {
+      "path": "EPS_research/PQ/5N1/1_original-update-files/5N1909144R_1401_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "5dc6427eb28da480d6aa7774f1cdf47044669b1e6b635defff517a942a73c9ac"
+    },
+    {
+      "path": "EPS_research/PQ/5N1/1_original-update-files/5N1909144S_1501_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "c7404253fd67aa668d669e925665a8d547fa2abf2eba0d056182006f5a22e5b3"
+    },
+    {
+      "path": "EPS_research/PQ/test radar compatibility.txt",
+      "size_bytes": 354,
+      "sha256": "030ab4e0d61becda4476238b99fb6ef1c39bbafe2c5ba541dffd09a20adbf3b5"
+    },
+    {
+      "path": "EPS_research/clean-update-files/1K0909144B_Y107_140_140_140.sgo",
+      "size_bytes": 7812,
+      "sha256": "e7d98e48a7dae18fd6856bf9323d15b2694394f520bbb0576156cd5f86b1f116"
+    },
+    {
+      "path": "EPS_research/clean-update-files/5N1909144M_1002.sgo",
+      "size_bytes": 273293,
+      "sha256": "b43754a723896ccbd35730a88959a6a95f7d90965d836b6d728665e553db88b6"
+    },
+    {
+      "path": "EPS_research/clean-update-files/5N1909144N_1101.sgo",
+      "size_bytes": 273293,
+      "sha256": "3dcbf4bb1c9140320ee7f07e0d28aa9325f94786f1442c38c603ff4ddd925d2a"
+    },
+    {
+      "path": "EPS_research/clean-update-files/5N1909144N_1101_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "886667e88f7027d4c9c45654301b9f96cfaf39db43502840896f78f3d4b22d30"
+    },
+    {
+      "path": "EPS_research/clean-update-files/5N1909144P_1202_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "e03cc687518c1249967882785359a3876235e32878053efc8c0708810778afa9"
+    },
+    {
+      "path": "EPS_research/clean-update-files/5N1909144R_1401_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "5dc6427eb28da480d6aa7774f1cdf47044669b1e6b635defff517a942a73c9ac"
+    },
+    {
+      "path": "EPS_research/clean-update-files/5N1909144S_1501_BP.sgo",
+      "size_bytes": 272694,
+      "sha256": "c7404253fd67aa668d669e925665a8d547fa2abf2eba0d056182006f5a22e5b3"
+    },
+    {
+      "path": "EPS_research/clean-update-files/Bootloader_FL_4N0909144E_0023.frf",
+      "size_bytes": 97660,
+      "sha256": "3b0c823bb11b76c02b1699a682f1046a93e0aa4a15c11fafdd3c6d17c3d5c78e"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_180909144G__4140.frf",
+      "size_bytes": 310263,
+      "sha256": "cba834a8e34f73cc603fa27a13dd8e33ac68e864abcbad612fc16681839dc969"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_180909144H__4150.frf",
+      "size_bytes": 311568,
+      "sha256": "bd8a79dc5828eeca80a71e99d8fa06698aac1d3f0703c0dc54c0e3d5c00969b1"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_1S2909144F__1502.frf",
+      "size_bytes": 173449,
+      "sha256": "06696129f2c90989ebeb5a584c9d4e031e410245e69c8196dcf90dd3a16cb7af"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144F_6013__V001.frf",
+      "size_bytes": 460401,
+      "sha256": "ed7d4a7fa5bbbe565e3af811ebf8bb2bcac914440395014d8feb0e2cd100a9c6"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144J_6030__V001.frf",
+      "size_bytes": 479072,
+      "sha256": "dc74a2a80346d764c471f09cc935aac820ecafac8a232a8274218cbc8d2c4357"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144M_6041__V001.frf",
+      "size_bytes": 489159,
+      "sha256": "5c18531aaccb90f04bb7f3b3799d8eb9bae23a7c1d80cd9174c77dd3ff6b7158"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144S_6042__V001.frf",
+      "size_bytes": 490455,
+      "sha256": "df2273840aaef12b256cc8e7279e3430dcae168ce2d04f4571747592abf29cf6"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144T_6213__V001.frf",
+      "size_bytes": 481560,
+      "sha256": "a06df2badff5e854211a31152e5cf32a8649e9ead37b41f55f72cca124705bea"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144ZT_BOOT__V001.frf",
+      "size_bytes": 105828,
+      "sha256": "a12cdc15b75b6079f4bdeab1fe6411dfd56e13aa2598911d99006354e28ee5ac"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144ZU_BOOT__V001.frf",
+      "size_bytes": 105705,
+      "sha256": "667b6a76a45f1c6d2962d684b67ced7cf37fffe97faaad6f6f13ffc6bcbbd4d2"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144ZX_BPLD__V001.frf",
+      "size_bytes": 53175,
+      "sha256": "120a0099db71112482a13e3f52dee71e092232a006dd16f808b9aec78310fe85"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_2Q1909144ZX_BPLD__V002.frf",
+      "size_bytes": 53164,
+      "sha256": "92b6e13aa57cc1561abeaf97be2bd0564f203f1989b4fe5340de3d7f4262f62e"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144FH15043.frf",
+      "size_bytes": 254697,
+      "sha256": "bb1da839bb2f635b0174d3d2e21caa428c3842d994b336648eafb925e4f5b1e1"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144FH25043.frf",
+      "size_bytes": 19030,
+      "sha256": "c1d65987c96bf81c114525d0bfb40e3d066ef4f9c33595ab7f519d22439f84cf"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144H_H1_5061.frf",
+      "size_bytes": 263045,
+      "sha256": "abc37a53658a8d10d88dc243e6267c1b3f71251a796ce5da184202cd2d247a46"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144H_H2_5061.frf",
+      "size_bytes": 36677,
+      "sha256": "9a5abc703e0e3b8f52b2af4559ecb495e404c1fb21c16f727f86ea1cb6f34f93"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144H_H7_5061.frf",
+      "size_bytes": 19131,
+      "sha256": "5d47ee6d575192b808931ea6a3c146fd64a96df6652198c881d8c17cc8675090"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144JH1_5063.frf",
+      "size_bytes": 263204,
+      "sha256": "c49121b707ff2b6a302721ab951f5c0edb93cf0fe8b92297b5d7c7e87d0c86ee"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144JH2_5063.frf",
+      "size_bytes": 36703,
+      "sha256": "c17842a77b30b6eaee6fc6e10cb081f09a7663798a05fffec0cab94f234d777a"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144JH7_5063.frf",
+      "size_bytes": 19140,
+      "sha256": "af690ba9f67709b1c9b8a6a773472531fbc64f395f7cc393ebaa1d301b23a751"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144KH1_5072.frf",
+      "size_bytes": 267295,
+      "sha256": "5ef784b2de90096488e7ae5c5db3f14f4ef0e77ac83326450d416e1c2a13ddda"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144KH2_5072.frf",
+      "size_bytes": 37192,
+      "sha256": "e0e01ce43f75ed3d3ce2be37c390e45a6b7c45187050f8630609cbe8dad2f769"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144MH15082_.frf",
+      "size_bytes": 275691,
+      "sha256": "84ac918e02e4876c506fd2d86079c345e16b316f406ca88166e2a74c66448d52"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144MH25082_.frf",
+      "size_bytes": 37561,
+      "sha256": "dd68377eb7357c7a086eec78fb15b03a7c89f977d03fabb24331f9acbc5139fa"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144XX_H2_Y006-Y007.frf",
+      "size_bytes": 19144,
+      "sha256": "7423e580af4e93142fe0db96a5cee959f40c1d58cf2d9d2b8dd1df9b32685061"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3Q0909144YF_9999.frf",
+      "size_bytes": 19127,
+      "sha256": "3ec799314568c2c40b8bdad0570051a7137c6aff6c5e9b8235a536f88d039a3d"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3QG909144DH11582.frf",
+      "size_bytes": 275687,
+      "sha256": "3100a7f4c0195e31b6f2d948b38c741c756ec6863d85761f9ac97005c9b83cf1"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3QG909144DH21582.frf",
+      "size_bytes": 37571,
+      "sha256": "508681b0ef597c6806e8b7d0999f92bf02af81609693c7e4f2fa5ed89d77744a"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3QG909144XBH1_P808.frf",
+      "size_bytes": 275908,
+      "sha256": "6292c307ca658ed268471cbc0c6ae4f9e0bcaba13e6d198f9ff7525f9b21e4ca"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3QG909144XBP808.frf",
+      "size_bytes": 275898,
+      "sha256": "d76b1ca9f92bc8aad4feffafe754e7fa4761394c68c68648e6f8b4b1023d6f6c"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_3QG909144XDH1_P810.frf",
+      "size_bytes": 276947,
+      "sha256": "8335d9ad9d9ea4e64641c01960aba1ab0011a76ee7c75d338def3fb3aab5f92a"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144AA0013_BP.frf",
+      "size_bytes": 298747,
+      "sha256": "7781c43745911ad2cc11604caa44d08ca7d1af40c3d9df090e17d2461bd70aea"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144J_0008_BP.frf",
+      "size_bytes": 285922,
+      "sha256": "78560edacf69b81ef65273e7fd87bc568e6fcb5bd88b36e961eeca76111c81b7"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144K_0009_BP.frf",
+      "size_bytes": 286403,
+      "sha256": "169fd4fd24e3625d40c28f9949adf872f192ad20bf0013ec5cc07814a47646aa"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144L_0010_BP.frf",
+      "size_bytes": 293832,
+      "sha256": "6f7c8dd6503e6a01dc4adb43f8e2726e41a5a8e8b028036f9c8994cefd5c5dfa"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144L_K010_BP.frf",
+      "size_bytes": 292069,
+      "sha256": "3e6db252d3f94c8a5f53cdaeb40abd4826ab0a78924ed8fa535eb5f7f80f63a9"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144L_K010_BP.odx",
+      "size_bytes": 1211953,
+      "sha256": "8d1eaf23f965beb2c8971c01a69de33371f9c7390e853141fea8e225bfce0a94"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144L_L010_BP.frf",
+      "size_bytes": 292201,
+      "sha256": "11096b68c920752a9425792a214291503c1c96e009120f0a36b2dfa7d0e140ec"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144L_M010_BP.frf",
+      "size_bytes": 292338,
+      "sha256": "360749b20d7e9caf1b78908ef0a4ba8e3d8c9a9cdcbfff7f3598006c045edb85"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144M_0011_BP.frf",
+      "size_bytes": 295357,
+      "sha256": "f3f4d073a201ec0ed968e632c38e49f60b4b3c67e5d57fcfaa33e6948e2dccc0"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144R__0201.frf",
+      "size_bytes": 376486,
+      "sha256": "1aae45a16f5ea29d19b07d99a278fffdea15b2a6d9500931a46d0e6e39c47abb"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144S_0012_BP.frf",
+      "size_bytes": 298795,
+      "sha256": "fccc2976bc7a39887189aabc6be3ba0c772305d908edbd77a0c77e66d933cfe0"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4G0909144T__0202_BP.frf",
+      "size_bytes": 380853,
+      "sha256": "e79368ed3716f61ea5ff8dca3cc9ba8cf1bb51da52a197ef024e101a1e6920c9"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4M0909144D_0001_FULL.frf",
+      "size_bytes": 449686,
+      "sha256": "163c0918440049c8a434db4804734dacd007166be20ec04e24c179fb49628f46"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4M0909144G_0004_FULL.frf",
+      "size_bytes": 494470,
+      "sha256": "7d949faf70b3815fecd823dd0d154c3eac996dab53427c8ae2fbb74186a31289"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4M0909144H_0005_FULL.frf",
+      "size_bytes": 476891,
+      "sha256": "cc8ff5dfab4fbb39434f5f287c5c8736929235bff27396fe8ea1026ebcb4d5bc"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4N0909144C_0503.frf",
+      "size_bytes": 475825,
+      "sha256": "ec1a94d8369776fac0ee3c0e1e071164b5bb0b3580f12f341310a1a98c507d17"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4N0909144D_0504.frf",
+      "size_bytes": 477735,
+      "sha256": "3d65f72e1c5448b1ccf8d612936c3b3206d99351f7bf07fc214459babf8cd082"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4N0909144E_0505.frf",
+      "size_bytes": 475446,
+      "sha256": "84bee9cf0c6754212fe5a2fac55fa79473a9bef040a94d3e34f4701db4692a54"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4S0909144G__0904.frf",
+      "size_bytes": 203230,
+      "sha256": "069e012d4a6b30c46c74dac6cc1f81ef17b78d0d6d8e4e9a0b21833b4c72e24f"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_4S0909144H__0905.frf",
+      "size_bytes": 202389,
+      "sha256": "c5253960cba68792ac61b8719978b5be50f0965273af388be424f8bde4338ae4"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144AA_H1_1081.frf",
+      "size_bytes": 275696,
+      "sha256": "35e86bde95b195eea59fe142ddb1eb7145860445a191a0ebc21637a386fa09e5"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144AA_H2_1081.frf",
+      "size_bytes": 37540,
+      "sha256": "95b1b1adebaf2cd4ad8307ba44c2c62d621709acc73837a1759f59f39b68bdab"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144ABH1_1082.frf",
+      "size_bytes": 275693,
+      "sha256": "da29fda4edf10be316462c9a8258e1511dcb928f410692e2b496a2e4953cc6a8"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144ABH2_1082.frf",
+      "size_bytes": 37568,
+      "sha256": "63d5b968bb1577e27317be5f720ceb1e8f67611afe8d98f6ed22457e9c374b33"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144H1_1021.frf",
+      "size_bytes": 276014,
+      "sha256": "f1fc939452f33aadf4fccfa8e8e6e08fb74cdd3471f496ad495f04c4f2247f98"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144PH11043.frf",
+      "size_bytes": 254699,
+      "sha256": "dea02791f33cc7801a2c0e8193172d4df4ac2d2e6dcc0344ffa19ed1e5cfac78"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144PH21043.frf",
+      "size_bytes": 19031,
+      "sha256": "2eefc4aaf6c8e51420722f2bdf52ea60703488522fe4d2c438e5e16ae8dd2efe"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144R_H1_1061.frf",
+      "size_bytes": 263054,
+      "sha256": "47d99bc0fe7e709535577628c250281ea4e13a4ab6dbe03812c09f15a78aa04e"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144R_H2_1061.frf",
+      "size_bytes": 36685,
+      "sha256": "501c3327a530ce6b83485b3265312ef894f256d0111822c7453eddf8beceb097"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144R_H7_1061.frf",
+      "size_bytes": 19151,
+      "sha256": "7ec18f1fbbde971f1fa0f06122342f013cf4cfe4981ee67a835cd0e5a4d25d38"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144SH1_1063.frf",
+      "size_bytes": 263214,
+      "sha256": "661af8fa196cd07adf38174da5af219d7d3eb5dd730cf79adec5ebe2638f51bb"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144SH2_1063.frf",
+      "size_bytes": 36711,
+      "sha256": "4d20a724d5ac582f93df47c91e7301dcbc77904633c74d723a0c442b76d2b3e7"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144SH7_1063.frf",
+      "size_bytes": 19142,
+      "sha256": "7f19d6f13c9c7263228190ee86530ff9090d6a4f7bec05b0671cdf1daf4cd43b"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144TH1_1072.frf",
+      "size_bytes": 267299,
+      "sha256": "9465be5146a155225f6482e934dc4cdb5e0de5c2f9956443786b79287b738553"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144TH2_1072.frf",
+      "size_bytes": 37208,
+      "sha256": "ce0f5ab44ac9ce9a09d8f5465fdc6f46cdd53a009a2ad77cab89eb90aa483da0"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144XDH1_P810.frf",
+      "size_bytes": 276944,
+      "sha256": "1b0d4754532b8d8ab7af4e064c258335dc872c0310f942a72537c9c0b1783100"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144XX_H2_X037-X039.frf",
+      "size_bytes": 19142,
+      "sha256": "45d616383f73a1c0921af62ec6054825c4f21e1baa14ce25f03a9d3e564e5654"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144YF_9999.frf",
+      "size_bytes": 19115,
+      "sha256": "e8ae6dd651250531388449b4ae2314ba88e45bd688d644d8721c26d7f0bbda43"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Q0909144YF_B001.frf",
+      "size_bytes": 19120,
+      "sha256": "98846e5bab71c7bbf8d450a5382e95e6baac572640d7bc8e8a5daeae04006065"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5QF909144BH1_5582.frf",
+      "size_bytes": 275690,
+      "sha256": "a503700348925cffeaaa2e7d8243cd78783e88b34439a7a821d2bb30016609a0"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5QF909144XDH1_P810.frf",
+      "size_bytes": 276977,
+      "sha256": "4269909a04282b4328f40fa4cd8067b0d8a534ce59bbda1aa8413729ce9f727c"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_5Z1909144D__4040.frf",
+      "size_bytes": 279159,
+      "sha256": "48374f924e1365adbe718d87083330a4c890d9e617d68ffd94463feb0771a41c"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6C1909144AJ_3242.frf",
+      "size_bytes": 440700,
+      "sha256": "57863f3a89b242af01239d298641a3e1213aec0b707b60b9ba52ece8532d7f5d"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6C1909144AK_3250.frf",
+      "size_bytes": 440809,
+      "sha256": "5c98a6f9002e480c18bd89587fe5b395e3a9e3ef092f8e8ab88b790b5a846193"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6C1909144M__3211.frf",
+      "size_bytes": 400985,
+      "sha256": "bcf3ce15d8290b5d0902045bde47c66281d84e8e4d921e17beb0fdf5dc48dbed"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6R1909144AD_3124.frf",
+      "size_bytes": 418190,
+      "sha256": "95170fdfad14b071ed09b8e55f612b6582f2e9cb18cd622bea9128c29736b651"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6R1909144AJ_3132.frf",
+      "size_bytes": 433854,
+      "sha256": "7f86a3eb7288139d77e2d40c27432d3876a3968ab21a58ba66bd9e257964e342"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6R1909144AM_3142.frf",
+      "size_bytes": 438649,
+      "sha256": "f67417d32021c6f69b287795236f0f6e57348d4e5b6fa8908785b1dc8c7f4de2"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6R1909144AN_3150.frf",
+      "size_bytes": 439149,
+      "sha256": "a702e32c4cb347baadb266f5dac3e8832d71771f97dfdc335b22aadd075988eb"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6R1909144P__3104.frf",
+      "size_bytes": 383830,
+      "sha256": "523739c3b7b723f79ae45dcd2f58f636861537217f4a7d9b6606e3296b6f8931"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6R1909144R__3111.frf",
+      "size_bytes": 399879,
+      "sha256": "2306325fdb3c97711a5472414d053b5596d841d77fdb60865febaa01fe835483"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6R1909144YB_BOOT_KD.frf",
+      "size_bytes": 39502,
+      "sha256": "9ef8ca2573349c69e0c1df5c1ca0d3258ac8c65bc168832f8f6ce420732faf51"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6RF909144H__0321.frf",
+      "size_bytes": 149421,
+      "sha256": "f815737746287f3e787348df90cca14e79202f3eb59139e6e5dbf8fb95462c06"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_6RU909144H__0311.frf",
+      "size_bytes": 149420,
+      "sha256": "4dd0bbb4d272efb9ccac33561553c59c9101c33e207a85d051d1f47f8ec7ebdb"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144E_0506_BP.frf",
+      "size_bytes": 245989,
+      "sha256": "e899e266336f33629d63cd1d1524b9b8a84b6d32d4a54a791a7f4a7d778c4283"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144F_0507_BP.frf",
+      "size_bytes": 248530,
+      "sha256": "5a97a7123837071a6238ae5024012f3868ecc78e2100ff96d53561966172977e"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144F_K507_BP.frf",
+      "size_bytes": 246847,
+      "sha256": "9d5a19a10a302c1a462c7a71306c3d7cfc9f3af862efd78444539578f15d87a8"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144F_K507_BP.odx",
+      "size_bytes": 1212010,
+      "sha256": "a2d57af8a5c2ce10059ecbb1890fc4772defcfe7a5f9a6a7a34ca88cb240b622"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144F_L507_BP.frf",
+      "size_bytes": 246955,
+      "sha256": "41ce848c4144efa81222d59e887d55b0dc1760b2c130dac5b40496bcade3b755"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144F_M507_BP.frf",
+      "size_bytes": 247020,
+      "sha256": "20a7211f68617090e621d7ce34a9e334ae112e500a3e21ba6b415945b90bbb6f"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144F_WK57_BP.frf",
+      "size_bytes": 246841,
+      "sha256": "6c040db73e4b72bbf548b6d3cb64f3a89f895e6c511e34d2f8b860252cc56d4c"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144G_0508_BP.frf",
+      "size_bytes": 248527,
+      "sha256": "f552f1104dbcd5f7e1c69d50e39d2376295ffeb48395a0083780a8de3aa226c8"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144J_0509_BP.frf",
+      "size_bytes": 250241,
+      "sha256": "4551952dba4f211de03f1bc609ce9f0a752a985d99d6fd1feaa996c92d41a250"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144P_0510_BP.frf",
+      "size_bytes": 253540,
+      "sha256": "9648098a0572c30f7643511ef8c6f91cf00068e6a616f12576b6ec4c43e75273"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8K0909144R_0511_BP.frf",
+      "size_bytes": 253508,
+      "sha256": "9f7cab9eda89a8252996b02c49b4fdd40c8a71a1de33dd22cfc5c404c18f2a36"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144A_X521_BP.frf",
+      "size_bytes": 232137,
+      "sha256": "70a12016464c98476c8ad987edf99c4dc18f5b03c021dce9525f754b9e112c08"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144E_0506_BP.frf",
+      "size_bytes": 245965,
+      "sha256": "8d4e0714444e9f6c3236b5ea60c75f76e07a83317d67a97f9496668f688cf4de"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144F_0507_BP.frf",
+      "size_bytes": 248536,
+      "sha256": "06e72e91e78448f3dc0c10b2135dc9949d4c664953b91909c12de8e654e6cd50"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144F_K507_BP.frf",
+      "size_bytes": 246852,
+      "sha256": "f9a374b21985899e06f758551c626b6335ec7dbb11c738b222cef521031e97e8"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144F_K507_BP.odx",
+      "size_bytes": 1212010,
+      "sha256": "98c7169dfea88582e2248cee2039df502eb8f0b69e45fddb5fed62190e075d82"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144F_L507_BP.frf",
+      "size_bytes": 246958,
+      "sha256": "fa3927c0721c68905efa759823e5141356fdde9fb7110e6462d631d6ec50c1f7"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144F_M507_BP.frf",
+      "size_bytes": 247028,
+      "sha256": "0347b605d53823ed93ff494b243d9c3275f8abd796b0df7c53957596d14289d2"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144G_0508_BP.frf",
+      "size_bytes": 248530,
+      "sha256": "176cb74041928158b54ac2601fcec87abb685f0921390307fef7ceba30c70726"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144J_0509_BP.frf",
+      "size_bytes": 250234,
+      "sha256": "fd4e3e0294fb7173265d747f1cf8d16d2b1ff37be5cf12d3f9df8d7862f47286"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144P_0510_BP.frf",
+      "size_bytes": 253537,
+      "sha256": "d36b68d0d8168fdf25aabe1febf0c97504d6f54591735cc42ad36958931e6ab9"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144Q__0702_BP.frf",
+      "size_bytes": 321050,
+      "sha256": "c2a715b61b04a1a49b59f57db148fa1b06b0b0e1dc4f6ea5b3bff6f1febbee35"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8R0909144R_0511_BP.frf",
+      "size_bytes": 253493,
+      "sha256": "efed7d2b5e8f4cbfd538066e0acca4c443bcab3626a4b6de302ac496fc2bb0a7"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8W0909144D_0405.frf",
+      "size_bytes": 375834,
+      "sha256": "bb818473e7206c55020882599f1f91d112f14679768afad975d03b25e0655907"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8W0909144F_0407.frf",
+      "size_bytes": 374196,
+      "sha256": "bccc830ece06af9f6d6293e793d1aa824d044b02d2d87b91daf57238a5a5f974"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8W0909144F_Z022.frf",
+      "size_bytes": 88132,
+      "sha256": "21b8653361908fa22d89d06a8a817a215098375d5ff3efb62ab8c2a79254815a"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8W0909144G_0409.frf",
+      "size_bytes": 377353,
+      "sha256": "e4c61da65e8a74c5641074df1cbd0905066ec24481ef152527e4e1e5b3df7bbe"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8W0909144H_0410.frf",
+      "size_bytes": 378160,
+      "sha256": "9439924de4aedafc2005b49d8cadef55f3e902f0e4e8167353445134e9edc40b"
+    },
+    {
+      "path": "EPS_research/clean-update-files/FL_8W0909144J_0411.frf",
+      "size_bytes": 377451,
+      "sha256": "85c06d9c0932a50062f0d845c3bf456b14e278dbd57eff28f222dc46dbd371b3"
+    },
+    {
+      "path": "EPS_research/folder-structure.txt",
+      "size_bytes": 441,
+      "sha256": "017ff3f6e4ff0311a863ca5ba8b51ccfbc16dcd64b8e852c58279b6bf5c8e0c2"
+    },
+    {
+      "path": "EPS_research/tools/SGO FRF tools/SGO Extract.exe",
+      "size_bytes": 237568,
+      "sha256": "cf80c63a94d990d398e25368b3a6b5cf13d751f207749de109e08e25871297d5"
+    },
+    {
+      "path": "EPS_research/tools/SGO FRF tools/setup_frf_decoder.exe",
+      "size_bytes": 2398298,
+      "sha256": "0b9a3a12afd842db5225ba2c5ee4f8964c094b25f9c9d5c60e32dde69a3d1879"
+    },
+    {
+      "path": "EPS_research/tools/Strings/Eula.txt",
+      "size_bytes": 7490,
+      "sha256": "8329bcbadc7f81539a4969ca13f0be5b8eb7652b912324a1926fc9bfb6ec005a"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec.py",
+      "size_bytes": 47027,
+      "sha256": "d41d9eddd4f33bf06b18de87d05fabf53d8b16de8bbe5bc8404dafa76eecfdba"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/#6502#cc65.corpus.xz",
+      "size_bytes": 5004,
+      "sha256": "82ed5f7495f8b6f3ab6337c8be9e9ed367a65252db2a0a24edb26508af0f69f9"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/6502.corpus.xz",
+      "size_bytes": 796,
+      "sha256": "b9837866ff38429e57109d980b6654f6962d29de257ce50e29dea100b107ec13"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/68HC08.corpus.xz",
+      "size_bytes": 5048,
+      "sha256": "63aa441ffeeb8bba377dd3725cfbbff4ade1e4470fb89ae8f02ec50b1c779b18"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/68HC11.corpus.xz",
+      "size_bytes": 5456,
+      "sha256": "98450ab4c7327ec85407506840cf2fd0f6e4975cc198bb01a092191545655ba2"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/8051.corpus.xz",
+      "size_bytes": 6248,
+      "sha256": "33234fa98b2369ffccc1cdc1384f5bc64eb9d351fafe3589d216710e91f521cc"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ARC32eb.corpus.xz",
+      "size_bytes": 12224,
+      "sha256": "df7ee588fe73da11beb1bf35101af795e8bfa63ef89a507c9d09d3f975e54873"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ARC32el.corpus.xz",
+      "size_bytes": 12328,
+      "sha256": "04f98385149b94d7e2f913f1d367533aad1cb0a8b8f6f7d44c871be072c135cc"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ARM64.corpus.xz",
+      "size_bytes": 145164,
+      "sha256": "ff3336a8db655ee692d908748f8034ba1fb13c56ec463ec77dbcdb1505a7bdf4"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ARMeb.corpus.xz",
+      "size_bytes": 395732,
+      "sha256": "2f00910b881b2462a0c18052f8fd26288d7b5a52e1a5d60a8e6a364616dc316a"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ARMel.corpus.xz",
+      "size_bytes": 132844,
+      "sha256": "164dc27f35a43970d513d6427282105220f38c514d85eeaf00a763159607e57b"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ARMhf.corpus.xz",
+      "size_bytes": 145584,
+      "sha256": "f76cf68e6f8d17a748c195933600438ae2ca5a1654f67d4351b4f4e737703655"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ARcompact.corpus.xz",
+      "size_bytes": 61528,
+      "sha256": "14060508512994886a57808b2fa453fd66aeaf0f741b58043d348fa12f14f167"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/AVR.corpus.xz",
+      "size_bytes": 61616,
+      "sha256": "d7cee33dae4afb86de5461d6c6f6dd396d746010fcff003dc3dd01c8c017e5b0"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Alpha.corpus.xz",
+      "size_bytes": 372048,
+      "sha256": "563827d00fab780a30792fcf5cf48640adcecce0072ed19918d8b3be46e83220"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/AxisCris.corpus.xz",
+      "size_bytes": 30084,
+      "sha256": "35447c16b263c0e0049fd864b738c40adfe08f5064bf909087bd66184e4b5856"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Blackfin.corpus.xz",
+      "size_bytes": 57168,
+      "sha256": "8965bb7e54c38df66c4b0295e0dce7037ad7729f10096ea33262f2967339a9d8"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/CLIPPER.corpus.xz",
+      "size_bytes": 294672,
+      "sha256": "e92950c104ddc91102ebfaf937aa3eb3cdc150fa6d2a3af324b4f1e03a4241fb"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/CUDA.corpus.xz",
+      "size_bytes": 880,
+      "sha256": "b7340ff37b9ac12e7b6b4ae49ea9d231e8de36e5f5374773076cad67ac2269ec"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Cell-SPU.corpus.xz",
+      "size_bytes": 162656,
+      "sha256": "4832f8b5267b44050f7d9fc16349c2e0a830959aeaaf81fcef4b9e7d6ab47db4"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/CompactRISC.corpus.xz",
+      "size_bytes": 28796,
+      "sha256": "971967957615a673074b68d003c6d16172f9f0ed65fd4fd239c62f40860000f9"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Cray.corpus.xz",
+      "size_bytes": 274820,
+      "sha256": "2be0a2ebf653d5b28b6ad0a3d1b4d9b87fe9aed904e856dc46828114d31f9a92"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Epiphany.corpus.xz",
+      "size_bytes": 34212,
+      "sha256": "7755801a1b326c8ef05d02fe6d69840c06e788e242d82e9bf433f3334e6b7070"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/FR-V.corpus.xz",
+      "size_bytes": 62892,
+      "sha256": "ec7d7f68d4f13332862564fe9cfec4c0159a982929db54532cf56f883753bcd9"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/FR30.corpus.xz",
+      "size_bytes": 66812,
+      "sha256": "d68cd061b56eb704fdd685af3151ac7cc6fb7db13296950a9cc6415f5b2076ca"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/FT32.corpus.xz",
+      "size_bytes": 57920,
+      "sha256": "1e85daf09c77237c05d1150c058ec347163c81c2e032ab1dea27968819324e5a"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/H8-300.corpus.xz",
+      "size_bytes": 56436,
+      "sha256": "c34afb79e16c9cf724aa9b227ecb191595baa1142de44388ab98d93224d38e4e"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/H8S.corpus.xz",
+      "size_bytes": 23376,
+      "sha256": "101da4ce1d6944486c4fc20a85d5728de77f6072f3d215f6c2b15967d2a93fb7"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/HP-Focus.corpus.xz",
+      "size_bytes": 102568,
+      "sha256": "54aab97619bdcddbc52d4b567e300f12f2e0e15091e28454dd690a2010a2bc96"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/HP-PA.corpus.xz",
+      "size_bytes": 335056,
+      "sha256": "c3ffa09e2fecbda263a55909f03bad2f402b17327106eb140696e9a4811bdb65"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/IA-64.corpus.xz",
+      "size_bytes": 112048,
+      "sha256": "6e29e75f8059e6df46556a0ee2f1f71a74fe42562cd20daa4b53f85f5a4534c7"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/IQ2000.corpus.xz",
+      "size_bytes": 57308,
+      "sha256": "98c63875d46b5328359c35c80288dba2e1b7a9bcee9d602b0f87e84af18506fc"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/M32C.corpus.xz",
+      "size_bytes": 71924,
+      "sha256": "c3c49f59e3d7607cd8b190d34df96823374c99397332699a524ed88ba49a996c"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/M32R.corpus.xz",
+      "size_bytes": 55204,
+      "sha256": "a3d5400d52aef06989a76d40f4fdfa3d6291990ee299591fadf39783df63c7e8"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/M68k.corpus.xz",
+      "size_bytes": 270980,
+      "sha256": "be5bc56e13dcce0ddfdb1202c6fadc771fbebc6fe026df4148095bd1b8b52b4f"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/M88k.corpus.xz",
+      "size_bytes": 131264,
+      "sha256": "8ef5fb799938251f7d7e4ec5c60397e9d58719fa7a3ebc8d03d3bc88dd18581c"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MCore.corpus.xz",
+      "size_bytes": 56876,
+      "sha256": "c237fe156f3753c9ee12e6ec8b2763e4766a8f2d4f33ded72ef999c310498393"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MIPS16.corpus.xz",
+      "size_bytes": 58116,
+      "sha256": "7cf59d0326471560e9639937c8d9d2c272dc1f73d57c5828c59d5091b1fb027e"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MIPSeb.corpus.xz",
+      "size_bytes": 243888,
+      "sha256": "5a41f6dfef4d16ca973ac8d6ab45579dbbdcf72ff91d62a152589ca98149e611"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MIPSel.corpus.xz",
+      "size_bytes": 155120,
+      "sha256": "3011828ca3887f2ebd6c13cdadbd6987ba421b24818d4c51476c74c2f7e834e4"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MMIX.corpus.xz",
+      "size_bytes": 72404,
+      "sha256": "868a1fbfd3ed3d01890ed0fb6897a243dfd8fe9bc2a0c2254887347e508873e6"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MN10300.corpus.xz",
+      "size_bytes": 59164,
+      "sha256": "13270d91c5f7b0cee161a86daf3dfe8f6e5abb735cc64c96fc28ee4155f987fb"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MSP430.corpus.xz",
+      "size_bytes": 117908,
+      "sha256": "642e68a64a7bfd9e31aa338a752fd8137de936dfdc182b1b8d79f1d3987d7c0d"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Mico32.corpus.xz",
+      "size_bytes": 57168,
+      "sha256": "18553a4fd12b93cedd1aa09702794aedf26c4daf8817c5ba33d66a7cd20e9063"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/MicroBlaze.corpus.xz",
+      "size_bytes": 65344,
+      "sha256": "552053cdf60bf7ecd986d71b2d1fb2bc3f8e18bc6dd59819def9d718fa69761b"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Moxie.corpus.xz",
+      "size_bytes": 59316,
+      "sha256": "f3fbeb7d4ef6a2eb6450cca9b36a532b25e5720d59638557f8bb895088e35a1d"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/NDS32.corpus.xz",
+      "size_bytes": 54776,
+      "sha256": "227b46bb44762a157c0633470ce5a1b9c8d25afbe139275a8c4ff0154af7866b"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/NIOS-II.corpus.xz",
+      "size_bytes": 56924,
+      "sha256": "2d42b21810d1c4fb91a4779bea92280ae6fcde38238838f6f8e4c6e10647af33"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/OCaml.corpus.xz",
+      "size_bytes": 102328,
+      "sha256": "38fda6bc932643f4b6f311b5027dcdd078e4a48b0a1639de34fbdfc35a93c6db"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/PDP-11.corpus.xz",
+      "size_bytes": 59968,
+      "sha256": "2d7ce23d502b99692cf11bcad88584b6741b901d7cf961fd69f59a30336817bc"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/PIC10.corpus.xz",
+      "size_bytes": 748,
+      "sha256": "afec37141da01855b988bf1f83610c6ac0d5859344f721083039f689a6371245"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/PIC16.corpus.xz",
+      "size_bytes": 2252,
+      "sha256": "1f6e0b35a8344ff96db624d17a1b66b0d4e5956a8252ea7ababbd88b8eaf1ad1"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/PIC18.corpus.xz",
+      "size_bytes": 2676,
+      "sha256": "be94f7a27a23883b78a742af41fb939c4c260107bc953da9ae76b4db3cb2b01f"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/PIC24.corpus.xz",
+      "size_bytes": 20280,
+      "sha256": "4fa267d5cc352c2ef97f6dd4c31f9ce8a9c9a08bc21245f4f13a931fe06d3d75"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/PPCeb.corpus.xz",
+      "size_bytes": 148920,
+      "sha256": "9c6338f63669bb4dbcf8424e26e2a9c2a9997e18fb2f6f080be2a0952580222a"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/PPCel.corpus.xz",
+      "size_bytes": 163352,
+      "sha256": "3b4a395a6edb2795544c1e022e39e5b16c2e0d116ae4e0052602a7663ce08b1f"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/RISC-V.corpus.xz",
+      "size_bytes": 33752,
+      "sha256": "59a35efbb893aa8c55c98e9a7e9a71fc14154ff638aee6df307f12998f30bc0e"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/RL78.corpus.xz",
+      "size_bytes": 112112,
+      "sha256": "e8d314db0d8aa4d5dfafef70bab65a85ab459fb2b28d91c97e07f78fc3f39244"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/ROMP.corpus.xz",
+      "size_bytes": 201232,
+      "sha256": "600a8f8f0d9f85c92459f292c7413aae5b1a457dcafe5b9c6081d38a186c3279"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/RX.corpus.xz",
+      "size_bytes": 57116,
+      "sha256": "51b798d14248c8aa7ac251e190769ab92e47a571179d96051521ca687f4ebcc2"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/S-390.corpus.xz",
+      "size_bytes": 159128,
+      "sha256": "4bf6e7e3b92badc3bf4264388aa8fd0e79f018e9d049155c2eaf1a7d5b380ca3"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/SPARC.corpus.xz",
+      "size_bytes": 350044,
+      "sha256": "a50f0ae63de340a9be75bb765749fa93d1ad3e3c399cfc04fd7a56490fe1dbdc"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/STM8.corpus.xz",
+      "size_bytes": 2136,
+      "sha256": "0219556491e67d4f9a016264eb5133b316557902f40d4efd3c200c4b5d22dde5"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Stormy16.corpus.xz",
+      "size_bytes": 67248,
+      "sha256": "29aed55d373a0a14200f620eab1efde62d20fae0d0c32e9817aeb646ef15825b"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/SuperH.corpus.xz",
+      "size_bytes": 540868,
+      "sha256": "260fd2c95b093e2ac93393c291b5b62cf337308af488975705b4c687ff091495"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/TILEPro.corpus.xz",
+      "size_bytes": 40304,
+      "sha256": "003f42fdf31480003f6483933390900d2b400e2f25b95a23c537112a3f7b779a"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/TLCS-90.corpus.xz",
+      "size_bytes": 5320,
+      "sha256": "ba499e579627e53e0b934b5fc0cbbb5cc88227912458630cccf2b69a3965d698"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/TMS320C2x.corpus.xz",
+      "size_bytes": 2824,
+      "sha256": "79c134e09f96ca3b0c1c3247b681add645cda19daf455aa3235bcfc05deda3f6"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/TMS320C6x.corpus.xz",
+      "size_bytes": 51976,
+      "sha256": "3a68970295cd7acaeed1562226cecb9d0df6c653ee6853f2f95ca46b575c4676"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/TriMedia.corpus.xz",
+      "size_bytes": 229040,
+      "sha256": "5fd6a09c6232fb19490a0982ec60b15257d306b893eb4ba5ef00dee84e219e63"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/V850.corpus.xz",
+      "size_bytes": 62048,
+      "sha256": "f915bfef5bff66bef3d9d0d7e84ffec133bc2dd3c99f78e335f45d1ea6a42492"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/VAX.corpus.xz",
+      "size_bytes": 146120,
+      "sha256": "64f634b38a1e1e8a0a85c3a2747e644bd15eb1a5ec77e2c5ee0c5a05a36b5eaf"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Visium.corpus.xz",
+      "size_bytes": 76052,
+      "sha256": "79a56955d44f313c3ff68c5fca525df1b28c8957592ba27a1bb2b1898ff8892c"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/WASM.corpus.xz",
+      "size_bytes": 5048,
+      "sha256": "df4e3a6fd259393e8823a3cefc7c789d158e480d71e88a9dc7bf2d43a11d130f"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/WE32000.corpus.xz",
+      "size_bytes": 112896,
+      "sha256": "52618e32f2e24a64ddd67a84497ecca57e4a7dd11c0c6d8fb05c91da721a2592"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/X86-64.corpus.xz",
+      "size_bytes": 167968,
+      "sha256": "08467c27a30355243b52ec96e414c582db80a521e0e07ba436ff237622a14c16"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/X86.corpus.xz",
+      "size_bytes": 172836,
+      "sha256": "6cda2840e629a02e6a5f4b0a7e3841776dd02207043b815b7234604ffed52621"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Xtensa.corpus.xz",
+      "size_bytes": 62892,
+      "sha256": "337fa9c7dec04ac6edecf40a15b119e9bd0cf4d63a334bfd5d8f075121a09a9a"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/Z80.corpus.xz",
+      "size_bytes": 4976,
+      "sha256": "1bf1551ba47223bc3e4c4cbb25dda8742fbabddbeac29f555d37191a6eb03417"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/_mask1.corpus.xz",
+      "size_bytes": 212,
+      "sha256": "fd61bcd545f24248d9c823effb1ea0283bd9fe58a0e6d8d2bc70240065d80e36"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/_ones.corpus.xz",
+      "size_bytes": 208,
+      "sha256": "d86669f0b17a8db2a9c9aff3f2f26d9248ac97cd7dc1ca9d61d33363506d0e92"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/_words.corpus.xz",
+      "size_bytes": 108884,
+      "sha256": "570d3bfa562401b51b6c7745eda7a7899f59faf5f620de299c62163a5441b944"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/_words_ucs2.corpus.xz",
+      "size_bytes": 112040,
+      "sha256": "5aef4f28aa7c1e7f4fb2ec2022e6b7df9280161545ecc447a9ad9f97762ba08b"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/_zero.corpus.xz",
+      "size_bytes": 208,
+      "sha256": "5f3ca38e44c1052ccc263671d42ef6fee5d8185a43cf98438046d2de1c7ccf27"
+    },
+    {
+      "path": "EPS_research/tools/Strings/cpu_rec_corpus/i860.corpus.xz",
+      "size_bytes": 210376,
+      "sha256": "b20632095f5669be12273a54825c46bfd4918809f0ec834214b5a8bee3864c97"
+    },
+    {
+      "path": "EPS_research/tools/Strings/strings.exe",
+      "size_bytes": 370056,
+      "sha256": "a7553d77edca85bec980e38e69bf0e9f36962f20be0ee759e9a96030d519c5a0"
+    },
+    {
+      "path": "EPS_research/tools/Strings/strings.txt",
+      "size_bytes": 86690,
+      "sha256": "240575f2771100822b3b43862d59364cc346f85eb883b556b701ad4296ce5b7c"
+    },
+    {
+      "path": "EPS_research/tools/Strings/strings64.exe",
+      "size_bytes": 478088,
+      "sha256": "05dbb43499bcff44424c7ac2d987ea9e9742cd90afe360e84ba0bccade17f71b"
+    },
+    {
+      "path": "EPS_research/tools/Strings/strings64a.exe",
+      "size_bytes": 525704,
+      "sha256": "128ddf146edb4c72b48588a57f5fdc4528b870ba0fb2b99bce500452ae436912"
+    },
+    {
+      "path": "EPS_research/tools/Strings.zip",
+      "size_bytes": 547485,
+      "sha256": "b1a0a3dc5f639af1c98ae5832676727646eb3d543640e65e310dff747e733a25"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/021906018AA_6763.sgo",
+      "size_bytes": 445762,
+      "sha256": "31707fd4f02db99799e9b0bdb1e699055169b4b8863ee3302066f1ef4b634d55"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/seat freetrack 2011.xml",
+      "size_bytes": 3202,
+      "sha256": "8126654cce983e648b8a9903f56f6a18667f233b227d051e892059c8b8e5b3e1"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda octavia 2011 china.xml",
+      "size_bytes": 3232,
+      "sha256": "92c20aa82bca9f59a103a37f7be1b591797e6c51b6e3095ca87cda4525d007ad"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda octavia 2011.xml",
+      "size_bytes": 3380,
+      "sha256": "4a76369987712efbc874ec47f10f7c7aba5fb8e65fd4f2133702ae242242976b"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda octavia rs 2011.xml",
+      "size_bytes": 3494,
+      "sha256": "e706ff6d39f188db46461ccd21c1c2e87e37928af3e23f8b5d427af68a79a444"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda octavia scout 2011.xml",
+      "size_bytes": 3314,
+      "sha256": "ce5b0f69cada81f7f00c1550c58727137afaff278524f6eebc7c1351a0626a63"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda superb 2010.xml",
+      "size_bytes": 3461,
+      "sha256": "76fda5916ee7567fdedcb168c72d8f9d291191d4926694fb1bdf69c227c104fd"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda superb 2014.xml",
+      "size_bytes": 3293,
+      "sha256": "422a73ca804d3af2fe08fb61bb2c78a4b2bc58b20921c666bc719d07599d16ea"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda superb combi 2013.xml",
+      "size_bytes": 3453,
+      "sha256": "3374667a1915627c06bd5e04e58bd4196d201d28903a1e7466a59a7feb4c9310"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda yeti 2009.xml",
+      "size_bytes": 3275,
+      "sha256": "8b99426b74fd4a6fe5b4c668dc500628bb5631318088ef3b0c46e7cdec26527b"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda yeti 2011.xml",
+      "size_bytes": 3305,
+      "sha256": "0152381c5d5932e0f59b99dd44d61bad2b7ff574066966340de47706b48df15d"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda yeti 2012.xml",
+      "size_bytes": 3366,
+      "sha256": "6f2bec763141f1e532d5c6a8cbe97dbfa647507a921b0f9936717dbee5a54716"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda yeti 2014 halogen.xml",
+      "size_bytes": 3405,
+      "sha256": "56d28e11840662117c01e16846c81abbd20fc3a775948e71c8af31cbd7a1bd43"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda yeti 2014 led xenon.xml",
+      "size_bytes": 3626,
+      "sha256": "b356fb0d3b0b961ddd35abb577d7d08e67a954c09b6018d63f0c1dcf3a32031f"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/skoda yeti 2014 led.xml",
+      "size_bytes": 3402,
+      "sha256": "fb7b9e76e219ad60aa03642dbd3b64b94bc786a730725910b13c0263d3a84aa4"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw golf 6 2010 america.xml",
+      "size_bytes": 3145,
+      "sha256": "834d80e413afe727d5f1b0df911c73e1f00d1ca1a9bebc90be0d981f9f9cb73b"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw golf 6 2010 halogen.xml",
+      "size_bytes": 3106,
+      "sha256": "3d617acd8059c4331e733a2a186258dc0f430c104b76b662af7ea65a50baacbe"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw golf 6 2010 xenon.xml",
+      "size_bytes": 3288,
+      "sha256": "45021e1678b59ef45d8a0fb2f6b479988f4330f2da942447b98f1f7e88acadf3"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw golf gti 2010.xml",
+      "size_bytes": 3365,
+      "sha256": "8878d407cb99ac1250bf22fe7a92ce685a28de00258819923bf37fc923c82ec2"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw jetta 2013.xml",
+      "size_bytes": 3076,
+      "sha256": "54890838f9bc95e49bb875dafe09773190ce0aaa1240c0d2ad5084e50bacb2f8"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw passat b7 2010 halogen.xml",
+      "size_bytes": 3228,
+      "sha256": "8e4c285f1475b4ac60a2246bebab4ad92a919dd12ff4f60461b6ffd020c89b96"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw passat b7 2011 led.xml",
+      "size_bytes": 3249,
+      "sha256": "31cf1fa9b17d8192f5a911792c11ab9dda23b70b5f5391b51637f4ff7bd13863"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw passat cc 2010.xml",
+      "size_bytes": 3186,
+      "sha256": "ce6e056e0d442969310167cb47eb3df05593781955ef5a6e7775fefcacc89c75"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw passat cc 2011.xml",
+      "size_bytes": 3188,
+      "sha256": "1ac7a8e95b7987c6de4b8f5ceb31fc89eb664b3a897dd987bf8e97d4eea35106"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw scirocco 2011.xml",
+      "size_bytes": 3406,
+      "sha256": "1dd1028970d635551f864c81c87073c4a39afa771272b0c77df778e30465fa34"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw tiguan 2009.xml",
+      "size_bytes": 3312,
+      "sha256": "bd77bd0e8021ba824cdd40f1ef470b5ce6ee04c55f223375082221832932edd8"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw tiguan 2010.xml",
+      "size_bytes": 3312,
+      "sha256": "9cdba7cb1002e14c424752686253118fcc6f8a00e24f490acf1cb3e41651c2ad"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw tiguan gp 2010.xml",
+      "size_bytes": 3341,
+      "sha256": "a7b6e95208531e7460583c6e9c34a43037c5e3b6b51e6cfafcd75b523070f416"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw tiguan r-line 2010.xml",
+      "size_bytes": 3438,
+      "sha256": "2cd4cb07a28bd5e7d089fe3e33238a039aba95d92c7d7aeb2bbd75cdaf68373b"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/LightSchemes/Defaults/vw touran 2014.xml",
+      "size_bytes": 2476,
+      "sha256": "35c5010ed7c652a630f3973dd0397e4192947949262290c018f35d4e47201887"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074B3335N1___Lenkung_Passat_RLine.sgo",
+      "size_bytes": 3548,
+      "sha256": "d272e2983eb3b1f739f638ac5594f8fa82ef4899765c187a7e7ced9df6ff71b5"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074B3365N1___Lenkung.sgo",
+      "size_bytes": 3548,
+      "sha256": "0eab2329faf654c688a2432a05907499c14dfe1be95fa7c9d947960f3d116228"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074B3375N1___Lenkung_Passat_B7_\u00ef\u00d1\u00fa\u00ac\u00e1\u2229.sgo",
+      "size_bytes": 3548,
+      "sha256": "02e920fa9c92d99dc3e5b11fb93ea43b20312a772105cccb958de8ba047815cf"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074B3755N1___Lenkung_Audi_Q3_RS.sgo",
+      "size_bytes": 3548,
+      "sha256": "5e215a41ffd95cec6bc2765e026c2fc8b9a24aba0e708d5cf775933ce544c8c9"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0511K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "855299c18ef932de67b79bb326ebb88748d73aa4cade4f9f887642f5d62f3bb5"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0651K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "39072a7fd771daf0d409e3bcff473bc531327be223a8451c150e66a871a02442"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0671K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "a87d433910128ed033ea8663ba8c69086f4d7f88bf0b4dd7a8cba24ccd32dbf3"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0681K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "973d8d6cf06ad2116b0f1cd23a221dca73cb3f3a8eb51966360ec72d445ae8d7"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0691K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "2f88fc540e7525b6236f0b0e87487eca225319756ca0517c1535ce3385969703"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0701K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "e0a0da25a2da9d0dfd0b479aa296ff5cdb4fb0b9e831d265a049524317354654"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0711K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "6aeb5b954527852c05c0bab8009098ba23b499de1095b573c3622a8142475aa6"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0741K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "4b73ae147ad08e1d49497c29657c6ae523df081f9e50d5022e560706843ce31c"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N0771K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "d352502fe6513f8de4a540e8435868eda9687f130a1871d0f593a3a6c815f307"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1401K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "267a26c4c492d7bc84891b8c7bf82cf2616af6d6f78e8e346e0ba230c6e6f5bf"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1411K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "325eef8ee8c525b90368333029a89b57eee905e77535aff60267b472e29a96b8"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1421K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "c12019f10e08f932952d89cd29c928cb73c1597b71924b6f3d5516803ee0074d"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1431K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "119d805fbc12c5e734f3d4fff0a6c6881b30e394443593161b5501e47d2dcbb0"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1541K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "eab3e6ce1fe409e7b9b74d0e366362f7d54396529782fe749983a6846d309fc5"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1558J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "d9ed72dd401f8ec2e4ad8358781fbad45332e952dbfb876e35f9c0fa24cc0167"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1568J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "708aab45ce278a4504b6f7118ae2cbef39665ce68876e9fd92252d6007e8046f"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1591K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "b5f346746805fa4f63956419e518684687149b5835eebc3d46dca6155d5b22e8"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1678J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "dbd33c9f54882cda62054d8a47dc0774e59936a151f24c61666aed5c706bfd78"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1691K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "a83f48c77c88f043637cf7f5ec0516daf9b02f3c0697ca8ea20fae8ed2900ef7"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1721K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "dc553c0b0c557eabf43478286320dad55c271c12a14141a57aa1e24683b3b162"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1751K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "a2bef8d15b02a84ffacf07661c346542db95e98e13f6673995e501c17ac552ec"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1781K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "985a1d160e626e99fca38516b3dc5a938fbcc1d21d7fe3ad88e870688e09530e"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1811K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "ffcb4894b96b8cf10ee3c2f85bed2db517066044b42eb94389254e4f4646b804"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1841K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "fd61bf7b86ec6fb51713cf26c9c3bbe26862fb21a582dd05bd21d015229a4444"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1871K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "a1dcb1c39ade4529472ad80391bbdf3dd922658e8c28fc1f141e6075d23757c5"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1901K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "7b2939132de2fad18fa6354a29c5b617373d2dd26e618d647ee8e77f7ca30899"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1931K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "3dbbadccc84454ee83b3af2ca93655b220e7098651e2ab6fb100a5a9b88e9a0c"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1941K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "e0491894e906d287611e9c2ce12aec4da3eea7e986be13857ebc1f248625982b"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1951K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "5ad76d9f35ec49731e82305372b2f0f1bf0602b641240439fffa9ddeebbbd1ca"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1961K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "543439ce4b23f53e8de3eec6a27a1adf8f388b862fce86da211c2ee679499a7e"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1971K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "4259215c77c571296cec7f5bd891ee0a2711fe48c925868f48c15237f97f56a1"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1981K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "e694e930b4690acdfb205646028a9515a9dba8673698d61951a86ea9ff1febc1"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N1991K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "c1496152b076dcfcb68f375ae2d39051f2c927b79eda8b85c8b0a77263848a8f"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2005N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "f82865536ea43ed12992b28b513b5491669ee19a4f779d7cc3a9ba2708e41cbf"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2015N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "f6f84d70a6ac3c649487336f31dc84fd3ae0ebee5aca8bbf1ba4f54680429805"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2025N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "e813cee334718d35fda2c7e6e5b6ee8de79eaeb230c0c363e1f061081ee2d946"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2035N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "d62f894fd8173d927434a40292357b3d925dd716c19bc4e8688fd56e5341ab31"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2045N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "9a9dec12a05890460fb21eeb081efc660b2b852c8db555e3fb70267c1301eea0"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2051K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "c827eef530aedacf5d40a1d8c6adcf78215c42e42930663fa00d2b4455e7085c"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2071K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "137f53fe28c40d599d1f1682c4ab23b21a7765be810aea962b70d3c5863e8863"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2091K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "b397bb5aaa3cef1b03f97f54a340e228c05485fb2d81fe8b6caaad9169260076"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2111K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "645c0ccda1c8c50b1c3dd9345d35f11699ec276924946f3d216b881258876e18"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2131K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "397df066e5f291e4831dedfee724ecb956895638bd92107bcc0a81406a898148"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2151K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "f1ffb95a7b547bf4d01dac96c991d0454a2620c24c074acf780266f44c5d4011"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2185N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "d46fcd444b716182685d3c03867bddef43ba0ad490df1695f1d7d897da74b63a"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2215N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "dab3c60cd94bbe48a028be256741605e550e865114c46bb6149262e3eac71c30"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2245N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "4cfb842edbb7ddf8761989e76815b4a589a303fe725372c0bfc6f590b9a89fd4"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2275N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "611feaa5295b858773a0262fb5590c47a9fbb24c63b550a723793746093416de"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2305N0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "15bf36884528a2dbfe7b41163cc6cc80b84ab71c1258c49a499f8c51f7b0bee5"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2321K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "ee3e0e2b8f405b72520c94a7fb75a5182e92ce106499dd096cc62a4afb427814"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2331K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "25f53adaa54663f1dd1b3eced24ae7ced2cbb293ebe76554c448e2ad75135497"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2341K0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "c5d45aefb1367e08c2bf0b7df2aceb48bbcbf5b0b734cffebea2646772b36fbb"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2358J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "38c92732b0a200fa19cf0633d21fd851a38595ff08ffdbcc0c035d6a2f2bfe9e"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2368J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "88f34e835314330580cf0b2943840ff198071f313cd9f51f3f4fbd2c551b5313"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2378J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "7270cfa9042f8f0bf6cbc7d6937949ec7f6588d6ce29a26bfe83f1d21610bfea"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2388J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "6b1b51b6ef9fcbda6fa0bb1ac752c333a6b863725e5f28ec54004c5331e9fef9"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2398J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "9b0d0567c907b70c69b89a044e46e260760808aaff7ee7a1c6201ea74c53139a"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2408J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "c46981a03a5de710aab08688068ffeb397e2e288da9d60b479dc46d04b8eae26"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2418J0___Lenkung_Reibung.sgo",
+      "size_bytes": 4589,
+      "sha256": "f7bf9705db449bf22ae84483a32be21b36195f742ca930ce22fc3cb97e428071"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2431K0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "40ba43a5ddfca80304f2d0233677323819479ff1258e5fb56ce65763481b1ed4"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2511K0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "969bf9f586cb0f3fea0ce3ce48fc2f716fc925fca6a0cdfd1f1e04f52bdc63a1"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2547N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "7ef3a17cba5847c55272edf84c26ac19443fed8e9026be28f941b2fc38828f86"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2577N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "7c739c4c928673b60dc41e8c2e81277cdc0a226d47cec29ebe4989faf721e186"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2607N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "70d821671c51e5675ad75c39e38aa6da40f403e26108ca5e572213cbe275b75e"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2637N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "64d6b389380956f99adf475cfca5bf5b5c6c8009198a6375bfa884213dd4d949"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2667N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "ac7dd56f859bfe39498c3574be9828080ae793974888d90bc3785546644e9268"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2697N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "e8cb58578b65de57cf367dd82fbbde4d0119a31f29aa36cdc50f6325422e8fd9"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2727N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "dc0ce52b8e0d0cb766d0b630490fb6cf14cab08ef2137e7a6c4fc42fb84200a6"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2757N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "dd6b5221084dc7b6ec2250346b83a958ef4bb5c7c41b1f383a6b34072cdadf09"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2787N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "fafee3ce3cc6ebb747f116abeec0f102a129db28a657e4c4463c51fabb74e7f1"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2817N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "4c128450e6141722a305a88268bc87defbf04531aa288064c7ca9082e5d94016"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2831K0_Mobi_pq35_3201.sgo",
+      "size_bytes": 8818,
+      "sha256": "f33921ef48179fb55891ec05f7dd1d6dcae534f7b1e62d94656da4ac93b95c43"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2831K0_Mobi_pq35_3301.sgo",
+      "size_bytes": 8818,
+      "sha256": "3fd9a27c158a944e25b69608b8838eaeabe8bbbdac92f7227b5eea248c2d30db"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2831K0_Mobi_pq35_3305.sgo",
+      "size_bytes": 8818,
+      "sha256": "5a8a603fa1017d591804cf8b104492eb7f60e5c798bebdc4ab8a138dc538ddee"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2831K0_Mobi_pq35_3501.sgo",
+      "size_bytes": 8818,
+      "sha256": "967573e6d5b8c0ac4a03ee4ad436e5a0e25957837a9509c551b4d9d938de7aab"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2835N0_Mobi_vw416_3201.sgo",
+      "size_bytes": 8818,
+      "sha256": "fe70cb93330bcde044338998382f0f3effb8355d1ce2b72b9c48a48825731ee1"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2835N0_Mobi_vw416_3301.sgo",
+      "size_bytes": 8818,
+      "sha256": "827b36f3c0e66e101150c670f008c733b6bd6ff92c367f2c4c9bc91d2d398325"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2835N0_Mobi_vw416_3501.sgo",
+      "size_bytes": 8818,
+      "sha256": "69151388843a83da5f911d791bd8b232dcdd639836c2b6657d9d6ed515e74cac"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2837N0_Mobi_sharan_3201.sgo",
+      "size_bytes": 8818,
+      "sha256": "bed4c88271865e84b5e3c5692fe9c779cdae611ef975c79bd7634834be29d804"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2837N0_Mobi_sharan_3301.sgo",
+      "size_bytes": 8818,
+      "sha256": "2b816cccf721fadcf45c4746d08a6d8c3d8a790e8656eff29fe758ce2d36cf69"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2837N0_Mobi_sharan_3501.sgo",
+      "size_bytes": 8818,
+      "sha256": "0e0fb83b802f30d14c51b7a007eab672162aafb5f62fe7295ca7f47ff3bed918"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2881K0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "48943ba2317d2ac7a81d892bda43f6c122d299394b64a74d15a875d3c71aa82e"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2901K0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "612545c597ab168005c620fea6c5dda520850fe3a2b740d4342b4c1e2a6cad44"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2935N0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "b06ec12db99562e592069736ef4444586000948b8a4b4661b28207d925648952"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2965N0___Lenkung_3305.sgo",
+      "size_bytes": 8818,
+      "sha256": "c0ec18c7bd55c42d1bc4ee18dca556c5ae945c930c962fa98186a4f810c2eec9"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2965N0___Lenkung_3501.sgo",
+      "size_bytes": 8818,
+      "sha256": "07cac324ff2fe8fc138d99fe900acee4ece3c3bc8b9b9166793e13c3203098dd"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N2995N0___Lenkung_3501.sgo",
+      "size_bytes": 8818,
+      "sha256": "b573a4f7215b64672331500ff1f6f5829d26784587bb31f12a3918c6dff3b1cf"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N3025N0___Lenkung_3501.sgo",
+      "size_bytes": 8818,
+      "sha256": "0a25e0408f0fab98a4785c5d8037a2e224c8eaacc71fdca551acfef6978a657d"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/Data/Steering/v074N3091K0___Lenkung.sgo",
+      "size_bytes": 4589,
+      "sha256": "89b9ae18bd3ebaca36534c3872aba90272e924f1bf492b652fd90593bb1225dd"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/VAGHelper.exe",
+      "size_bytes": 931840,
+      "sha256": "6848a1a3170b9b1c3fa31483c09bf17ac4390f798b98abbf0df6c108760b6eba"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/VAGHelper.exe.config",
+      "size_bytes": 1569,
+      "sha256": "7d4c51639eca68d2e6c1f7b99233a8cab533bc2584dd816f038218f0a516f1c3"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/VAGHelper.pdb",
+      "size_bytes": 439808,
+      "sha256": "c4cd7c52c557d25b302aa9dbab183679be8f0f44ecc10306cd19b3b9da98bc65"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/VAGHelper.vshost.exe",
+      "size_bytes": 22688,
+      "sha256": "cc0d4c85639dd5e8d68c4b356c9dcf9c501bae0190a08376bced2bcc85e2cf79"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/VAGHelper.vshost.exe.config",
+      "size_bytes": 1569,
+      "sha256": "7d4c51639eca68d2e6c1f7b99233a8cab533bc2584dd816f038218f0a516f1c3"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/VAGHelper.vshost.exe.manifest",
+      "size_bytes": 3869,
+      "sha256": "fd885b6fc7e491586ef06251bb128e5a9a1186efed067b34ca577f452e8daa6a"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/VAGHelper.xml",
+      "size_bytes": 59020,
+      "sha256": "37535297266dc14566140b7438ff72b640e23fc4b5fcaf3a34d3131bd60c3bbb"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7/ru/VAGHelper.resources.dll",
+      "size_bytes": 229376,
+      "sha256": "451b98039f4ac0c53f3960e74661a3da45448680175395dd5b95f2f958f614b8"
+    },
+    {
+      "path": "EPS_research/tools/VAGHelper.X_2.0.0.7.zip",
+      "size_bytes": 520965,
+      "sha256": "d49b856a1d2854292203c330eb320f898fbfe7417e15404b0dd6a279586b8ef9"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/AppInfo/appicon.ico",
+      "size_bytes": 360518,
+      "sha256": "72e75b6e6c8e494fdb016453e66111aefe598811efa87acb1ab682b8ebb64c8d"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/AppInfo/appicon_128.png",
+      "size_bytes": 9992,
+      "sha256": "a376c1a6884528967c8ad5e6f1f7ad5ea1021a10e361c1885f12a4fdb967cc22"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/AppInfo/appicon_16.png",
+      "size_bytes": 473,
+      "sha256": "a7d773dae2b2eb9c92b1ffd1d5094dc8affe95d50054d67027433eb8a3997088"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/AppInfo/appicon_32.png",
+      "size_bytes": 669,
+      "sha256": "eb89426ba1a7670f9f2d0bd295d447f87d6283da7c5d65fa3f6714b711fdf2d8"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/AppInfo/appinfo.ini",
+      "size_bytes": 352,
+      "sha256": "8c8ae51aaccd60a4da8e56acb460acee636a99f73edd8328a07e2a6236a67e4a"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Boot Sector FAT.tpl",
+      "size_bytes": 1217,
+      "sha256": "4b16a526faecee899f97547a2fe05b7513de6a6c4f807c9f6623c94ec4d2c5ec"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Boot Sector FAT32.tpl",
+      "size_bytes": 1441,
+      "sha256": "6a7df566070f7ce6d1778c9932b231e2916ae7e7f26eb009378b6a8db9d169a8"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Boot Sector NTFS.tpl",
+      "size_bytes": 1637,
+      "sha256": "c221d32e6360dffe0272ddf5411c853ce7f056cce10e955ab589afc2fcd784fc"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Case Report Classic.css",
+      "size_bytes": 261,
+      "sha256": "48a1c3840d02a7c367cfdb98f9f807dd49c198add30bb9c88933ab145a8ca7cc"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Case Report.css",
+      "size_bytes": 6540,
+      "sha256": "12df01f25b96a5118f6c4b98836a90e5b20235d581688fdb0a571f3d003fe5a7"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Chinese.dat",
+      "size_bytes": 21504,
+      "sha256": "bf96bcd2180b7d5f1c5c50d1f3d146160b8a1ad642c0049c8cf283ec5bf1a172"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Chinese.txt",
+      "size_bytes": 54112,
+      "sha256": "10edbffa853b695584b140a9e12e8ddaea0b55918c542d08401e1a0e0f679605"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Conditional Coloring.cfg",
+      "size_bytes": 230,
+      "sha256": "1609098eec91b4eabecc591243e621c7e778d563f7a17f0e7d0b758bef4f1ad2"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Dokan.exe",
+      "size_bytes": 674592,
+      "sha256": "3d676ce6e3a12c14f275b03f64d73d49463a0ff946a5f661b603559025e71a84"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Ext Directory Entry.tpl",
+      "size_bytes": 586,
+      "sha256": "2b23038af1df80b7f404ae0c3e03dfa3dece95185ee1275d1be7e5533fa60a42"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Ext Group Descriptor.tpl",
+      "size_bytes": 592,
+      "sha256": "1705edf4117c3c3dfbae8f76d268437ec27ff8ad2ac7fc4dd4c8616fbb7825e1"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Ext Inode.tpl",
+      "size_bytes": 1385,
+      "sha256": "3bf09a19e830f142ad19525479ee25a1595d1343fc45368975a1435ea9885cba"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Ext Superblock.tpl",
+      "size_bytes": 3329,
+      "sha256": "4706b2def17ed1e91e559aa920998fc461a7d3bfc7c37707f04636f2798ca056"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Ext4 Inode.tpl",
+      "size_bytes": 2099,
+      "sha256": "70b5887f078ab832423969c64ae32df2fae7da295001792cdaa530f9e9221a05"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/FAT Directory Entry.tpl",
+      "size_bytes": 912,
+      "sha256": "832039763cb2e837cd48f24b9a44c6a928702a472c77d4ca847f140c2cd83c84"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/FAT LFN Entry.tpl",
+      "size_bytes": 711,
+      "sha256": "4b36dc865d28928f030b5ef58139f5ae61212821a283a5147c5fa6ec1683d5a4"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/File Type Signatures Search.txt",
+      "size_bytes": 25129,
+      "sha256": "320571a21414de242ab084c0cdc3f17e4fb6ecbd23982ce81c94b9b12d444a43"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/GUID Partition Table.tpl",
+      "size_bytes": 1600,
+      "sha256": "997d492ee269c23576037bec2fcec0df71a464c51ee5e851e565de24afda50a9"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/HFS+ Volume Header.tpl",
+      "size_bytes": 1979,
+      "sha256": "8cd31e3896894153574b810172e6d88a5d6f035baa83a31a0d798b5cb94043dc"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Jump List Names.txt",
+      "size_bytes": 23461,
+      "sha256": "17986434f2aff99fb8cb255e34d925cf752be9bb4e3de078481d3be60110c15d"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Master Boot Record.tpl",
+      "size_bytes": 1051,
+      "sha256": "92d1f63048c0518b04a7e417d9a6218a9e08643490938bb0034b706d6fd55dea"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/NTFS FILE Record.tpl",
+      "size_bytes": 2236,
+      "sha256": "6ecf91001a559202201f8ba1f59fe39140772e5b3c0f7db500ef9240549a4f21"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/PVicCat.txt",
+      "size_bytes": 450,
+      "sha256": "30f0ad314867c42012e38fecb3a4d8d13cf245de7b66640a20fdf2209f37c580"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Phone Alias Table.txt",
+      "size_bytes": 254943,
+      "sha256": "94a527d043f6d247ec8f6956c8851b697684b64ef7d73e53aaa9bfb101a7c8ba"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Russian.txt",
+      "size_bytes": 143438,
+      "sha256": "0db181600511dbcfc02467545bc4e021e87e3f7cd641c00e86aeb3f1081e57ea"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Sample script.whs",
+      "size_bytes": 2051,
+      "sha256": "7ff8c33efcb86d159bc0c596256463cd825c61ecde3242d4372a0df2f52761af"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Text file conversion UNIX - Windows.whs",
+      "size_bytes": 267,
+      "sha256": "df97e3931040e814981ce5df601cd6c8e717c7dbbfd2de852a9fc61ecdc48df0"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Text file conversion Windows - UNIX.whs",
+      "size_bytes": 267,
+      "sha256": "69ad006980223c3b5200fbe2e72763b7b198a95b1bfaf7d62c969f4585319942"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/Video Signatures.txt",
+      "size_bytes": 16486,
+      "sha256": "46dd4cdefcac0da2e5e24e78a9518961965dae5eb4b9ee70e772b0f0621a2414"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/WinHex64.exe",
+      "size_bytes": 3827512,
+      "sha256": "23c299065ba621ad4953338f6beab4209ecd523ad19d6e832d45f141c4bdbf0f"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/language.dat",
+      "size_bytes": 404529,
+      "sha256": "f96a0f8788fb4fe5bd93e9db909bb91808afdd0b55ee1160a33a0b86ad2c1b9e"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/main.log",
+      "size_bytes": 36961,
+      "sha256": "4471f1e26c23ce7483aece7f5477cfb7ef831bed749b8012ea8fb5492001628f"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/timezone.dat",
+      "size_bytes": 4864,
+      "sha256": "8bc05b3f5652cce6ca30da7bc146ca193fef76cbd4fd83ebc6935145773b221d"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/user.txt",
+      "size_bytes": 216,
+      "sha256": "cb6bb0c14ab8362e3f5c9eb8df76724f67a3c7fdd5c0608eb9e04972fdbfb5cd"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/winhex-d.chm",
+      "size_bytes": 765547,
+      "sha256": "816b0745369778401bee3f000ac7aca246c1e415d4deb91a08ad9c34feedbd85"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/winhex.chm",
+      "size_bytes": 635295,
+      "sha256": "bf50935ee65ab3c14ce32ff20fa8b814d47b8d76521a9388b206bf7815051ac0"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/winhex.exe",
+      "size_bytes": 2792248,
+      "sha256": "41c5bdd7a97092a0470510a7e87ab10ba016ae8d8c69bdbd4a31605e35d38520"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/x64/hash2.dll",
+      "size_bytes": 198656,
+      "sha256": "2c31e7aacba30ad7113e2a66fe0966e4bf66026bd39e782fbe5e66dcf3dd7e3a"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/x64/zlib1.dll",
+      "size_bytes": 140288,
+      "sha256": "7c4ee77a9f24225d313c9837e0f973072168ab3ddfa2aad546110923f4eff8b3"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/App/WinHex/zlib1.dll",
+      "size_bytes": 100352,
+      "sha256": "6fee3797819384b70bddc8868c2b8a1112900206a21ae8b85588f62bb41b82e1"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/Data/settings/Recently Opened.dat",
+      "size_bytes": 8896,
+      "sha256": "9769d4ead3a3c5e8d70204fedd87c97250d628e3a78064859fe24b12ef0c440a"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/Data/settings/WinHexPortableSettings.ini",
+      "size_bytes": 381,
+      "sha256": "4ce296b405606a3cddd8d359e6c5095c021691f6e2b33c780e8ab1d4fdb9e356"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/WinHexPortable.exe",
+      "size_bytes": 530997,
+      "sha256": "7a3a26db4965ab2f545c46efc86e561aefb381ab6ac7a155d97d49b36127cf53"
+    },
+    {
+      "path": "EPS_research/tools/WinHex 20.4 Specialist Portable/\u00a9danielo11.txt",
+      "size_bytes": 39,
+      "sha256": "7d37b13eeda0c57b594c33509198d01f8882edde33032b0ed0375b925f02e6f5"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/LICENCE",
+      "size_bytes": 11357,
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/README.md",
+      "size_bytes": 16131,
+      "sha256": "f115b4e103899d51c32fa66df33ff3463f2fb78d40e3b9a085d4c9cd144b710d"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec.c",
+      "size_bytes": 3565,
+      "sha256": "025999c0733c52eb2994aa586fe1289a20bc91d2d7a0a30e55c7d1157f9a1fe0"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec.py",
+      "size_bytes": 47027,
+      "sha256": "d41d9eddd4f33bf06b18de87d05fabf53d8b16de8bbe5bc8404dafa76eecfdba"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/#6502#cc65.corpus.xz",
+      "size_bytes": 5004,
+      "sha256": "82ed5f7495f8b6f3ab6337c8be9e9ed367a65252db2a0a24edb26508af0f69f9"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/6502.corpus.xz",
+      "size_bytes": 796,
+      "sha256": "b9837866ff38429e57109d980b6654f6962d29de257ce50e29dea100b107ec13"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/68HC08.corpus.xz",
+      "size_bytes": 5048,
+      "sha256": "63aa441ffeeb8bba377dd3725cfbbff4ade1e4470fb89ae8f02ec50b1c779b18"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/68HC11.corpus.xz",
+      "size_bytes": 5456,
+      "sha256": "98450ab4c7327ec85407506840cf2fd0f6e4975cc198bb01a092191545655ba2"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/8051.corpus.xz",
+      "size_bytes": 6248,
+      "sha256": "33234fa98b2369ffccc1cdc1384f5bc64eb9d351fafe3589d216710e91f521cc"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ARC32eb.corpus.xz",
+      "size_bytes": 12224,
+      "sha256": "df7ee588fe73da11beb1bf35101af795e8bfa63ef89a507c9d09d3f975e54873"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ARC32el.corpus.xz",
+      "size_bytes": 12328,
+      "sha256": "04f98385149b94d7e2f913f1d367533aad1cb0a8b8f6f7d44c871be072c135cc"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ARM64.corpus.xz",
+      "size_bytes": 145164,
+      "sha256": "ff3336a8db655ee692d908748f8034ba1fb13c56ec463ec77dbcdb1505a7bdf4"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ARMeb.corpus.xz",
+      "size_bytes": 395732,
+      "sha256": "2f00910b881b2462a0c18052f8fd26288d7b5a52e1a5d60a8e6a364616dc316a"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ARMel.corpus.xz",
+      "size_bytes": 132844,
+      "sha256": "164dc27f35a43970d513d6427282105220f38c514d85eeaf00a763159607e57b"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ARMhf.corpus.xz",
+      "size_bytes": 145584,
+      "sha256": "f76cf68e6f8d17a748c195933600438ae2ca5a1654f67d4351b4f4e737703655"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ARcompact.corpus.xz",
+      "size_bytes": 61528,
+      "sha256": "14060508512994886a57808b2fa453fd66aeaf0f741b58043d348fa12f14f167"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/AVR.corpus.xz",
+      "size_bytes": 61616,
+      "sha256": "d7cee33dae4afb86de5461d6c6f6dd396d746010fcff003dc3dd01c8c017e5b0"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Alpha.corpus.xz",
+      "size_bytes": 372048,
+      "sha256": "563827d00fab780a30792fcf5cf48640adcecce0072ed19918d8b3be46e83220"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/AxisCris.corpus.xz",
+      "size_bytes": 30084,
+      "sha256": "35447c16b263c0e0049fd864b738c40adfe08f5064bf909087bd66184e4b5856"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Blackfin.corpus.xz",
+      "size_bytes": 57168,
+      "sha256": "8965bb7e54c38df66c4b0295e0dce7037ad7729f10096ea33262f2967339a9d8"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/CLIPPER.corpus.xz",
+      "size_bytes": 294672,
+      "sha256": "e92950c104ddc91102ebfaf937aa3eb3cdc150fa6d2a3af324b4f1e03a4241fb"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/CUDA.corpus.xz",
+      "size_bytes": 880,
+      "sha256": "b7340ff37b9ac12e7b6b4ae49ea9d231e8de36e5f5374773076cad67ac2269ec"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Cell-SPU.corpus.xz",
+      "size_bytes": 162656,
+      "sha256": "4832f8b5267b44050f7d9fc16349c2e0a830959aeaaf81fcef4b9e7d6ab47db4"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/CompactRISC.corpus.xz",
+      "size_bytes": 28796,
+      "sha256": "971967957615a673074b68d003c6d16172f9f0ed65fd4fd239c62f40860000f9"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Cray.corpus.xz",
+      "size_bytes": 274820,
+      "sha256": "2be0a2ebf653d5b28b6ad0a3d1b4d9b87fe9aed904e856dc46828114d31f9a92"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Epiphany.corpus.xz",
+      "size_bytes": 34212,
+      "sha256": "7755801a1b326c8ef05d02fe6d69840c06e788e242d82e9bf433f3334e6b7070"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/FR-V.corpus.xz",
+      "size_bytes": 62892,
+      "sha256": "ec7d7f68d4f13332862564fe9cfec4c0159a982929db54532cf56f883753bcd9"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/FR30.corpus.xz",
+      "size_bytes": 66812,
+      "sha256": "d68cd061b56eb704fdd685af3151ac7cc6fb7db13296950a9cc6415f5b2076ca"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/FT32.corpus.xz",
+      "size_bytes": 57920,
+      "sha256": "1e85daf09c77237c05d1150c058ec347163c81c2e032ab1dea27968819324e5a"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/H8-300.corpus.xz",
+      "size_bytes": 56436,
+      "sha256": "c34afb79e16c9cf724aa9b227ecb191595baa1142de44388ab98d93224d38e4e"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/H8S.corpus.xz",
+      "size_bytes": 23376,
+      "sha256": "101da4ce1d6944486c4fc20a85d5728de77f6072f3d215f6c2b15967d2a93fb7"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/HP-Focus.corpus.xz",
+      "size_bytes": 102568,
+      "sha256": "54aab97619bdcddbc52d4b567e300f12f2e0e15091e28454dd690a2010a2bc96"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/HP-PA.corpus.xz",
+      "size_bytes": 335056,
+      "sha256": "c3ffa09e2fecbda263a55909f03bad2f402b17327106eb140696e9a4811bdb65"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/IA-64.corpus.xz",
+      "size_bytes": 112048,
+      "sha256": "6e29e75f8059e6df46556a0ee2f1f71a74fe42562cd20daa4b53f85f5a4534c7"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/IQ2000.corpus.xz",
+      "size_bytes": 57308,
+      "sha256": "98c63875d46b5328359c35c80288dba2e1b7a9bcee9d602b0f87e84af18506fc"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/M32C.corpus.xz",
+      "size_bytes": 71924,
+      "sha256": "c3c49f59e3d7607cd8b190d34df96823374c99397332699a524ed88ba49a996c"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/M32R.corpus.xz",
+      "size_bytes": 55204,
+      "sha256": "a3d5400d52aef06989a76d40f4fdfa3d6291990ee299591fadf39783df63c7e8"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/M68k.corpus.xz",
+      "size_bytes": 270980,
+      "sha256": "be5bc56e13dcce0ddfdb1202c6fadc771fbebc6fe026df4148095bd1b8b52b4f"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/M88k.corpus.xz",
+      "size_bytes": 131264,
+      "sha256": "8ef5fb799938251f7d7e4ec5c60397e9d58719fa7a3ebc8d03d3bc88dd18581c"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MCore.corpus.xz",
+      "size_bytes": 56876,
+      "sha256": "c237fe156f3753c9ee12e6ec8b2763e4766a8f2d4f33ded72ef999c310498393"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MIPS16.corpus.xz",
+      "size_bytes": 58116,
+      "sha256": "7cf59d0326471560e9639937c8d9d2c272dc1f73d57c5828c59d5091b1fb027e"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MIPSeb.corpus.xz",
+      "size_bytes": 243888,
+      "sha256": "5a41f6dfef4d16ca973ac8d6ab45579dbbdcf72ff91d62a152589ca98149e611"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MIPSel.corpus.xz",
+      "size_bytes": 155120,
+      "sha256": "3011828ca3887f2ebd6c13cdadbd6987ba421b24818d4c51476c74c2f7e834e4"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MMIX.corpus.xz",
+      "size_bytes": 72404,
+      "sha256": "868a1fbfd3ed3d01890ed0fb6897a243dfd8fe9bc2a0c2254887347e508873e6"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MN10300.corpus.xz",
+      "size_bytes": 59164,
+      "sha256": "13270d91c5f7b0cee161a86daf3dfe8f6e5abb735cc64c96fc28ee4155f987fb"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MSP430.corpus.xz",
+      "size_bytes": 117908,
+      "sha256": "642e68a64a7bfd9e31aa338a752fd8137de936dfdc182b1b8d79f1d3987d7c0d"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Mico32.corpus.xz",
+      "size_bytes": 57168,
+      "sha256": "18553a4fd12b93cedd1aa09702794aedf26c4daf8817c5ba33d66a7cd20e9063"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/MicroBlaze.corpus.xz",
+      "size_bytes": 65344,
+      "sha256": "552053cdf60bf7ecd986d71b2d1fb2bc3f8e18bc6dd59819def9d718fa69761b"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Moxie.corpus.xz",
+      "size_bytes": 59316,
+      "sha256": "f3fbeb7d4ef6a2eb6450cca9b36a532b25e5720d59638557f8bb895088e35a1d"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/NDS32.corpus.xz",
+      "size_bytes": 54776,
+      "sha256": "227b46bb44762a157c0633470ce5a1b9c8d25afbe139275a8c4ff0154af7866b"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/NIOS-II.corpus.xz",
+      "size_bytes": 56924,
+      "sha256": "2d42b21810d1c4fb91a4779bea92280ae6fcde38238838f6f8e4c6e10647af33"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/OCaml.corpus.xz",
+      "size_bytes": 102328,
+      "sha256": "38fda6bc932643f4b6f311b5027dcdd078e4a48b0a1639de34fbdfc35a93c6db"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/PDP-11.corpus.xz",
+      "size_bytes": 59968,
+      "sha256": "2d7ce23d502b99692cf11bcad88584b6741b901d7cf961fd69f59a30336817bc"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/PIC10.corpus.xz",
+      "size_bytes": 748,
+      "sha256": "afec37141da01855b988bf1f83610c6ac0d5859344f721083039f689a6371245"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/PIC16.corpus.xz",
+      "size_bytes": 2252,
+      "sha256": "1f6e0b35a8344ff96db624d17a1b66b0d4e5956a8252ea7ababbd88b8eaf1ad1"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/PIC18.corpus.xz",
+      "size_bytes": 2676,
+      "sha256": "be94f7a27a23883b78a742af41fb939c4c260107bc953da9ae76b4db3cb2b01f"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/PIC24.corpus.xz",
+      "size_bytes": 20280,
+      "sha256": "4fa267d5cc352c2ef97f6dd4c31f9ce8a9c9a08bc21245f4f13a931fe06d3d75"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/PPCeb.corpus.xz",
+      "size_bytes": 148920,
+      "sha256": "9c6338f63669bb4dbcf8424e26e2a9c2a9997e18fb2f6f080be2a0952580222a"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/PPCel.corpus.xz",
+      "size_bytes": 163352,
+      "sha256": "3b4a395a6edb2795544c1e022e39e5b16c2e0d116ae4e0052602a7663ce08b1f"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/RISC-V.corpus.xz",
+      "size_bytes": 33752,
+      "sha256": "59a35efbb893aa8c55c98e9a7e9a71fc14154ff638aee6df307f12998f30bc0e"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/RL78.corpus.xz",
+      "size_bytes": 112112,
+      "sha256": "e8d314db0d8aa4d5dfafef70bab65a85ab459fb2b28d91c97e07f78fc3f39244"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/ROMP.corpus.xz",
+      "size_bytes": 201232,
+      "sha256": "600a8f8f0d9f85c92459f292c7413aae5b1a457dcafe5b9c6081d38a186c3279"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/RX.corpus.xz",
+      "size_bytes": 57116,
+      "sha256": "51b798d14248c8aa7ac251e190769ab92e47a571179d96051521ca687f4ebcc2"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/S-390.corpus.xz",
+      "size_bytes": 159128,
+      "sha256": "4bf6e7e3b92badc3bf4264388aa8fd0e79f018e9d049155c2eaf1a7d5b380ca3"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/SPARC.corpus.xz",
+      "size_bytes": 350044,
+      "sha256": "a50f0ae63de340a9be75bb765749fa93d1ad3e3c399cfc04fd7a56490fe1dbdc"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/STM8.corpus.xz",
+      "size_bytes": 2136,
+      "sha256": "0219556491e67d4f9a016264eb5133b316557902f40d4efd3c200c4b5d22dde5"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Stormy16.corpus.xz",
+      "size_bytes": 67248,
+      "sha256": "29aed55d373a0a14200f620eab1efde62d20fae0d0c32e9817aeb646ef15825b"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/SuperH.corpus.xz",
+      "size_bytes": 540868,
+      "sha256": "260fd2c95b093e2ac93393c291b5b62cf337308af488975705b4c687ff091495"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/TILEPro.corpus.xz",
+      "size_bytes": 40304,
+      "sha256": "003f42fdf31480003f6483933390900d2b400e2f25b95a23c537112a3f7b779a"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/TLCS-90.corpus.xz",
+      "size_bytes": 5320,
+      "sha256": "ba499e579627e53e0b934b5fc0cbbb5cc88227912458630cccf2b69a3965d698"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/TMS320C2x.corpus.xz",
+      "size_bytes": 2824,
+      "sha256": "79c134e09f96ca3b0c1c3247b681add645cda19daf455aa3235bcfc05deda3f6"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/TMS320C6x.corpus.xz",
+      "size_bytes": 51976,
+      "sha256": "3a68970295cd7acaeed1562226cecb9d0df6c653ee6853f2f95ca46b575c4676"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/TriMedia.corpus.xz",
+      "size_bytes": 229040,
+      "sha256": "5fd6a09c6232fb19490a0982ec60b15257d306b893eb4ba5ef00dee84e219e63"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/V850.corpus.xz",
+      "size_bytes": 62048,
+      "sha256": "f915bfef5bff66bef3d9d0d7e84ffec133bc2dd3c99f78e335f45d1ea6a42492"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/VAX.corpus.xz",
+      "size_bytes": 146120,
+      "sha256": "64f634b38a1e1e8a0a85c3a2747e644bd15eb1a5ec77e2c5ee0c5a05a36b5eaf"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Visium.corpus.xz",
+      "size_bytes": 76052,
+      "sha256": "79a56955d44f313c3ff68c5fca525df1b28c8957592ba27a1bb2b1898ff8892c"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/WASM.corpus.xz",
+      "size_bytes": 5048,
+      "sha256": "df4e3a6fd259393e8823a3cefc7c789d158e480d71e88a9dc7bf2d43a11d130f"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/WE32000.corpus.xz",
+      "size_bytes": 112896,
+      "sha256": "52618e32f2e24a64ddd67a84497ecca57e4a7dd11c0c6d8fb05c91da721a2592"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/X86-64.corpus.xz",
+      "size_bytes": 167968,
+      "sha256": "08467c27a30355243b52ec96e414c582db80a521e0e07ba436ff237622a14c16"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/X86.corpus.xz",
+      "size_bytes": 172836,
+      "sha256": "6cda2840e629a02e6a5f4b0a7e3841776dd02207043b815b7234604ffed52621"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Xtensa.corpus.xz",
+      "size_bytes": 62892,
+      "sha256": "337fa9c7dec04ac6edecf40a15b119e9bd0cf4d63a334bfd5d8f075121a09a9a"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/Z80.corpus.xz",
+      "size_bytes": 4976,
+      "sha256": "1bf1551ba47223bc3e4c4cbb25dda8742fbabddbeac29f555d37191a6eb03417"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/_mask1.corpus.xz",
+      "size_bytes": 212,
+      "sha256": "fd61bcd545f24248d9c823effb1ea0283bd9fe58a0e6d8d2bc70240065d80e36"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/_ones.corpus.xz",
+      "size_bytes": 208,
+      "sha256": "d86669f0b17a8db2a9c9aff3f2f26d9248ac97cd7dc1ca9d61d33363506d0e92"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/_words.corpus.xz",
+      "size_bytes": 108884,
+      "sha256": "570d3bfa562401b51b6c7745eda7a7899f59faf5f620de299c62163a5441b944"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/_words_ucs2.corpus.xz",
+      "size_bytes": 112040,
+      "sha256": "5aef4f28aa7c1e7f4fb2ec2022e6b7df9280161545ecc447a9ad9f97762ba08b"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/_zero.corpus.xz",
+      "size_bytes": 208,
+      "sha256": "5f3ca38e44c1052ccc263671d42ef6fee5d8185a43cf98438046d2de1c7ccf27"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/cpu_rec_corpus/i860.corpus.xz",
+      "size_bytes": 210376,
+      "sha256": "b20632095f5669be12273a54825c46bfd4918809f0ec834214b5a8bee3864c97"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/doc/cpu_rec_slides.pdf",
+      "size_bytes": 617468,
+      "sha256": "b5375f377bb2b88f1ba93f0e046410a99652b6ffe7b7d89064c93d385319e0f3"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/doc/cpu_rec_slides_english.pdf",
+      "size_bytes": 613132,
+      "sha256": "e0868b24b41e3069e4bac8ba9f4a7d1cb50ac1c86afdce92f8c9691afb2c3c84"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/doc/cpu_rec_sstic_english.md",
+      "size_bytes": 36204,
+      "sha256": "477e649fc8cd28f3a6681624775e2542ba7ec07b5ad632ce3c749fba0b6029e0"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/h1.bin",
+      "size_bytes": 462848,
+      "sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master/h7.bin",
+      "size_bytes": 24577,
+      "sha256": "391f6fc7872966a3f980e21534853c0b13164d9b084d6d513fde978178e2a40d"
+    },
+    {
+      "path": "EPS_research/tools/cpu_rec-master.zip",
+      "size_bytes": 9518070,
+      "sha256": "92df7f4f1ba959e0b33e681581e74a5b539c799f9d5c39cec9c5a75ba76cda2f"
+    },
+    {
+      "path": "EPS_research/tools/hexdump/Nov\u00fd textov\u00fd dokument.txt",
+      "size_bytes": 64,
+      "sha256": "4c5388fd9d7b02ad91b23b43eec9e8d1fcd4f325ff8a5e92730a964ed7fe121a"
+    },
+    {
+      "path": "EPS_research/tools/hexdump/hexdump.bat",
+      "size_bytes": 4195,
+      "sha256": "9d13e99f5b05f9ff40d864074a4c42d6c76fe0fe1f4a48a2b316ef089dd42fb0"
+    },
+    {
+      "path": "EPS_research/tools/hexdump/lh0012501.sgo.out",
+      "size_bytes": 352930,
+      "sha256": "9f61533920c34e46cf210813d38dcbfa14fa1de97f34350920a3d5f3446fbceb"
+    },
+    {
+      "path": "EPS_research/tools/hexdump/lh0012501.sgo.out.bin",
+      "size_bytes": 705862,
+      "sha256": "387e0d4eb6bb106b22a1b25cd287d874cb2e87aeb1b460dda5c7713ed5eda415"
+    },
+    {
+      "path": "EPS_research/tools/hexdump/lh0012501.sgo.out.hex",
+      "size_bytes": 1058789,
+      "sha256": "500d7e61c1bc7ac4f06c68adb9235db3fe122d1deb2bbbc68ef8eb7ae56b23c6"
+    },
+    {
+      "path": "EPS_research/tools/winhex.zip",
+      "size_bytes": 3692176,
+      "sha256": "8ec7d0256cc1cdbda625d56afb7e23c0f878bbda54a6e65bbbb3b27bac36f62f"
+    },
+    {
+      "path": "EPS_research/workflow.txt",
+      "size_bytes": 745,
+      "sha256": "463d76b95a75bdccd0afa687b103308fd7d409730318c17530c13edabaa8e7ba"
+    }
+  ]
+}
