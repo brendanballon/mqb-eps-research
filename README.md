@@ -36,6 +36,22 @@ Initial target: **5Q0 909 144 R**, firmware **EPS_MQB_ZFLS 126 1061**. Findings 
 
 Success means **better path tracking and fewer steering-limit interventions**, while preserving driver override and bounded steering response. Increased torque is a possible means; a working improvement remains unproved.
 
+## Community credit
+
+- **[RetroPilot MQB Discord research](https://discord.com/channels/660951518014341124/1063188305514090546):** shared firmware, hardware leads, PLA observations, and connector research helped focus this investigation and avoid duplicate work.
+- **openpilot / opendbc:** vehicle interfaces and CAN definitions.
+- **VW_Flash:** adapted FRF extraction logic ([license](scripts/licenses/VW_Flash-BSD-2-Clause.txt)).
+- **Earlier PQ steering research:** useful methodology; findings do not automatically apply to MQB.
+
+[Thread review and 67 dated source anchors](notes/DISCORD_REVIEW.md). Community reports are not independently verified results; no reproducible MQB firmware torque patch was established in the reviewed thread.
+
+## AI and tooling transparency
+
+- **OpenAI Codex desktop:** LLM agents and parallel subagents assisted research, analysis, scripts, checks, and writing. Exact historical model versions were not consistently recorded.
+- **REA:** `reverse-engineer-anything` skill v42 and `rea-agents` 6.7.0 for tooling checks and separate ARM64 ALC host analysis.
+- **Ghidra 12.1.4:** direct V850 firmware analysis because REA's raw-import interface did not support it. [Method and limitations](notes/REA_READINESS.md).
+- **Verification:** retained hashes, instructions, source records, and reproducible checks. AI interpretations can be wrong; static checks do not prove vehicle behavior or a working modification.
+
 ## Explore the research
 
 - [Current status and next steps](notes/STATUS.md)
