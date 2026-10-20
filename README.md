@@ -17,13 +17,18 @@ Start with the existing **HCA torque-control interface**. Investigate firmware c
 | **PLA** | The angle-request steering interface used for parking assistance. |
 | **DSR** | Steering requests associated with stability assistance. These can interact with other steering modes. |
 
-## Covered so far
+## Progress beyond the reviewed thread
 
-- **Research foundation:** preserved the original archive, reproduced firmware extraction, and built an annotated code-analysis project.
-- **Torque control:** traced HCA request checks, speed-dependent curves, driver-input effects, and interactions with other steering modes.
-- **Angle control:** identified PLA speed and driver-release conditions. Angle-controller analysis is still partial.
-- **Motor output:** followed the command path into motor control. Converting software values into physical steering torque remains unresolved.
-- **Prior work:** reviewed historical community research and separated reported results from verified local findings.
+Building on the community's leads, this project has added:
+
+- **Reproducible firmware extraction:** verified all three 1061 update containers against archived ODX/payload bytes and resolved overlapping flash blocks. [Extraction](notes/OFFLINE_ANALYSIS.md)
+- **A usable analysis foundation:** corroborated the V850 hardware/memory profile, corrected false code identification, and built an annotated Ghidra project. [Hardware and mapping](notes/MCU_IDENTIFICATION.md)
+- **Concrete torque restrictions:** located the approximately **3.05 Nm HCA request check**, three speed-dependent curves, and downstream command shaping. This explains why changing one threshold may not increase usable assistance. [Findings](notes/FINDINGS.md)
+- **Request-to-motor tracing:** followed HCA contributions through shared assist calculations into current feedback and motor-output registers. Identified missing calibration needed to translate software values into physical torque. [Control path](notes/HCA_DOWNSTREAM_1061.md)
+- **More precise angle-control limits:** the supplied PLA calibration indicates a low-speed entry qualifier, qualified release near **12 km/h**, and a separate driver-release threshold around **7 Nm**. This replaces the simple 15 km/h assumption for this update. [Findings](notes/FINDINGS.md)
+- **Historical table verified:** traced the old security-access-table lead to diagnostic service `0x27` and corrected two earlier value interpretations. Working vehicle access remains untested. [Analysis](notes/OFFLINE_ANALYSIS.md)
+
+These are **static findings for the supplied firmware**, not measured vehicle performance or a working torque modification. Original archive bytes remain preserved.
 
 Initial target: **5Q0 909 144 R**, firmware **EPS_MQB_ZFLS 126 1061**. Findings do not automatically apply to other MQB racks.
 
