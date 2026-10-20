@@ -52,7 +52,7 @@ Success means **better path tracking and fewer steering-limit interventions**, w
 
 ## AI and tooling transparency
 
-- **OpenAI Codex desktop:** LLM agents and parallel subagents assisted research, analysis, scripts, checks, and writing. Exact historical model versions were not consistently recorded.
+- **GPT-6.1 Sol with OpenAI Codex:** used thus far for research, analysis, scripts, checks, and writing, including parallel subagents.
 - **REA:** `reverse-engineer-anything` skill v42 and `rea-agents` 6.7.0 for tooling checks and separate ARM64 ALC host analysis.
 - **Ghidra 12.1.4:** direct V850 firmware analysis because REA's raw-import interface did not support it. [Method and limitations](notes/REA_READINESS.md).
 - **Verification:** retained hashes, instructions, source records, and reproducible checks. AI interpretations can be wrong; static checks do not prove vehicle behavior or a working modification.
