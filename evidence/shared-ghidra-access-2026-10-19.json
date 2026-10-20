@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-19",
+  "host": "138.68.55.155",
+  "port": 13100,
+  "authorization": "User explicitly requested trying the pinned login and retrieving notes; remote reads only.",
+  "pinned_credentials_retained": false,
+  "credential_attempts": 1,
+  "credential_scope": "One published shared-account/default-password pair from the pinned post. Identity and password omitted.",
+  "attempts": {
+    "installed_client": {
+      "host": "138.68.55.155",
+      "port": 13100,
+      "checked_at_utc": "2026-10-19T18:54:13.922351Z",
+      "remote_write_operations": false,
+      "error": "javax.net.ssl.SSLHandshakeException: (certificate_unknown) No subject alternative names present",
+      "compatibility_check": "failed"
+    },
+    "pinned_tls_installed_client": {
+      "host": "138.68.55.155",
+      "port": 13100,
+      "checked_at_utc": "2026-10-19T18:55:19.297770Z",
+      "remote_write_operations": false,
+      "tls_endpoint_identity": "Exact SHA-256 pin, certificate validity checked, isolated JVM only",
+      "error": "java.io.IOException: Incompatible Ghidra Server - detected interface version 9.0.\nThis client requires server version 12.0.5 - 12.1.4 (or possibly newer)",
+      "compatibility_check": "failed"
+    },
+    "compatible_client_login": {
+      "host": "138.68.55.155",
+      "port": 13100,
+      "checked_at_utc": "2026-10-19T18:56:14.276082Z",
+      "remote_write_operations": false,
+      "tls_endpoint_identity": "Exact SHA-256 pin, certificate validity checked, isolated JVM only",
+      "compatibility_check": "passed",
+      "authenticated": false,
+      "error": "javax.security.auth.login.FailedLoginException: User authentication failed"
+    },
+    "offered_anonymous_read_only": {
+      "host": "138.68.55.155",
+      "port": 13100,
+      "checked_at_utc": "2026-10-19T18:56:53.487345Z",
+      "remote_write_operations": false,
+      "tls_endpoint_identity": "Exact SHA-256 pin, certificate validity checked, isolated JVM only",
+      "compatibility_check": "passed",
+      "anonymous_access_offered": true,
+      "connected": true,
+      "repositories": []
+    }
+  },
+  "compatible_client": {
+    "version": "11.4.2",
+    "source": "https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_11.4.2_build",
+    "asset": "ghidra_11.4.2_PUBLIC_20250826.zip",
+    "sha256": "795a02076af16257bd6f3f4736c4fc152ce9ff1f95df35cd47e2adc086e037a6",
+    "release_api_digest_verified": true,
+    "path": "analysis/tools/ghidra_11.4.2_PUBLIC",
+    "global_configuration_changed": false
+  },
+  "tls_policy": {
+    "fingerprint": "8fb96531093f38f444373d43354620c5e22e643378eed1ec268beddce48cadae",
+    "method": "Isolated JVM X509ExtendedTrustManager accepts only that exact current certificate and checks its validity. No arbitrary-certificate trust or global client configuration changes.",
+    "reason": "Server certificate has no SAN; initial Java25 hostname validation rejected it."
+  },
+  "result": {
+    "pinned_login": "rejected",
+    "anonymous_read_only": "connected",
+    "anonymous_visible_repositories": [],
+    "notes_retrieved": 0,
+    "remote_mutations": false
+  },
+  "limitations": [
+    "The detected9.0 registry binding is a protocol-compatibility label, not an exact server release number.",
+    "An empty anonymous repository list does not prove repositories were deleted or that authenticated users see none.",
+    "Authentication failure does not establish whether the account was removed, its password changed, or another authentication condition failed."
+  ],
+  "helper_source_hashes": [
+    {
+      "path": "analysis/shared-server-scripts/ReadAnonymousRepository.java",
+      "sha256": "bced488e051b4c3c413d877693d0ca0a74941c4607662542de6efc4d6939adf6"
+    },
+    {
+      "path": "analysis/shared-server-scripts/ReadSharedRepository.java",
+      "sha256": "f66cd09a0495169387012e053217113231fffdb20903ca1fddeefd7e72deccec"
+    }
+  ]
+}

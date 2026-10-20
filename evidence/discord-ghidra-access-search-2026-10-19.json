@@ -1,0 +1,89 @@
+{
+  "observed_date": "2026-10-19",
+  "method": "Native Discord UI read-only RetroPilot server search and message-context jumps",
+  "queries": [
+    {
+      "query": "ghidra",
+      "results": 162,
+      "reviewed": "newest page including January 2026 and September 2023 results"
+    },
+    {
+      "query": "password",
+      "results": 59,
+      "reviewed": "newest page including server account-expiration explanation"
+    },
+    {
+      "query": "login",
+      "reviewed": "newest page including September 12 2023 access request"
+    },
+    {
+      "query": "ghidra server",
+      "results": 11,
+      "reviewed": "all returned results on one page"
+    },
+    {
+      "query": "\"log in\"",
+      "results": 52,
+      "reviewed": "newest page and January 2 2026 surrounding MQB discussion"
+    }
+  ],
+  "sources": [
+    {
+      "date": "2023-09-02",
+      "time_displayed": "17:45",
+      "author": "CzokNorris",
+      "scope": "PQ thread, shared Ghidra server administration",
+      "url": "https://discord.com/channels/660951518014341124/1026931406590447617/1147648620280168578",
+      "observation": "Owner said default accounts without custom passwords expire after 30 days and need renewal. Suggested another participant might share an account while waiting. No verified working replacement account recovered."
+    },
+    {
+      "date": "2023-09-12",
+      "time_displayed": "11:53",
+      "author": "daniii438",
+      "url": "https://discord.com/channels/660951518014341124/1026931406590447617",
+      "observation": "Still waiting for Ghidra login."
+    },
+    {
+      "date": "2023-09-19",
+      "time_displayed": "18:37-18:38",
+      "author": "CzokNorris",
+      "url": "https://discord.com/channels/660951518014341124/1026931406590447617",
+      "observation": "Reported repairing user permissions, adding a participant to the repository, and server stability after changes."
+    },
+    {
+      "date": "2026-01-02",
+      "time_displayed": "17:20",
+      "author": "miso",
+      "scope": "MQB thread",
+      "url": "https://discord.com/channels/660951518014341124/1063188305514090546/1456774181579395103",
+      "observation": "Reported server still alive but unable to log in. Nearby 17:13-17:15 discussion proposed spinning up a combined EPS/ABS server, without an address or replacement access instructions in the reviewed context. Miso said he had migrated to Binary Ninja."
+    },
+    {
+      "date": "2023-01-12",
+      "time_displayed": "15:14",
+      "author": "CzokNorris",
+      "scope": "MQB thread",
+      "url": "https://discord.com/channels/660951518014341124/1063188305514090546",
+      "observation": "Proposed adding an MQB folder to the existing server and keeping PQ accounts. Supports relevance of shared-server administrative discussion, not firmware equivalence."
+    },
+    {
+      "date": "2023-09-19",
+      "time_displayed": "12:16",
+      "author": "dkiiv",
+      "scope": "PQ thread only",
+      "url": "https://discord.com/channels/660951518014341124/1026931406590447617",
+      "attachment": "2023_09_19_archive.gar",
+      "displayed_size": "6.18 MB",
+      "attachment_path": "attachments/1026931406590447617/1153726375111446548/2023_09_19_archive.gar",
+      "observation": "Described as full Ghidra project backup. Recovery lead only, not downloaded or proven to contain MQB annotations in this search."
+    }
+  ],
+  "conclusion": "Historical expiry and permission failures are directly reported. No newer endpoint or verified alternative login recovered in reviewed results. Expiry is consistent with current failed default login but not proven as its cause.",
+  "limitations": [
+    "Search is bounded, not an exhaustive read of all channel history.",
+    "Displayed times are Discord client times.",
+    "No credentials copied into evidence or tracked notes.",
+    "No messages, reactions, account changes, or authentication retries performed.",
+    "No firmware artifact or binary offsets apply to these source observations."
+  ]
+}

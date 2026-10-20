@@ -1,0 +1,62 @@
+{
+  "verified_at_utc": "2026-10-20T15:22:58.290528+00:00",
+  "mapped_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+  "manual_sha256_verified": "f2914aa669635072756bc530485d8bc690dede0e8398b51ee6adcc3b62b3bd22",
+  "report_reproduction_identical": true,
+  "pointer_initializer_readbacks_verified": true,
+  "three_template_feedback_fields_verified": true,
+  "selected_instruction_witnesses_verified": true,
+  "selected_function_exports_completed": true,
+  "normalization_boundary_verified": true,
+  "protection_boundary_arithmetic": [
+    {
+      "phase_value": -2880,
+      "first_report_call_from_zero": 31
+    },
+    {
+      "phase_value": -2879,
+      "first_report_call_from_zero": null
+    },
+    {
+      "phase_value": 2879,
+      "first_report_call_from_zero": null
+    },
+    {
+      "phase_value": 2880,
+      "first_report_call_from_zero": 31
+    }
+  ],
+  "archive_files_checked": 694,
+  "archive_mismatches": [],
+  "artifacts": [
+    {
+      "path": "scripts/inspect_current_feedback_1061.py",
+      "sha256": "593a26459559a0187f0ded86e538f15fd9c74bb7ee71bf62747c770320cba486",
+      "bytes": 5615
+    },
+    {
+      "path": "evidence/ghidra-current-feedback-1061-2026-10-20.txt",
+      "sha256": "b8a2864cce02bb68bebfb68c906c4f07923c18b50a1749f546515eb0b1785732",
+      "bytes": 51497
+    },
+    {
+      "path": "evidence/ghidra-current-entry-protection-1061-2026-10-20.txt",
+      "sha256": "f0c0a2728b54b574bcd5ec6d4471ccff60e4201f5e8c3f803e1f662e6dafdc82",
+      "bytes": 25938
+    },
+    {
+      "path": "evidence/adc-manual-source-2026-10-20.json",
+      "sha256": "2eef4a31062d0072f88d6693f52ca7220f689068a2898769ee038d40eb5b7a61",
+      "bytes": 11614
+    },
+    {
+      "path": "evidence/current-feedback-1061-2026-10-20.json",
+      "sha256": "108438a4c1dabd1c7eab3c8e0fb99bf2f3724c112731610af8a3017e51e61ff1",
+      "bytes": 7053
+    }
+  ],
+  "limitations": [
+    "Static analysis and analyst arithmetic only, not firmware emulation.",
+    "No physical unit, installed calibration, call period or downstream fault response verified."
+  ]
+}

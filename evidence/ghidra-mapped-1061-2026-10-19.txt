@@ -1,0 +1,32 @@
+language=V850:LE:32:default
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+program_image_base=ram:00000000
+Corroborated static working map. No hardware execution or complete flash dump.
+BLOCK ram:00002000 ram:0007ffff bytes=516096
+functions=1907
+BYTES ram:0000fb48 0881ffff000000000c81ffff000000001881ffff000000001c81ffff000000000c81ffff08000000
+REFS ram:0000fb48 count=1
+From: ram:0000f088 To: ram:0000fb48 Type: DATA Op: 2 ANALYSIS function=ram:0000f078
+BYTES ram:00057a20 176e00000100000033ae000002000000314b000004000000af7a00000800000052ee000010000000
+REFS ram:00057a20 count=0
+NEAR_TABLE_REFS inclusive=0x57a00..0x57a60
+DECOMPILE ram:0000f078 completed=true
+error=
+
+undefined2 FUN_ram_0000f078(uint param_1)
+
+{
+  undefined2 uVar1;
+  int iVar2;
+  
+  iVar2 = (param_1 & 0xff) * 8;
+  if ((&LAB_ram_0000fb4c)[iVar2] == '\x01') {
+    uVar1 = *(undefined2 *)(*(int *)(&DAT_ram_0000fb48 + iVar2) + 0x10);
+  }
+  else {
+    uVar1 = *(undefined2 *)(*(int *)(&DAT_ram_0000fb48 + iVar2) + 0x100);
+  }
+  return uVar1;
+}
+
+

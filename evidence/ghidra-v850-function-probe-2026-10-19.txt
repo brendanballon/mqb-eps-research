@@ -1,0 +1,41 @@
+language=V850:LE:32:default
+input_sha256=75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641
+base=ram:00000000
+entry_file_offset=0x78
+Provisional static probe. Offset coordinates are not a verified runtime mapping.
+body=[[ram:00000078, ram:00000099]]
+ram:00000078 mov r6,ep
+ram:0000007a zxb ep
+ram:0000007c mov 0xfb48,r15
+ram:00000082 shl 0x3,ep
+ram:00000084 add r15,ep
+ram:00000086 sld.bu 0x4[ep],r12
+ram:00000088 sld.w 0x0[ep],r14
+ram:0000008a cmp 0x1,r12
+ram:0000008c bne 0x00000094
+ram:0000008e ld.hu 0x10[r14],r10
+ram:00000092 br 0x00000098
+ram:00000094 ld.hu 0x100[r14],r10
+ram:00000098 jmp [lp]
+completed=true
+error=
+
+undefined2 candidate_offset_78(uint param_1)
+
+{
+  undefined2 uVar1;
+  int iVar2;
+  int iVar3;
+  
+  iVar3 = (param_1 & 0xff) * 8;
+  iVar2 = *(int *)(iVar3 + 0xfb48);
+  if (*(char *)(iVar3 + 0xfb4c) == '\x01') {
+    uVar1 = *(undefined2 *)(iVar2 + 0x10);
+  }
+  else {
+    uVar1 = *(undefined2 *)(iVar2 + 0x100);
+  }
+  return uVar1;
+}
+
+

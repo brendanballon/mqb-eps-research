@@ -1,0 +1,63 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+SELECT ram:00030006
+FUNCTION ram:00030006 body=[[ram:00030006, ram:00030051]]
+ram:00030006 prepare { r20,r26,r27,r28,lp },0x0
+ram:0003000a mov r6,r27
+ram:0003000c mov r7,r20
+ram:0003000e mov 0x0,r26
+ram:00030010 jarl 0x0002fc3a,lp
+ram:00030014 mov r10,r28
+ram:00030016 cmp 0x2,r28
+ram:00030018 bne 0x0003004c
+ram:0003001a mov r27,r6
+ram:0003001c mov r20,r7
+ram:0003001e jarl 0x0002fd96,lp
+ram:00030022 mov r10,r28
+ram:00030024 addi -0x78,r28,r0
+ram:00030028 be 0x0003004c
+ram:0003002a cmp r0,r28
+ram:0003002c be 0x0003004c
+ram:0003002e jarl 0x0002fc02,lp
+ram:00030032 addi 0x1,r26,r14
+ram:00030036 andi 0xff,r14,r26
+ram:0003003a cmp 0x5,r26
+ram:0003003c bc 0x00030048
+ram:0003003e st.h r0,0x0[r20]
+ram:00030042 movea 0x22,r0,r28
+ram:00030046 br 0x0003004c
+ram:00030048 cmp 0x2,r28
+ram:0003004a be 0x0003001a
+ram:0003004c mov r28,r10
+ram:0003004e dispose 0x0,{ r20,r26,r27,r28,lp },[lp]
+completed=true error=
+
+int FUN_ram_00030006(undefined4 param_1,undefined2 *param_2)
+
+{
+  int iVar1;
+  byte bVar2;
+  
+  bVar2 = 0;
+  iVar1 = FUN_ram_0002fc3a();
+  do {
+    if (iVar1 != 2) {
+      return iVar1;
+    }
+    iVar1 = FUN_ram_0002fd96(param_1,param_2);
+    if (iVar1 == 0x78) {
+      return 0x78;
+    }
+    if (iVar1 == 0) {
+      return 0;
+    }
+    FUN_ram_0002fc02();
+    bVar2 = bVar2 + 1;
+  } while (bVar2 < 5);
+  *param_2 = 0;
+  return 0x22;
+}
+
+
+SELECT ram:0003001e
+SELECT ram:00078318
+NO_FUNCTION

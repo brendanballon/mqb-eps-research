@@ -1,0 +1,828 @@
+{
+  "url": "https://raw.githubusercontent.com/iqinc/iqpilot/1b891adc2a8fd27a5365e229d74d08ceea00b2f0/artifacts/iqpilot_alc_private/python/iqpilot_private/konn3kt/iqlvbs/alc.cpython-312-aarch64-linux-gnu.so",
+  "sha256": "bc3bab44f449522bb5e8ff97bf2a12e02941ef14ff5af6ba10b96e6e72d56775",
+  "bytes": 536160,
+  "path": "analysis/public-alc/alc.cpython-312-aarch64-linux-gnu.so",
+  "manifest_match": true,
+  "analysis_scope": "Static only; never imported or executed",
+  "literal_strings": [
+    {
+      "offset": "0x1b0c",
+      "text": "PyNumber_InPlaceSubtract"
+    },
+    {
+      "offset": "0x1ccf",
+      "text": "PyNumber_InPlaceMultiply"
+    },
+    {
+      "offset": "0x219f",
+      "text": "PyNumber_InPlaceAnd"
+    },
+    {
+      "offset": "0x21b3",
+      "text": "PyNumber_InPlaceXor"
+    },
+    {
+      "offset": "0x22b2",
+      "text": "PyNumber_InPlaceAdd"
+    },
+    {
+      "offset": "0x2357",
+      "text": "PyNumber_InPlaceOr"
+    },
+    {
+      "offset": "0x238e",
+      "text": "PyInit_alc"
+    },
+    {
+      "offset": "0x69f38",
+      "text": "cannot pickle '%.200s' object"
+    },
+    {
+      "offset": "0x6a0b8",
+      "text": "cannot import name %S"
+    },
+    {
+      "offset": "0x6a1e8",
+      "text": "can't convert negative value to unsigned char"
+    },
+    {
+      "offset": "0x6a218",
+      "text": "Interpreter change detected - this module can only be loaded into one interpreter per process."
+    },
+    {
+      "offset": "0x6a750",
+      "text": "cannot fit '%.200s' into an index-sized integer"
+    },
+    {
+      "offset": "0x6a850",
+      "text": "_iqlvbs_reset_mqb_crypto"
+    },
+    {
+      "offset": "0x6a948",
+      "text": "_iqlvbs_decode_mlb_alc_key_slot"
+    },
+    {
+      "offset": "0x6a988",
+      "text": "_iqlvbs_decode_mqb_alc_key_slot"
+    },
+    {
+      "offset": "0x6aaa8",
+      "text": "exported_alc_engaged"
+    },
+    {
+      "offset": "0x6aae0",
+      "text": "_iqlvbs_decode_mlb_eps_angle_deg"
+    },
+    {
+      "offset": "0x6ab68",
+      "text": "can't send non-None value to a just-started generator"
+    },
+    {
+      "offset": "0x6acb8",
+      "text": "_iqlvbs_decode_mqb_eps_pla_abbruch"
+    },
+    {
+      "offset": "0x6ad00",
+      "text": "_iqlvbs_decode_pq_alc_key_slot"
+    },
+    {
+      "offset": "0x6ad40",
+      "text": "_iqlvbs_decode_pq_alc_status"
+    },
+    {
+      "offset": "0x6ad80",
+      "text": "_iqlvbs_decode_pq_alc_lwreq"
+    },
+    {
+      "offset": "0x6adc0",
+      "text": "_iqlvbs_decode_mqb_eps_pla_status"
+    },
+    {
+      "offset": "0x6ae08",
+      "text": "_iqlvbs_decode_pq_alc_abbr"
+    },
+    {
+      "offset": "0x6aef8",
+      "text": "update_pq_carstate_alc_state"
+    },
+    {
+      "offset": "0x6af38",
+      "text": "update_mqb_carstate_alc_state"
+    },
+    {
+      "offset": "0x6b1e0",
+      "text": "update_mlb_carstate_alc_state"
+    },
+    {
+      "offset": "0x6b3b0",
+      "text": "mqb_exported_alc_entering"
+    },
+    {
+      "offset": "0x6b490",
+      "text": "pq_exported_alc_entering"
+    },
+    {
+      "offset": "0x6b4d0",
+      "text": "pq_exported_alc_active"
+    },
+    {
+      "offset": "0x6b508",
+      "text": "mlb_exported_alc_entering"
+    },
+    {
+      "offset": "0x6b548",
+      "text": "mlb_exported_alc_active"
+    },
+    {
+      "offset": "0x6b580",
+      "text": "mqb_exported_alc_active"
+    },
+    {
+      "offset": "0x6b5b8",
+      "text": "Module 'alc' has already been imported. Re-initialisation is not supported."
+    },
+    {
+      "offset": "0x6b648",
+      "text": "iqpilot_private.konn3kt.iqlvbs.alc"
+    },
+    {
+      "offset": "0x6b6e0",
+      "text": "init iqpilot_private.konn3kt.iqlvbs.alc"
+    },
+    {
+      "offset": "0x6b738",
+      "text": "mqb_exported_alc_available"
+    },
+    {
+      "offset": "0x6b778",
+      "text": "mlb_exported_alc_available"
+    },
+    {
+      "offset": "0x6b7b8",
+      "text": "pq_exported_alc_available"
+    },
+    {
+      "offset": "0x6b850",
+      "text": "exported_alc_active"
+    },
+    {
+      "offset": "0x6b888",
+      "text": "exported_alc_entering"
+    },
+    {
+      "offset": "0x6b8e8",
+      "text": "platform"
+    },
+    {
+      "offset": "0x6b970",
+      "text": "_iqlvbs_make_pq_alc_frame"
+    },
+    {
+      "offset": "0x6b9b0",
+      "text": "alc_status"
+    },
+    {
+      "offset": "0x6ba18",
+      "text": "_iqlvbs_update_mqb_crypto_counter"
+    },
+    {
+      "offset": "0x6ba80",
+      "text": "key_slot"
+    },
+    {
+      "offset": "0x6bab0",
+      "text": "_iqlvbs_sync_mqb_crypto_session"
+    },
+    {
+      "offset": "0x6bc68",
+      "text": "_iqlvbs_get_mqb_prog_map"
+    },
+    {
+      "offset": "0x6bca8",
+      "text": "_iqlvbs_kcan_module_present"
+    },
+    {
+      "offset": "0x6bde0",
+      "text": "_iqlvbs_build_kcan_request"
+    },
+    {
+      "offset": "0x6be60",
+      "text": "_write_alc_availability"
+    },
+    {
+      "offset": "0x6bf18",
+      "text": "_iqlvbs_encrypt_pq_alc_frame"
+    },
+    {
+      "offset": "0x6bf58",
+      "text": "_iqlvbs_encrypt_mqb_alc_frame"
+    },
+    {
+      "offset": "0x6c050",
+      "text": "_create_mqb_alc_steering_control"
+    },
+    {
+      "offset": "0x6c1b0",
+      "text": "_run_mqb_alc"
+    },
+    {
+      "offset": "0x6c1e0",
+      "text": "update_vw_alc"
+    },
+    {
+      "offset": "0x6c210",
+      "text": "_run_mlb_alc"
+    },
+    {
+      "offset": "0x6c240",
+      "text": "_run_pq_alc"
+    },
+    {
+      "offset": "0x6cb50",
+      "text": "IQLVBS_MQB_PROGRESSIVE_ANGLE_MAP_Y"
+    },
+    {
+      "offset": "0x6cbf0",
+      "text": "iqpilot_private.konn3kt.iqlvbs.alc"
+    },
+    {
+      "offset": "0x6cc20",
+      "text": "artifacts/iqpilot_alc_private/python/iqpilot_private/konn3kt/iqlvbs/alc.py"
+    },
+    {
+      "offset": "0x6cd60",
+      "text": "IQLVBS_TORQUE_BLEND_MQB_MAX_OFFSET_DEG"
+    },
+    {
+      "offset": "0x6cf40",
+      "text": "IQLVBS_TORQUE_ANGLE_KP_MQB_DEG_PER_LAT_ACCEL"
+    },
+    {
+      "offset": "0x6d090",
+      "text": "IQLVBS_PQ_HCA_STATUS_OVERRIDE_CLEAR"
+    },
+    {
+      "offset": "0x6d0c0",
+      "text": "IQLVBS_MQB_PROGRESSIVE_ANGLE_MAP_X"
+    },
+    {
+      "offset": "0x6d0f0",
+      "text": "IQLVBS_KCAN_LSM_MASK_RIGHT_BLINK"
+    },
+    {
+      "offset": "0x6d120",
+      "text": "IQLVBS_ALC_REENGAGE_WINDOW_FRAMES"
+    },
+    {
+      "offset": "0x6d150",
+      "text": "IQLVBS_ALC_DOUBLE_SET_MAX_FRAMES"
+    },
+    {
+      "offset": "0x6d1b0",
+      "text": "_iqlvbs_update_mqb_crypto_counter"
+    },
+    {
+      "offset": "0x6d2a0",
+      "text": "iqlvbs_mqb_crypto_counter_valid"
+    },
+    {
+      "offset": "0x6d320",
+      "text": "_iqlvbs_decode_mqb_eps_pla_status"
+    },
+    {
+      "offset": "0x6d350",
+      "text": "_iqlvbs_decode_mqb_eps_pla_abbruch"
+    },
+    {
+      "offset": "0x6d380",
+      "text": "_iqlvbs_decode_mlb_eps_angle_deg"
+    },
+    {
+      "offset": "0x6d3e0",
+      "text": "/data/iqpilot_private/vw_alc_available"
+    },
+    {
+      "offset": "0x6d410",
+      "text": "_create_mqb_alc_steering_control"
+    },
+    {
+      "offset": "0x6d510",
+      "text": "IQLVBS_TORQUE_BLEND_MQB_SAT_CNM"
+    },
+    {
+      "offset": "0x6d5b0",
+      "text": "IQLVBS_KCAN_LSM_MASK_LEFT_BLINK"
+    },
+    {
+      "offset": "0x6d640",
+      "text": "ALC_override_rearm_saw_inactive"
+    },
+    {
+      "offset": "0x6d660",
+      "text": "_iqlvbs_sync_mqb_crypto_session"
+    },
+    {
+      "offset": "0x6d6a0",
+      "text": "iqlvbs_mqb_crypto_last_counter"
+    },
+    {
+      "offset": "0x6d6c0",
+      "text": "_iqlvbs_decode_mqb_alc_key_slot"
+    },
+    {
+      "offset": "0x6d6e0",
+      "text": "_iqlvbs_decode_mlb_alc_key_slot"
+    },
+    {
+      "offset": "0x6d790",
+      "text": "IQLVBS_PQ_HCA_STATUS_ALC_ANGLE"
+    },
+    {
+      "offset": "0x6d7b0",
+      "text": "IQLVBS_MQB_CRYPTO_VERSION_BITS"
+    },
+    {
+      "offset": "0x6d7d0",
+      "text": "IQLVBS_MQB_CRYPTO_MAGIC_NIBBLE"
+    },
+    {
+      "offset": "0x6d7f0",
+      "text": "update_mqb_carstate_alc_state"
+    },
+    {
+      "offset": "0x6d810",
+      "text": "update_mlb_carstate_alc_state"
+    },
+    {
+      "offset": "0x6d870",
+      "text": "iqlvbs_mqb_crypto_counter_ext"
+    },
+    {
+      "offset": "0x6d890",
+      "text": "_iqlvbs_decode_pq_alc_key_slot"
+    },
+    {
+      "offset": "0x6d930",
+      "text": "IQLVBS_MQB_FITTED_ANGLE_MAP_Y"
+    },
+    {
+      "offset": "0x6d950",
+      "text": "IQLVBS_MQB_FITTED_ANGLE_MAP_X"
+    },
+    {
+      "offset": "0x6d970",
+      "text": "IQLVBS_KCAN_VERSION_LSM_STATE"
+    },
+    {
+      "offset": "0x6d990",
+      "text": "vw_iq_lvbs_alc_eps_angle_deg"
+    },
+    {
+      "offset": "0x6d9b0",
+      "text": "update_pq_carstate_alc_state"
+    },
+    {
+      "offset": "0x6da10",
+      "text": "_iqlvbs_encrypt_mqb_alc_frame"
+    },
+    {
+      "offset": "0x6da30",
+      "text": "IQLVBS_MQB_HCA_STATUS_ACTIVE"
+    },
+    {
+      "offset": "0x6da70",
+      "text": "volkswagen_mqb_meb_checksum"
+    },
+    {
+      "offset": "0x6dad0",
+      "text": "_iqlvbs_encrypt_pq_alc_frame"
+    },
+    {
+      "offset": "0x6daf0",
+      "text": "_iqlvbs_decode_pq_alc_status"
+    },
+    {
+      "offset": "0x6db90",
+      "text": "IQLVBS_PQ_HCA_MAX_RAW_ANGLE"
+    },
+    {
+      "offset": "0x6dbd0",
+      "text": "IQLVBS_MQB_HCA_STATUS_READY"
+    },
+    {
+      "offset": "0x6dbf0",
+      "text": "ALC_reengage_set_tap_frames"
+    },
+    {
+      "offset": "0x6dc10",
+      "text": "mqb_exported_alc_available"
+    },
+    {
+      "offset": "0x6dc30",
+      "text": "mlb_exported_alc_available"
+    },
+    {
+      "offset": "0x6dc50",
+      "text": "iqlvbs_mqb_crypto_key_slot"
+    },
+    {
+      "offset": "0x6dc70",
+      "text": "_iqlvbs_kcan_module_present"
+    },
+    {
+      "offset": "0x6dc90",
+      "text": "_iqlvbs_decode_pq_alc_lwreq"
+    },
+    {
+      "offset": "0x6dcb0",
+      "text": "IQLVBS_PQ_HCA_STATUS_READY"
+    },
+    {
+      "offset": "0x6dd30",
+      "text": "ALC_reengage_set_tap_count"
+    },
+    {
+      "offset": "0x6dd50",
+      "text": "pq_exported_alc_available"
+    },
+    {
+      "offset": "0x6dd70",
+      "text": "mqb_exported_alc_entering"
+    },
+    {
+      "offset": "0x6dd90",
+      "text": "mlb_exported_alc_entering"
+    },
+    {
+      "offset": "0x6ddf0",
+      "text": "iqlvbs_pq_crypto_key_slot"
+    },
+    {
+      "offset": "0x6de10",
+      "text": "_iqlvbs_kcan_lsm_mask_last"
+    },
+    {
+      "offset": "0x6de50",
+      "text": "_iqlvbs_decode_pq_alc_abbr"
+    },
+    {
+      "offset": "0x6de70",
+      "text": "_iqlvbs_build_kcan_request"
+    },
+    {
+      "offset": "0x6deb0",
+      "text": "IQLVBS_PQ_HCA_DEG_PER_BIT"
+    },
+    {
+      "offset": "0x6ded0",
+      "text": "ALC_reengage_set_raw_last"
+    },
+    {
+      "offset": "0x6def0",
+      "text": "ALC_override_clear_frames"
+    },
+    {
+      "offset": "0x6df10",
+      "text": "vw_iq_lvbs_alc_available"
+    },
+    {
+      "offset": "0x6df30",
+      "text": "pq_exported_alc_entering"
+    },
+    {
+      "offset": "0x6df70",
+      "text": "_iqlvbs_make_pq_alc_frame"
+    },
+    {
+      "offset": "0x6dfb0",
+      "text": "vw_iq_lvbs_alc_key_slot"
+    },
+    {
+      "offset": "0x6dfd0",
+      "text": "vw_iq_lvbs_alc_entering"
+    },
+    {
+      "offset": "0x6dff0",
+      "text": "mqb_exported_alc_active"
+    },
+    {
+      "offset": "0x6e010",
+      "text": "mlb_exported_alc_active"
+    },
+    {
+      "offset": "0x6e030",
+      "text": "_iqlvbs_reset_mqb_crypto"
+    },
+    {
+      "offset": "0x6e050",
+      "text": "_iqlvbs_get_mqb_prog_map"
+    },
+    {
+      "offset": "0x6e090",
+      "text": "AlcFittedProgressiveMap"
+    },
+    {
+      "offset": "0x6e0b0",
+      "text": "_write_alc_availability"
+    },
+    {
+      "offset": "0x6e0f0",
+      "text": "pq_exported_alc_active"
+    },
+    {
+      "offset": "0x6e130",
+      "text": "_iqlvbs_mqb_apd_counter"
+    },
+    {
+      "offset": "0x6e1b0",
+      "text": "vw_iq_lvbs_alc_active"
+    },
+    {
+      "offset": "0x6e1f0",
+      "text": "mqb_torque_like_angle"
+    },
+    {
+      "offset": "0x6e230",
+      "text": "iqlvbs_pq_hca_counter"
+    },
+    {
+      "offset": "0x6e290",
+      "text": "exported_alc_entering"
+    },
+    {
+      "offset": "0x6e2f0",
+      "text": "IQLVBS_KCAN_VALUE_XOR"
+    },
+    {
+      "offset": "0x6e310",
+      "text": "ALC_feedback_entering"
+    },
+    {
+      "offset": "0x6e3f0",
+      "text": "exported_alc_engaged"
+    },
+    {
+      "offset": "0x6e470",
+      "text": "IQLVBS_MQB_KEY_SEEDS"
+    },
+    {
+      "offset": "0x6e490",
+      "text": "IQLVBS_KCAN_CMD_ADDR"
+    },
+    {
+      "offset": "0x6e4b0",
+      "text": "IQLVBS_ALC_KEY_NAMES"
+    },
+    {
+      "offset": "0x6e4d0",
+      "text": "ALC_override_latched"
+    },
+    {
+      "offset": "0x6e4f0",
+      "text": "ALC_override_counter"
+    },
+    {
+      "offset": "0x6e510",
+      "text": "ALC_feedback_engaged"
+    },
+    {
+      "offset": "0x6e5d0",
+      "text": "exported_alc_active"
+    },
+    {
+      "offset": "0x6e610",
+      "text": "IQLVBS_MQB_APD_ADDR"
+    },
+    {
+      "offset": "0x6e630",
+      "text": "IQLVBS_KCAN_MAGIC_5"
+    },
+    {
+      "offset": "0x6e650",
+      "text": "IQLVBS_KCAN_MAGIC_4"
+    },
+    {
+      "offset": "0x6e670",
+      "text": "IQLVBS_KCAN_MAGIC_1"
+    },
+    {
+      "offset": "0x6e690",
+      "text": "IQLVBS_KCAN_MAGIC_0"
+    },
+    {
+      "offset": "0x6e6b0",
+      "text": "IQLVBS_KCAN_CMD_BUS"
+    },
+    {
+      "offset": "0x6e6f0",
+      "text": "AngleLateralControl"
+    },
+    {
+      "offset": "0x6e710",
+      "text": "ALC_reentry_blocked"
+    },
+    {
+      "offset": "0x6e730",
+      "text": "ALC_feedback_active"
+    },
+    {
+      "offset": "0x6e890",
+      "text": "_alc_available_last"
+    },
+    {
+      "offset": "0x6e8b0",
+      "text": "IQLVBS_PQ_HCA_ADDR"
+    },
+    {
+      "offset": "0x6e910",
+      "text": "HCA_01_Sendestatus"
+    },
+    {
+      "offset": "0x6e9d0",
+      "text": "create_eps_update"
+    },
+    {
+      "offset": "0x6e9f0",
+      "text": "STOCK_HCA_PRESENT"
+    },
+    {
+      "offset": "0x6ea10",
+      "text": "PQ_ALC_Status_raw"
+    },
+    {
+      "offset": "0x6ea30",
+      "text": "IQLVBS-PQ-HCA1-V1:"
+    },
+    {
+      "offset": "0x6ea50",
+      "text": "HCA_01_Status_HCA"
+    },
+    {
+      "offset": "0x6ea70",
+      "text": "HCA_01_LM_OffSign"
+    },
+    {
+      "offset": "0x6ea90",
+      "text": "ALC_override_last"
+    },
+    {
+      "offset": "0x6ead0",
+      "text": "mqb_torque_blend"
+    },
+    {
+      "offset": "0x6eb90",
+      "text": "eps_stock_values"
+    },
+    {
+      "offset": "0x6ec30",
+      "text": "alcOverrideAlert"
+    },
+    {
+      "offset": "0x6ec70",
+      "text": "ALC_entryCounter"
+    },
+    {
+      "offset": "0x6ed20",
+      "text": "HCA_01_Vib_Freq"
+    },
+    {
+      "offset": "0x6ed30",
+      "text": "EPS_ALC_Abbruch"
+    },
+    {
+      "offset": "0x6edc0",
+      "text": "calc_curvature"
+    },
+    {
+      "offset": "0x6ede0",
+      "text": "alc_rack_angle"
+    },
+    {
+      "offset": "0x6edf0",
+      "text": "IQLVBS-HCA1-V1:"
+    },
+    {
+      "offset": "0x6ee10",
+      "text": "EPS_ALC_Status"
+    },
+    {
+      "offset": "0x6ee50",
+      "text": "ALC_driverExit"
+    },
+    {
+      "offset": "0x6ee60",
+      "text": "_ALC_STATE_PATH"
+    },
+    {
+      "offset": "0x6ee70",
+      "text": "ALCTorqueBlend"
+    },
+    {
+      "offset": "0x6eea0",
+      "text": "update_vw_alc"
+    },
+    {
+      "offset": "0x6ef38",
+      "text": "make_can_msg"
+    },
+    {
+      "offset": "0x6efe8",
+      "text": "_run_mqb_alc"
+    },
+    {
+      "offset": "0x6eff8",
+      "text": "_run_mlb_alc"
+    },
+    {
+      "offset": "0x6f0e8",
+      "text": "_run_pq_alc"
+    },
+    {
+      "offset": "0x6f1b8",
+      "text": "alc_status"
+    },
+    {
+      "offset": "0x6f1f8",
+      "text": "ALC_status"
+    },
+    {
+      "offset": "0x6f278",
+      "text": "splatoon3"
+    },
+    {
+      "offset": "0x6f368",
+      "text": "can_sends"
+    },
+    {
+      "offset": "0x6f3c8",
+      "text": "LH_EPS_03"
+    },
+    {
+      "offset": "0x6f3d8",
+      "text": "LH_EPS_01"
+    },
+    {
+      "offset": "0x6f478",
+      "text": "platform"
+    },
+    {
+      "offset": "0x6f540",
+      "text": "key_slot"
+    },
+    {
+      "offset": "0x6f698",
+      "text": "halcyon"
+    },
+    {
+      "offset": "0x6f6f0",
+      "text": "can_msg"
+    },
+    {
+      "offset": "0x6f710",
+      "text": "MQB_EVO"
+    },
+    {
+      "offset": "0x6f778",
+      "text": "mqbcan"
+    },
+    {
+      "offset": "0x6f790",
+      "text": "mlbcan"
+    },
+    {
+      "offset": "0x6f7d0",
+      "text": "HCA_01"
+    },
+    {
+      "offset": "0x6f830",
+      "text": "pqcan"
+    }
+  ],
+  "literal_scope": "All printable ASCII sequences of at least five bytes; literals are not code references or execution",
+  "rea_followup": {
+    "provider": "Ghidra12.1.4 through REA6.7.0",
+    "bundle": "evidence/public-alc-rea-bundle-2026-10-19.json",
+    "snapshot": "analysis/public-alc/rea-snapshot.json",
+    "image_base": "0x100000",
+    "procedure_search_mqb": {
+      "matches": 0,
+      "evidence_id": "ev_c1d4abf6e9d782c6af722950a86dcd21098ec072a72ea351dffe45349b4d61bf"
+    },
+    "creator_name": {
+      "address": "0x16c050",
+      "evidence_id": "ev_b3bdd94da9848510dd1e2245ddf2bd25b77ecf5f2fd5065ea1ed2252435f4574",
+      "incoming_reference_evidence_id": "ev_d815c4c645671a3de35737db999544da5d278a88aaf52c0faabb609a29374e40"
+    },
+    "method_record": {
+      "address": "0x191c90",
+      "name_pointer": "0x16c050",
+      "function_pointer_candidate": "0x14b354",
+      "flags": "0x82",
+      "evidence_id": "ev_0937b05d6c2676ba27cca1b5f43e15d9d6d65903e7e33b51af4bb7a42358b99f"
+    },
+    "boundary_limit": "Default Ghidra analysis did not define a procedure at 0x14b354 or containing code string-reference 0x14b410. No function decompilation or CAN algorithm claim is made.",
+    "target_executed": false,
+    "target_closed": true
+  }
+}

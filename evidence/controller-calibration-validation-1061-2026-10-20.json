@@ -1,0 +1,65 @@
+{
+  "verified_at_utc": "2026-10-20T15:16:00.595346+00:00",
+  "mapped_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+  "h1_sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641",
+  "archive_files_checked": 694,
+  "archive_mismatches": [],
+  "model_report_repeat_identical": true,
+  "body_gap_metadata_placement_verified": true,
+  "model_fields_match_h1_bytes": true,
+  "accepted_selectors": [
+    0,
+    1,
+    2
+  ],
+  "record_identity_rejects_selectors": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "selected_instruction_witnesses_verified": true,
+  "selected_function_exports_completed": true,
+  "artifacts": [
+    {
+      "path": "evidence/ghidra-calibration-context-1061-2026-10-20.txt",
+      "sha256": "32a0c456ec936abaeb8776b82f11d388c741a5df8599ce523220497e2f6f458f",
+      "bytes": 46644
+    },
+    {
+      "path": "evidence/ghidra-calibration-origin-1061-2026-10-20.txt",
+      "sha256": "bbb0a45cd9ff3694de16f1582b713cec16bd44c9bea799855d7fe52ed3cd5a17",
+      "bytes": 63906
+    },
+    {
+      "path": "evidence/ghidra-calibration-selection-1061-2026-10-20.txt",
+      "sha256": "6b9dab728daf50eab90c361a69eee6a8c2e6a1a53ca09589736834d3162da5a9",
+      "bytes": 9626
+    },
+    {
+      "path": "evidence/ghidra-calibration-writer-1061-2026-10-20.txt",
+      "sha256": "746d6defaca1d36f3714b85136fc1f1b3a3ae0edcf2e2a56bd43446732fe378b",
+      "bytes": 15634
+    },
+    {
+      "path": "evidence/controller-calibration-1061-2026-10-20.json",
+      "sha256": "ed8fff61397c656644092418af2243493b50df1e3109da2f732c454972a64842",
+      "bytes": 10600
+    },
+    {
+      "path": "scripts/inspect_controller_calibration_1061.py",
+      "sha256": "193721463f5382a2620050ff74acd3c59867ecaef174ef8f0a10d0911e2d4ccb",
+      "bytes": 5571
+    },
+    {
+      "path": "scripts/ghidra/ExportCalibrationContext1061.java",
+      "sha256": "8e17f43ce36823c5e144abfa4a5f492124f4e21d260a27346583c1f08320b061",
+      "bytes": 2304
+    }
+  ],
+  "limits": [
+    "Offline static analysis and conditional analyst model, not ECU emulation.",
+    "Actual selector and installed calibration page are unavailable.",
+    "No physical current or torque scale is established."
+  ]
+}

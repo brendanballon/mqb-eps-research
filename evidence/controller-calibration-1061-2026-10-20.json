@@ -1,0 +1,358 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "evidence_type": "static reads and conditional copy model",
+  "input_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+  "load_base": "0x2000",
+  "raw_page": {
+    "address": "0x60000",
+    "length": 4096,
+    "all_ff": true,
+    "sha256": "f47a8ec3e9aff2318d896942282ad4fe37d6391c82914f54a5da8a37de1300c6"
+  },
+  "boot_blank_check": {
+    "function": "0x90e0",
+    "words": [
+      "0x60000",
+      "0x60ffc"
+    ],
+    "condition": "Both words equal 0xffffffff",
+    "result": "0xa2"
+  },
+  "selection": {
+    "function": "0x90be",
+    "record_lookup": "0xbaa0(0xa8)",
+    "lookup_range": "[0x1000,0x1ff0)",
+    "index": "record byte at +7 if below 7, otherwise 0; absent record gives 0",
+    "limitation": "Lookup bytes are absent from this update"
+  },
+  "copy": {
+    "function": "0x912a",
+    "source": "0x61000 + index * 0x6c0",
+    "body": {
+      "source_offset": "0x0",
+      "destination": "0x60000",
+      "length": "0x6b0"
+    },
+    "metadata": {
+      "source_offset": "0x6b0",
+      "destination": "0x60ff0",
+      "length": "0x10"
+    },
+    "assumption": "Successful blank-page erase/program path; not emulation or an observed ECU write"
+  },
+  "records": [
+    {
+      "selector": 0,
+      "source_address": "0x61000",
+      "h1_offset": "0x52000",
+      "bytes": 1728,
+      "sha256": "18a8c411022be21e8dc37445d3b156ef476d5fa48f216a7d15e5a41031491701",
+      "id_byte": 0,
+      "accepted_by_0x90fc": true,
+      "conditional_page": {
+        "path": "analysis/1061/controller-calibration-model/selector-0-conditional-page.bin",
+        "sha256": "2edb38be64a9894f369dab71ad13471b1b8a173b15a40f59faa19ee46a959717",
+        "bytes": 4096
+      },
+      "fields": [
+        {
+          "destination_address": "0x60112",
+          "source_address": "0x61112",
+          "source_h1_offset": "0x52112",
+          "bytes_hex": "15 4d",
+          "unsigned_le": 19733,
+          "signed_le": 19733,
+          "role": "signed command conversion multiplier"
+        },
+        {
+          "destination_address": "0x603f8",
+          "source_address": "0x613f8",
+          "source_h1_offset": "0x523f8",
+          "bytes_hex": "00 24",
+          "unsigned_le": 9216,
+          "signed_le": 9216,
+          "role": "signed command magnitude clamp"
+        },
+        {
+          "destination_address": "0x604d8",
+          "source_address": "0x614d8",
+          "source_h1_offset": "0x524d8",
+          "bytes_hex": "0b 00",
+          "unsigned_le": 11,
+          "signed_le": 11,
+          "role": "parallel conversion right shift count"
+        },
+        {
+          "destination_address": "0x604da",
+          "source_address": "0x614da",
+          "source_h1_offset": "0x524da",
+          "bytes_hex": "0c 00",
+          "unsigned_le": 12,
+          "signed_le": 12,
+          "role": "command conversion right shift count"
+        }
+      ],
+      "command_conversion": {
+        "instruction_range": "0x48058..0x480a2",
+        "formula": "sat[-32767,32767]((clamp(x,-9216,9216) * gain) >> shift)",
+        "gain": 19733,
+        "shift": 12,
+        "gain_over_2_power_shift": 4.817626953125,
+        "scope": "One conversion stage only; later filtering and state selection still apply",
+        "examples": [
+          {
+            "input": -9216,
+            "stage_output": -32767
+          },
+          {
+            "input": -8192,
+            "stage_output": -32767
+          },
+          {
+            "input": -1024,
+            "stage_output": -4934
+          },
+          {
+            "input": 0,
+            "stage_output": 0
+          },
+          {
+            "input": 1024,
+            "stage_output": 4933
+          },
+          {
+            "input": 8192,
+            "stage_output": 32767
+          },
+          {
+            "input": 9216,
+            "stage_output": 32767
+          }
+        ]
+      }
+    },
+    {
+      "selector": 1,
+      "source_address": "0x616c0",
+      "h1_offset": "0x526c0",
+      "bytes": 1728,
+      "sha256": "ca22aeff0e1f862f12ab7e3cf31d2f9b13eb79b84d7798739a4702303b2264d0",
+      "id_byte": 1,
+      "accepted_by_0x90fc": true,
+      "conditional_page": {
+        "path": "analysis/1061/controller-calibration-model/selector-1-conditional-page.bin",
+        "sha256": "a449c62a21346dcd03a215acda79967972fdc1424b5103cd10e479634a813248",
+        "bytes": 4096
+      },
+      "fields": [
+        {
+          "destination_address": "0x60112",
+          "source_address": "0x617d2",
+          "source_h1_offset": "0x527d2",
+          "bytes_hex": "d9 4b",
+          "unsigned_le": 19417,
+          "signed_le": 19417,
+          "role": "signed command conversion multiplier"
+        },
+        {
+          "destination_address": "0x603f8",
+          "source_address": "0x61ab8",
+          "source_h1_offset": "0x52ab8",
+          "bytes_hex": "00 24",
+          "unsigned_le": 9216,
+          "signed_le": 9216,
+          "role": "signed command magnitude clamp"
+        },
+        {
+          "destination_address": "0x604d8",
+          "source_address": "0x61b98",
+          "source_h1_offset": "0x52b98",
+          "bytes_hex": "0b 00",
+          "unsigned_le": 11,
+          "signed_le": 11,
+          "role": "parallel conversion right shift count"
+        },
+        {
+          "destination_address": "0x604da",
+          "source_address": "0x61b9a",
+          "source_h1_offset": "0x52b9a",
+          "bytes_hex": "0c 00",
+          "unsigned_le": 12,
+          "signed_le": 12,
+          "role": "command conversion right shift count"
+        }
+      ],
+      "command_conversion": {
+        "instruction_range": "0x48058..0x480a2",
+        "formula": "sat[-32767,32767]((clamp(x,-9216,9216) * gain) >> shift)",
+        "gain": 19417,
+        "shift": 12,
+        "gain_over_2_power_shift": 4.740478515625,
+        "scope": "One conversion stage only; later filtering and state selection still apply",
+        "examples": [
+          {
+            "input": -9216,
+            "stage_output": -32767
+          },
+          {
+            "input": -8192,
+            "stage_output": -32767
+          },
+          {
+            "input": -1024,
+            "stage_output": -4855
+          },
+          {
+            "input": 0,
+            "stage_output": 0
+          },
+          {
+            "input": 1024,
+            "stage_output": 4854
+          },
+          {
+            "input": 8192,
+            "stage_output": 32767
+          },
+          {
+            "input": 9216,
+            "stage_output": 32767
+          }
+        ]
+      }
+    },
+    {
+      "selector": 2,
+      "source_address": "0x61d80",
+      "h1_offset": "0x52d80",
+      "bytes": 1728,
+      "sha256": "8eccf90c4d739aed8be623d9dbb325800439d9c541a349baaed5cdf5b4aea3bf",
+      "id_byte": 2,
+      "accepted_by_0x90fc": true,
+      "conditional_page": {
+        "path": "analysis/1061/controller-calibration-model/selector-2-conditional-page.bin",
+        "sha256": "250219b79f15c8d81dde43965c386651dddf1bb8b8442cad1b5f74de5d0b6451",
+        "bytes": 4096
+      },
+      "fields": [
+        {
+          "destination_address": "0x60112",
+          "source_address": "0x61e92",
+          "source_h1_offset": "0x52e92",
+          "bytes_hex": "9d 7b",
+          "unsigned_le": 31645,
+          "signed_le": 31645,
+          "role": "signed command conversion multiplier"
+        },
+        {
+          "destination_address": "0x603f8",
+          "source_address": "0x62178",
+          "source_h1_offset": "0x53178",
+          "bytes_hex": "00 24",
+          "unsigned_le": 9216,
+          "signed_le": 9216,
+          "role": "signed command magnitude clamp"
+        },
+        {
+          "destination_address": "0x604d8",
+          "source_address": "0x62258",
+          "source_h1_offset": "0x53258",
+          "bytes_hex": "0b 00",
+          "unsigned_le": 11,
+          "signed_le": 11,
+          "role": "parallel conversion right shift count"
+        },
+        {
+          "destination_address": "0x604da",
+          "source_address": "0x6225a",
+          "source_h1_offset": "0x5325a",
+          "bytes_hex": "0d 00",
+          "unsigned_le": 13,
+          "signed_le": 13,
+          "role": "command conversion right shift count"
+        }
+      ],
+      "command_conversion": {
+        "instruction_range": "0x48058..0x480a2",
+        "formula": "sat[-32767,32767]((clamp(x,-9216,9216) * gain) >> shift)",
+        "gain": 31645,
+        "shift": 13,
+        "gain_over_2_power_shift": 3.8629150390625,
+        "scope": "One conversion stage only; later filtering and state selection still apply",
+        "examples": [
+          {
+            "input": -9216,
+            "stage_output": -32767
+          },
+          {
+            "input": -8192,
+            "stage_output": -31645
+          },
+          {
+            "input": -1024,
+            "stage_output": -3956
+          },
+          {
+            "input": 0,
+            "stage_output": 0
+          },
+          {
+            "input": 1024,
+            "stage_output": 3955
+          },
+          {
+            "input": 8192,
+            "stage_output": 31645
+          },
+          {
+            "input": 9216,
+            "stage_output": 32767
+          }
+        ]
+      }
+    },
+    {
+      "selector": 3,
+      "source_address": "0x62440",
+      "h1_offset": "0x53440",
+      "bytes": 1728,
+      "sha256": "8eccf90c4d739aed8be623d9dbb325800439d9c541a349baaed5cdf5b4aea3bf",
+      "id_byte": 2,
+      "accepted_by_0x90fc": false
+    },
+    {
+      "selector": 4,
+      "source_address": "0x62b00",
+      "h1_offset": "0x53b00",
+      "bytes": 1728,
+      "sha256": "8eccf90c4d739aed8be623d9dbb325800439d9c541a349baaed5cdf5b4aea3bf",
+      "id_byte": 2,
+      "accepted_by_0x90fc": false
+    },
+    {
+      "selector": 5,
+      "source_address": "0x631c0",
+      "h1_offset": "0x541c0",
+      "bytes": 1728,
+      "sha256": "8eccf90c4d739aed8be623d9dbb325800439d9c541a349baaed5cdf5b4aea3bf",
+      "id_byte": 2,
+      "accepted_by_0x90fc": false
+    },
+    {
+      "selector": 6,
+      "source_address": "0x63880",
+      "h1_offset": "0x54880",
+      "bytes": 1728,
+      "sha256": "8eccf90c4d739aed8be623d9dbb325800439d9c541a349baaed5cdf5b4aea3bf",
+      "id_byte": 2,
+      "accepted_by_0x90fc": false
+    }
+  ],
+  "limitations": [
+    "The installed rack may already have a populated or modified page.",
+    "No current or mechanical torque units established.",
+    "No firmware execution, flashing or hardware access.",
+    "Derived pages are analysis models, never replacements for original bytes."
+  ]
+}

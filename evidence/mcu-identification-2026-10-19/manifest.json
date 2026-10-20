@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-19",
+  "scope": "Public historical board photo and primary Renesas identity evidence, offline byte corroboration",
+  "files": [
+    {
+      "path": "evidence/mcu-identification-2026-10-19/datasheet-archive-manual-page.html",
+      "bytes": 14975,
+      "sha256": "f7218bb2b21444aae8cf398870b50a592b5b9e58e72de4b0ad13557caa5ebd28"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/datasheet-archive-search.html",
+      "bytes": 70142,
+      "sha256": "089a713666f3cc22b3dd60128b3f1dfd03143c68d2aefae42cf268f7e8f37f36"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/historical-board-page.html",
+      "bytes": 24505,
+      "sha256": "0c72b6acd032cc553a4d0892a46a8cd404f639c753a6861bcea571dafba194c6"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/historical-board.jpg",
+      "bytes": 2285715,
+      "sha256": "60847d664322b9af5b10c4ca60f7878d6720d6a6398d3706e6fc6d4a6a4c929f"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/manual-memory-map.json",
+      "bytes": 7857,
+      "sha256": "c4113dc23595cfb4129a259992e787df459c786c9182b8f5a0de3ce5fb3ce8b7"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/memory-constant-candidates.txt",
+      "bytes": 130667,
+      "sha256": "d6b0d4d306242be563073fd5fd616e99f6afd3088faf5b31f33f7d137ad6e44e"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-device-information.html",
+      "bytes": 418491,
+      "sha256": "df3eb42ab8473b7ea0baf6b7b4f0a0e3953b6620220bfb6f0387d68a58fda571"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-pg-fp5-supported.pdf",
+      "bytes": 254748,
+      "sha256": "c886f73e37dc02d2decea120224ab2e8c1595f29c0a8a5b02bdaff13e279ccd5"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-px4-hardware-R01UH0098EJ0100.pdf",
+      "bytes": 37557355,
+      "sha256": "f2914aa669635072756bc530485d8bc690dede0e8398b51ee6adcc3b62b3bd22"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-upd70f3506.html",
+      "bytes": 209393,
+      "sha256": "754db7d6c1ef7c95ff34ad0dd68cd53f78aa0622aa683e43cbbd099e553ee931"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://ibb.co/3rDw18D",
+      "local": "historical-board-page.html",
+      "provenance": "February 18 2023 architecture lead in SOURCE_ANCHORS.tsv; recovered public page has og:image link",
+      "limitations": "No module label or target-rack serial identity visible"
+    },
+    {
+      "url": "https://i.ibb.co/JBfNnbf/20210128-211638.jpg",
+      "local": "historical-board.jpg",
+      "observation": "Visually legible base marking D70F3506; suffix appears ZGJAS, not relied on for ordering-code identity; lot line appears 1616KP703; JAPAN",
+      "dimensions": [
+        1908,
+        4032
+      ]
+    },
+    {
+      "url": "https://www.renesas.com/en/products/v850e2-px4/part-details/upd70f3506gja2-gbg-ax",
+      "local": "renesas-upd70f3506.html",
+      "facts": {
+        "cpu": "V850E2M",
+        "program_memory_KB": 512,
+        "data_flash_KB": 32,
+        "ram_KB": 40,
+        "lead_count": 144
+      },
+      "limitations": "Catalog suffix differs from visible custom marking; product capacities corroborate base family, not exact ordering code"
+    },
+    {
+      "url": "https://www.renesas.com/en/document/mat/list-mcus-supported-pg-fp5",
+      "local": "renesas-pg-fp5-supported.pdf",
+      "location": "PDF page 30 (zero-based29), R20UT0757EJ3600 Rev.36.00 Apr20 2022",
+      "fact": "UPD70F3506 is V850E2/PJ4"
+    },
+    {
+      "url": "https://tool-support.renesas.com/autoupdate/support/jpn/cs_plus/DeviceInformation_V850_List.html",
+      "local": "renesas-device-information.html",
+      "fact": "V850E2/PJ4 list includes UPD70F3506"
+    },
+    {
+      "url": "https://www.renesas.com/en/document/mah/v850e2px4-users-manual-hardware?r=1055671",
+      "status": "403, not obtained",
+      "limitations": "No login or access-control bypass attempted"
+    },
+    {
+      "url": "https://mhhauto.com/Thread-Vag-Steering-Assistance-D-Flash-EEPROM-Read",
+      "status": "403 via web, not obtained"
+    },
+    {
+      "url": "https://datasheet.datasheetarchive.com/originals/library/Datasheets-ISS15/DSAIH000290215.pdf",
+      "local": "renesas-px4-hardware-R01UH0098EJ0100.pdf",
+      "status": "recovered manufacturer-authored public mirror",
+      "identity_limit": "Manufacturer-authored document recovered from public third-party mirror. Archive rewrapped PDF metadata. No official byte hash available for equality verification."
+    }
+  ],
+  "firmware": {
+    "mapped_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+    "h1_sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641",
+    "startup_function": "0x13cd2",
+    "ram_zeroing_code": [
+      "0x13cd2",
+      "0x13cec"
+    ],
+    "ram_zeroing_interval": [
+      "0xfedf6000",
+      "0xfee00000"
+    ],
+    "ram_interval_bytes": 40960,
+    "code_flash_update_end_exclusive": "0x80000",
+    "not_in_update": [
+      "0x0..0x2000 low code flash",
+      "runtime RAM contents",
+      "data flash contents not identified"
+    ]
+  },
+  "conclusion": "V850E2M/PJ4 70F3506 is a strongly corroborated hardware hypothesis for 1061, identified for linked historical board photo. Exact silicon in user rack remains unverified without board/module binding.",
+  "followup": "Manual and bounded public target search recovered; see manual-memory-map.json"
+}

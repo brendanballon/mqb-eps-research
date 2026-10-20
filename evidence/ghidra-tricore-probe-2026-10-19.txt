@@ -1,0 +1,31 @@
+language=tricore:LE:32:default
+base=00000000
+Mapping is an offset coordinate system. CPU and load addresses remain hypotheses.
+SAMPLE file-offset=0x82
+00000082 INVALID
+SAMPLE file-offset=0x100
+00000100 bisr #0x57
+00000102 ld.bu d3,[a4+]
+00000104 INVALID
+SAMPLE file-offset=0x200
+00000200 add d15,d13,#0x0
+00000202 bisr #0x71
+00000204 cmov d5,d15,#-0x1
+00000206 sub.a a10,#0x36
+00000208 INVALID
+SAMPLE file-offset=0x400
+00000400 mov d2,d3
+00000402 jlt.u d15,#0xf,0xfffffe26
+00000406 mov.aa a6,a0
+00000408 jlt d0,d0,0x00001308
+0000040c INVALID
+SAMPLE file-offset=0x1000
+00001000 mov.d d7,a0
+00001002 ld.h d0,[a0+]
+00001004 nop
+00001006 nop
+00001008 nop
+0000100a nop
+0000100c nop
+0000100e nop
+00001010 INVALID

@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-20",
+  "evidence_type": "static byte/instruction analysis",
+  "input_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+  "pointer_initializers": [
+    {
+      "ram_destination": "0xfedfc058",
+      "flash_initializer": {
+        "address": "0x54f98",
+        "mapped_offset": "0x52f98",
+        "h1_offset": "0x45f98",
+        "bytes_hex": "00 10 00 00",
+        "unsigned_le": 4096
+      }
+    },
+    {
+      "ram_destination": "0xfedfc064",
+      "flash_initializer": {
+        "address": "0x54fa4",
+        "mapped_offset": "0x52fa4",
+        "h1_offset": "0x45fa4",
+        "bytes_hex": "00 00 00 00",
+        "unsigned_le": 0
+      }
+    },
+    {
+      "ram_destination": "0xfedfc0d0",
+      "flash_initializer": {
+        "address": "0x55010",
+        "mapped_offset": "0x53010",
+        "h1_offset": "0x46010",
+        "bytes_hex": "40 dc ff ff",
+        "unsigned_le": 4294958144
+      }
+    },
+    {
+      "ram_destination": "0xfedfc0d4",
+      "flash_initializer": {
+        "address": "0x55014",
+        "mapped_offset": "0x53014",
+        "h1_offset": "0x46014",
+        "bytes_hex": "44 dc ff ff",
+        "unsigned_le": 4294958148
+      }
+    }
+  ],
+  "adc": {
+    "registers": [
+      "0xffffdc40",
+      "0xffffdc44"
+    ],
+    "channels": [
+      1,
+      2
+    ],
+    "module": "ADCA0",
+    "sample_mask": "0x3ff",
+    "ctl1": {
+      "address": "0xff81d104",
+      "written_value": "0x50308001",
+      "CTYP_bit15": 1,
+      "CRAC_bit24": 0
+    },
+    "format": "10-bit right-aligned"
+  },
+  "sensor_calibration": {
+    "pointer": "0xfedfc064",
+    "initializer": 0,
+    "parser": "0x3e34a",
+    "record_type": 2,
+    "record_length": "0x20",
+    "source_records": "[0x1000,0x2000), not supplied",
+    "gain_offsets": {
+      "mode_zero_phase_A": "0x8",
+      "mode_nonzero_phase_A": "0xa",
+      "mode_zero_phase_C": "0x10",
+      "mode_nonzero_phase_C": "0x12"
+    },
+    "gain_encoding": "uint16 little-endian",
+    "mode_variable": "0xfedfaecd",
+    "offsets": {
+      "mode_zero": [
+        "0xfedfae26",
+        "0xfedfae28"
+      ],
+      "mode_nonzero": [
+        "0xfedfae22",
+        "0xfedfae24"
+      ]
+    },
+    "formula_first_stage": "t = ((signed16(offset - (adc & 1023)) * gain) + 512) >> 10",
+    "formula_mode_zero": "phase = signed16((t * 5285 + 256) >> 9)",
+    "formula_mode_nonzero": "phase = signed16((t * 4271 + 1024) >> 11)",
+    "third_phase": "phase_B = signed16(-(phase_A + phase_C))",
+    "offset_update": "Under calibration conditions, average 16 ADC samples with (sum+8)>>4",
+    "limitations": "Gain values absent. Initial zero pointer is not a usable zero gain."
+  },
+  "controller_records": [
+    {
+      "selector": 0,
+      "source": "0x61000",
+      "fields": [
+        {
+          "address": "0x61110",
+          "mapped_offset": "0x5f110",
+          "h1_offset": "0x52110",
+          "bytes_hex": "05 5b",
+          "unsigned_le": 23301,
+          "conditional_destination": "0x60110",
+          "role": "phase feedback normalization multiplier"
+        },
+        {
+          "address": "0x61500",
+          "mapped_offset": "0x5f500",
+          "h1_offset": "0x52500",
+          "bytes_hex": "0b 00",
+          "unsigned_le": 11,
+          "conditional_destination": "0x60500",
+          "role": "phase feedback normalization shift"
+        },
+        {
+          "address": "0x61404",
+          "mapped_offset": "0x5f404",
+          "h1_offset": "0x52404",
+          "bytes_hex": "40 0b",
+          "unsigned_le": 2880,
+          "conditional_destination": "0x60404",
+          "role": "phase feedback signed magnitude clamp"
+        }
+      ]
+    },
+    {
+      "selector": 1,
+      "source": "0x616c0",
+      "fields": [
+        {
+          "address": "0x617d0",
+          "mapped_offset": "0x5f7d0",
+          "h1_offset": "0x527d0",
+          "bytes_hex": "05 5b",
+          "unsigned_le": 23301,
+          "conditional_destination": "0x60110",
+          "role": "phase feedback normalization multiplier"
+        },
+        {
+          "address": "0x61bc0",
+          "mapped_offset": "0x5fbc0",
+          "h1_offset": "0x52bc0",
+          "bytes_hex": "0b 00",
+          "unsigned_le": 11,
+          "conditional_destination": "0x60500",
+          "role": "phase feedback normalization shift"
+        },
+        {
+          "address": "0x61ac4",
+          "mapped_offset": "0x5fac4",
+          "h1_offset": "0x52ac4",
+          "bytes_hex": "40 0b",
+          "unsigned_le": 2880,
+          "conditional_destination": "0x60404",
+          "role": "phase feedback signed magnitude clamp"
+        }
+      ]
+    },
+    {
+      "selector": 2,
+      "source": "0x61d80",
+      "fields": [
+        {
+          "address": "0x61e90",
+          "mapped_offset": "0x5fe90",
+          "h1_offset": "0x52e90",
+          "bytes_hex": "05 5b",
+          "unsigned_le": 23301,
+          "conditional_destination": "0x60110",
+          "role": "phase feedback normalization multiplier"
+        },
+        {
+          "address": "0x62280",
+          "mapped_offset": "0x60280",
+          "h1_offset": "0x53280",
+          "bytes_hex": "0b 00",
+          "unsigned_le": 11,
+          "conditional_destination": "0x60500",
+          "role": "phase feedback normalization shift"
+        },
+        {
+          "address": "0x62184",
+          "mapped_offset": "0x60184",
+          "h1_offset": "0x53184",
+          "bytes_hex": "40 0b",
+          "unsigned_le": 2880,
+          "conditional_destination": "0x60404",
+          "role": "phase feedback signed magnitude clamp"
+        }
+      ]
+    }
+  ],
+  "normalization_example": {
+    "phase_input": 2880,
+    "multiplier": 23301,
+    "shift": 11,
+    "positive_output": 32767,
+    "negative_output_before_saturation": -32768,
+    "saturation": [
+      -32767,
+      32767
+    ],
+    "unit": "controller integers"
+  },
+  "phase_protection": {
+    "function": "0x1cc22",
+    "threshold": {
+      "address": "0x5d08e",
+      "mapped_offset": "0x5b08e",
+      "h1_offset": "0x4e08e",
+      "bytes_hex": "40 0b",
+      "unsigned_le": 2880
+    },
+    "inputs": [
+      "0xfedfaac2",
+      "0xfedfaac6"
+    ],
+    "counters": [
+      "0xfedfb6d0",
+      "0xfedfb6d2"
+    ],
+    "condition": "abs(phase) >= 2880 increments; below resets counter",
+    "report_on_call_count": 31,
+    "report_function": "0x1535e",
+    "arguments": [
+      21,
+      0,
+      1,
+      1
+    ],
+    "limits": "Call period, resulting fault action and physical units are unproven"
+  },
+  "execution_order": {
+    "function": "0x1c43a",
+    "when": "0xfedfaed8 == 0",
+    "calls": [
+      "0x1c47e",
+      "0x1c3d2",
+      "0x1cc92",
+      "0x1da5a"
+    ],
+    "scope": "Static order, not observed execution"
+  },
+  "limits": [
+    "No conversion to amperes or delivered steering torque established.",
+    "No target execution or hardware measurements.",
+    "Template constants are conditional defaults, not confirmed installed calibration.",
+    "Large controller decompilation remains warning-bearing and partially hand-traced."
+  ]
+}

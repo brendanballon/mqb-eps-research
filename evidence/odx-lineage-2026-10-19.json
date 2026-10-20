@@ -1,0 +1,2660 @@
+{
+  "method": "Python stdlib XML, hex decoding, SHA-256 and zlib CRC32",
+  "limitations": [
+    "FRF files are hashed as candidate ancestors. FRF to ODX conversion was not reproduced.",
+    "Download source addresses are literal ODX fields, not established CPU mappings.",
+    "Checksum agreement establishes byte consistency, not authenticity or hardware applicability.",
+    "No original archive files are written. No firmware or legacy tool is executed."
+  ],
+  "files": [
+    {
+      "odx": {
+        "path": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H1_1061.odx",
+        "bytes": 937733,
+        "sha256": "a2f2620ae33701e9b5b1b2e193d6cb68a8dd2ec23cfff5870ab0069ef7923b6e"
+      },
+      "flash": {
+        "ID": "FL_5Q0909144RH11061"
+      },
+      "candidate_frf": [
+        {
+          "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144R_H1_1061.frf",
+          "bytes": 263054,
+          "sha256": "6bf8e39c9ea7e0acab2251407db8e65eb8803a6e1ce606166907cbe998c92e54"
+        },
+        {
+          "path": "EPS_research/clean-update-files/FL_5Q0909144R_H1_1061.frf",
+          "bytes": 263054,
+          "sha256": "47d99bc0fe7e709535577628c250281ea4e13a4ab6dbe03812c09f15a78aa04e"
+        }
+      ],
+      "frf_to_odx_verified": false,
+      "expected_idents": [
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH15061.SES_3Q0909144HH15061.EI_VWSparePartNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWSparePartNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW Spare Part Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YM",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144R",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144H",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH15061.SES_3Q0909144HH15061.EI_VWAppliSoftwVersiNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWAppliSoftwVersiNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW Application Software Version Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "A999",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P054",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X027",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P061",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X028",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P071",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X029",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P081",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P082",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P083",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P084",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P085",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X030",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P091",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P092",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P093",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P094",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P095",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P096",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X031",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X032",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P111",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P112",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P113",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P114",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P121",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X034",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P131",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P132",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "1011",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P141",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P151",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P708",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X046",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X047",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X048",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X049",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X049",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "1061",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5061",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH15061.SES_3Q0909144HH15061.EI_VWECUHardwVersiNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWECUHardwVersiNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW ECU Hardware Version Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H12",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H13",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H16",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H18",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H19",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "119",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH15061.SES_3Q0909144HH15061.EI_VWECUHardwNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWECUHardwNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW ECU Hardware Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909145",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "security_metadata": [
+        {
+          "tag": "SECURITY",
+          "attributes": {},
+          "text": "",
+          "children": [
+            {
+              "tag": "SECURITY-METHOD",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "ALFID",
+              "children": []
+            },
+            {
+              "tag": "FW-SIGNATURE",
+              "attributes": {
+                "TYPE": "A_BYTEFIELD"
+              },
+              "text": "014101",
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "SECURITY",
+          "attributes": {},
+          "text": "",
+          "children": [
+            {
+              "tag": "SECURITY-METHOD",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "CRC32",
+              "children": []
+            },
+            {
+              "tag": "FW-CHECKSUM",
+              "attributes": {
+                "TYPE": "A_BYTEFIELD"
+              },
+              "text": "423BE503",
+              "children": []
+            },
+            {
+              "tag": "VALIDITY-FOR",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "DB_0DATA",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "datablocks": [
+        {
+          "tag": "DATABLOCK",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH15061.DB_0ERASEDATA",
+            "TYPE": "ERASE"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "DB_0ERASEDATA",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "0 ERASE DATA",
+              "children": []
+            },
+            {
+              "tag": "FLASHDATA-REF",
+              "attributes": {
+                "ID-REF": "EMEM_3Q0909144HH15061.FD_0ERASEDATA"
+              },
+              "text": "",
+              "children": []
+            },
+            {
+              "tag": "SEGMENTS",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "SEGMENT",
+                  "attributes": {
+                    "ID": "EMEM_3Q0909144HH15061.DB_0ERASEDATA.SEG_0ERASEDATA"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "SHORT-NAME",
+                      "attributes": {},
+                      "text": "SEG_0ERASEDATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "LONG-NAME",
+                      "attributes": {},
+                      "text": "0 ERASE DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "SOURCE-START-ADDRESS",
+                      "attributes": {},
+                      "text": "07",
+                      "children": []
+                    },
+                    {
+                      "tag": "UNCOMPRESSED-SIZE",
+                      "attributes": {},
+                      "text": "01",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "DATABLOCK",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH15061.DB_0DATA",
+            "TYPE": "DATA"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "DB_0DATA",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "0 DATA",
+              "children": []
+            },
+            {
+              "tag": "FLASHDATA-REF",
+              "attributes": {
+                "ID-REF": "EMEM_3Q0909144HH15061.FD_0DATA"
+              },
+              "text": "",
+              "children": []
+            },
+            {
+              "tag": "SEGMENTS",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "SEGMENT",
+                  "attributes": {
+                    "ID": "EMEM_3Q0909144HH15061.DB_0DATA.SEG_0DATA"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "SHORT-NAME",
+                      "attributes": {},
+                      "text": "SEG_0DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "LONG-NAME",
+                      "attributes": {},
+                      "text": "0 DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "SOURCE-START-ADDRESS",
+                      "attributes": {},
+                      "text": "07",
+                      "children": []
+                    },
+                    {
+                      "tag": "UNCOMPRESSED-SIZE",
+                      "attributes": {},
+                      "text": "462848",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "payloads": [
+        {
+          "id": "EMEM_3Q0909144HH15061.FD_0ERASEDATA",
+          "output": {
+            "path": "analysis/1061/blocks/FL_5Q0909144R_H1_1061_FD_0ERASEDATA.bin",
+            "bytes": 1,
+            "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+          },
+          "dataformat": {
+            "SELECTION": "BINARY"
+          },
+          "encrypt_compress_method": "00",
+          "crc32_zlib": "D202EF8D",
+          "declared_crc32": [],
+          "crc32_matches": false,
+          "first_64_bytes": "00",
+          "last_32_bytes": "00"
+        },
+        {
+          "id": "EMEM_3Q0909144HH15061.FD_0DATA",
+          "output": {
+            "path": "analysis/1061/blocks/FL_5Q0909144R_H1_1061_FD_0DATA.bin",
+            "bytes": 462848,
+            "sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641"
+          },
+          "dataformat": {
+            "SELECTION": "BINARY"
+          },
+          "encrypt_compress_method": "00",
+          "crc32_zlib": "423BE503",
+          "declared_crc32": [
+            "423BE503"
+          ],
+          "crc32_matches": true,
+          "first_64_bytes": "323031342f30352f31332031373a35343a35322e3638006778313332370000000000000000000053474443313236373500373830353037393934350041314d51",
+          "last_32_bytes": "ffffffffffffffffffffffffffffffff0b200f0b000000007000100017d54c44",
+          "historical": {
+            "identity": {
+              "path": "EPS_research/MQB/5Q0, 3Q0/3_bin/FL_5Q0909144R_H1_1061.bin",
+              "bytes": 462848,
+              "sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641"
+            },
+            "exact_match": true,
+            "extra_leading_byte_only": false,
+            "leading_byte_hex": "32"
+          },
+          "historical_table_candidate": {
+            "file_offset": "0x48a20",
+            "rows": [
+              {
+                "file_offset": "0x48a20",
+                "raw": "176e000001000000",
+                "value_le16": 28183,
+                "value_be16": 5998,
+                "padding": 0,
+                "flag_le32": 1
+              },
+              {
+                "file_offset": "0x48a28",
+                "raw": "33ae000002000000",
+                "value_le16": 44595,
+                "value_be16": 13230,
+                "padding": 0,
+                "flag_le32": 2
+              },
+              {
+                "file_offset": "0x48a30",
+                "raw": "314b000004000000",
+                "value_le16": 19249,
+                "value_be16": 12619,
+                "padding": 0,
+                "flag_le32": 4
+              },
+              {
+                "file_offset": "0x48a38",
+                "raw": "af7a000008000000",
+                "value_le16": 31407,
+                "value_be16": 44922,
+                "padding": 0,
+                "flag_le32": 8
+              },
+              {
+                "file_offset": "0x48a40",
+                "raw": "52ee000010000000",
+                "value_le16": 61010,
+                "value_be16": 21230,
+                "padding": 0,
+                "flag_le32": 16
+              }
+            ],
+            "limitation": "Observed table bytes only. No code references, security role or runtime behavior verified."
+          }
+        }
+      ]
+    },
+    {
+      "odx": {
+        "path": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H2_1061.odx",
+        "bytes": 120939,
+        "sha256": "8c00f9bd1103deef9db0d6e07477787d35ca06c5b0d9717334b818bbb4bb2baa"
+      },
+      "flash": {
+        "ID": "FL_5Q0909144RH21061"
+      },
+      "candidate_frf": [
+        {
+          "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144R_H2_1061.frf",
+          "bytes": 36685,
+          "sha256": "f309ecfca6b4d79d5e48dc5812c89ac587e506c15c53c80d6d27c1ce49c90fcc"
+        },
+        {
+          "path": "EPS_research/clean-update-files/FL_5Q0909144R_H2_1061.frf",
+          "bytes": 36685,
+          "sha256": "501c3327a530ce6b83485b3265312ef894f256d0111822c7453eddf8beceb097"
+        }
+      ],
+      "frf_to_odx_verified": false,
+      "expected_idents": [
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH25061.SES_3Q0909144HH25061.EI_VWSparePartNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWSparePartNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW Spare Part Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144C",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144D",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144E",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144F",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144G",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144L",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144H",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144B",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144B_",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144F",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144F_",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144G",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144H",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144K",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144L",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144M",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144N",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144P",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144Q",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144R",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YA",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YB",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YC",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YD",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YE",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YF",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YG",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YH",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YI",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YJ",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YK",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YL",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YM",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144ZZ",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH25061.SES_3Q0909144HH25061.EI_VWAppliSoftwVersiNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWAppliSoftwVersiNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW Application Software Version Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "A999",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P054",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X027",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P061",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X028",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P071",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X029",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P081",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P082",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P083",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P084",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P085",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X030",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P091",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P092",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P093",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P094",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P095",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P096",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X031",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X032",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P111",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P112",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P113",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P114",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P121",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X034",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P131",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P132",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "1011",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P141",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P151",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P708",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X046",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X047",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X048",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X049",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "1061",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5061",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH25061.SES_3Q0909144HH25061.EI_VWECUHardwVersiNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWECUHardwVersiNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW ECU Hardware Version Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H12",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H13",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H16",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H18",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H19",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "119",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH25061.SES_3Q0909144HH25061.EI_VWECUHardwNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWECUHardwNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW ECU Hardware Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909145",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "security_metadata": [
+        {
+          "tag": "SECURITY",
+          "attributes": {},
+          "text": "",
+          "children": [
+            {
+              "tag": "SECURITY-METHOD",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "ALFID",
+              "children": []
+            },
+            {
+              "tag": "FW-SIGNATURE",
+              "attributes": {
+                "TYPE": "A_BYTEFIELD"
+              },
+              "text": "014101",
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "SECURITY",
+          "attributes": {},
+          "text": "",
+          "children": [
+            {
+              "tag": "SECURITY-METHOD",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "CRC32",
+              "children": []
+            },
+            {
+              "tag": "FW-CHECKSUM",
+              "attributes": {
+                "TYPE": "A_BYTEFIELD"
+              },
+              "text": "827F508F",
+              "children": []
+            },
+            {
+              "tag": "VALIDITY-FOR",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "DB_0DATA",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "datablocks": [
+        {
+          "tag": "DATABLOCK",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH25061.DB_0ERASEDATA",
+            "TYPE": "ERASE"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "DB_0ERASEDATA",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "0 ERASE DATA",
+              "children": []
+            },
+            {
+              "tag": "FLASHDATA-REF",
+              "attributes": {
+                "ID-REF": "EMEM_3Q0909144HH25061.FD_0ERASEDATA"
+              },
+              "text": "",
+              "children": []
+            },
+            {
+              "tag": "SEGMENTS",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "SEGMENT",
+                  "attributes": {
+                    "ID": "EMEM_3Q0909144HH25061.DB_0ERASEDATA.SEG_0ERASEDATA"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "SHORT-NAME",
+                      "attributes": {},
+                      "text": "SEG_0ERASEDATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "LONG-NAME",
+                      "attributes": {},
+                      "text": "0 ERASE DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "SOURCE-START-ADDRESS",
+                      "attributes": {},
+                      "text": "06",
+                      "children": []
+                    },
+                    {
+                      "tag": "UNCOMPRESSED-SIZE",
+                      "attributes": {},
+                      "text": "01",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "DATABLOCK",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH25061.DB_0DATA",
+            "TYPE": "DATA"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "DB_0DATA",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "0 DATA",
+              "children": []
+            },
+            {
+              "tag": "FLASHDATA-REF",
+              "attributes": {
+                "ID-REF": "EMEM_3Q0909144HH25061.FD_0DATA"
+              },
+              "text": "",
+              "children": []
+            },
+            {
+              "tag": "SEGMENTS",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "SEGMENT",
+                  "attributes": {
+                    "ID": "EMEM_3Q0909144HH25061.DB_0DATA.SEG_0DATA"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "SHORT-NAME",
+                      "attributes": {},
+                      "text": "SEG_0DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "LONG-NAME",
+                      "attributes": {},
+                      "text": "0 DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "SOURCE-START-ADDRESS",
+                      "attributes": {},
+                      "text": "06",
+                      "children": []
+                    },
+                    {
+                      "tag": "UNCOMPRESSED-SIZE",
+                      "attributes": {},
+                      "text": "53248",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "payloads": [
+        {
+          "id": "EMEM_3Q0909144HH25061.FD_0ERASEDATA",
+          "output": {
+            "path": "analysis/1061/blocks/FL_5Q0909144R_H2_1061_FD_0ERASEDATA.bin",
+            "bytes": 1,
+            "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+          },
+          "dataformat": {
+            "SELECTION": "BINARY"
+          },
+          "encrypt_compress_method": "00",
+          "crc32_zlib": "D202EF8D",
+          "declared_crc32": [],
+          "crc32_matches": false,
+          "first_64_bytes": "00",
+          "last_32_bytes": "00"
+        },
+        {
+          "id": "EMEM_3Q0909144HH25061.FD_0DATA",
+          "output": {
+            "path": "analysis/1061/blocks/FL_5Q0909144R_H2_1061_FD_0DATA.bin",
+            "bytes": 53248,
+            "sha256": "6da9a40580a2bd49b5097f6c7363a2080a76575e230b7cf8fe54a3f7a61ce5f7"
+          },
+          "dataformat": {
+            "SELECTION": "BINARY"
+          },
+          "encrypt_compress_method": "00",
+          "crc32_zlib": "827F508F",
+          "declared_crc32": [
+            "827F508F"
+          ],
+          "crc32_matches": true,
+          "first_64_bytes": "0e7a0000ec7a00007c7b0000c47a0000347b00008c4c0000c44d00000e4c00004c4e0000fe4d0000924900006a4a00009a4e0000e04e0000204f00005a4f0000",
+          "last_32_bytes": "ffffffffffffffffffffffffffffffff0100000009005e000900060083b405a9"
+        }
+      ]
+    },
+    {
+      "odx": {
+        "path": "EPS_research/MQB/5Q0, 3Q0/2_odx/FL_5Q0909144R_H7_1061.odx",
+        "bytes": 61276,
+        "sha256": "c9265268aa6305c3a563f33e4c1af5ea664f5e04c6bef4d64d01d37f27855e60"
+      },
+      "flash": {
+        "ID": "FL_5Q0909144RH71061"
+      },
+      "candidate_frf": [
+        {
+          "path": "EPS_research/MQB/5Q0, 3Q0/1_original-update-files/FL_5Q0909144R_H7_1061.frf",
+          "bytes": 19151,
+          "sha256": "7ec18f1fbbde971f1fa0f06122342f013cf4cfe4981ee67a835cd0e5a4d25d38"
+        },
+        {
+          "path": "EPS_research/clean-update-files/FL_5Q0909144R_H7_1061.frf",
+          "bytes": 19151,
+          "sha256": "7ec18f1fbbde971f1fa0f06122342f013cf4cfe4981ee67a835cd0e5a4d25d38"
+        }
+      ],
+      "frf_to_odx_verified": false,
+      "expected_idents": [
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH75061.SES_3Q0909144HH75061.EI_VWSparePartNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWSparePartNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW Spare Part Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144YM",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144R",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "3Q0909144H",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH75061.SES_3Q0909144HH75061.EI_VWAppliSoftwVersiNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWAppliSoftwVersiNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW Application Software Version Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "A999",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P054",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X027",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P061",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X028",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P071",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X029",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P081",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P082",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P083",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P084",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P085",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X030",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P091",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P092",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P093",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P094",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P095",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P096",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X031",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X032",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P111",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P112",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P113",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P114",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P121",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X034",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P131",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P132",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "1011",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P141",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P151",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "P708",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X046",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X047",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X048",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X049",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "X049",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "1061",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5061",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH75061.SES_3Q0909144HH75061.EI_VWECUHardwVersiNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWECUHardwVersiNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW ECU Hardware Version Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H12",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H13",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H16",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H18",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "H19",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "119",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "EXPECTED-IDENT",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH75061.SES_3Q0909144HH75061.EI_VWECUHardwNumbe"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "EI_VWECUHardwNumbe",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "VW ECU Hardware Number",
+              "children": []
+            },
+            {
+              "tag": "IDENT-VALUES",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909144",
+                  "children": []
+                },
+                {
+                  "tag": "IDENT-VALUE",
+                  "attributes": {
+                    "TYPE": "A_ASCIISTRING"
+                  },
+                  "text": "5Q0909145",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "security_metadata": [
+        {
+          "tag": "SECURITY",
+          "attributes": {},
+          "text": "",
+          "children": [
+            {
+              "tag": "SECURITY-METHOD",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "ALFID",
+              "children": []
+            },
+            {
+              "tag": "FW-SIGNATURE",
+              "attributes": {
+                "TYPE": "A_BYTEFIELD"
+              },
+              "text": "014101",
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "SECURITY",
+          "attributes": {},
+          "text": "",
+          "children": [
+            {
+              "tag": "SECURITY-METHOD",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "CRC32",
+              "children": []
+            },
+            {
+              "tag": "FW-CHECKSUM",
+              "attributes": {
+                "TYPE": "A_BYTEFIELD"
+              },
+              "text": "2144DF1C",
+              "children": []
+            },
+            {
+              "tag": "VALIDITY-FOR",
+              "attributes": {
+                "TYPE": "A_ASCIISTRING"
+              },
+              "text": "DB_0DATA",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "datablocks": [
+        {
+          "tag": "DATABLOCK",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH75061.DB_0ERASEDATA",
+            "TYPE": "ERASE"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "DB_0ERASEDATA",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "0 ERASE DATA",
+              "children": []
+            },
+            {
+              "tag": "FLASHDATA-REF",
+              "attributes": {
+                "ID-REF": "EMEM_3Q0909144HH75061.FD_0ERASEDATA"
+              },
+              "text": "",
+              "children": []
+            },
+            {
+              "tag": "SEGMENTS",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "SEGMENT",
+                  "attributes": {
+                    "ID": "EMEM_3Q0909144HH75061.DB_0ERASEDATA.SEG_0ERASEDATA"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "SHORT-NAME",
+                      "attributes": {},
+                      "text": "SEG_0ERASEDATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "LONG-NAME",
+                      "attributes": {},
+                      "text": "0 ERASE DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "SOURCE-START-ADDRESS",
+                      "attributes": {},
+                      "text": "02",
+                      "children": []
+                    },
+                    {
+                      "tag": "UNCOMPRESSED-SIZE",
+                      "attributes": {},
+                      "text": "01",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "DATABLOCK",
+          "attributes": {
+            "ID": "EMEM_3Q0909144HH75061.DB_0DATA",
+            "TYPE": "DATA"
+          },
+          "text": "",
+          "children": [
+            {
+              "tag": "SHORT-NAME",
+              "attributes": {},
+              "text": "DB_0DATA",
+              "children": []
+            },
+            {
+              "tag": "LONG-NAME",
+              "attributes": {},
+              "text": "0 DATA",
+              "children": []
+            },
+            {
+              "tag": "FLASHDATA-REF",
+              "attributes": {
+                "ID-REF": "EMEM_3Q0909144HH75061.FD_0DATA"
+              },
+              "text": "",
+              "children": []
+            },
+            {
+              "tag": "SEGMENTS",
+              "attributes": {},
+              "text": "",
+              "children": [
+                {
+                  "tag": "SEGMENT",
+                  "attributes": {
+                    "ID": "EMEM_3Q0909144HH75061.DB_0DATA.SEG_0DATA"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "SHORT-NAME",
+                      "attributes": {},
+                      "text": "SEG_0DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "LONG-NAME",
+                      "attributes": {},
+                      "text": "0 DATA",
+                      "children": []
+                    },
+                    {
+                      "tag": "SOURCE-START-ADDRESS",
+                      "attributes": {},
+                      "text": "02",
+                      "children": []
+                    },
+                    {
+                      "tag": "UNCOMPRESSED-SIZE",
+                      "attributes": {},
+                      "text": "24576",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "payloads": [
+        {
+          "id": "EMEM_3Q0909144HH75061.FD_0ERASEDATA",
+          "output": {
+            "path": "analysis/1061/blocks/FL_5Q0909144R_H7_1061_FD_0ERASEDATA.bin",
+            "bytes": 1,
+            "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+          },
+          "dataformat": {
+            "SELECTION": "BINARY"
+          },
+          "encrypt_compress_method": "00",
+          "crc32_zlib": "D202EF8D",
+          "declared_crc32": [],
+          "crc32_matches": false,
+          "first_64_bytes": "00",
+          "last_32_bytes": "00"
+        },
+        {
+          "id": "EMEM_3Q0909144HH75061.FD_0DATA",
+          "output": {
+            "path": "analysis/1061/blocks/FL_5Q0909144R_H7_1061_FD_0DATA.bin",
+            "bytes": 24576,
+            "sha256": "10c11c159565aeff7750a8c4ebe67b2ef25e44e1ce599dbec54c42a85bbbf64a"
+          },
+          "dataformat": {
+            "SELECTION": "BINARY"
+          },
+          "encrypt_compress_method": "00",
+          "crc32_zlib": "2144DF1C",
+          "declared_crc32": [
+            "2144DF1C"
+          ],
+          "crc32_matches": true,
+          "first_64_bytes": "4d51425f42425f31385f30312020200000000000355130393039313434594d3033313966726565000000000000000000800e00804026e0fe24260090c121402e",
+          "last_32_bytes": "ffffffffffffffffffffffffffffffff0100000009005e000900060083b405a9",
+          "historical": {
+            "identity": {
+              "path": "EPS_research/MQB/5Q0, 3Q0/3_bin/FL_5Q0909144R_H7_1061.bin",
+              "bytes": 24577,
+              "sha256": "391f6fc7872966a3f980e21534853c0b13164d9b084d6d513fde978178e2a40d"
+            },
+            "exact_match": false,
+            "extra_leading_byte_only": true,
+            "leading_byte_hex": "00"
+          }
+        }
+      ]
+    }
+  ]
+}

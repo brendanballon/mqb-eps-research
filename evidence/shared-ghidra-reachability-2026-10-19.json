@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-19T18:52:07.535970+00:00",
+  "source": {
+    "thread": "https://discord.com/channels/660951518014341124/1063188305514090546",
+    "location": "Pinned Messages",
+    "author": "miso",
+    "displayed_date": "January 12, 2023, 3:20 PM",
+    "credentials_retained": false
+  },
+  "host": "138.68.55.155",
+  "tcp_results": [
+    {
+      "port": 13100,
+      "connected": true,
+      "seconds": 0.075
+    },
+    {
+      "port": 13101,
+      "connected": true,
+      "seconds": 0.075
+    },
+    {
+      "port": 13102,
+      "connected": true,
+      "seconds": 0.075
+    }
+  ],
+  "tls_results": [
+    {
+      "port": 13100,
+      "server_certificate_sha256": "8fb96531093f38f444373d43354620c5e22e643378eed1ec268beddce48cadae",
+      "plaintext_jrmi_response_hex": "1503030002020a"
+    },
+    {
+      "port": 13101,
+      "server_certificate_sha256": "8fb96531093f38f444373d43354620c5e22e643378eed1ec268beddce48cadae",
+      "plaintext_jrmi_response_hex": "1503030002020a"
+    },
+    {
+      "port": 13102,
+      "server_certificate_sha256": "8fb96531093f38f444373d43354620c5e22e643378eed1ec268beddce48cadae",
+      "plaintext_jrmi_response_hex": "1503030002020a"
+    }
+  ],
+  "certificate": {
+    "subject": "CN=GhidraServer",
+    "issuer": "CN=GhidraServer",
+    "not_before_utc": "2026-09-15T16:48:53Z",
+    "not_after_utc": "2028-09-14T16:48:53Z",
+    "observation": "Retrieved public self-signed certificate only; no authenticated identity or trust claim"
+  },
+  "method": "TCP connect, minimal JRMI header and TLS public-certificate retrieval only; no authentication, registry enumeration or repository access",
+  "limitations": [
+    "Server responds and presents a GhidraServer certificate. Login, version, repository contents and MQB annotations are unverified.",
+    "Pinned credentials were neither transmitted nor retained in project notes."
+  ],
+  "local_port_documentation": {
+    "path": "analysis/tools/ghidra_12.1.4_PUBLIC/server/svrREADME.html",
+    "sha256": "9a3dd4bfc0aed951b80d8a725c2e84adc49c4749b61aba12c1986525d958609a",
+    "lines": "267-268"
+  }
+}

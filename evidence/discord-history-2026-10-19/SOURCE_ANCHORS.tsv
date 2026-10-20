@@ -1,0 +1,68 @@
+date	displayed_time	author	evidence_kind	paraphrase
+2023-01-12	3:10 PM	CzokNorris	Goal	MQB-specific rack reverse engineering and torque hacking.
+2023-01-12	3:12-3:14 PM	CzokNorris	Infrastructure	Offers shared Ghidra server and MQB folder in existing PQ project.
+2023-01-12	3:14 PM	miso	Archive	Links Drive firmware/docs and requests per-firmware workflow notes.
+2023-01-12	3:29 PM	miso	Vehicle report	Reports version 1061 on their Mk7.
+2023-01-12	4:10-4:38 PM	miso	Archive	Reorganized Drive, removed public editing, added available original firmware files.
+2023-01-20	11:51-11:58 AM	miso	Hardware claim	TRW MQB-A0 column-mounted units described as TriCore.
+2023-02-18	10:15 AM; 2:09-2:10 PM	ole	Architecture lead	5Q0 internet photos and Ghidra interpretation suggest V850.
+2023-02-18	12:09 PM	miso	Scope correction	Actual teardown was 2Q1; rack-mounted CPU uncertain.
+2023-02-19	2:58 AM	cd_redbrick	External lead	Posts MQB EPS firmware collection URL.
+2023-02-19	3:52-3:53 AM	cd_redbrick	Attachment lead	Posts V850 reverse-engineering PDF; suggests page 49.
+2023-04-16	8:32-8:51 AM	miso	Dump status	No known MQB firmware dump; research believed based on update files.
+2023-04-16	8:57 AM	FLcruising	Proposal	Suggests used rack and adapting Willem's 1K0 V850 work.
+2023-04-17	3:54 AM	miso	Terminology	Identifies PLA as angle-control park assist.
+2023-04-22	8:34-8:35 PM	dkiiv	Tool uncertainty	Dumping is unsolved; VCP/ODIS possibilities raised, not demonstrated.
+2023-04-23	9:25-9:26 AM	FLcruising	Correction	Questions VCP dumping; writing and reading are different capabilities.
+2023-04-23	6:50-6:54 PM	dkiiv	Research proposal	Suggests RE of VCP flashing; uncertain about full read/edit/write; recalls Ghidra container problem.
+2023-04-23	6:55 PM	miso	Dump status	No MQB module dump known to them.
+2023-04-23	8:13 PM	FLcruising	Correction	VCP flash-file export is not reading installed module flash.
+2023-05-16	3:48 PM	Paper	Alternative	Suggests adding column servo; no result shown.
+2023-05-16	3:53-3:55 PM	dkiiv	Mixing proposal	Inline HCA/DSR mixing; proposed torque arithmetic explicitly uncertain for MQB.
+2023-05-22	11:29-11:32 AM	dkiiv	Priority shift	Pessimistic about firmware hacking; favors mixing; mentions speed spoofing alternative.
+2023-05-22	11:33 AM	dkiiv	Test plan	Plans Ocelot v1 mixed and DSR-quantification branches after ACC work frees time.
+2023-05-22	11:34 AM	dkiiv	Later-corrected claim	Initially attributes PLA cancellation to external script rather than rack.
+2023-05-22	12:01-12:02 PM	dkiiv	Mechanism proposal	EPS-side inline device; mixing would not require speed spoofing if it works; DSR described as ABS request.
+2023-05-22	4:02-4:04 PM	ole	Participant result	Reports MQB rack cancellation above about 5 Nm driver torque; distinguishes larger motor output.
+2023-05-22	4:03-4:04 PM	ole	Participant result	Reports rate limiting requested angle due to acceleration and force.
+2023-05-22	4:05 PM	ole	Participant result	Closed-ground test at 15 km/h, roughly 90 degrees wheel motion before driver stopped it.
+2023-05-24	2:00-2:02 PM	ole	Causal explanation	Low sensed driver torque does not bound motor output or rate; external limiter must be trusted.
+2023-05-24	2:44-2:45 PM	dkiiv	Test plan	Working toward CAN inbox change for DSR quantification; custom module alternative.
+2023-06-29	11:40 AM	dkiiv	Explicit untested status	Mixing idea still untested; waiting for Ocelot v1 restock to buy hardware.
+2023-06-29	11:46 AM; 11:53 AM	dkiiv	Harness leads	Posts 5Q1971111BA and 5Q1971111AC.
+2023-06-29	11:47 AM	Paper	Hardware offer	Has two Ocelot v2 units and possible access to another vehicle.
+2023-06-29	11:48 AM	miso	Vehicle constraint	GTE wiring access obstructed; ordinary ICE access looks easier in diagrams.
+2023-06-29	12:01 PM	dkiiv	Candidate rejection	Questions early connector candidate as having too many wires.
+2023-06-29	12:40-12:44 PM	UptownBench1187; miso	Participant result	Connector found after tracing; airbox/battery-tray access described and diagram agreement reported.
+2023-06-29	12:41 PM	miso	External lead	Posts wiring-diagram Drive folder.
+2023-06-29	12:44 PM	miso	Vehicle constraint	EV inverter occupies conventional access area.
+2023-06-29	afternoon; edited 2:50 PM	dkiiv	Connector leads	Posts 4H0 973 713 and 3B0 973 813 with six-way connector listings.
+2023-06-29	2:43 PM	dkiiv	Unverified harness plan	Wants schematic and hopes plug includes 12V and ground.
+2023-06-29	2:47 PM	UptownBench1187	Test offer	Offers MQB test if PQ DSR/HCA mixing succeeds.
+2023-06-29	2:52 PM	UptownBench1187	Access report	Could touch connector through exhaust tunnel from underneath.
+2023-08-21	8:07 AM	Martin	Participation change	Withdraws promised bounty contribution after no longer having VW.
+2024-05-12	4:56 AM; 8:59 AM	ChosenCypher; dkiiv	Speed spoofing discussion	Low speed spoofing proposed; dkiiv mentions 1 mph and objects; no measured result.
+2025-03-14	1:00 PM	ole	Map lead	At least three lookup-table groups in steering-map SGO; asks meanings.
+2025-03-14	2:07-2:08 PM	dkiiv	Map hypotheses	Suggests recentering, HCA/DSR, TSC; says code-reference tracing needed.
+2025-03-14	3:21 PM	ole	Map hypotheses	Tentative HCA/DSR/TSC association; two tables same; agrees memory tracing needed.
+2025-03-14	3:21-4:18 PM	ole	Participant result plus hearsay	Drove strong prototype rack; told IAV flashed something; no modification details available.
+2026-01-02	5:00-5:15 PM	daniii438	Infrastructure proposal	Asks about old server and proposes combined EPS/ABS server.
+2026-01-02	5:13 PM; 5:20 PM	miso	Infrastructure status	Moved to Binary Ninja; server seems alive but login fails.
+2026-01-02	5:16-5:58 PM	miso; Teal	ALC origin in thread	Reddit demo linked; Teal identifies self and names angle lateral control.
+2026-01-02	5:59 PM	Teal	Media leads	Six MOV demo attachments visible, not independently reviewed.
+2026-01-02	6:02-6:04 PM	Teal; armanthenothacker	Implementation claims	EPS-side module, no firmware flash; favorable safety assertions without validation record here.
+2026-01-02	6:05-6:06 PM	armanthenothacker	Installation claim	TML coupling under battery; own GTI said to be only installed MQB at that time.
+2026-01-02	6:05-6:07 PM	miso	Vehicle constraint	2015 Golf/GTE PHEV access blocked by inverter; battery in trunk.
+2026-01-02	11:10 PM	jp-solutionz	Unanswered mechanism question	Asks if torque-sensor intercept and about compatibility; question is not confirmation.
+2026-01-02	11:11 PM	Teal	External lead	Links Konn3kt beta-testers server.
+2026-01-02	11:31 PM	armanthenothacker	Release status	Not yet released; information scattered pending compilation.
+2026-01-04	2:13 PM	Teal	Harness offer	Offers harness after connector identification; mentions two CAN wires.
+2026-01-05	4:07 AM	armanthenothacker	Missing deliverable	Requests both connector sides, pins, wire colors, part number to make harness.
+2026-01-10	12:45 PM	Teal	Compatibility expectation	Expects existing code to work; says wiring is remaining issue, not a demonstrated GTE result.
+2026-01-10	1:03-1:18 PM	miso	Physical roadblock	Cannot release T14q/T14z; posts T14q 3C0 973 837 / 3C0 973 737.
+2026-01-11	1:40-1:53 PM	miso	Negative participant result	T14q/T14z unplugging did not affect EPS; C/D/E hard to access near crash beam per drawing.
+2026-01-11	2:02 PM	miso	Physical roadblock	Cannot see connectors even with endoscope.
+2026-01-18	3:41 AM	miso	Diagnostic correction	No camera/park-assist modules fitted; EPS coded to accept them produces faults.
+2026-01-19	11:29 AM	Teal	Proposal	Bumper access/direct CAN tapping discussed; relay behavior claimed, no result shown.
+2026-03-07	8:30 PM	Teal	Follow-up	Reminder without technical outcome.
+2026-08-10	8:22-8:23 PM	Teal	Final proposal	Replies to January EPS-unaffected result; says connector works if filtered; tags armanthenothacker; exact connector not named.

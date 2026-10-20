@@ -1,0 +1,280 @@
+{
+  "evidence_type": "direct Ghidra decompiler/static reference export review, not REA Evidence record",
+  "artifact": {
+    "path": "analysis/1061/mapped-update.bin",
+    "sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+    "load_base": "0x2000"
+  },
+  "sources": {
+    "decompiler": "analysis/1061/torque-survey.c",
+    "decompiler_sha256": "13b11c6048b4cf55c2ac15b40aafc7018f9f7e4a5e32efc452011f1475a1b2f8",
+    "references": "analysis/1061/torque-survey-refs.tsv",
+    "references_sha256": "8ade781054abd56c40fbf55ba8780e9f9c69475492f11f29d01c221ce10b29fc"
+  },
+  "function_spans": [
+    {
+      "decompiler_header": "FUNCTION ram:00018e72 body=[[ram:00018e72, ram:00018ed5]]",
+      "source_line": 21524
+    },
+    {
+      "decompiler_header": "FUNCTION ram:00018ed6 body=[[ram:00018ed6, ram:00019177]]",
+      "source_line": 21540
+    },
+    {
+      "decompiler_header": "FUNCTION ram:0001da5a body=[[ram:0001da5a, ram:0001f37d]]",
+      "source_line": 26299
+    },
+    {
+      "decompiler_header": "FUNCTION ram:000361e4 body=[[ram:000361e4, ram:0003656d]]",
+      "source_line": 51307
+    },
+    {
+      "decompiler_header": "FUNCTION ram:0003660a body=[[ram:0003660a, ram:00036719]]",
+      "source_line": 51592
+    },
+    {
+      "decompiler_header": "FUNCTION ram:0003671a body=[[ram:0003671a, ram:0003698d]]",
+      "source_line": 51652
+    },
+    {
+      "decompiler_header": "FUNCTION ram:0003ebbc body=[[ram:0003ebbc, ram:0003ec01]]",
+      "source_line": 60243
+    },
+    {
+      "decompiler_header": "FUNCTION ram:0004636e body=[[ram:0004636e, ram:0004637f]]",
+      "source_line": 66933
+    },
+    {
+      "decompiler_header": "FUNCTION ram:00046380 body=[[ram:00046380, ram:0004638f]]",
+      "source_line": 66944
+    },
+    {
+      "decompiler_header": "FUNCTION ram:00046390 body=[[ram:00046390, ram:000463a5]]",
+      "source_line": 66955
+    },
+    {
+      "decompiler_header": "FUNCTION ram:000463e2 body=[[ram:000463e2, ram:00048e53]]",
+      "source_line": 67031
+    },
+    {
+      "decompiler_header": "FUNCTION ram:0004a494 body=[[ram:0004a494, ram:0004a579]]",
+      "source_line": 71248
+    }
+  ],
+  "chain": [
+    {
+      "step": "0x3671a consumes0xfedfab30 and writes0xfedfac04",
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x361e4 scales and rate-limits0xfedfac04 into0xfedfabfc",
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x3660a adds0xfedfabfa correction to0xfedfabfc and writes0xfedfabfe with mirror check",
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x4a494 accepts signed0xfedfabfe within[-8192,8192], substitutes0 otherwise, writes signed0xfedfab2a and absolute0xfedfab18 with mirror checks",
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x463e2 copies0xfedfab2a to0xfedf9f68, clamps to calibration-dependent symmetric bound, multiplies and shifts through calibration fields to sStack78",
+      "source_lines": [
+        68641,
+        69072,
+        69112,
+        69141
+      ],
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x463e2 writeslocal80[2]=sStack78 into32-byte double buffer and toggles index",
+      "source_lines": [
+        69872,
+        69873,
+        69894
+      ],
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x4636e producer chooses0xfedfc2ac+index*32;0x46380 toggles0xfedfc2aa;0x46390 consumer chooses opposite buffer0xfedfc2ac or0xfedfc2cc",
+      "type": "static decompiler data flow",
+      "slot_check": "local80 andpsStack94 are bothshort*; index2 means byte offset4 on both sides"
+    },
+    {
+      "step": "0x1da5a reads buffer slot2 into sStack7c, subtracts transformed/filter feedbackiVar18, integrates error into0xfedfb768 with gain from slot12, includes proportional/feed-forward terms",
+      "source_lines": [
+        26546,
+        26548,
+        26914,
+        26922,
+        26968
+      ],
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x1da5a computes6 phased outputs0xfedf97ec..0xfedf97f6 and calls0x18e72; typecVar8 changes channel ordering",
+      "source_lines": [
+        27718,
+        27873,
+        27924
+      ],
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x18e72 converts6 values by(value*50+512)>>10 into0xfedfaa54..0xfedfaa5e",
+      "source_lines": [
+        21530,
+        21535
+      ],
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x18ed6 passes alternating triplets to0x3ebbc based on scheduler/state counter0xfedfb4f8",
+      "source_lines": [
+        21554,
+        21596,
+        21625
+      ],
+      "type": "static decompiler data flow"
+    },
+    {
+      "step": "0x3ebbc caps unsigned param2 at2500, reports0x13 on cap, writes2500-param2 to0xffffccb0/0xffffccb4/0xffffccb8 forchannel0/1/2, returns2 forinvalidchannel",
+      "source_lines": [
+        60254,
+        60261,
+        60264,
+        60267
+      ],
+      "type": "static decompiler data flow"
+    }
+  ],
+  "interpretation": "The error feedback, integrator, phased outputs and peripheral compare writes support a motor-control-path inference. Exact current/torque units and physical calibration are not established.",
+  "limitations": [
+    "Static flow does not establish execution or active variant selection.",
+    "Large0x1da5a and0x463e2 decompilations contain merged-register and overlapping-global warnings; full instruction-level value flow is not hand-verified.",
+    "Some0x463e2 calibration fields resolve to0xffff in this map:0x603f8=ffff,0x604d8=ffff. Active variant/calibration selection must be resolved before numeric interpretation.",
+    "2500 is a peripheral-domain numeric cap, not evidence of2500Nm or2500A.",
+    "Missing low flash and data flash remain outside supplied image.",
+    "No firmware patch, target execution, CAN transmission, vehicle actuation or hardware test."
+  ],
+  "raw_pointer_search": {
+    "method": "all overlapping little-endian exact32-bit byte matches in supplied map",
+    "hits": {
+      "0xfedfab30": [],
+      "0xfedfabfe": [
+        "0x5a358"
+      ],
+      "0xfedfab3e": [],
+      "0xfedfab48": [],
+      "0xfedfaaf8": [],
+      "0xfedfaafc": [],
+      "0xfedfab2a": [
+        "0x59c98"
+      ]
+    },
+    "limitation": "No match does not rule out gp-relative code references, computed addresses or runtime copies."
+  },
+  "selected_static_refs": [
+    "ram:00018e72\tram:00018e80\tram:fedfaa54\tWRITE\tst.h r14,-0x65ac[gp]",
+    "ram:00018ed6\tram:00018f12\tram:fedfaa54\tREAD\tld.hu -0x65ac[gp],r7",
+    "ram:00018ed6\tram:0001904e\tram:ffffccb0\tREAD\tld.hu -0x3350[r0],r12",
+    "ram:00018ed6\tram:00019052\tram:ffffccb4\tREAD\tld.hu -0x334c[r0],r28",
+    "ram:00018ed6\tram:00019056\tram:ffffccb8\tREAD\tld.hu -0x3348[r0],r26",
+    "ram:0001932a\tram:00019384\tram:ffffccb0\tREAD\tld.hu -0x3350[r0],r12",
+    "ram:0001932a\tram:0001938c\tram:ffffccb4\tREAD\tld.hu -0x334c[r0],r8",
+    "ram:0001932a\tram:00019394\tram:ffffccb8\tREAD\tld.hu -0x3348[r0],r6",
+    "ram:0001c7ea\tram:0001c8c2\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r15",
+    "ram:0001c928\tram:0001c998\tram:ffffccb0\tREAD\tld.hu -0x3350[r0],r12",
+    "ram:0001c928\tram:0001c9a4\tram:ffffccb4\tREAD\tld.hu -0x334c[r0],r10",
+    "ram:0001c928\tram:0001c9b0\tram:ffffccb8\tREAD\tld.hu -0x3348[r0],r8",
+    "ram:0001cc92\tram:0001ccfc\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:0001f632\tram:0001f676\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r15",
+    "ram:00026acc\tram:00026acc\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r14",
+    "ram:00028a0a\tram:00028dd2\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r15",
+    "ram:0003495c\tram:00034962\tram:fedfabfe\tREAD\tld.h -0x6402[gp],r16",
+    "ram:0003549a\tram:0003558c\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r15",
+    "ram:000361e4\tram:000364a4\tram:fedfac04\tREAD\tld.h -0x63fc[gp],r6",
+    "ram:000361e4\tram:00036528\tram:fedfabfc\tWRITE\tst.h r6,-0x6404[gp]",
+    "ram:000361e4\tram:00036558\tram:fedfabfc\tREAD\tld.h -0x6404[gp],r6",
+    "ram:000361e4\tram:00036562\tram:fedfabfc\tWRITE\tst.h r6,-0x6404[gp]",
+    "ram:0003660a\tram:000366f2\tram:fedfabfc\tREAD\tld.h -0x6404[gp],r15",
+    "ram:0003660a\tram:000366f6\tram:fedfabfe\tREAD\tld.h -0x6402[gp],r14",
+    "ram:0003660a\tram:00036704\tram:fedfabfe\tWRITE\tst.h r15,-0x6402[gp]",
+    "ram:0003671a\tram:00036916\tram:fedfac04\tWRITE\tst.h r12,-0x63fc[gp]",
+    "ram:0003698e\tram:00036992\tram:fedfabfc\tREAD\tld.h -0x6404[gp],r15",
+    "ram:0003698e\tram:00036996\tram:fedfac04\tREAD\tld.h -0x63fc[gp],r9",
+    "ram:00036a3c\tram:00036ac2\tram:fedfabfe\tREAD\tld.h -0x6402[gp],r14",
+    "ram:00036a3c\tram:00036ace\tram:fedfabfc\tREAD\tld.h -0x6404[gp],r14",
+    "ram:00036b24\tram:00036b42\tram:fedfac04\tREAD\tld.h -0x63fc[gp],r6",
+    "ram:0003d89c\tram:0003d994\tram:ffffccb0\tREAD\tsld.hu 0x0[ep],r14",
+    "ram:0003d89c\tram:0003d996\tram:ffffccb0\tREAD\tsld.hu 0x0[ep],r7",
+    "ram:0003d89c\tram:0003d9a2\tram:ffffccb4\tREAD\tsld.hu 0x0[ep],r12",
+    "ram:0003d89c\tram:0003d9a4\tram:ffffccb4\tREAD\tsld.hu 0x0[ep],r16",
+    "ram:0003d89c\tram:0003d9b0\tram:ffffccb8\tREAD\tsld.hu 0x0[ep],r10",
+    "ram:0003d89c\tram:0003d9ba\tram:ffffccb8\tREAD\tsld.hu 0x0[ep],r14",
+    "ram:0003d89c\tram:0003da82\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r8",
+    "ram:0003d89c\tram:0003dab0\tram:fedfaa54\tREAD\tld.hu -0x65ac[gp],r15",
+    "ram:0003d89c\tram:0003db7c\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r28",
+    "ram:0003d89c\tram:0003dbfa\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r8",
+    "ram:0003d89c\tram:0003dc2a\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r8",
+    "ram:0003ea46\tram:0003eaa0\tram:ffffccb4\tWRITE\tst.h r14,-0x334c[r0]",
+    "ram:0003ea46\tram:0003eaa4\tram:ffffccb8\tWRITE\tst.h r14,-0x3348[r0]",
+    "ram:0003ea46\tram:0003eaa8\tram:ffffccb0\tWRITE\tst.h r14,-0x3350[r0]",
+    "ram:0003ebbc\tram:0003ebe0\tram:ffffccb0\tWRITE\tst.h r8,-0x3350[r0]",
+    "ram:0003ebbc\tram:0003ebec\tram:ffffccb4\tWRITE\tst.h r16,-0x334c[r0]",
+    "ram:0003ebbc\tram:0003ebf8\tram:ffffccb8\tWRITE\tst.h r14,-0x3348[r0]",
+    "ram:00040f50\tram:0004101a\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r6",
+    "ram:00041158\tram:00041208\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r14",
+    "ram:000417dc\tram:000417e0\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r6",
+    "ram:000460ca\tram:0004620e\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r15",
+    "ram:0004636e\tram:0004636e\tram:fedfc2aa\tREAD\tld.h -0x4d56[gp],r14",
+    "ram:00046380\tram:00046380\tram:fedfc2aa\tREAD\tld.h -0x4d56[gp],r12",
+    "ram:00046380\tram:0004638a\tram:fedfc2aa\tWRITE\tst.h r14,-0x4d56[gp]",
+    "ram:00046390\tram:00046390\tram:fedfc2aa\tREAD\tld.h -0x4d56[gp],r15",
+    "ram:00046390\tram:000463a0\tram:fedfc2cc\tDATA\tst.w r14,0x0[r6]",
+    "ram:00046390\tram:000463a0\tram:fedfc2ac\tDATA\tst.w r14,0x0[r6]",
+    "ram:000463e2\tram:00047878\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r16",
+    "ram:000463e2\tram:0004788c\tram:fedf9f68\tWRITE\tsst.h r16,0x0[ep]",
+    "ram:000463e2\tram:00047a0c\tram:fedf9f68\tREAD\tsld.h 0x0[ep],r1",
+    "ram:000490f0\tram:000490f4\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r12",
+    "ram:0004a494\tram:0004a49c\tram:fedfabfe\tREAD\tld.h -0x6402[gp],r28",
+    "ram:0004a494\tram:0004a4ec\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r16",
+    "ram:0004a494\tram:0004a4f8\tram:fedfab2a\tWRITE\tst.h r28,-0x64d6[gp]",
+    "ram:0004a57a\tram:0004a57e\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r16",
+    "ram:0004a57a\tram:0004a586\tram:fedfabfe\tREAD\tld.h -0x6402[gp],r6",
+    "ram:0004bf1a\tram:0004bf2a\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:0004bf1a\tram:0004bf32\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r11",
+    "ram:0004c256\tram:0004c294\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r10",
+    "ram:0004c256\tram:0004c2a2\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r6",
+    "ram:0004c256\tram:0004c2aa\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r15",
+    "ram:0004d366\tram:0004dd02\tram:fedfaa54\tREAD\tld.hu -0x65ac[gp],r16",
+    "ram:0004d366\tram:0004dd10\tram:fedfaa54\tREAD\tld.hu -0x65ac[gp],r13",
+    "ram:00050c12\tram:00050c20\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:00050c12\tram:00050c34\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:00050c12\tram:00050c48\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:00050c12\tram:00050c5c\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:00050c12\tram:00050c6e\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:00050c12\tram:00050c88\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:00050c12\tram:00050c96\tram:fedfab2a\tREAD\tld.h -0x64d6[gp],r13",
+    "ram:00051cc8\tram:00051cce\tram:fedfabfe\tREAD\tld.h -0x6402[gp],r15"
+  ],
+  "hardware_endpoint_corroboration": {
+    "source": "analysis/1061/px4-manual-text.txt",
+    "manual_sha256": "f2914aa669635072756bc530485d8bc690dede0e8398b51ee6adcc3b62b3bd22",
+    "source_identity_reference": "notes/MCU_IDENTIFICATION.md",
+    "provided_by": "parent agent manual verification",
+    "table15_2": {
+      "PDF_page": 907,
+      "printed_page": 887,
+      "observation": "TSG20 short peripheral base1 is 0xffffcc00"
+    },
+    "table15_6": {
+      "PDF_page": 912,
+      "printed_page": 892,
+      "observation": "CMPU+0xb0,CMPV+0xb4,CMPW+0xb8 are HT-PWM U/V/W phase compare registers"
+    },
+    "address_caveat": "The manual short-address window and sign-extended 32-bit firmware addresses agree at 0xffffccb0/0xffffccb4/0xffffccb8."
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "date": "2026-10-19",
+  "scope": "Offline preparation outputs and provenance checks; no target execution",
+  "checks": [
+    {
+      "name": "original_archive",
+      "passed": true,
+      "files_checked": 694
+    },
+    {
+      "name": "evidence_json_parse",
+      "passed": true,
+      "files_checked": 21
+    },
+    {
+      "name": "exact_lineage_outputs",
+      "passed": true,
+      "odx_matches": 3,
+      "payload_matches": 6
+    },
+    {
+      "name": "mapped_bytes_and_structures",
+      "passed": true
+    },
+    {
+      "name": "fresh_end_to_end_reproduction",
+      "passed": true,
+      "diagnostic_export_sha256": "18458b7e268aacb0660f38c4ebfd4d2095c3dec0522d7a55217d91d21da321f4",
+      "byte_identical": true
+    },
+    {
+      "name": "recovered_mcu_sources",
+      "passed": true,
+      "files_checked": 10
+    },
+    {
+      "name": "public_alc_identity_and_snapshot",
+      "passed": true
+    },
+    {
+      "name": "local_git_boundaries_and_whitespace",
+      "passed": true
+    }
+  ],
+  "all_checks_passed": true,
+  "limits": [
+    "Fresh export equality verifies reproduction, not correctness of every inferred function or runtime behavior.",
+    "Missing user-board binding and original external artifacts remain unresolved in ACTION_ITEMS.md."
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1776,
+      "sha256": "d7d98d975d21581504e73d754eabffada0ecb97063d1cdf2ef56219f86b85ed8"
+    },
+    {
+      "path": "evidence/archive-integrity-2026-10-19.json",
+      "bytes": 94,
+      "sha256": "102fc9abc42ea1bdb2982b127e13200e2d6f75ad9f29ec0694269a2135db067f"
+    },
+    {
+      "path": "evidence/code-data-refinement-1061-2026-10-19.json",
+      "bytes": 5675,
+      "sha256": "e8e55b4fe315ccb2ee7d1295c388e241cf9891c9b19cab5a0971a9f8c51ff3b2"
+    },
+    {
+      "path": "evidence/discord-ghidra-access-search-2026-10-19.json",
+      "bytes": 3985,
+      "sha256": "43e8684f4796be80ba2e2167691ec308ac519339f830132f479c2c5bc6499028"
+    },
+    {
+      "path": "evidence/discord-history-2026-10-19/SOURCES.json",
+      "bytes": 5262,
+      "sha256": "ca2ba6c222d7b6f5f6862c222e74aa3882c830bfa1e232783a94195238fff631"
+    },
+    {
+      "path": "evidence/discord-history-2026-10-19/SOURCE_ANCHORS.tsv",
+      "bytes": 7812,
+      "sha256": "87bd8ecd7d4a3f2d04972056c7f420b94db341cbff412086e83ae67f335a3755"
+    },
+    {
+      "path": "evidence/frf-lineage-1061-2026-10-19.json",
+      "bytes": 11390,
+      "sha256": "5fac9ab9ac525eb9b6edb37eaed75336bbd0aee59d3af1a058b67ffb27dbf4ee"
+    },
+    {
+      "path": "evidence/frf-lineage-1061-2026-10-19.md",
+      "bytes": 5334,
+      "sha256": "b2b2fe5332e38889b183b6d1a85ce653ef330deada07587f0a96a8aabbb166aa"
+    },
+    {
+      "path": "evidence/ghidra-access-mask-consumers-2026-10-19.txt",
+      "bytes": 201106,
+      "sha256": "15ade6fb5b78a4de61e4331a20003d2ccaeccfb4026f5c30a8d659b4d131ba05"
+    },
+    {
+      "path": "evidence/ghidra-diagnostic-annotations-2026-10-19.txt",
+      "bytes": 1528,
+      "sha256": "9866abebb29a395475068b02d124a90998092c0c2e9388543cbf0e40b1917130"
+    },
+    {
+      "path": "evidence/ghidra-diagnostic-core-2026-10-19.txt",
+      "bytes": 12197,
+      "sha256": "18458b7e268aacb0660f38c4ebfd4d2095c3dec0522d7a55217d91d21da321f4"
+    },
+    {
+      "path": "evidence/ghidra-diagnostic-dispatch-2026-10-19.txt",
+      "bytes": 1477,
+      "sha256": "fe70de7ab3c41112af8f7644d96e9f4ec91629043df66b09b4586c9ead846ee3"
+    },
+    {
+      "path": "evidence/ghidra-h7-v850-probe-2026-10-19.txt",
+      "bytes": 3390,
+      "sha256": "a7f3c88e1088ff79dc9d93b010db5b48a215a2ccf716d534837718df2f542bba"
+    },
+    {
+      "path": "evidence/ghidra-mapped-1061-2026-10-19.txt",
+      "bytes": 1045,
+      "sha256": "996f4969a722f572bfd2d8a3f876f1680c921099f041848cb45af5ca339bd26e"
+    },
+    {
+      "path": "evidence/ghidra-probe-profile-2026-10-19.json",
+      "bytes": 5872,
+      "sha256": "3eab4897ace9b25bda16d7a457ad5ed6fb1a6bc9f7f65b067f646b022954f78c"
+    },
+    {
+      "path": "evidence/ghidra-refined-1061-2026-10-19.txt",
+      "bytes": 3587,
+      "sha256": "97247540332a4fe80400ba61936498282c0e908b58d6fcd21ec08ae5925a852a"
+    },
+    {
+      "path": "evidence/ghidra-refined-diagnostics-2026-10-19.txt",
+      "bytes": 50970,
+      "sha256": "8e3eabbd024751e457d4d0afe4bcc94253323bd95a6e91c4f3e80927f7532b5f"
+    },
+    {
+      "path": "evidence/ghidra-startup-investigation-2026-10-19.txt",
+      "bytes": 74526,
+      "sha256": "622038d4e906ba414ccaae0b85f56c8cb655120826f4607bc9b4f61d57c7e403"
+    },
+    {
+      "path": "evidence/ghidra-table-helpers-2026-10-19.txt",
+      "bytes": 15833,
+      "sha256": "4758bebcc7821d2d7a524981ad6733159f88581508a809e4dda09903bdb8679c"
+    },
+    {
+      "path": "evidence/ghidra-tp-startup-2026-10-19.txt",
+      "bytes": 183477,
+      "sha256": "330af8fea6fc037a7afabd1b7e933a6c4cd37850261808322b84c7746529dfda"
+    },
+    {
+      "path": "evidence/ghidra-tricore-probe-2026-10-19.txt",
+      "bytes": 707,
+      "sha256": "ac4ed627643f8bafc87d04db05cd0c430bf025cc01d13991e8a893395fa495aa"
+    },
+    {
+      "path": "evidence/ghidra-v850-function-probe-2026-10-19.txt",
+      "bytes": 972,
+      "sha256": "cd34fca26cac4c155eb526b3fc37feefc89c49a518c49f91a305cdfca1b99221"
+    },
+    {
+      "path": "evidence/ghidra-v850-probe-2026-10-19.txt",
+      "bytes": 3155,
+      "sha256": "2ecd56f130ab942f59667019708a88c12ec6f5f4fc98c252853e00478029b983"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/datasheet-archive-manual-page.html",
+      "bytes": 14975,
+      "sha256": "f7218bb2b21444aae8cf398870b50a592b5b9e58e72de4b0ad13557caa5ebd28"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/datasheet-archive-search.html",
+      "bytes": 70142,
+      "sha256": "089a713666f3cc22b3dd60128b3f1dfd03143c68d2aefae42cf268f7e8f37f36"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/historical-board-page.html",
+      "bytes": 24505,
+      "sha256": "0c72b6acd032cc553a4d0892a46a8cd404f639c753a6861bcea571dafba194c6"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/historical-board.jpg",
+      "bytes": 2285715,
+      "sha256": "60847d664322b9af5b10c4ca60f7878d6720d6a6398d3706e6fc6d4a6a4c929f"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/manifest.json",
+      "bytes": 5500,
+      "sha256": "42575200c8bced0c333ed75d24a6e7efd3d4b6f9b10d7f4e3105bb5d723ba21d"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/manual-memory-map.json",
+      "bytes": 7857,
+      "sha256": "c4113dc23595cfb4129a259992e787df459c786c9182b8f5a0de3ce5fb3ce8b7"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/memory-constant-candidates.txt",
+      "bytes": 130667,
+      "sha256": "d6b0d4d306242be563073fd5fd616e99f6afd3088faf5b31f33f7d137ad6e44e"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-device-information.html",
+      "bytes": 418491,
+      "sha256": "df3eb42ab8473b7ea0baf6b7b4f0a0e3953b6620220bfb6f0387d68a58fda571"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-pg-fp5-supported.pdf",
+      "bytes": 254748,
+      "sha256": "c886f73e37dc02d2decea120224ab2e8c1595f29c0a8a5b02bdaff13e279ccd5"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-px4-hardware-R01UH0098EJ0100.pdf",
+      "bytes": 37557355,
+      "sha256": "f2914aa669635072756bc530485d8bc690dede0e8398b51ee6adcc3b62b3bd22"
+    },
+    {
+      "path": "evidence/mcu-identification-2026-10-19/renesas-upd70f3506.html",
+      "bytes": 209393,
+      "sha256": "754db7d6c1ef7c95ff34ad0dd68cd53f78aa0622aa683e43cbbd099e553ee931"
+    },
+    {
+      "path": "evidence/odx-block-inventory-2026-10-19.json",
+      "bytes": 3079,
+      "sha256": "cf9cefeb2fe63c6aa4eeef68685be0f5a40f7fd0c402f7843baaad9da46f4650"
+    },
+    {
+      "path": "evidence/odx-lineage-2026-10-19.json",
+      "bytes": 79979,
+      "sha256": "d060e6aa47ff8f4451e9b1be2575fe0b14b25981cdc8433b47ab5e632b60fbd3"
+    },
+    {
+      "path": "evidence/public-alc-rea-bundle-2026-10-19.json",
+      "bytes": 45599,
+      "sha256": "cd330cbf6ac98ad6b6c939c853a496fb57a9de0eb294e169ef4d601849c87d7e"
+    },
+    {
+      "path": "evidence/public-alc-static-2026-10-19.json",
+      "bytes": 17766,
+      "sha256": "427ad95889ec955ae2499cb74808d0c1c6b2115501c011e77d5583fcec60fb5d"
+    },
+    {
+      "path": "evidence/rea-ghidra-configuration-2026-10-19.json",
+      "bytes": 1315,
+      "sha256": "083666ee7b56092ff49cf27349bd6758ec6a6bd6bf132ce44ad9117380c0be8a"
+    },
+    {
+      "path": "evidence/rea-ghidra-doctor-2026-10-19.json",
+      "bytes": 13073,
+      "sha256": "45ba9a566fcdff9b568100886658e2b437a6274b71544e9534927cbf2bfc35f5"
+    },
+    {
+      "path": "evidence/rea-readiness-2026-10-19.json",
+      "bytes": 7586,
+      "sha256": "f9de5b97141a4957442ada62a1f12e23bb6eb42cb23c623140e77f2a6a4f3012"
+    },
+    {
+      "path": "evidence/rea-restart-verification-2026-10-19.json",
+      "bytes": 4288,
+      "sha256": "549efe22aa89eaf47f3b1c7615fcb1f74fd731c6d59dfbb5af017974de53f7ea"
+    },
+    {
+      "path": "evidence/shared-ghidra-access-2026-10-19.json",
+      "bytes": 3893,
+      "sha256": "ce237a4b2aac5300e1494e35762f503cce7e2afb5e7539b76c9ddc4dc6139e32"
+    },
+    {
+      "path": "evidence/shared-ghidra-reachability-2026-10-19.json",
+      "bytes": 2096,
+      "sha256": "a333fc712efdd73b51b45cc36b59e0b683ed7459438d687e8e56ef1a777b2dc4"
+    },
+    {
+      "path": "evidence/source-recovery-2026-10-19.json",
+      "bytes": 205214,
+      "sha256": "201b8c593b5c11345bee126d17a7dabcdc5b4312ce5bb1ad712483f4f46a8e0c"
+    },
+    {
+      "path": "evidence/source-recovery-public-followup-2026-10-19.json",
+      "bytes": 261997,
+      "sha256": "2f6755313a5964c89d5373bbf4bd71cb57c00b1eb17f90cb5089d9760e09be36"
+    },
+    {
+      "path": "evidence/static-map-1061-2026-10-19.json",
+      "bytes": 11718,
+      "sha256": "d7e3238480f0c3f68dd263ad4fa83a35afb49182efaf893cd27725c132182e5c"
+    },
+    {
+      "path": "inventory/archive-manifest.json",
+      "bytes": 144857,
+      "sha256": "4205c520826ae67b68f2e70f4d6b6cc3f222cf67a95227f02e4127217ca32dc3"
+    },
+    {
+      "path": "notes/ACTION_ITEMS.md",
+      "bytes": 4968,
+      "sha256": "dfd7d6715ce27a9d7001a55ef1e82689640e0d231dbedaf1bc95c89189d80b3c"
+    },
+    {
+      "path": "notes/DISCORD_REVIEW.md",
+      "bytes": 24149,
+      "sha256": "e6b7c5f394a0399810433335827502763c0a6a646cd685ae3421b1950697979f"
+    },
+    {
+      "path": "notes/FINDINGS.md",
+      "bytes": 26526,
+      "sha256": "caa1f8d05085dfe7218121c823aa92fb1e5bb58c3f69c66500eca2289492fb7e"
+    },
+    {
+      "path": "notes/MCU_IDENTIFICATION.md",
+      "bytes": 11480,
+      "sha256": "800630f43ee3e542dcd25990fb5d5b701f5ac4d8c9e2c1c86b461e9bcf692fc9"
+    },
+    {
+      "path": "notes/OFFLINE_ANALYSIS.md",
+      "bytes": 10555,
+      "sha256": "67aab368d532b3cb2dd1d9f7c065c883926bcb0eda50ec96a602299c9eeef56e"
+    },
+    {
+      "path": "notes/REA_READINESS.md",
+      "bytes": 8808,
+      "sha256": "aa029e1b3e4ea8a2f818100c543bc90ea5fc0125e82d941ebfe0f7aaefc6fe09"
+    },
+    {
+      "path": "notes/SESSION_LOG.md",
+      "bytes": 18509,
+      "sha256": "dd6bb549b6fd186d5a13d88398d64d8a601969e4b9e806b3befcb2981c393cb9"
+    },
+    {
+      "path": "notes/SOURCE_RECOVERY.md",
+      "bytes": 16145,
+      "sha256": "04b8b10a449d782203a4feaeefb1faf3f59f7f08924511f0edbb88cee3745764"
+    },
+    {
+      "path": "notes/STATUS.md",
+      "bytes": 6781,
+      "sha256": "84f324a98f64d877751849bea1237cdd7f0b059ed9115ce4dc3d2182c899c121"
+    },
+    {
+      "path": "notes/TARGET.md",
+      "bytes": 1647,
+      "sha256": "22aafcd7edfce882f99a68f5841f05f76562c1d072ad9cfbaedf017794c09f0f"
+    },
+    {
+      "path": "scripts/build_1061_map.py",
+      "bytes": 4227,
+      "sha256": "c4a162a23b24c08fdebe40a8be011bf38efa6a910fbe8348da2fb3f99685d8ef"
+    },
+    {
+      "path": "scripts/ghidra/AnnotateDiagnostics1061.java",
+      "bytes": 2876,
+      "sha256": "c89c300d4c27346cb37778aa6bdf63f51e0f2ae5702a6575dc8da1454e0de4ae"
+    },
+    {
+      "path": "scripts/ghidra/ExportFocused1061.java",
+      "bytes": 2141,
+      "sha256": "f27ba0b35be19a3ed1e68fa89556413ad995a121525571276a0abfaf92500d9e"
+    },
+    {
+      "path": "scripts/ghidra/ExportFunctions1061.java",
+      "bytes": 1702,
+      "sha256": "13f673b14a72f802c570ba5a9fea88c8fdd804ccb8fb7c39e784270cd234f6b6"
+    },
+    {
+      "path": "scripts/ghidra/InvestigateMapped1061.java",
+      "bytes": 3112,
+      "sha256": "aff71e4211a8078150dc3d1668ca78c9c1d4c212d853eefe055cc3cdf4028725"
+    },
+    {
+      "path": "scripts/ghidra/ProbeFunction.java",
+      "bytes": 2012,
+      "sha256": "7c6ce6db9fa23a8253cec90981f7c938fff286fe071d5bf679728b62d0d91687"
+    },
+    {
+      "path": "scripts/ghidra/ProbeInstructions.java",
+      "bytes": 1691,
+      "sha256": "24d5b8b6d10f7bb0f8c69f213b02c501f0863314d6101e38ba2087f2581af0cf"
+    },
+    {
+      "path": "scripts/ghidra/ProbeMemoryConstants.java",
+      "bytes": 1638,
+      "sha256": "1674861eccd963cf77a68008921c210646df3d385e4b56e043fdc86a8a63a1e6"
+    },
+    {
+      "path": "scripts/ghidra/RefineMapped1061.java",
+      "bytes": 1840,
+      "sha256": "afaf02af315dd12142c8b0a5948c4f4886a95608070eb94ec008ae5caec8377c"
+    },
+    {
+      "path": "scripts/ghidra/ReportMapped1061.java",
+      "bytes": 2867,
+      "sha256": "a1012b7564b7647079476d38cc688f5c6c011cd481cf874a8988a0ccd69a2f06"
+    },
+    {
+      "path": "scripts/ghidra/SeedMapped1061.java",
+      "bytes": 700,
+      "sha256": "c72e46ff3f6c226c0b43ff4ac28e5d03c25a2f7b53855bd80db80ccb74da6289"
+    },
+    {
+      "path": "scripts/inspect_1061_odx.py",
+      "bytes": 4911,
+      "sha256": "183d04855621cb6ec51c7ce8057842c522400bb10c8cf5fd3c8456e10e381bb5"
+    },
+    {
+      "path": "scripts/inventory_archive.py",
+      "bytes": 1652,
+      "sha256": "0da03e3d1d5a201e23e288a96af337de70dc1ca83a868384c89f785f28f73b0b"
+    },
+    {
+      "path": "scripts/licenses/VW_Flash-BSD-2-Clause.txt",
+      "bytes": 1473,
+      "sha256": "d08b7d9656eb0c078ebc71926be5a6c3fecb36f695e4d01105ba9f3b917d6ccc"
+    },
+    {
+      "path": "scripts/rea-ghidra",
+      "bytes": 412,
+      "sha256": "254d5ad0cdfd86aa771cbfe495174c88e51abb2d6c4897daac2605f01292e5ef"
+    },
+    {
+      "path": "scripts/run_1061_analysis.sh",
+      "bytes": 1691,
+      "sha256": "48b6319f258ff7c39650d3b0edbf2a40f2595663218bd82e601d563b3fc51c3a"
+    },
+    {
+      "path": "scripts/verify_1061_frf.py",
+      "bytes": 7951,
+      "sha256": "f2414eba6522677cd21162624a93dc4de091a8989b38917917545678bdc7296c"
+    },
+    {
+      "path": "scripts/verify_offline_preparation.py",
+      "bytes": 6189,
+      "sha256": "02a7d369f287521a84c7862750e50c1bc05f7ca1d18b806b1a23e5c847f8b229"
+    }
+  ]
+}

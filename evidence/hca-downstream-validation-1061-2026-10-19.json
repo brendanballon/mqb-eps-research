@@ -1,0 +1,68 @@
+{
+  "verified_at_utc": "2026-10-19T19:35:07.595798+00:00",
+  "mapped_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+  "archive_files_checked": 694,
+  "archive_mismatches": [],
+  "selected_decompilations_completed": true,
+  "manual_hash_verified": true,
+  "scalar_readback": {
+    "0x5e62a": {
+      "bytes": "3d 0a",
+      "uint16": 2621,
+      "mapped_offset": "0x5c62a",
+      "h1_offset": "0x4f62a"
+    },
+    "0x5e634": {
+      "bytes": "ff 01",
+      "uint16": 511,
+      "mapped_offset": "0x5c634",
+      "h1_offset": "0x4f634"
+    },
+    "0x5e802": {
+      "bytes": "00 00",
+      "uint16": 0,
+      "mapped_offset": "0x5c802",
+      "h1_offset": "0x4f802"
+    },
+    "0x5e5d8": {
+      "bytes": "cd 12",
+      "uint16": 4813,
+      "mapped_offset": "0x5c5d8",
+      "h1_offset": "0x4f5d8"
+    },
+    "0x603f8": {
+      "bytes": "ff ff",
+      "uint16": 65535,
+      "mapped_offset": "0x5e3f8",
+      "h1_offset": "0x513f8"
+    },
+    "0x604d8": {
+      "bytes": "ff ff",
+      "uint16": 65535,
+      "mapped_offset": "0x5e4d8",
+      "h1_offset": "0x514d8"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "evidence/ghidra-hca-downstream-1061-2026-10-19.txt",
+      "sha256": "f542d72c8a198764fe2da6ed2be5ca955e013965fb48e9d0e12574e3d87a87d5",
+      "bytes": 79179
+    },
+    {
+      "path": "evidence/ghidra-hca-motor-chain-1061-2026-10-19.txt",
+      "sha256": "9da6998a1240b55e38aff680f68513b00c4bb748f6cd8edff61730a909a260c1",
+      "bytes": 400901
+    },
+    {
+      "path": "evidence/hca-motor-chain-1061-2026-10-19.json",
+      "sha256": "f6b8d69448608a2587e3386837e69f286a483ce122c7fa7b8be3ba305914711c",
+      "bytes": 13421
+    }
+  ],
+  "limitations": [
+    "Static analysis, no runtime validation.",
+    "Large decompilations have merged-register/overlapping-global warnings.",
+    "Active calibration, tp context in later control routines, current/torque conversion unresolved."
+  ]
+}

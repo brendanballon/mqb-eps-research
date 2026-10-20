@@ -1,0 +1,2202 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+SELECT ram:0002b530
+FUNCTION ram:0002b530 body=[[ram:0002b530, ram:0002b627]]
+ram:0002b530 prepare { r24,r26,r28,lp },0x0
+ram:0002b534 cmp r0,r6
+ram:0002b536 mov 0x9,r6
+ram:0002b538 bne 0x0002b5e6
+ram:0002b53a jarl 0x0002a49c,lp
+ram:0002b53e movea -0x7490,gp,ep
+ram:0002b542 sld.bu 0x3[ep],r24
+ram:0002b544 sld.bu 0x4[ep],r28
+ram:0002b546 sld.bu 0x2[ep],r13
+ram:0002b548 andi 0x1,r24,r26
+ram:0002b54c shl 0x8,r26
+ram:0002b54e andi 0xf,r28,r28
+ram:0002b552 shl 0x18,r24
+ram:0002b554 or r13,r26
+ram:0002b556 shr 0x1f,r24
+ram:0002b558 cmp 0x5,r28
+ram:0002b55a be 0x0002b560
+ram:0002b55c cmp 0x7,r28
+ram:0002b55e bne 0x0002b56a
+ram:0002b560 movea -0x7c0,tp,r7
+ram:0002b564 movea -0x728,tp,r9
+ram:0002b568 br 0x0002b572
+ram:0002b56a movea -0x7bc,tp,r7
+ram:0002b56e movea -0x72a,tp,r9
+ram:0002b572 addi 0x2,r7,r8
+ram:0002b576 mov 0x9,r6
+ram:0002b578 jarl 0x0002a488,lp
+ram:0002b57c cmp r0,r24
+ram:0002b57e mov r26,r14
+ram:0002b580 be 0x0002b584
+ram:0002b582 subr r0,r14
+ram:0002b584 addi -0x1f4,r14,r0
+ram:0002b588 ble 0x0002b590
+ram:0002b58a movea 0x1f4,r0,r14
+ram:0002b58e br 0x0002b59a
+ram:0002b590 addi 0x1f4,r14,r0
+ram:0002b594 bge 0x0002b59a
+ram:0002b596 movea -0x1f4,r0,r14
+ram:0002b59a movea 0xa3d,r0,r11
+ram:0002b59e mul r11,r14,r0
+ram:0002b5a2 sar 0x8,r14
+ram:0002b5a4 cmp 0x7,r28
+ram:0002b5a6 bnh 0x0002b5b0
+ram:0002b5a8 movea 0x7fff,r0,r7
+ram:0002b5ac mov 0x0,r28
+ram:0002b5ae br 0x0002b5b2
+ram:0002b5b0 mov r14,r7
+ram:0002b5b2 ld.bu -0x748c[gp],r10
+ram:0002b5b6 ld.bu -0x748f[gp],r8
+ram:0002b5ba st.b r28,-0x60f8[gp]
+ram:0002b5be mov 0x1,r16
+ram:0002b5c0 st.b r16,-0x60a1[gp]
+ram:0002b5c4 shl 0x18,r10
+ram:0002b5c6 st.h r7,-0x64da[gp]
+ram:0002b5ca shr 0x1c,r10
+ram:0002b5cc mulhi 0xcc,r10,r14
+ram:0002b5d0 shl 0x18,r8
+ram:0002b5d2 st.b r16,-0x60a0[gp]
+ram:0002b5d6 shr 0x1c,r8
+ram:0002b5d8 addi 0xf,r8,r12
+ram:0002b5dc st.b r12,-0x610d[gp]
+ram:0002b5e0 st.h r14,-0x64d8[gp]
+ram:0002b5e4 br 0x0002b624
+ram:0002b5e6 jarl 0x0002a4ac,lp
+ram:0002b5ea cmp 0x1,r10
+ram:0002b5ec bne 0x0002b624
+ram:0002b5ee ori 0xffff,r0,r7
+ram:0002b5f2 st.h r7,-0x64d8[gp]
+ram:0002b5f6 movea 0x7fff,r0,r9
+ram:0002b5fa st.h r9,-0x64da[gp]
+ram:0002b5fe movea 0xff,r0,r6
+ram:0002b602 st.b r6,-0x60a1[gp]
+ram:0002b606 movea -0x7bc,tp,r7
+ram:0002b60a st.b r6,-0x610d[gp]
+ram:0002b60e addi 0x2,r7,r8
+ram:0002b612 st.b r6,-0x60f8[gp]
+ram:0002b616 movea -0x72a,tp,r9
+ram:0002b61a st.b r6,-0x60a0[gp]
+ram:0002b61e mov 0x9,r6
+ram:0002b620 jarl 0x0002a488,lp
+ram:0002b624 dispose 0x0,{ r24,r26,r28,lp },[lp]
+completed=true error=
+
+void FUN_ram_0002b530(int param_1)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  uint uVar3;
+  uint uVar4;
+  byte bVar5;
+  
+  if (param_1 == 0) {
+    FUN_ram_0002a49c();
+    uVar3 = (uint)DAT_ram_fedf9b73;
+    bVar5 = DAT_ram_fedf9b74 & 0xf;
+    uVar4 = (uVar3 & 1) << 8 | (uint)DAT_ram_fedf9b72;
+    if ((bVar5 == 5) || (bVar5 == 7)) {
+      iVar1 = 0x5d040;
+      uVar2 = 0x5d0d8;
+    }
+    else {
+      iVar1 = 0x5d044;
+      uVar2 = 0x5d0d6;
+    }
+    FUN_ram_0002a488(9,iVar1,iVar1 + 2,uVar2);
+    if ((int)(uVar3 << 0x18) < 0) {
+      uVar4 = -uVar4;
+    }
+    if ((int)uVar4 < 0x1f5) {
+      if ((int)uVar4 < -500) {
+        uVar4 = 0xfffffe0c;
+      }
+    }
+    else {
+      uVar4 = 500;
+    }
+    DAT_ram_fedfab26 = (undefined2)(uVar4 * 0xa3d >> 8);
+    DAT_ram_fedfaf08 = bVar5;
+    if (7 < bVar5) {
+      DAT_ram_fedfab26 = 0x7fff;
+      DAT_ram_fedfaf08 = 0;
+    }
+    DAT_ram_fedfaf5f = 1;
+    DAT_ram_fedfab28 = (ushort)(DAT_ram_fedf9b74 >> 4) * 0xcc;
+    DAT_ram_fedfaf60 = 1;
+    DAT_ram_fedfaef3 = (DAT_ram_fedf9b71 >> 4) + 0xf;
+  }
+  else {
+    iVar1 = FUN_ram_0002a4ac(9);
+    if (iVar1 == 1) {
+      DAT_ram_fedfab28 = -1;
+      DAT_ram_fedfab26 = 0x7fff;
+      DAT_ram_fedfaf5f = 0xff;
+      DAT_ram_fedfaef3 = -1;
+      DAT_ram_fedfaf08 = 0xff;
+      DAT_ram_fedfaf60 = 0xff;
+      FUN_ram_0002a488(9,0x5d044,0x5d046,0x5d0d6);
+    }
+  }
+  return;
+}
+
+
+SELECT ram:00024aec
+REF From: ram:000210c6 To: ram:00024aec Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x00024aec,lp
+FUNCTION ram:00024aec body=[[ram:00024aec, ram:000255db]]
+ram:00024aec prepare { r20,r21,r22,r23,r24,r25,r26,r27,r28,r29,lp },0x0
+ram:00024af0 andi 0xff,r6,r23
+ram:00024af4 ld.bu -0x56ae[gp],r12
+ram:00024af8 cmp 0x1,r12
+ram:00024afa bc 0x00024b04
+ram:00024afc be 0x00024b58
+ram:00024afe cmp 0x3,r12
+ram:00024b00 bc 0x00024b0a
+ram:00024b02 be 0x00024b7a
+ram:00024b04 ld.hu -0x6360[gp],r7
+ram:00024b08 br 0x00024b8c
+ram:00024b0a ld.hu 0xebc[tp],r9
+ram:00024b0e ld.hu -0x56b8[gp],r16
+ram:00024b12 cmp r9,r16
+ram:00024b14 bc 0x00024b2c
+ram:00024b16 st.h r0,-0x56b8[gp]
+ram:00024b1a mov 0x1,r12
+ram:00024b1c st.b r12,-0x56ac[gp]
+ram:00024b20 mov 0x3,r7
+ram:00024b22 st.b r7,-0x56ae[gp]
+ram:00024b26 ld.hu -0x6360[gp],r7
+ram:00024b2a br 0x00024b98
+ram:00024b2c ld.hu 0xf1c[tp],r15
+ram:00024b30 ld.hu -0x6360[gp],r7
+ram:00024b34 cmp r15,r7
+ram:00024b36 bnh 0x00024b4a
+ram:00024b38 st.h r0,-0x56b8[gp]
+ram:00024b3c mov 0x1,r13
+ram:00024b3e st.b r13,-0x56ae[gp]
+ram:00024b42 mov 0x0,r12
+ram:00024b44 st.b r0,-0x56ac[gp]
+ram:00024b48 br 0x00024b98
+ram:00024b4a addi 0x1,r16,r11
+ram:00024b4e st.h r11,-0x56b8[gp]
+ram:00024b52 ld.bu -0x56ac[gp],r12
+ram:00024b56 br 0x00024b98
+ram:00024b58 ld.hu 0xf1c[tp],r9
+ram:00024b5c ld.hu -0x6360[gp],r7
+ram:00024b60 cmp r9,r7
+ram:00024b62 bnh 0x00024b6a
+ram:00024b64 ld.bu -0x56ac[gp],r12
+ram:00024b68 br 0x00024b98
+ram:00024b6a ld.bu -0x56ac[gp],r12
+ram:00024b6e mov 0x2,r10
+ram:00024b70 st.b r10,-0x56ae[gp]
+ram:00024b74 st.h r10,-0x56b8[gp]
+ram:00024b78 br 0x00024b98
+ram:00024b7a ld.hu 0xf1c[tp],r6
+ram:00024b7e ld.hu -0x6360[gp],r7
+ram:00024b82 cmp r6,r7
+ram:00024b84 bh 0x00024b8c
+ram:00024b86 ld.bu -0x56ac[gp],r12
+ram:00024b8a br 0x00024b98
+ram:00024b8c mov 0x1,r15
+ram:00024b8e st.b r15,-0x56ae[gp]
+ram:00024b92 mov 0x0,r12
+ram:00024b94 st.b r0,-0x56ac[gp]
+ram:00024b98 ld.bu -0x60a0[gp],r8
+ram:00024b9c mov 0x0,r16
+ram:00024b9e cmp 0x1,r8
+ram:00024ba0 st.b r12,-0x612b[gp]
+ram:00024ba4 bne 0x00024bbc
+ram:00024ba6 ld.hu -0x64d8[gp],r6
+ram:00024baa addi -0xc01,r6,r0
+ram:00024bae bc 0x00024bbc
+ram:00024bb0 ld.bu -0x610d[gp],r14
+ram:00024bb4 addi -0x65,r14,r0
+ram:00024bb8 cmovnc 0x1,r16,r16
+ram:00024bbc ld.bu -0x60a1[gp],r10
+ram:00024bc0 mov 0x0,r13
+ram:00024bc2 cmp 0x1,r10
+ram:00024bc4 ld.h -0x64da[gp],r14
+ram:00024bc8 bne 0x00024bde
+ram:00024bca ld.bu -0x60f8[gp],r6
+ram:00024bce cmp 0x8,r6
+ram:00024bd0 bh 0x00024bde
+ram:00024bd2 addi 0x1400,r14,r10
+ram:00024bd6 addi -0x2801,r10,r0
+ram:00024bda cmovnc 0x1,r13,r13
+ram:00024bde cmp r0,r16
+ram:00024be0 mov 0x0,r1
+ram:00024be2 be 0x00024c08
+ram:00024be4 cmp r0,r13
+ram:00024be6 be 0x00024c08
+ram:00024be8 ld.bu -0x60f0[gp],r15
+ram:00024bec cmp 0x1,r15
+ram:00024bee bne 0x00024c08
+ram:00024bf0 ld.h -0x6358[gp],r6
+ram:00024bf4 ori 0xfa01,r0,r9
+ram:00024bf8 addi 0x7d00,r6,r11
+ram:00024bfc cmp r9,r11
+ram:00024bfe bnc 0x00024c08
+ram:00024c00 addi -0x7d01,r7,r0
+ram:00024c04 cmovnc 0x1,r1,r1
+ram:00024c08 ld.bu -0x60f5[gp],r15
+ram:00024c0c cmp 0x1,r15
+ram:00024c0e mov 0x1,r9
+ram:00024c10 be 0x00024c18
+ram:00024c12 cmp 0x2,r15
+ram:00024c14 setfe r9
+ram:00024c18 cmp r0,r1
+ram:00024c1a mov 0x1,r6
+ram:00024c1c bne 0x00024c24
+ram:00024c1e ld.hu -0x628a[gp],r13
+ram:00024c22 br 0x00024c6a
+ram:00024c24 ld.bu -0x60f4[gp],r13
+ram:00024c28 cmp 0x8,r13
+ram:00024c2a bne 0x00024c32
+ram:00024c2c ld.hu -0x628a[gp],r13
+ram:00024c30 br 0x00024c6a
+ram:00024c32 addi -0x1,r13,r15
+ram:00024c36 cmp 0xa,r15
+ram:00024c38 bc 0x00024c40
+ram:00024c3a ld.hu -0x628a[gp],r13
+ram:00024c3e br 0x00024c6a
+ram:00024c40 ld.h -0x67d4[gp],r10
+ram:00024c44 movea -0x8000,r0,r11
+ram:00024c48 cmp r11,r10
+ram:00024c4a be 0x00024c52
+ram:00024c4c addi -0x7fff,r10,r0
+ram:00024c50 bne 0x00024c5c
+ram:00024c52 cmp r0,r9
+ram:00024c54 bne 0x00024c5c
+ram:00024c56 ld.hu -0x628a[gp],r13
+ram:00024c5a br 0x00024c6a
+ram:00024c5c ld.hu -0x628a[gp],r13
+ram:00024c60 ori 0x8000,r0,r16
+ram:00024c64 cmp r16,r13
+ram:00024c66 cmovnh 0x0,r6,r6
+ram:00024c6a cmp 0x1,r8
+ram:00024c6c mov 0x0,lp
+ram:00024c6e mov r6,r10
+ram:00024c70 bne 0x00024c7c
+ram:00024c72 ld.hu -0x64d8[gp],r11
+ram:00024c76 cmp r0,r11
+ram:00024c78 setfne lp
+ram:00024c7c ld.bu -0x56b3[gp],r8
+ram:00024c80 cmp 0x1,r8
+ram:00024c82 bc 0x00024d00
+ram:00024c84 be 0x00024cbe
+ram:00024c86 cmp 0x3,r8
+ram:00024c88 bc 0x00024c92
+ram:00024c8a be 0x00024cd6
+ram:00024c8c cmp 0x4,r8
+ram:00024c8e bne 0x00024d00
+ram:00024c90 br 0x00024cee
+ram:00024c92 ld.w 0xc54[tp],r16
+ram:00024c96 ld.w -0x56cc[gp],r6
+ram:00024c9a cmp r16,r6
+ram:00024c9c bc 0x00024caa
+ram:00024c9e mov 0x4,r11
+ram:00024ca0 st.b r11,-0x56b3[gp]
+ram:00024ca4 mov 0x1,r15
+ram:00024ca6 mov 0x0,r24
+ram:00024ca8 br 0x00024d08
+ram:00024caa ld.bu -0x60cd[gp],r8
+ram:00024cae cmp 0x1,r8
+ram:00024cb0 bne 0x00024cee
+ram:00024cb2 mov 0x1,r15
+ram:00024cb4 mov 0x1,r24
+ram:00024cb6 add 0x1,r6
+ram:00024cb8 st.w r6,-0x56cc[gp]
+ram:00024cbc br 0x00024d08
+ram:00024cbe ld.bu -0x60cd[gp],r11
+ram:00024cc2 mov 0x1,r15
+ram:00024cc4 cmp 0x1,r11
+ram:00024cc6 mov 0x1,r24
+ram:00024cc8 bne 0x00024d08
+ram:00024cca mov 0x2,r11
+ram:00024ccc st.b r11,-0x56b3[gp]
+ram:00024cd0 st.w r11,-0x56cc[gp]
+ram:00024cd4 br 0x00024d08
+ram:00024cd6 ld.hu 0xeb8[tp],r6
+ram:00024cda ld.hu -0x56bc[gp],r11
+ram:00024cde cmp r6,r11
+ram:00024ce0 bnc 0x00024d00
+ram:00024ce2 mov 0x0,r15
+ram:00024ce4 mov 0x1,r24
+ram:00024ce6 add 0x1,r11
+ram:00024ce8 st.h r11,-0x56bc[gp]
+ram:00024cec br 0x00024d08
+ram:00024cee mov 0x3,r6
+ram:00024cf0 st.b r6,-0x56b3[gp]
+ram:00024cf4 mov 0x0,r15
+ram:00024cf6 mov 0x1,r24
+ram:00024cf8 mov 0x2,r11
+ram:00024cfa st.h r11,-0x56bc[gp]
+ram:00024cfe br 0x00024d08
+ram:00024d00 mov 0x1,r15
+ram:00024d02 st.b r15,-0x56b3[gp]
+ram:00024d06 mov 0x1,r24
+ram:00024d08 ld.bu -0x56b2[gp],r16
+ram:00024d0c cmp 0x1,r16
+ram:00024d0e bc 0x00024d90
+ram:00024d10 be 0x00024d4c
+ram:00024d12 cmp 0x3,r16
+ram:00024d14 bc 0x00024d1e
+ram:00024d16 be 0x00024d64
+ram:00024d18 cmp 0x4,r16
+ram:00024d1a bne 0x00024d90
+ram:00024d1c br 0x00024d7e
+ram:00024d1e ld.hu 0xeb4[tp],r16
+ram:00024d22 ld.hu -0x56be[gp],r6
+ram:00024d26 cmp r16,r6
+ram:00024d28 bc 0x00024d36
+ram:00024d2a mov 0x4,r8
+ram:00024d2c st.b r8,-0x56b2[gp]
+ram:00024d30 mov 0x1,r16
+ram:00024d32 mov 0x0,r22
+ram:00024d34 br 0x00024d98
+ram:00024d36 ld.bu -0x60cc[gp],r11
+ram:00024d3a cmp 0x1,r11
+ram:00024d3c bne 0x00024d7e
+ram:00024d3e mov 0x1,r16
+ram:00024d40 mov 0x1,r22
+ram:00024d42 addi 0x1,r6,r11
+ram:00024d46 st.h r11,-0x56be[gp]
+ram:00024d4a br 0x00024d98
+ram:00024d4c ld.bu -0x60cc[gp],r6
+ram:00024d50 mov 0x1,r16
+ram:00024d52 cmp 0x1,r6
+ram:00024d54 mov 0x1,r22
+ram:00024d56 bne 0x00024d98
+ram:00024d58 mov 0x2,r6
+ram:00024d5a st.b r6,-0x56b2[gp]
+ram:00024d5e st.h r6,-0x56be[gp]
+ram:00024d62 br 0x00024d98
+ram:00024d64 ld.hu 0xeba[tp],r11
+ram:00024d68 ld.hu -0x56ba[gp],r8
+ram:00024d6c cmp r11,r8
+ram:00024d6e bnc 0x00024d90
+ram:00024d70 mov 0x0,r16
+ram:00024d72 mov 0x1,r22
+ram:00024d74 addi 0x1,r8,r6
+ram:00024d78 st.h r6,-0x56ba[gp]
+ram:00024d7c br 0x00024d98
+ram:00024d7e mov 0x3,r11
+ram:00024d80 st.b r11,-0x56b2[gp]
+ram:00024d84 mov 0x0,r16
+ram:00024d86 mov 0x1,r22
+ram:00024d88 mov 0x2,r6
+ram:00024d8a st.h r6,-0x56ba[gp]
+ram:00024d8e br 0x00024d98
+ram:00024d90 mov 0x1,r16
+ram:00024d92 st.b r16,-0x56b2[gp]
+ram:00024d96 mov 0x1,r22
+ram:00024d98 ld.hu 0x1000[tp],r8
+ram:00024d9c cmp r8,r13
+ram:00024d9e setfnc r6
+ram:00024da2 cmp r0,r14
+ram:00024da4 mov r14,r13
+ram:00024da6 bge 0x00024daa
+ram:00024da8 subr r0,r13
+ram:00024daa ld.h -0x56b6[gp],r8
+ram:00024dae cmp r0,r8
+ram:00024db0 mov r8,r2
+ram:00024db2 bge 0x00024db6
+ram:00024db4 subr r0,r2
+ram:00024db6 mov r14,r11
+ram:00024db8 sub r8,r11
+ram:00024dba bp 0x00024dbe
+ram:00024dbc subr r0,r11
+ram:00024dbe cmp r0,r14
+ram:00024dc0 mov 0x1,r25
+ram:00024dc2 ble 0x00024dca
+ram:00024dc4 cmp r0,r8
+ram:00024dc6 bge 0x00024dd2
+ram:00024dc8 br 0x00024dd4
+ram:00024dca cmp r0,r14
+ram:00024dcc bge 0x00024dd2
+ram:00024dce cmp r0,r8
+ram:00024dd0 bgt 0x00024dd4
+ram:00024dd2 mov 0x0,r25
+ram:00024dd4 ld.bu 0x10a0[tp],r20
+ram:00024dd8 cmp 0x1,r20
+ram:00024dda be 0x00024df8
+ram:00024ddc ld.bu -0x60f8[gp],r28
+ram:00024de0 cmp 0x5,r28
+ram:00024de2 bne 0x00024df8
+ram:00024de4 ld.bu -0x60cd[gp],r26
+ram:00024de8 cmp r0,r26
+ram:00024dea be 0x00024df8
+ram:00024dec cmp 0x1,r25
+ram:00024dee cmove 0x0,r20,r20
+ram:00024df2 be 0x00024e06
+ram:00024df4 cmp r2,r13
+ram:00024df6 bnc 0x00024dfc
+ram:00024df8 mov 0x1,r20
+ram:00024dfa br 0x00024e06
+ram:00024dfc ld.hu 0xe30[tp],r2
+ram:00024e00 cmp r2,r11
+ram:00024e02 setfnh r20
+ram:00024e06 ld.hu 0xe38[tp],r11
+ram:00024e0a zxh r13
+ram:00024e0c cmp r11,r13
+ram:00024e0e ld.bu -0x56b1[gp],r11
+ram:00024e12 setfnh r21
+ram:00024e16 cmp 0x1,r11
+ram:00024e18 bc 0x00024e86
+ram:00024e1a be 0x00024e24
+ram:00024e1c cmp 0x3,r11
+ram:00024e1e bc 0x00024e5a
+ram:00024e20 bne 0x00024e86
+ram:00024e22 br 0x00024e76
+ram:00024e24 cmp r0,r14
+ram:00024e26 be 0x00024e86
+ram:00024e28 ld.bu -0x60f8[gp],r11
+ram:00024e2c cmp 0x5,r11
+ram:00024e2e bne 0x00024e86
+ram:00024e30 cmp r8,r14
+ram:00024e32 bne 0x00024e66
+ram:00024e34 ld.hu 0xeb2[tp],r14
+ram:00024e38 ld.hu -0x56c0[gp],r13
+ram:00024e3c cmp r14,r13
+ram:00024e3e bc 0x00024e4e
+ram:00024e40 mov 0x3,r11
+ram:00024e42 st.b r11,-0x56b1[gp]
+ram:00024e46 mov 0x0,r28
+ram:00024e48 st.h r0,-0x56c0[gp]
+ram:00024e4c br 0x00024e92
+ram:00024e4e addi 0x1,r13,r14
+ram:00024e52 st.h r14,-0x56c0[gp]
+ram:00024e56 mov 0x1,r28
+ram:00024e58 br 0x00024e92
+ram:00024e5a cmp r0,r14
+ram:00024e5c be 0x00024e72
+ram:00024e5e ld.bu -0x60f8[gp],r11
+ram:00024e62 cmp 0x5,r11
+ram:00024e64 bne 0x00024e72
+ram:00024e66 mov 0x1,r28
+ram:00024e68 st.b r28,-0x56b1[gp]
+ram:00024e6c st.h r28,-0x56c0[gp]
+ram:00024e70 br 0x00024e92
+ram:00024e72 mov 0x1,r28
+ram:00024e74 br 0x00024e92
+ram:00024e76 cmp r0,r14
+ram:00024e78 be 0x00024e86
+ram:00024e7a ld.bu -0x60f8[gp],r14
+ram:00024e7e cmp 0x5,r14
+ram:00024e80 cmove 0x0,r28,r28
+ram:00024e84 be 0x00024e92
+ram:00024e86 mov 0x2,r11
+ram:00024e88 st.b r11,-0x56b1[gp]
+ram:00024e8c mov 0x1,r28
+ram:00024e8e st.h r0,-0x56c0[gp]
+ram:00024e92 cmp r0,r20
+ram:00024e94 mov 0x0,r14
+ram:00024e96 be 0x00024ea2
+ram:00024e98 cmp r0,r21
+ram:00024e9a be 0x00024ea2
+ram:00024e9c cmp r0,r28
+ram:00024e9e cmovne 0x1,r14,r14
+ram:00024ea2 ld.hu 0xf1a[tp],r11
+ram:00024ea6 cmp r11,r7
+ram:00024ea8 mov 0x0,r8
+ram:00024eaa bc 0x00024ebe
+ram:00024eac ld.hu 0xf18[tp],r11
+ram:00024eb0 cmp r11,r7
+ram:00024eb2 bh 0x00024ebe
+ram:00024eb4 ld.bu -0x609e[gp],r11
+ram:00024eb8 cmp r0,r11
+ram:00024eba cmove 0x1,r8,r8
+ram:00024ebe ld.bu -0x56b0[gp],r13
+ram:00024ec2 cmp 0x5,r13
+ram:00024ec4 bnc 0x00024ee6
+ram:00024ec6 cmp 0x1,r13
+ram:00024ec8 bnc 0x00024ece
+ram:00024eca jr 0x00025434
+ram:00024ece bne 0x00024ed4
+ram:00024ed0 jr 0x000252a2
+ram:00024ed4 cmp 0x3,r13
+ram:00024ed6 bnc 0x00024edc
+ram:00024ed8 jr 0x00024fec
+ram:00024edc be 0x00024ee2
+ram:00024ede jr 0x000251d0
+ram:00024ee2 jr 0x00025104
+ram:00024ee6 cmp 0x8,r13
+ram:00024ee8 bnc 0x00024ef6
+ram:00024eea cmp 0x6,r13
+ram:00024eec bc 0x00024f18
+ram:00024eee be 0x00024ef4
+ram:00024ef0 jr 0x000250ca
+ram:00024ef4 br 0x00024fa4
+ram:00024ef6 cmp 0x9,r13
+ram:00024ef8 bnc 0x00024efe
+ram:00024efa jr 0x000252bc
+ram:00024efe be 0x00024f88
+ram:00024f00 cmp 0xa,r13
+ram:00024f02 be 0x00024f08
+ram:00024f04 jr 0x00025434
+ram:00024f08 ld.bu -0x60fb[gp],r14
+ram:00024f0c ld.bu -0x60cd[gp],r10
+ram:00024f10 ld.bu -0x56ad[gp],r12
+ram:00024f14 jr 0x00025456
+ram:00024f18 ld.w -0x6590[gp],r13
+ram:00024f1c shr 0x5,r13
+ram:00024f1e bc 0x00024f44
+ram:00024f20 st.h r0,-0x56d0[gp]
+ram:00024f24 mov 0x1,r14
+ram:00024f26 st.w r14,-0x56c8[gp]
+ram:00024f2a ld.bu -0x60cd[gp],r10
+ram:00024f2e st.b r0,-0x60fb[gp]
+ram:00024f32 st.b r14,-0x56b0[gp]
+ram:00024f36 st.w r14,-0x56c4[gp]
+ram:00024f3a mov 0x0,r14
+ram:00024f3c ld.bu -0x56ad[gp],r12
+ram:00024f40 jr 0x00025456
+ram:00024f44 cmp 0x1,r9
+ram:00024f46 mov 0x0,r15
+ram:00024f48 bne 0x00024f50
+ram:00024f4a cmp r0,r6
+ram:00024f4c setfne r15
+ram:00024f50 cmp 0x1,r15
+ram:00024f52 bne 0x00024f6e
+ram:00024f54 ld.hu -0x56d0[gp],r8
+ram:00024f58 addi -0xc8,r8,r0
+ram:00024f5c cmovc 0x1,r9,r9
+ram:00024f60 bc 0x00024f74
+ram:00024f62 addi 0x1,r8,r9
+ram:00024f66 st.h r9,-0x56d0[gp]
+ram:00024f6a mov 0x0,r9
+ram:00024f6c br 0x00024f74
+ram:00024f6e st.h r0,-0x56d0[gp]
+ram:00024f72 mov 0x0,r9
+ram:00024f74 cmp r0,r9
+ram:00024f76 bne 0x00024f7c
+ram:00024f78 jr 0x000252a2
+ram:00024f7c cmp 0x1,r1
+ram:00024f7e be 0x00024f84
+ram:00024f80 jr 0x000252a2
+ram:00024f84 jr 0x000251aa
+ram:00024f88 cmp 0x1,r9
+ram:00024f8a be 0x00024f90
+ram:00024f8c jr 0x000252a2
+ram:00024f90 cmp r0,r6
+ram:00024f92 bne 0x00024f98
+ram:00024f94 jr 0x000252a2
+ram:00024f98 cmp 0x1,r1
+ram:00024f9a be 0x00024fa0
+ram:00024f9c jr 0x000252a2
+ram:00024fa0 jr 0x0002523a
+ram:00024fa4 cmp 0x1,r10
+ram:00024fa6 mov 0x0,r13
+ram:00024fa8 be 0x00024fb0
+ram:00024faa cmp r0,r6
+ram:00024fac setfne r13
+ram:00024fb0 cmp 0x1,r13
+ram:00024fb2 bne 0x00024fce
+ram:00024fb4 ld.hu -0x56d0[gp],r8
+ram:00024fb8 addi -0xc8,r8,r0
+ram:00024fbc cmovc 0x1,r6,r6
+ram:00024fc0 bc 0x00024fd4
+ram:00024fc2 addi 0x1,r8,r6
+ram:00024fc6 st.h r6,-0x56d0[gp]
+ram:00024fca mov 0x0,r6
+ram:00024fcc br 0x00024fd4
+ram:00024fce st.h r0,-0x56d0[gp]
+ram:00024fd2 mov 0x0,r6
+ram:00024fd4 ld.bu -0x60f8[gp],r15
+ram:00024fd8 cmp 0x5,r15
+ram:00024fda bne 0x00024fe0
+ram:00024fdc jr 0x000252a2
+ram:00024fe0 cmp r0,r6
+ram:00024fe2 bne 0x00024fe8
+ram:00024fe4 jr 0x000252a2
+ram:00024fe8 jr 0x000251aa
+ram:00024fec cmp 0x1,r10
+ram:00024fee bne 0x00024ff4
+ram:00024ff0 jr 0x00025280
+ram:00024ff4 cmp 0x1,r9
+ram:00024ff6 be 0x00024ffc
+ram:00024ff8 jr 0x00025260
+ram:00024ffc cmp r0,r6
+ram:00024ffe bne 0x00025004
+ram:00025000 jr 0x00025260
+ram:00025004 ld.bu -0x60f8[gp],r11
+ram:00025008 cmp 0x5,r11
+ram:0002500a be 0x00025010
+ram:0002500c jr 0x000252a2
+ram:00025010 cmp 0x1,r12
+ram:00025012 bne 0x00025040
+ram:00025014 movea 0x32,r0,r6
+ram:00025018 mov 0x0,r7
+ram:0002501a mov 0x1,r8
+ram:0002501c mov 0x1,r9
+ram:0002501e jarl 0x0001535e,lp
+ram:00025022 mov 0xa,r9
+ram:00025024 st.b r9,-0x56b0[gp]
+ram:00025028 mov 0x4,r14
+ram:0002502a st.b r14,-0x60fb[gp]
+ram:0002502e ld.bu -0x60cd[gp],r10
+ram:00025032 mov 0x1,r12
+ram:00025034 st.b r12,-0x56ad[gp]
+ram:00025038 ld.hu -0x6360[gp],r7
+ram:0002503c jr 0x00025456
+ram:00025040 cmp 0x1,r8
+ram:00025042 bne 0x000250a8
+ram:00025044 cmp 0x1,r14
+ram:00025046 bne 0x000250a8
+ram:00025048 cmp 0x1,r15
+ram:0002504a bne 0x000250a8
+ram:0002504c mov 0x0,r6
+ram:0002504e jarl 0x00036d64,lp
+ram:00025052 shl 0x18,r10
+ram:00025054 mov 0x1,r9
+ram:00025056 mov 0x8,r14
+ram:00025058 be 0x00025086
+ram:0002505a st.b r14,-0x56b0[gp]
+ram:0002505e mov 0x5,r14
+ram:00025060 st.b r14,-0x60fb[gp]
+ram:00025064 ld.hu -0x6360[gp],r7
+ram:00025068 mov r9,r10
+ram:0002506a st.w r10,-0x56c8[gp]
+ram:0002506e st.w r10,-0x56c4[gp]
+ram:00025072 ld.bu -0x56ad[gp],r12
+ram:00025076 st.b r0,-0x60cc[gp]
+ram:0002507a st.b r10,-0x60cd[gp]
+ram:0002507e st.b r10,-0x56b4[gp]
+ram:00025082 jr 0x00025456
+ram:00025086 ld.bu -0x60cd[gp],r10
+ram:0002508a ld.bu -0x56ad[gp],r12
+ram:0002508e mov 0x3,r6
+ram:00025090 st.b r6,-0x56b0[gp]
+ram:00025094 st.w r9,-0x56c4[gp]
+ram:00025098 st.w r9,-0x56c8[gp]
+ram:0002509c ld.hu -0x6360[gp],r7
+ram:000250a0 st.b r14,-0x60fb[gp]
+ram:000250a4 jr 0x00025456
+ram:000250a8 st.w r15,-0x56c8[gp]
+ram:000250ac mov 0x7,r15
+ram:000250ae st.b r15,-0x56b0[gp]
+ram:000250b2 mov 0x4,r14
+ram:000250b4 st.b r14,-0x60fb[gp]
+ram:000250b8 mov 0x1,r12
+ram:000250ba st.w r12,-0x56c4[gp]
+ram:000250be ld.bu -0x60cd[gp],r10
+ram:000250c2 ld.bu -0x56ad[gp],r12
+ram:000250c6 jr 0x00025456
+ram:000250ca cmp 0x1,r10
+ram:000250cc be 0x0002510c
+ram:000250ce cmp r0,r6
+ram:000250d0 be 0x0002510c
+ram:000250d2 cmp 0x1,r9
+ram:000250d4 bne 0x00025136
+ram:000250d6 ld.hu -0x56d0[gp],r8
+ram:000250da addi -0xc8,r8,r0
+ram:000250de cmovc 0x1,r11,r11
+ram:000250e2 bc 0x000250ee
+ram:000250e4 addi 0x1,r8,r10
+ram:000250e8 st.h r10,-0x56d0[gp]
+ram:000250ec mov 0x0,r11
+ram:000250ee ld.bu -0x60f8[gp],r8
+ram:000250f2 cmp 0x5,r8
+ram:000250f4 bne 0x000250fa
+ram:000250f6 jr 0x000252a2
+ram:000250fa cmp r0,r11
+ram:000250fc bne 0x00025102
+ram:000250fe jr 0x000252a2
+ram:00025102 br 0x000251aa
+ram:00025104 cmp 0x1,r10
+ram:00025106 be 0x0002510c
+ram:00025108 cmp r0,r6
+ram:0002510a bne 0x00025132
+ram:0002510c st.h r0,-0x56d0[gp]
+ram:00025110 mov 0x6,r16
+ram:00025112 st.b r16,-0x56b0[gp]
+ram:00025116 mov 0x2,r14
+ram:00025118 st.b r14,-0x60fb[gp]
+ram:0002511c ld.bu -0x56ad[gp],r12
+ram:00025120 mov 0x1,r6
+ram:00025122 st.w r6,-0x56c4[gp]
+ram:00025126 st.w r6,-0x56c8[gp]
+ram:0002512a ld.bu -0x60cd[gp],r10
+ram:0002512e jr 0x00025456
+ram:00025132 cmp 0x1,r9
+ram:00025134 be 0x0002515a
+ram:00025136 st.h r0,-0x56d0[gp]
+ram:0002513a mov 0x9,r14
+ram:0002513c st.b r14,-0x56b0[gp]
+ram:00025140 mov 0x1,r14
+ram:00025142 st.w r14,-0x56c8[gp]
+ram:00025146 ld.bu -0x56ad[gp],r12
+ram:0002514a ld.bu -0x60cd[gp],r10
+ram:0002514e st.b r14,-0x60fb[gp]
+ram:00025152 st.w r14,-0x56c4[gp]
+ram:00025156 jr 0x00025456
+ram:0002515a ld.bu -0x60fc[gp],r16
+ram:0002515e cmp 0x5,r16
+ram:00025160 mov 0x0,r9
+ram:00025162 be 0x00025172
+ram:00025164 cmp 0x7,r16
+ram:00025166 be 0x00025172
+ram:00025168 ld.bu -0x60fd[gp],r12
+ram:0002516c cmp 0x6,r12
+ram:0002516e cmovne 0x1,r9,r9
+ram:00025172 cmp 0x1,r9
+ram:00025174 bne 0x00025190
+ram:00025176 ld.hu -0x56d0[gp],r8
+ram:0002517a addi -0xc8,r8,r0
+ram:0002517e cmovc 0x1,r15,r15
+ram:00025182 bc 0x00025196
+ram:00025184 addi 0x1,r8,r10
+ram:00025188 st.h r10,-0x56d0[gp]
+ram:0002518c mov 0x0,r15
+ram:0002518e br 0x00025196
+ram:00025190 st.h r0,-0x56d0[gp]
+ram:00025194 mov 0x0,r15
+ram:00025196 ld.bu -0x60f8[gp],r8
+ram:0002519a cmp 0x5,r8
+ram:0002519c bne 0x000251a2
+ram:0002519e jr 0x000252a2
+ram:000251a2 cmp r0,r15
+ram:000251a4 bne 0x000251aa
+ram:000251a6 jr 0x000252a2
+ram:000251aa st.h r0,-0x56d0[gp]
+ram:000251ae mov 0x2,r16
+ram:000251b0 st.b r16,-0x56b0[gp]
+ram:000251b4 mov 0x3,r14
+ram:000251b6 st.b r14,-0x60fb[gp]
+ram:000251ba mov 0x1,r12
+ram:000251bc st.w r12,-0x56c4[gp]
+ram:000251c0 st.w r12,-0x56c8[gp]
+ram:000251c4 ld.bu -0x60cd[gp],r10
+ram:000251c8 ld.bu -0x56ad[gp],r12
+ram:000251cc jr 0x00025456
+ram:000251d0 ld.hu -0x56d0[gp],r8
+ram:000251d4 ld.hu 0xeb6[tp],r13
+ram:000251d8 cmp r13,r8
+ram:000251da cmovnc 0x1,r6,r6
+ram:000251de bnc 0x000251ea
+ram:000251e0 addi 0x1,r8,r14
+ram:000251e4 st.h r14,-0x56d0[gp]
+ram:000251e8 mov 0x0,r6
+ram:000251ea cmp r0,r6
+ram:000251ec bne 0x000251f6
+ram:000251ee ld.bu -0x60cb[gp],r12
+ram:000251f2 cmp r0,r12
+ram:000251f4 bne 0x000252a2
+ram:000251f6 ld.bu -0x56af[gp],r29
+ram:000251fa mov 0x0,r6
+ram:000251fc st.h r0,-0x56d0[gp]
+ram:00025200 jarl 0x00036d80,lp
+ram:00025204 cmp 0x4,r29
+ram:00025206 bne 0x0002522e
+ram:00025208 mov 0x7,r9
+ram:0002520a st.b r9,-0x56b0[gp]
+ram:0002520e mov 0x4,r14
+ram:00025210 st.b r14,-0x60fb[gp]
+ram:00025214 mov 0x1,r10
+ram:00025216 st.w r10,-0x56c8[gp]
+ram:0002521a ld.bu -0x56ad[gp],r12
+ram:0002521e st.w r10,-0x56c4[gp]
+ram:00025222 ld.hu -0x6360[gp],r7
+ram:00025226 ld.bu -0x60cd[gp],r10
+ram:0002522a jr 0x00025456
+ram:0002522e ld.bu -0x56af[gp],r14
+ram:00025232 ld.hu -0x6360[gp],r7
+ram:00025236 cmp 0x3,r14
+ram:00025238 bne 0x0002525c
+ram:0002523a mov 0x2,r6
+ram:0002523c st.b r6,-0x56b0[gp]
+ram:00025240 mov 0x3,r14
+ram:00025242 st.b r14,-0x60fb[gp]
+ram:00025246 ld.bu -0x56ad[gp],r12
+ram:0002524a mov 0x1,r8
+ram:0002524c st.w r8,-0x56c4[gp]
+ram:00025250 st.w r8,-0x56c8[gp]
+ram:00025254 ld.bu -0x60cd[gp],r10
+ram:00025258 jr 0x00025456
+ram:0002525c cmp 0x1,r14
+ram:0002525e bne 0x00025280
+ram:00025260 mov 0x9,r15
+ram:00025262 st.b r15,-0x56b0[gp]
+ram:00025266 mov 0x1,r14
+ram:00025268 st.w r14,-0x56c8[gp]
+ram:0002526c ld.bu -0x56ad[gp],r12
+ram:00025270 ld.bu -0x60cd[gp],r10
+ram:00025274 st.b r14,-0x60fb[gp]
+ram:00025278 st.w r14,-0x56c4[gp]
+ram:0002527c jr 0x00025456
+ram:00025280 mov 0x2,r14
+ram:00025282 st.b r14,-0x60fb[gp]
+ram:00025286 mov 0x6,r13
+ram:00025288 st.b r13,-0x56b0[gp]
+ram:0002528c ld.bu -0x56ad[gp],r12
+ram:00025290 mov 0x1,r13
+ram:00025292 st.w r13,-0x56c4[gp]
+ram:00025296 st.w r13,-0x56c8[gp]
+ram:0002529a ld.bu -0x60cd[gp],r10
+ram:0002529e jr 0x00025456
+ram:000252a2 mov 0x1,r11
+ram:000252a4 st.w r11,-0x56c4[gp]
+ram:000252a8 ld.bu -0x60fb[gp],r14
+ram:000252ac ld.bu -0x56ad[gp],r12
+ram:000252b0 st.w r11,-0x56c8[gp]
+ram:000252b4 ld.bu -0x60cd[gp],r10
+ram:000252b8 jr 0x00025456
+ram:000252bc cmp 0x1,r10
+ram:000252be be 0x000252c4
+ram:000252c0 cmp r0,r6
+ram:000252c2 bne 0x000252f4
+ram:000252c4 st.w r16,-0x56c4[gp]
+ram:000252c8 st.b r0,-0x60cd[gp]
+ram:000252cc st.b r0,-0x56b4[gp]
+ram:000252d0 ld.bu -0x56ad[gp],r12
+ram:000252d4 mov 0x2,r14
+ram:000252d6 st.b r14,-0x56af[gp]
+ram:000252da st.b r14,-0x60fb[gp]
+ram:000252de mov 0x4,r9
+ram:000252e0 st.b r9,-0x56b0[gp]
+ram:000252e4 mov 0x0,r10
+ram:000252e6 st.b r0,-0x60cc[gp]
+ram:000252ea mov 0x1,r6
+ram:000252ec st.w r6,-0x56c8[gp]
+ram:000252f0 jr 0x00025456
+ram:000252f4 cmp 0x1,r8
+ram:000252f6 be 0x000252fc
+ram:000252f8 jr 0x000253e0
+ram:000252fc cmp 0x1,r14
+ram:000252fe be 0x00025304
+ram:00025300 jr 0x000253e0
+ram:00025304 cmp 0x1,r24
+ram:00025306 be 0x0002530c
+ram:00025308 jr 0x000253e0
+ram:0002530c cmp 0x1,r22
+ram:0002530e be 0x00025314
+ram:00025310 jr 0x000253e0
+ram:00025314 cmp 0x1,r9
+ram:00025316 mov 0x1,r8
+ram:00025318 be 0x00025348
+ram:0002531a st.b r0,-0x60cd[gp]
+ram:0002531e ld.bu -0x56ad[gp],r12
+ram:00025322 st.w r16,-0x56c4[gp]
+ram:00025326 st.b r0,-0x56b4[gp]
+ram:0002532a st.b r0,-0x60cc[gp]
+ram:0002532e mov r8,r14
+ram:00025330 st.b r14,-0x56af[gp]
+ram:00025334 st.b r14,-0x60fb[gp]
+ram:00025338 mov 0x4,r13
+ram:0002533a st.b r13,-0x56b0[gp]
+ram:0002533e mov 0x0,r10
+ram:00025340 st.w r14,-0x56c8[gp]
+ram:00025344 jr 0x00025456
+ram:00025348 ld.bu -0x60f8[gp],r11
+ram:0002534c cmp 0x5,r11
+ram:0002534e be 0x0002537e
+ram:00025350 st.w r8,-0x56c8[gp]
+ram:00025354 ld.bu -0x56ad[gp],r12
+ram:00025358 st.b r0,-0x56b4[gp]
+ram:0002535c st.b r0,-0x60cc[gp]
+ram:00025360 mov 0x3,r9
+ram:00025362 st.b r9,-0x56af[gp]
+ram:00025366 ld.bu -0x60fb[gp],r14
+ram:0002536a mov 0x4,r15
+ram:0002536c st.b r15,-0x56b0[gp]
+ram:00025370 st.b r0,-0x60cd[gp]
+ram:00025374 mov 0x0,r10
+ram:00025376 st.w r16,-0x56c4[gp]
+ram:0002537a jr 0x00025456
+ram:0002537e ld.bu -0x56b4[gp],r15
+ram:00025382 cmp 0x1,r15
+ram:00025384 mov 0x1,r11
+ram:00025386 be 0x000253a2
+ram:00025388 st.w r8,-0x56c4[gp]
+ram:0002538c cmp 0x2,r15
+ram:0002538e st.w r8,-0x56c8[gp]
+ram:00025392 be 0x0002540c
+ram:00025394 ld.bu -0x60fb[gp],r14
+ram:00025398 ld.bu -0x60cd[gp],r10
+ram:0002539c ld.bu -0x56ad[gp],r12
+ram:000253a0 br 0x00025456
+ram:000253a2 cmp 0x1,lp
+ram:000253a4 be 0x000253bc
+ram:000253a6 st.w r8,-0x56c8[gp]
+ram:000253aa ld.bu -0x60fb[gp],r14
+ram:000253ae ld.bu -0x56ad[gp],r12
+ram:000253b2 st.w r8,-0x56c4[gp]
+ram:000253b6 ld.bu -0x60cd[gp],r10
+ram:000253ba br 0x00025456
+ram:000253bc cmp 0x1,r16
+ram:000253be bne 0x000253e0
+ram:000253c0 st.w r8,-0x56c4[gp]
+ram:000253c4 mov 0x2,r13
+ram:000253c6 st.b r13,-0x56b4[gp]
+ram:000253ca ld.bu -0x56ad[gp],r12
+ram:000253ce ld.bu -0x60fb[gp],r14
+ram:000253d2 st.b r8,-0x60cc[gp]
+ram:000253d6 st.w r8,-0x56c8[gp]
+ram:000253da ld.bu -0x60cd[gp],r10
+ram:000253de br 0x00025456
+ram:000253e0 st.w r16,-0x56c4[gp]
+ram:000253e4 st.b r0,-0x60cd[gp]
+ram:000253e8 st.b r0,-0x56b4[gp]
+ram:000253ec ld.bu -0x56ad[gp],r12
+ram:000253f0 mov 0x4,r14
+ram:000253f2 st.b r14,-0x60fb[gp]
+ram:000253f6 st.b r14,-0x56af[gp]
+ram:000253fa st.b r14,-0x56b0[gp]
+ram:000253fe mov 0x0,r10
+ram:00025400 st.b r0,-0x60cc[gp]
+ram:00025404 mov 0x1,r8
+ram:00025406 st.w r8,-0x56c8[gp]
+ram:0002540a br 0x00025456
+ram:0002540c cmp r0,lp
+ram:0002540e be 0x0002541e
+ram:00025410 ld.bu -0x60fb[gp],r14
+ram:00025414 ld.bu -0x60cd[gp],r10
+ram:00025418 ld.bu -0x56ad[gp],r12
+ram:0002541c br 0x00025456
+ram:0002541e st.b r0,-0x60cc[gp]
+ram:00025422 ld.bu -0x60fb[gp],r14
+ram:00025426 ld.bu -0x56ad[gp],r12
+ram:0002542a st.b r11,-0x56b4[gp]
+ram:0002542e ld.bu -0x60cd[gp],r10
+ram:00025432 br 0x00025456
+ram:00025434 st.b r0,-0x60cd[gp]
+ram:00025438 mov 0x5,r14
+ram:0002543a st.b r14,-0x56b0[gp]
+ram:0002543e mov 0x1,r14
+ram:00025440 st.w r14,-0x56c4[gp]
+ram:00025444 st.w r14,-0x56c8[gp]
+ram:00025448 st.b r14,-0x60fb[gp]
+ram:0002544c st.b r0,-0x60cc[gp]
+ram:00025450 mov 0x0,r10
+ram:00025452 ld.bu -0x56ad[gp],r12
+ram:00025456 cmp 0x4,r14
+ram:00025458 bne 0x000254c8
+ram:0002545a ld.bu -0x60ca[gp],r11
+ram:0002545e cmp 0x1,r11
+ram:00025460 be 0x0002546e
+ram:00025462 cmp 0x1,r21
+ram:00025464 cmovne 0x1,r13,r13
+ram:00025468 bne 0x000254c4
+ram:0002546a cmp 0x2,r11
+ram:0002546c be 0x0002547a
+ram:0002546e cmp 0x1,r24
+ram:00025470 cmovne 0x2,r13,r13
+ram:00025474 bne 0x000254c4
+ram:00025476 cmp 0x3,r11
+ram:00025478 be 0x00025486
+ram:0002547a cmp 0x1,r20
+ram:0002547c cmovne 0x3,r13,r13
+ram:00025480 bne 0x000254c4
+ram:00025482 cmp 0x4,r11
+ram:00025484 be 0x00025492
+ram:00025486 cmp 0x1,r22
+ram:00025488 cmovne 0x4,r13,r13
+ram:0002548c bne 0x000254c4
+ram:0002548e cmp 0x5,r11
+ram:00025490 be 0x000254a2
+ram:00025492 ld.w -0x56c4[gp],r9
+ram:00025496 cmp 0x1,r9
+ram:00025498 cmovne 0x5,r13,r13
+ram:0002549c bne 0x000254c4
+ram:0002549e cmp 0x6,r11
+ram:000254a0 be 0x000254ae
+ram:000254a2 cmp 0x1,r28
+ram:000254a4 cmovne 0x6,r13,r13
+ram:000254a8 bne 0x000254c4
+ram:000254aa cmp 0x7,r11
+ram:000254ac be 0x000254be
+ram:000254ae ld.w -0x56c8[gp],r6
+ram:000254b2 cmp 0x1,r6
+ram:000254b4 cmovne 0x7,r13,r13
+ram:000254b8 bne 0x000254c4
+ram:000254ba cmp 0x8,r11
+ram:000254bc be 0x000254c8
+ram:000254be cmp 0x1,r12
+ram:000254c0 bne 0x000254c8
+ram:000254c2 mov 0x8,r13
+ram:000254c4 st.b r13,-0x60ca[gp]
+ram:000254c8 ori 0xffff,r0,r15
+ram:000254cc cmp r0,r10
+ram:000254ce mov 0x0,r29
+ram:000254d0 st.h r15,-0x6270[gp]
+ram:000254d4 be 0x000254da
+ram:000254d6 ld.h -0x64da[gp],r29
+ram:000254da ld.bu -0x60a4[gp],ep
+ram:000254de movea 0x1f38,tp,r22
+ram:000254e2 shl 0x2,ep
+ram:000254e4 add r22,ep
+ram:000254e6 sld.w 0x0[ep],r6
+ram:000254e8 jarl 0x000387e2,lp
+ram:000254ec ld.bu -0x609f[gp],ep
+ram:000254f0 ld.hu -0x6294[gp],r9
+ram:000254f4 ld.hu -0x628e[gp],r26
+ram:000254f8 mov r10,r24
+ram:000254fa ld.hu -0x6360[gp],r7
+ram:000254fe shl 0x2,ep
+ram:00025500 add r22,ep
+ram:00025502 sld.w 0x0[ep],r6
+ram:00025504 movea 0x4000,r0,r10
+ram:00025508 mul r9,r24,r0
+ram:0002550c shl 0x1,r9
+ram:0002550e sub r9,r10
+ram:00025510 subr r10,r26
+ram:00025512 jarl 0x000387e2,lp
+ram:00025516 mul r10,r26,r0
+ram:0002551a add r24,r26
+ram:0002551c sar 0xd,r26
+ram:0002551e mov r29,r10
+ram:00025520 zxh r26
+ram:00025522 mul r26,r10,r0
+ram:00025526 sar 0xd,r10
+ram:00025528 addi -0x1800,r10,r0
+ram:0002552c movea 0x1800,r0,r8
+ram:00025530 bgt 0x0002553e
+ram:00025532 addi 0x1800,r10,r0
+ram:00025536 movea -0x1800,r0,r8
+ram:0002553a cmovle r8,r10,r8
+ram:0002553e ld.hu 0x1004[tp],r6
+ram:00025542 mul r6,r8,r0
+ram:00025546 sar 0xd,r8
+ram:00025548 addi -0x1800,r8,r0
+ram:0002554c ble 0x00025554
+ram:0002554e movea 0x1800,r0,r15
+ram:00025552 br 0x00025560
+ram:00025554 addi 0x1800,r8,r0
+ram:00025558 mov r8,r15
+ram:0002555a bge 0x00025560
+ram:0002555c movea -0x1800,r0,r15
+ram:00025560 st.h r15,-0x6470[gp]
+ram:00025564 ld.bu -0x60cc[gp],r15
+ram:00025568 cmp 0x1,r15
+ram:0002556a be 0x00025574
+ram:0002556c ld.bu 0x10af[tp],r27
+ram:00025570 mov 0x0,r6
+ram:00025572 br 0x0002559a
+ram:00025574 ld.hu -0x6360[gp],r7
+ram:00025578 ld.bu 0x10b1[tp],r27
+ram:0002557c movea 0x1384,tp,r6
+ram:00025580 jarl 0x000387e2,lp
+ram:00025584 ld.hu 0xe3c[tp],r11
+ram:00025588 mulu r10,r11,r0
+ram:0002558c shr 0xd,r11
+ram:0002558e addi -0xc00,r11,r0
+ram:00025592 movea 0xc00,r0,r13
+ram:00025596 cmovc r13,r11,r6
+ram:0002559a ld.w -0x7c40[gp],r9
+ram:0002559e ld.bu 0x14[r9],r9
+ram:000255a2 st.h r6,-0x646e[gp]
+ram:000255a6 movea -0x5080,gp,ep
+ram:000255aa andi 0x7,r9,r6
+ram:000255ae add r6,ep
+ram:000255b0 sld.bu 0x0[ep],r7
+ram:000255b2 add 0x1,r7
+ram:000255b4 sst.b r7,0x0[ep]
+ram:000255b6 zxb r7
+ram:000255b8 cmp r23,r7
+ram:000255ba st.b r27,-0x60ae[gp]
+ram:000255be be 0x000255d0
+ram:000255c0 movea -0x5078,gp,ep
+ram:000255c4 add r6,ep
+ram:000255c6 sld.bu 0x0[ep],r13
+ram:000255c8 cmp 0x1,r13
+ram:000255ca bne 0x000255d0
+ram:000255cc jarl 0x00038276,lp
+ram:000255d0 ld.h -0x64da[gp],r11
+ram:000255d4 st.h r11,-0x56b6[gp]
+ram:000255d8 dispose 0x0,{ r20,r21,r22,r23,r24,r25,r26,r27,r28,r29,lp },[lp]
+completed=true error=
+
+void FUN_ram_00024aec(char param_1)
+
+{
+  bool bVar1;
+  bool bVar2;
+  bool bVar3;
+  byte bVar4;
+  uint uVar5;
+  char cVar6;
+  undefined *puVar7;
+  uint uVar8;
+  char cVar9;
+  uint uVar10;
+  undefined *puVar11;
+  byte bVar12;
+  uint uVar13;
+  int iVar14;
+  int iVar15;
+  char cVar16;
+  uint uVar17;
+  uint unaff_r28;
+  int iVar18;
+  bool bVar19;
+  bool bVar20;
+  bool bVar21;
+  bool bVar22;
+  bool bVar23;
+  bool bVar24;
+  bool bVar25;
+  bool bVar26;
+  
+  cVar9 = DAT_ram_fedfb951;
+  bVar12 = DAT_ram_fedfb950;
+  if (DAT_ram_fedfb952 == 0) {
+LAB_ram_00024b8c:
+    DAT_ram_fedfb952 = 1;
+    DAT_ram_fedfb954 = '\0';
+  }
+  else if (DAT_ram_fedfb952 == 1) {
+    if (DAT_ram_fedfaca0 <= (ushort)BYTE_ARRAY_ram_00058308._25620_2_) {
+      DAT_ram_fedfb952 = 2;
+      DAT_ram_fedfb948 = 2;
+    }
+  }
+  else if (DAT_ram_fedfb952 < 3) {
+    if (DAT_ram_fedfb948 < (ushort)BYTE_ARRAY_ram_00058308._25524_2_) {
+      if ((ushort)BYTE_ARRAY_ram_00058308._25620_2_ < DAT_ram_fedfaca0) {
+        DAT_ram_fedfb948 = 0;
+        DAT_ram_fedfb952 = 1;
+        DAT_ram_fedfb954 = '\0';
+      }
+      else {
+        DAT_ram_fedfb948 = DAT_ram_fedfb948 + 1;
+      }
+    }
+    else {
+      DAT_ram_fedfb948 = 0;
+      DAT_ram_fedfb954 = '\x01';
+      DAT_ram_fedfb952 = 3;
+    }
+  }
+  else if ((DAT_ram_fedfb952 != 3) || ((ushort)BYTE_ARRAY_ram_00058308._25620_2_ < DAT_ram_fedfaca0)
+          ) goto LAB_ram_00024b8c;
+  puVar7 = (undefined *)(uint)DAT_ram_fedfaca0;
+  bVar23 = false;
+  if ((DAT_ram_fedfaf60 == '\x01') && (DAT_ram_fedfab28 < 0xc01)) {
+    bVar23 = DAT_ram_fedfaef3 < 0x65;
+  }
+  bVar24 = false;
+  uVar13 = (uint)DAT_ram_fedfab26;
+  if ((DAT_ram_fedfaf5f == '\x01') && (DAT_ram_fedfaf08 < 9)) {
+    bVar24 = uVar13 + 0x1400 < 0x2801;
+  }
+  bVar25 = false;
+  if ((((bVar23) && (bVar24)) && (DAT_ram_fedfaf10 == '\x01')) &&
+     (&DAT_ram_00007d00 + DAT_ram_fedfaca8 < &DAT_ram_0000fa01)) {
+    bVar25 = puVar7 < &UNK_ram_00007d01;
+  }
+  bVar19 = DAT_ram_fedfaf0b == '\x01';
+  bVar20 = DAT_ram_fedfaf0b == '\x02';
+  bVar24 = bVar19 || bVar20;
+  bVar23 = true;
+  if ((((bVar25) && (DAT_ram_fedfaf0c != 8)) && (DAT_ram_fedfaf0c - 1 < 10)) &&
+     (((DAT_ram_fedfa82c != -0x8000 && (DAT_ram_fedfa82c != 0x7fff)) || (bVar24)))) {
+    bVar23 = 0x8000 < DAT_ram_fedfad76;
+  }
+  if (DAT_ram_fedfb94d == 0) goto LAB_ram_00024d00;
+  if (DAT_ram_fedfb94d == 1) {
+    iVar14 = 1;
+    bVar2 = true;
+    if (DAT_ram_fedfaf33 == '\x01') {
+      DAT_ram_fedfb94d = 2;
+      DAT_ram_fedfb934 = 2;
+    }
+  }
+  else if (DAT_ram_fedfb94d < 3) {
+    if (DAT_ram_fedfb934 < (uint)BYTE_ARRAY_ram_00058308._24908_4_) {
+      if (DAT_ram_fedfaf33 != '\x01') goto LAB_ram_00024cee;
+      iVar14 = 1;
+      bVar2 = true;
+      DAT_ram_fedfb934 = DAT_ram_fedfb934 + 1;
+    }
+    else {
+      DAT_ram_fedfb94d = 4;
+      iVar14 = 1;
+      bVar2 = false;
+    }
+  }
+  else if (DAT_ram_fedfb94d == 3) {
+    if ((ushort)BYTE_ARRAY_ram_00058308._25520_2_ <= DAT_ram_fedfb944) goto LAB_ram_00024d00;
+    iVar14 = 0;
+    bVar2 = true;
+    DAT_ram_fedfb944 = DAT_ram_fedfb944 + 1;
+  }
+  else if (DAT_ram_fedfb94d == 4) {
+LAB_ram_00024cee:
+    DAT_ram_fedfb94d = 3;
+    iVar14 = 0;
+    bVar2 = true;
+    DAT_ram_fedfb944 = 2;
+  }
+  else {
+LAB_ram_00024d00:
+    iVar14 = 1;
+    DAT_ram_fedfb94d = 1;
+    bVar2 = true;
+  }
+  if (DAT_ram_fedfb94e == 0) goto LAB_ram_00024d90;
+  if (DAT_ram_fedfb94e == 1) {
+    iVar15 = 1;
+    bVar3 = true;
+    if (DAT_ram_fedfaf34 == '\x01') {
+      DAT_ram_fedfb94e = 2;
+      DAT_ram_fedfb942 = 2;
+    }
+  }
+  else if (DAT_ram_fedfb94e < 3) {
+    if (DAT_ram_fedfb942 < (ushort)BYTE_ARRAY_ram_00058308._25516_2_) {
+      if (DAT_ram_fedfaf34 != '\x01') goto LAB_ram_00024d7e;
+      iVar15 = 1;
+      bVar3 = true;
+      DAT_ram_fedfb942 = DAT_ram_fedfb942 + 1;
+    }
+    else {
+      DAT_ram_fedfb94e = 4;
+      iVar15 = 1;
+      bVar3 = false;
+    }
+  }
+  else if (DAT_ram_fedfb94e == 3) {
+    if ((ushort)BYTE_ARRAY_ram_00058308._25522_2_ <= DAT_ram_fedfb946) goto LAB_ram_00024d90;
+    iVar15 = 0;
+    bVar3 = true;
+    DAT_ram_fedfb946 = DAT_ram_fedfb946 + 1;
+  }
+  else if (DAT_ram_fedfb94e == 4) {
+LAB_ram_00024d7e:
+    DAT_ram_fedfb94e = 3;
+    iVar15 = 0;
+    bVar3 = true;
+    DAT_ram_fedfb946 = 2;
+  }
+  else {
+LAB_ram_00024d90:
+    iVar15 = 1;
+    DAT_ram_fedfb94e = 1;
+    bVar3 = true;
+  }
+  bVar26 = (ushort)BYTE_ARRAY_ram_00058308._25848_2_ <= DAT_ram_fedfad76;
+  uVar17 = uVar13;
+  if ((int)uVar13 < 0) {
+    uVar17 = -uVar13;
+  }
+  uVar8 = (uint)DAT_ram_fedfb94a;
+  uVar5 = uVar8;
+  if ((int)uVar8 < 0) {
+    uVar5 = -uVar8;
+  }
+  uVar10 = uVar13 - uVar8;
+  if ((int)(uVar13 - uVar8) < 0) {
+    uVar10 = -uVar10;
+  }
+  bVar1 = true;
+  if ((int)uVar13 < 1) {
+    if ((-1 < (int)uVar13) || ((int)uVar8 < 1)) goto LAB_ram_00024dd2;
+  }
+  else if (-1 < (int)uVar8) {
+LAB_ram_00024dd2:
+    bVar1 = false;
+  }
+  if (((BYTE_ARRAY_ram_00058308[0x6598] == 1) ||
+      (unaff_r28 = (uint)DAT_ram_fedfaf08, unaff_r28 != 5)) || (DAT_ram_fedfaf33 == '\0')) {
+LAB_ram_00024df8:
+    cVar16 = '\x01';
+  }
+  else {
+    cVar16 = BYTE_ARRAY_ram_00058308[0x6598] * !bVar1;
+    if (!bVar1) {
+      if (uVar17 < uVar5) goto LAB_ram_00024df8;
+      cVar16 = uVar10 <= (ushort)BYTE_ARRAY_ram_00058308._25384_2_;
+    }
+  }
+  bVar1 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25392_2_ < (uVar17 & 0xffff);
+  if (DAT_ram_fedfb94f == 0) {
+LAB_ram_00024e86:
+    DAT_ram_fedfb94f = 2;
+    iVar18 = 1;
+    DAT_ram_fedfb940 = 0;
+  }
+  else if (DAT_ram_fedfb94f == 1) {
+    if ((uVar13 == 0) || (DAT_ram_fedfaf08 != 5)) goto LAB_ram_00024e86;
+    if (uVar13 != uVar8) goto LAB_ram_00024e66;
+    if (DAT_ram_fedfb940 < (ushort)BYTE_ARRAY_ram_00058308._25514_2_) {
+      DAT_ram_fedfb940 = DAT_ram_fedfb940 + 1;
+      iVar18 = 1;
+    }
+    else {
+      DAT_ram_fedfb94f = 3;
+      iVar18 = 0;
+      DAT_ram_fedfb940 = 0;
+    }
+  }
+  else if (DAT_ram_fedfb94f < 3) {
+    if ((uVar13 == 0) || (DAT_ram_fedfaf08 != 5)) {
+      iVar18 = 1;
+    }
+    else {
+LAB_ram_00024e66:
+      iVar18 = 1;
+      DAT_ram_fedfb94f = 1;
+      DAT_ram_fedfb940 = 1;
+    }
+  }
+  else if (((DAT_ram_fedfb94f != 3) || (uVar13 == 0)) ||
+          (iVar18 = unaff_r28 * (DAT_ram_fedfaf08 != 5), DAT_ram_fedfaf08 != 5))
+  goto LAB_ram_00024e86;
+  bVar21 = false;
+  if ((cVar16 != '\0') && (!bVar1)) {
+    bVar21 = iVar18 != 0;
+  }
+  puVar11 = (undefined *)(uint)(ushort)BYTE_ARRAY_ram_00058308._25618_2_;
+  bVar22 = false;
+  if ((puVar11 <= puVar7) &&
+     (puVar11 = (undefined *)(uint)(ushort)BYTE_ARRAY_ram_00058308._25616_2_, puVar7 <= puVar11)) {
+    puVar11 = (undefined *)(uint)DAT_ram_fedfaf62;
+    bVar22 = puVar11 == (undefined *)0x0;
+  }
+  uVar13 = (uint)DAT_ram_fedfb950;
+  DAT_ram_fedfaed5 = DAT_ram_fedfb954;
+  if (uVar13 < 5) {
+    if (uVar13 == 0) {
+LAB_ram_00025434:
+      DAT_ram_fedfaf33 = '\0';
+      DAT_ram_fedfb950 = 5;
+      DAT_ram_fedfb93c = 1;
+      DAT_ram_fedfb938 = 1;
+      DAT_ram_fedfaf05 = '\x01';
+      DAT_ram_fedfaf34 = '\0';
+    }
+    else {
+      if (uVar13 != 1) {
+        if (uVar13 < 3) {
+          if (bVar23) {
+LAB_ram_00025280:
+            DAT_ram_fedfaf05 = '\x02';
+            DAT_ram_fedfb950 = 6;
+            bVar12 = 1;
+            DAT_ram_fedfb93c = 1;
+            DAT_ram_fedfb938 = 1;
+          }
+          else if ((bVar19 || bVar20) && (bVar26)) {
+            if (DAT_ram_fedfaf08 != 5) goto LAB_ram_000252a2;
+            if (DAT_ram_fedfb954 == '\x01') {
+              FUN_ram_0001535e(0x32,0,1,1);
+              DAT_ram_fedfb950 = 10;
+              DAT_ram_fedfaf05 = '\x04';
+              DAT_ram_fedfb953 = '\x01';
+              puVar7 = (undefined *)(uint)DAT_ram_fedfaca0;
+            }
+            else if (((bVar22) && (bVar21)) && (iVar14 == 1)) {
+              cVar9 = FUN_ram_00036d64(0);
+              if (cVar9 == '\0') {
+                DAT_ram_fedfb950 = 3;
+                DAT_ram_fedfb93c = 1;
+                DAT_ram_fedfb938 = 1;
+                puVar7 = (undefined *)(uint)DAT_ram_fedfaca0;
+                DAT_ram_fedfaf05 = '\b';
+              }
+              else {
+                DAT_ram_fedfb950 = 8;
+                DAT_ram_fedfaf05 = '\x05';
+                puVar7 = (undefined *)(uint)DAT_ram_fedfaca0;
+                DAT_ram_fedfb938 = 1;
+                DAT_ram_fedfb93c = 1;
+                DAT_ram_fedfaf34 = '\0';
+                DAT_ram_fedfaf33 = '\x01';
+                DAT_ram_fedfb94c = '\x01';
+              }
+            }
+            else {
+              DAT_ram_fedfb950 = 7;
+              DAT_ram_fedfaf05 = '\x04';
+              DAT_ram_fedfb93c = 1;
+              DAT_ram_fedfb938 = iVar14;
+            }
+          }
+          else {
+LAB_ram_00025260:
+            DAT_ram_fedfb950 = 9;
+            DAT_ram_fedfb938 = 1;
+            DAT_ram_fedfaf05 = '\x01';
+            DAT_ram_fedfb93c = 1;
+          }
+          goto LAB_ram_00025456;
+        }
+        if (uVar13 == 3) {
+          if ((bVar23) || (!bVar26)) goto LAB_ram_0002510c;
+          if (!bVar19 && !bVar20) goto LAB_ram_00025136;
+          bVar23 = false;
+          if ((DAT_ram_fedfaf04 != '\x05') && (DAT_ram_fedfaf04 != '\a')) {
+            bVar23 = DAT_ram_fedfaf03 != '\x06';
+          }
+          if (bVar23) {
+            bVar23 = 199 < DAT_ram_fedfb930;
+            iVar14 = (uint)bVar23 + iVar14 * (uint)!bVar23;
+            if (!bVar23) {
+              DAT_ram_fedfb930 = DAT_ram_fedfb930 + 1;
+              iVar14 = 0;
+            }
+          }
+          else {
+            DAT_ram_fedfb930 = 0;
+            iVar14 = 0;
+          }
+joined_r0x000250f4:
+          if ((DAT_ram_fedfaf08 != 5) && (iVar14 != 0)) goto LAB_ram_000251aa;
+        }
+        else {
+          uVar13 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25518_2_;
+          bVar23 = uVar13 <= DAT_ram_fedfb930;
+          cVar6 = bVar23 + bVar26 * !bVar23;
+          if (!bVar23) {
+            DAT_ram_fedfb930 = DAT_ram_fedfb930 + 1;
+            cVar6 = '\0';
+          }
+          if ((cVar6 != '\0') || (DAT_ram_fedfaf35 == '\0')) {
+            DAT_ram_fedfb930 = 0;
+            FUN_ram_00036d80(0);
+            bVar12 = (byte)uVar13;
+            if (cVar9 == '\x04') {
+              DAT_ram_fedfb950 = 7;
+              DAT_ram_fedfaf05 = '\x04';
+              DAT_ram_fedfb938 = 1;
+              DAT_ram_fedfb93c = 1;
+              puVar7 = (undefined *)(uint)DAT_ram_fedfaca0;
+              goto LAB_ram_00025456;
+            }
+            puVar7 = (undefined *)(uint)DAT_ram_fedfaca0;
+            if (DAT_ram_fedfb951 == '\x03') goto LAB_ram_0002523a;
+            if (DAT_ram_fedfb951 == '\x01') goto LAB_ram_00025260;
+            goto LAB_ram_00025280;
+          }
+        }
+      }
+LAB_ram_000252a2:
+      bVar12 = (byte)uVar13;
+      DAT_ram_fedfb93c = 1;
+      DAT_ram_fedfb938 = 1;
+    }
+  }
+  else if (uVar13 < 8) {
+    if (uVar13 < 6) {
+      uVar13 = DAT_ram_fedfaa70 >> 5;
+      bVar12 = (byte)uVar13;
+      if ((DAT_ram_fedfaa70 & 0x10) != 0) {
+        if ((bVar19 || bVar20) && bVar26) {
+          bVar23 = 199 < DAT_ram_fedfb930;
+          cVar9 = bVar23 + bVar24 * !bVar23;
+          if (!bVar23) {
+            DAT_ram_fedfb930 = DAT_ram_fedfb930 + 1;
+            cVar9 = '\0';
+          }
+        }
+        else {
+          DAT_ram_fedfb930 = 0;
+          cVar9 = '\0';
+        }
+        if ((cVar9 != '\0') && (bVar25)) goto LAB_ram_000251aa;
+        goto LAB_ram_000252a2;
+      }
+      DAT_ram_fedfb930 = 0;
+      DAT_ram_fedfb938 = 1;
+      DAT_ram_fedfaf05 = '\0';
+      DAT_ram_fedfb950 = 1;
+      DAT_ram_fedfb93c = 1;
+    }
+    else if (uVar13 == 6) {
+      uVar13 = 0;
+      if (!bVar23) {
+        uVar13 = (uint)bVar26;
+      }
+      bVar12 = (byte)uVar13;
+      if (uVar13 == 1) {
+        bVar23 = 199 < DAT_ram_fedfb930;
+        cVar9 = bVar23 + bVar26 * !bVar23;
+        if (!bVar23) {
+          DAT_ram_fedfb930 = DAT_ram_fedfb930 + 1;
+          cVar9 = '\0';
+        }
+      }
+      else {
+        DAT_ram_fedfb930 = 0;
+        cVar9 = '\0';
+      }
+      if ((DAT_ram_fedfaf08 == 5) || (cVar9 == '\0')) goto LAB_ram_000252a2;
+LAB_ram_000251aa:
+      DAT_ram_fedfb930 = 0;
+      DAT_ram_fedfb950 = 2;
+      DAT_ram_fedfaf05 = '\x03';
+      DAT_ram_fedfb93c = 1;
+      DAT_ram_fedfb938 = 1;
+    }
+    else if ((bVar23) || (!bVar26)) {
+LAB_ram_0002510c:
+      DAT_ram_fedfb930 = 0;
+      DAT_ram_fedfb950 = 6;
+      DAT_ram_fedfaf05 = '\x02';
+      DAT_ram_fedfb93c = 1;
+      DAT_ram_fedfb938 = 1;
+    }
+    else {
+      if (bVar19 || bVar20) {
+        bVar23 = 199 < DAT_ram_fedfb930;
+        iVar14 = (uint)bVar23 + (int)puVar11 * (uint)!bVar23;
+        if (!bVar23) {
+          DAT_ram_fedfb930 = DAT_ram_fedfb930 + 1;
+          iVar14 = 0;
+        }
+        goto joined_r0x000250f4;
+      }
+LAB_ram_00025136:
+      DAT_ram_fedfb930 = 0;
+      DAT_ram_fedfb950 = 9;
+      DAT_ram_fedfb938 = 1;
+      DAT_ram_fedfaf05 = '\x01';
+      DAT_ram_fedfb93c = 1;
+    }
+  }
+  else if (uVar13 < 9) {
+    DAT_ram_fedfb93c = iVar15;
+    if ((bVar23) || (!bVar26)) {
+      DAT_ram_fedfaf33 = '\0';
+      DAT_ram_fedfb94c = '\0';
+      DAT_ram_fedfb951 = '\x02';
+      DAT_ram_fedfaf05 = '\x02';
+      DAT_ram_fedfb950 = 4;
+      DAT_ram_fedfaf34 = '\0';
+      DAT_ram_fedfb938 = 1;
+    }
+    else if (((bVar22) && (bVar21)) && ((bVar2 && (bVar3)))) {
+      if (bVar24) {
+        if (DAT_ram_fedfaf08 == 5) {
+          if (DAT_ram_fedfb94c == '\x01') {
+            if (DAT_ram_fedfaf60 == '\x01' && DAT_ram_fedfab28 != 0) {
+              if (iVar15 != 1) goto LAB_ram_000253e0;
+              DAT_ram_fedfb93c = 1;
+              bVar12 = 2;
+              DAT_ram_fedfb94c = '\x02';
+              DAT_ram_fedfaf34 = '\x01';
+              DAT_ram_fedfb938 = 1;
+            }
+            else {
+              DAT_ram_fedfb938 = 1;
+              DAT_ram_fedfb93c = 1;
+            }
+          }
+          else {
+            DAT_ram_fedfb93c = 1;
+            DAT_ram_fedfb938 = 1;
+            if ((DAT_ram_fedfb94c == '\x02') &&
+               (DAT_ram_fedfaf60 != '\x01' || DAT_ram_fedfab28 == 0)) {
+              DAT_ram_fedfaf34 = '\0';
+              DAT_ram_fedfb94c = '\x01';
+            }
+          }
+        }
+        else {
+          DAT_ram_fedfb938 = 1;
+          DAT_ram_fedfb94c = '\0';
+          DAT_ram_fedfaf34 = '\0';
+          DAT_ram_fedfb951 = '\x03';
+          DAT_ram_fedfb950 = 4;
+          DAT_ram_fedfaf33 = '\0';
+        }
+      }
+      else {
+        DAT_ram_fedfaf33 = '\0';
+        DAT_ram_fedfb94c = '\0';
+        DAT_ram_fedfaf34 = '\0';
+        DAT_ram_fedfb951 = '\x01';
+        DAT_ram_fedfaf05 = '\x01';
+        bVar12 = 4;
+        DAT_ram_fedfb950 = 4;
+        DAT_ram_fedfb938 = 1;
+      }
+    }
+    else {
+LAB_ram_000253e0:
+      DAT_ram_fedfaf33 = '\0';
+      DAT_ram_fedfb94c = '\0';
+      DAT_ram_fedfaf05 = '\x04';
+      DAT_ram_fedfb951 = '\x04';
+      DAT_ram_fedfb950 = 4;
+      DAT_ram_fedfaf34 = '\0';
+      DAT_ram_fedfb938 = 1;
+    }
+  }
+  else if (uVar13 == 9) {
+    if (((!bVar19 && !bVar20) || (!bVar26)) || (!bVar25)) goto LAB_ram_000252a2;
+LAB_ram_0002523a:
+    DAT_ram_fedfb950 = 2;
+    DAT_ram_fedfaf05 = '\x03';
+    DAT_ram_fedfb93c = 1;
+    DAT_ram_fedfb938 = 1;
+  }
+  else if (uVar13 != 10) goto LAB_ram_00025434;
+LAB_ram_00025456:
+  bVar4 = DAT_ram_fedfaf36;
+  if (DAT_ram_fedfaf05 != '\x04') goto LAB_ram_000254c8;
+  if (DAT_ram_fedfaf36 == 1) {
+LAB_ram_0002546e:
+    bVar12 = !bVar2 * '\x02' + bVar12 * bVar2;
+    bVar4 = bVar12;
+    if (!bVar2) goto LAB_ram_000254c8;
+    if (DAT_ram_fedfaf36 != 3) goto LAB_ram_0002547a;
+LAB_ram_00025486:
+    bVar12 = !bVar3 * '\x04' + bVar12 * bVar3;
+    bVar4 = bVar12;
+    if (!bVar3) goto LAB_ram_000254c8;
+    if (DAT_ram_fedfaf36 != 5) goto LAB_ram_00025492;
+LAB_ram_000254a2:
+    bVar23 = iVar18 != 1;
+    bVar12 = bVar23 * '\x06' + bVar12 * !bVar23;
+    bVar4 = bVar12;
+    if (bVar23) goto LAB_ram_000254c8;
+    if (DAT_ram_fedfaf36 != 7) goto LAB_ram_000254ae;
+  }
+  else {
+    bVar12 = bVar1 + bVar12 * !bVar1;
+    bVar4 = bVar12;
+    if (bVar1) goto LAB_ram_000254c8;
+    if (DAT_ram_fedfaf36 != 2) goto LAB_ram_0002546e;
+LAB_ram_0002547a:
+    bVar23 = cVar16 != '\x01';
+    bVar12 = bVar23 * '\x03' + bVar12 * !bVar23;
+    bVar4 = bVar12;
+    if (bVar23) goto LAB_ram_000254c8;
+    if (DAT_ram_fedfaf36 != 4) goto LAB_ram_00025486;
+LAB_ram_00025492:
+    bVar23 = DAT_ram_fedfb93c != 1;
+    bVar12 = bVar23 * '\x05' + bVar12 * !bVar23;
+    bVar4 = bVar12;
+    if (bVar23) goto LAB_ram_000254c8;
+    if (DAT_ram_fedfaf36 != 6) goto LAB_ram_000254a2;
+LAB_ram_000254ae:
+    bVar23 = DAT_ram_fedfb938 != 1;
+    bVar4 = bVar23 * '\a' + bVar12 * !bVar23;
+    if ((bVar23) || (bVar4 = DAT_ram_fedfaf36, DAT_ram_fedfaf36 == 8)) goto LAB_ram_000254c8;
+  }
+  bVar4 = DAT_ram_fedfaf36;
+  if (DAT_ram_fedfb953 == '\x01') {
+    bVar4 = 8;
+  }
+LAB_ram_000254c8:
+  DAT_ram_fedfaf36 = bVar4;
+  iVar14 = 0;
+  DAT_ram_fedfad90 = 0xffff;
+  if (DAT_ram_fedfaf33 != '\0') {
+    iVar14 = (int)DAT_ram_fedfab26;
+  }
+  iVar15 = FUN_ram_000387e2(*(undefined4 *)
+                             (BYTE_ARRAY_ram_00058308 + (uint)DAT_ram_fedfaf5c * 4 + 0x7430),puVar7)
+  ;
+  uVar13 = (uint)DAT_ram_fedfad6c;
+  uVar17 = (uint)DAT_ram_fedfad72;
+  iVar18 = FUN_ram_000387e2(*(undefined4 *)
+                             (BYTE_ARRAY_ram_00058308 + (uint)DAT_ram_fedfaf61 * 4 + 0x7430),
+                            DAT_ram_fedfaca0);
+  bVar12 = BYTE_ARRAY_ram_00058308[0x65a9];
+  iVar15 = (int)(iVar14 * ((int)(((uVar13 * -2 + 0x4000) - uVar17) * iVar18 + iVar15 * uVar13) >>
+                           0xd & 0xffffU)) >> 0xd;
+  iVar14 = 0x1800;
+  if (iVar15 < 0x1801) {
+    iVar14 = (uint)(iVar15 < -0x17ff) * -0x1800 + iVar15 * (uint)(iVar15 >= -0x17ff);
+  }
+  iVar14 = (int)(iVar14 * (uint)(ushort)BYTE_ARRAY_ram_00058308._25852_2_) >> 0xd;
+  if (iVar14 < 0x1801) {
+    if (iVar14 < -0x1800) {
+      iVar14 = -0x1800;
+    }
+  }
+  else {
+    iVar14 = 0x1800;
+  }
+  DAT_ram_fedfab90 = (undefined2)iVar14;
+  if (DAT_ram_fedfaf34 == '\x01') {
+    iVar14 = FUN_ram_000387e2(0x5eb84,DAT_ram_fedfaca0);
+    uVar13 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25396_2_ * iVar14 >> 0xd;
+    DAT_ram_fedfab92 = (ushort)(0xbff < uVar13) * 0xc00 + (short)uVar13 * (ushort)(0xbff >= uVar13);
+  }
+  else {
+    DAT_ram_fedfab92 = 0;
+    bVar12 = BYTE_ARRAY_ram_00058308[0x65a7];
+  }
+  uVar13 = *(byte *)(DAT_ram_fedf93c0 + 0x14) & 7;
+  cVar9 = (&DAT_ram_fedfbf80)[uVar13] + '\x01';
+  (&DAT_ram_fedfbf80)[uVar13] = cVar9;
+  DAT_ram_fedfaf52 = bVar12;
+  if ((cVar9 != param_1) && ((&DAT_ram_fedfbf88)[uVar13] == '\x01')) {
+    FUN_ram_00038276();
+  }
+  DAT_ram_fedfb94a = DAT_ram_fedfab26;
+  return;
+}
+
+
+SELECT ram:00024694
+REF From: ram:000210de To: ram:00024694 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x00024694,lp
+FUNCTION ram:00024694 body=[[ram:00024694, ram:00024807]]
+ram:00024694 prepare { r28,lp },0x0
+ram:00024698 andi 0xff,r6,r1
+ram:0002469c ld.bu -0x60cd[gp],r7
+ram:000246a0 mov 0x0,r14
+ram:000246a2 cmp 0x1,r7
+ram:000246a4 ld.h -0x6470[gp],r12
+ram:000246a8 bh 0x000246b6
+ram:000246aa addi 0x1800,r12,r15
+ram:000246ae addi -0x3001,r15,r0
+ram:000246b2 setfnc r14
+ram:000246b6 cmp r0,r12
+ram:000246b8 mov r12,r11
+ram:000246ba bge 0x000246be
+ram:000246bc subr r0,r11
+ram:000246be cmp r0,r12
+ram:000246c0 ld.h -0x646c[gp],r10
+ram:000246c4 mov 0x1,r6
+ram:000246c6 ble 0x000246ce
+ram:000246c8 cmp r0,r10
+ram:000246ca bge 0x000246d6
+ram:000246cc br 0x000246d8
+ram:000246ce cmp r0,r12
+ram:000246d0 bge 0x000246d6
+ram:000246d2 cmp r0,r10
+ram:000246d4 bgt 0x000246d8
+ram:000246d6 mov 0x0,r6
+ram:000246d8 cmp r0,r10
+ram:000246da mov r10,r8
+ram:000246dc bge 0x000246e0
+ram:000246de subr r0,r8
+ram:000246e0 ld.bu -0x56e1[gp],r9
+ram:000246e4 cmp 0x1,r9
+ram:000246e6 bc 0x00024796
+ram:000246e8 be 0x000246f2
+ram:000246ea cmp 0x3,r9
+ram:000246ec bc 0x00024770
+ram:000246ee bne 0x00024796
+ram:000246f0 br 0x00024706
+ram:000246f2 cmp 0x1,r7
+ram:000246f4 bne 0x000246fe
+ram:000246f6 cmp 0x1,r14
+ram:000246f8 bne 0x000246fe
+ram:000246fa cmp r0,r8
+ram:000246fc be 0x0002477c
+ram:000246fe mov 0x0,r12
+ram:00024700 ld.hu 0xe36[tp],r14
+ram:00024704 br 0x000247a2
+ram:00024706 cmp 0x1,r7
+ram:00024708 bne 0x0002470e
+ram:0002470a cmp 0x1,r14
+ram:0002470c be 0x00024720
+ram:0002470e st.b r0,-0x56e2[gp]
+ram:00024712 mov 0x1,r15
+ram:00024714 st.b r15,-0x56e1[gp]
+ram:00024718 mov 0x0,r12
+ram:0002471a ld.hu 0xe36[tp],r14
+ram:0002471e br 0x000247a2
+ram:00024720 cmp 0x1,r6
+ram:00024722 mov 0x0,r14
+ram:00024724 bne 0x00024738
+ram:00024726 st.b r0,-0x56e2[gp]
+ram:0002472a mov 0x2,r12
+ram:0002472c st.b r12,-0x56e1[gp]
+ram:00024730 mov r0,r12
+ram:00024732 ld.hu 0xe2c[tp],r14
+ram:00024736 br 0x000247a2
+ram:00024738 ld.bu -0x56e2[gp],r6
+ram:0002473c cmp 0x1,r6
+ram:0002473e be 0x0002475a
+ram:00024740 cmp 0x2,r6
+ram:00024742 bne 0x000247a2
+ram:00024744 cmp r8,r11
+ram:00024746 bnc 0x00024754
+ram:00024748 mov 0x1,r9
+ram:0002474a st.b r9,-0x56e2[gp]
+ram:0002474e ld.hu 0xe2c[tp],r14
+ram:00024752 br 0x000247a2
+ram:00024754 ld.hu 0xe32[tp],r14
+ram:00024758 br 0x000247a2
+ram:0002475a cmp r8,r11
+ram:0002475c bnh 0x0002476a
+ram:0002475e mov 0x2,r7
+ram:00024760 st.b r7,-0x56e2[gp]
+ram:00024764 ld.hu 0xe32[tp],r14
+ram:00024768 br 0x000247a2
+ram:0002476a ld.hu 0xe2c[tp],r14
+ram:0002476e br 0x000247a2
+ram:00024770 cmp 0x1,r7
+ram:00024772 bne 0x00024796
+ram:00024774 cmp 0x1,r14
+ram:00024776 bne 0x00024796
+ram:00024778 cmp 0x1,r6
+ram:0002477a be 0x0002478e
+ram:0002477c mov 0x3,r16
+ram:0002477e st.b r16,-0x56e1[gp]
+ram:00024782 mov 0x2,r14
+ram:00024784 st.b r14,-0x56e2[gp]
+ram:00024788 ld.hu 0xe32[tp],r14
+ram:0002478c br 0x000247a2
+ram:0002478e mov 0x0,r12
+ram:00024790 ld.hu 0xe2c[tp],r14
+ram:00024794 br 0x000247a2
+ram:00024796 mov 0x1,r12
+ram:00024798 st.b r12,-0x56e1[gp]
+ram:0002479c mov 0x0,r12
+ram:0002479e ld.hu 0xe36[tp],r14
+ram:000247a2 ld.hu 0xe3a[tp],r9
+ram:000247a6 cmp r9,r12
+ram:000247a8 ld.hu 0xe3a[tp],r13
+ram:000247ac ble 0x000247b2
+ram:000247ae mov r13,r12
+ram:000247b0 br 0x000247be
+ram:000247b2 subr r0,r13
+ram:000247b4 cmp r13,r12
+ram:000247b6 bge 0x000247be
+ram:000247b8 ld.hu 0xe3a[tp],r12
+ram:000247bc subr r0,r12
+ram:000247be mov r10,r6
+ram:000247c0 sub r14,r6
+ram:000247c2 add r10,r14
+ram:000247c4 cmp r6,r12
+ram:000247c6 cmovlt r6,r28,r28
+ram:000247ca blt 0x000247d2
+ram:000247cc cmp r12,r14
+ram:000247ce cmovge r12,r14,r28
+ram:000247d2 ld.w -0x7c40[gp],r16
+ram:000247d6 ld.bu 0x14[r16],r16
+ram:000247da movea -0x5080,gp,ep
+ram:000247de andi 0x7,r16,r6
+ram:000247e2 add r6,ep
+ram:000247e4 sld.bu 0x0[ep],r16
+ram:000247e6 add 0x1,r16
+ram:000247e8 sst.b r16,0x0[ep]
+ram:000247ea zxb r16
+ram:000247ec cmp r1,r16
+ram:000247ee be 0x00024800
+ram:000247f0 movea -0x5078,gp,ep
+ram:000247f4 add r6,ep
+ram:000247f6 sld.bu 0x0[ep],r10
+ram:000247f8 cmp 0x1,r10
+ram:000247fa bne 0x00024800
+ram:000247fc jarl 0x00038276,lp
+ram:00024800 st.h r28,-0x646c[gp]
+ram:00024804 dispose 0x0,{ r28,lp },[lp]
+completed=true error=
+
+void FUN_ram_00024694(char param_1)
+
+{
+  bool bVar1;
+  int iVar2;
+  uint uVar3;
+  uint uVar4;
+  uint uVar5;
+  uint uVar6;
+  uint uVar7;
+  int iVar8;
+  char cVar9;
+  short unaff_r28;
+  short sVar10;
+  bool bVar11;
+  
+  uVar5 = (uint)DAT_ram_fedfab90;
+  bVar11 = 0x3000 < uVar5 + 0x1800;
+  uVar6 = uVar5;
+  if ((int)uVar5 < 0) {
+    uVar6 = -uVar5;
+  }
+  uVar4 = (uint)DAT_ram_fedfab94;
+  bVar1 = true;
+  if ((int)uVar5 < 1) {
+    if ((-1 < (int)uVar5) || ((int)uVar4 < 1)) goto LAB_ram_000246d6;
+  }
+  else if (-1 < (int)uVar4) {
+LAB_ram_000246d6:
+    bVar1 = false;
+  }
+  uVar3 = uVar4;
+  if ((int)uVar4 < 0) {
+    uVar3 = -uVar4;
+  }
+  if (DAT_ram_fedfb91f != 0) {
+    if (DAT_ram_fedfb91f == 1) {
+      if (((DAT_ram_fedfaf33 != '\x01') || (bVar11)) || (uVar3 != 0)) {
+        uVar5 = 0;
+        uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25390_2_;
+        goto LAB_ram_000247a2;
+      }
+LAB_ram_0002477c:
+      DAT_ram_fedfb91f = 3;
+      DAT_ram_fedfb91e = '\x02';
+      uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25386_2_;
+      goto LAB_ram_000247a2;
+    }
+    if (DAT_ram_fedfb91f < 3) {
+      if ((DAT_ram_fedfaf33 == '\x01') && (!bVar11)) {
+        if (bVar1) {
+          uVar5 = 0;
+          uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25380_2_;
+          goto LAB_ram_000247a2;
+        }
+        goto LAB_ram_0002477c;
+      }
+    }
+    else if (DAT_ram_fedfb91f == 3) {
+      if ((DAT_ram_fedfaf33 != '\x01') || (bVar11)) {
+        DAT_ram_fedfb91e = '\0';
+        DAT_ram_fedfb91f = 1;
+        uVar5 = 0;
+        uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25390_2_;
+      }
+      else {
+        uVar7 = 0;
+        if (bVar1) {
+          DAT_ram_fedfb91e = '\0';
+          DAT_ram_fedfb91f = 2;
+          uVar5 = 0;
+          uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25380_2_;
+        }
+        else if (DAT_ram_fedfb91e == '\x01') {
+          if (uVar3 < uVar6) {
+            DAT_ram_fedfb91e = '\x02';
+            uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25386_2_;
+          }
+          else {
+            uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25380_2_;
+          }
+        }
+        else if (DAT_ram_fedfb91e == '\x02') {
+          if (uVar6 < uVar3) {
+            DAT_ram_fedfb91e = '\x01';
+            uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25380_2_;
+          }
+          else {
+            uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25386_2_;
+          }
+        }
+      }
+      goto LAB_ram_000247a2;
+    }
+  }
+  DAT_ram_fedfb91f = 1;
+  uVar5 = 0;
+  uVar7 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25390_2_;
+LAB_ram_000247a2:
+  uVar6 = (uint)(ushort)BYTE_ARRAY_ram_00058308._25394_2_;
+  if (((int)uVar5 <= (int)(uint)(ushort)BYTE_ARRAY_ram_00058308._25394_2_) &&
+     (iVar2 = -uVar6, uVar6 = uVar5, (int)uVar5 < iVar2)) {
+    uVar6 = -(uint)(ushort)BYTE_ARRAY_ram_00058308._25394_2_;
+  }
+  iVar2 = uVar4 - uVar7;
+  iVar8 = uVar7 + uVar4;
+  sVar10 = (short)iVar2 * (ushort)((int)uVar6 < iVar2) + unaff_r28 * (ushort)((int)uVar6 >= iVar2);
+  if (iVar2 <= (int)uVar6) {
+    sVar10 = (short)uVar6 * (ushort)((int)uVar6 <= iVar8) +
+             (short)iVar8 * (ushort)((int)uVar6 > iVar8);
+  }
+  uVar6 = *(byte *)(DAT_ram_fedf93c0 + 0x14) & 7;
+  cVar9 = (&DAT_ram_fedfbf80)[uVar6] + '\x01';
+  (&DAT_ram_fedfbf80)[uVar6] = cVar9;
+  if ((cVar9 != param_1) && ((&DAT_ram_fedfbf88)[uVar6] == '\x01')) {
+    FUN_ram_00038276();
+  }
+  DAT_ram_fedfab94 = sVar10;
+  return;
+}
+
+
+SELECT ram:00038746
+REF From: ram:000387f4 To: ram:00038746 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x00038746
+FUNCTION ram:00038746 body=[[ram:00038746, ram:000387e1]]
+ram:00038746 zxh r8
+ram:00038748 zxh r9
+ram:0003874a ld.hu 0x0[r7],r14
+ram:0003874e cmp r14,r9
+ram:00038750 bnh 0x000387dc
+ram:00038752 shl 0x1,r8
+ram:00038754 mov r8,r14
+ram:00038756 add r7,r14
+ram:00038758 ld.hu -0x2[r14],r12
+ram:0003875c cmp r12,r9
+ram:0003875e bc 0x00038768
+ram:00038760 add r6,r8
+ram:00038762 ld.hu -0x2[r8],r10
+ram:00038766 br 0x000387e0
+ram:00038768 ld.hu 0x2[r7],r10
+ram:0003876c add 0x4,r7
+ram:0003876e cmp r10,r9
+ram:00038770 bc 0x0003877e
+ram:00038772 ld.hu 0x0[r7],r15
+ram:00038776 add 0x2,r6
+ram:00038778 add 0x2,r7
+ram:0003877a cmp r15,r9
+ram:0003877c bnc 0x00038772
+ram:0003877e ld.hu -0x4[r7],r13
+ram:00038782 ld.hu -0x2[r7],r11
+ram:00038786 subr r0,r13
+ram:00038788 add r13,r11
+ram:0003878a add r9,r13
+ram:0003878c andi 0xffff,r13,r13
+ram:00038790 zxh r11
+ram:00038792 be 0x000387dc
+ram:00038794 mov r6,ep
+ram:00038796 sld.hu 0x2[ep],r8
+ram:00038798 sld.hu 0x0[ep],r15
+ram:0003879a sld.hu 0x2[ep],r12
+ram:0003879c sld.hu 0x0[ep],r9
+ram:0003879e sub r15,r8
+ram:000387a0 cmp r12,r9
+ram:000387a2 zxh r8
+ram:000387a4 bnh 0x000387b2
+ram:000387a6 mov r0,r16
+ram:000387a8 sub r8,r16
+ram:000387aa andi 0xffff,r16,r8
+ram:000387ae mov 0x1,r9
+ram:000387b0 br 0x000387b4
+ram:000387b2 mov 0x0,r9
+ram:000387b4 ori 0xffff,r0,r16
+ram:000387b8 cmp r0,r11
+ram:000387ba be 0x000387c6
+ram:000387bc mulu r13,r8,r0
+ram:000387c0 divqu r11,r8,r0
+ram:000387c4 mov r8,r16
+ram:000387c6 cmp r0,r9
+ram:000387c8 ld.hu 0x0[r6],r10
+ram:000387cc mov r16,r8
+ram:000387ce be 0x000387d6
+ram:000387d0 sub r8,r10
+ram:000387d2 zxh r10
+ram:000387d4 br 0x000387e0
+ram:000387d6 add r8,r10
+ram:000387d8 zxh r10
+ram:000387da br 0x000387e0
+ram:000387dc ld.hu 0x0[r6],r10
+ram:000387e0 jmp [lp]
+completed=true error=
+
+uint FUN_ram_00038746(ushort *param_1,ushort *param_2,uint param_3,ushort param_4)
+
+{
+  ushort uVar1;
+  ushort *puVar2;
+  uint uVar3;
+  uint uVar4;
+  uint uVar5;
+  uint uVar6;
+  
+  if (*param_2 < param_4) {
+    if (param_2[(param_3 & 0xffff) - 1] <= param_4) {
+      return (uint)param_1[(param_3 & 0xffff) - 1];
+    }
+    uVar1 = param_2[1];
+    puVar2 = param_2 + 2;
+    while (uVar1 <= param_4) {
+      param_1 = param_1 + 1;
+      uVar1 = *puVar2;
+      puVar2 = puVar2 + 1;
+    }
+    uVar5 = (uint)(ushort)(-puVar2[-2] + param_4);
+    uVar4 = (uint)(ushort)(puVar2[-1] + -puVar2[-2]);
+    if (uVar5 != 0) {
+      uVar3 = (uint)param_1[1] - (uint)*param_1 & 0xffff;
+      if (param_1[1] < *param_1) {
+        uVar3 = -uVar3 & 0xffff;
+      }
+      uVar6 = 0xffff;
+      if (uVar4 != 0) {
+        uVar6 = (uVar3 * uVar5) / uVar4;
+      }
+      if (param_1[1] < *param_1) {
+        return *param_1 - uVar6 & 0xffff;
+      }
+      return *param_1 + uVar6 & 0xffff;
+    }
+  }
+  return (uint)*param_1;
+}
+
+
+SELECT ram:000387e2
+REF From: ram:0001c234 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0001c23e To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0001c25a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000214c8 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021534 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021542 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021578 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021586 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021616 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0002162c To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021644 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0002165a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021820 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00021d76 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00024538 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000256fc To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0003575c To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0003598a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0003669a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000366aa To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000366c4 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000366d6 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0003676e To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000367ac To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00037df2 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00037f24 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00037f4e To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004925c To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004926a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00049344 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00049f98 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004a308 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004a316 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004a324 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004b76a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0002236a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00023804 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0002388c To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000238b6 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00024030 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0002403e To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00024058 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000254e8 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00025512 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00025580 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00049534 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00049544 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004955a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004956a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004957e To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004958c To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004959a To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000495a8 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000495ba To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000495c8 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000495d6 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000495e4 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004a00c To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:0004a180 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:000268f6 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00026912 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00049824 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+REF From: ram:00049840 To: ram:000387e2 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000387e2,lp
+FUNCTION ram:000387e2 body=[[ram:000387e2, ram:000387f7]]
+ram:000387e2 andi 0xffff,r7,r9
+ram:000387e6 ld.hu 0x0[r6],r8
+ram:000387ea addi 0x2,r6,r7
+ram:000387ee mov r8,r6
+ram:000387f0 shl 0x1,r6
+ram:000387f2 add r7,r6
+ram:000387f4 jr 0x00038746
+completed=true error=
+
+void FUN_ram_000387e2(ushort *param_1,undefined2 param_2)
+
+{
+  FUN_ram_00038746(param_1 + 1 + *param_1,param_1 + 1,(uint)*param_1,param_2);
+  return;
+}
+
+

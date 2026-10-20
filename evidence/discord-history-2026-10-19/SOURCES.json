@@ -1,0 +1,130 @@
+{
+  "review_date": "2026-10-19",
+  "scope": "Discord information gathering and historical prose review only",
+  "thread": {
+    "url": "https://discord.com/channels/660951518014341124/1063188305514090546",
+    "title": "MQB VW Rack FW Hack (5Q0, 3Q0)",
+    "server": "RetroPilot",
+    "channel": "bounties",
+    "coverage_start": "2023-01-12",
+    "latest_visible": "2026-08-10",
+    "acquisition": "Native Discord accessibility UI observations; dated paraphrases, not lossless transcript",
+    "individual_message_permalinks_collected": false,
+    "media_bytes_reviewed": false
+  },
+  "git_baseline": {
+    "initial_import": "167f9cc",
+    "configuration_commit": "efe0cce",
+    "used_for": "Distinguish initial historical review/import from concurrent working-tree changes; no Git mutations"
+  },
+  "historical_prose": [
+    {
+      "path": "EPS_research/MQB/5Q0, 3Q0/README.md",
+      "sha256": "3d2701a7f5fbf0b1bcc94c53dbb0395da19b0b2fa41cb3ff9855b579b01c2d63",
+      "bytes": 1964,
+      "evidence_type": "Imported historical author claim, not verified firmware finding",
+      "claimed_offset": "0x00048a20",
+      "original_binary_hash": "not specified by historical author",
+      "limitations": "No binary inspection this session. Unknown security codes explicitly untested. Longest-block heuristic explicitly unverified."
+    }
+  ],
+  "external_leads_not_fetched": [
+    {
+      "purpose": "Firmware/docs Drive",
+      "url": "https://drive.google.com/drive/folders/1jbYVfHPv69yVEW2BQdQ-R-QM_IWp8Gr9"
+    },
+    {
+      "purpose": "Wiring Drive",
+      "url": "https://drive.google.com/drive/folders/1bW8WEvV_sL4IoRP_i1ewVIfz-GTYVk5O"
+    },
+    {
+      "purpose": "5Q0 hardware photograph",
+      "url": "https://ibb.co/3rDw18D"
+    },
+    {
+      "purpose": "Photo discussion",
+      "url": "https://mhhauto.com/Thread-Vag-Steering-Assistance-D-Flash-EEPROM-Read"
+    },
+    {
+      "purpose": "Firmware collection",
+      "url": "https://mibsolution.one/#/1/11/MQB/44"
+    },
+    {
+      "purpose": "2026 demo linked in thread",
+      "url": "https://www.reddit.com/r/Comma_ai/s/PENewTpcQX"
+    },
+    {
+      "purpose": "ALC follow-up community",
+      "url": "https://discord.konn3kt.com/"
+    }
+  ],
+  "attachment_metadata_only": [
+    {
+      "posted": "2023-02-19 3:52 PM",
+      "name": "ICIT-Brief_Whos-Behind-the-Wheel_Car-Hacking2.pdf",
+      "discord_attachment_id": "1076788439900504085",
+      "cdn_path": "https://cdn.discordapp.com/attachments/1063188305514090546/1076788439900504085/ICIT-Brief_Whos-Behind-the-Wheel_Car-Hacking2.pdf",
+      "bytes_downloaded": false,
+      "sha256": null
+    },
+    {
+      "posted": "2026-01-02 5:59 PM",
+      "name": "IMG_3947.mov",
+      "discord_attachment_id": "1456783986054664202",
+      "cdn_path": "https://cdn.discordapp.com/attachments/1063188305514090546/1456783986054664202/IMG_3947.mov",
+      "bytes_downloaded": false,
+      "sha256": null
+    },
+    {
+      "posted": "2026-01-02 5:59 PM",
+      "name": "IMG_3941.mov",
+      "discord_attachment_id": "1456783986851315754",
+      "cdn_path": "https://cdn.discordapp.com/attachments/1063188305514090546/1456783986851315754/IMG_3941.mov",
+      "bytes_downloaded": false,
+      "sha256": null
+    },
+    {
+      "posted": "2026-01-02 5:59 PM",
+      "name": "IMG_4390.mov",
+      "discord_attachment_id": "1456783987895832616",
+      "cdn_path": "https://cdn.discordapp.com/attachments/1063188305514090546/1456783987895832616/IMG_4390.mov",
+      "bytes_downloaded": false,
+      "sha256": null
+    },
+    {
+      "posted": "2026-01-02 5:59 PM",
+      "name": "IMG_4400.mov",
+      "discord_attachment_id": "1456783989166702644",
+      "cdn_path": "https://cdn.discordapp.com/attachments/1063188305514090546/1456783989166702644/IMG_4400.mov",
+      "bytes_downloaded": false,
+      "sha256": null
+    },
+    {
+      "posted": "2026-01-02 5:59 PM",
+      "name": "IMG_1445.mov",
+      "discord_attachment_id": "1456783990131261544",
+      "cdn_path": "https://cdn.discordapp.com/attachments/1063188305514090546/1456783990131261544/IMG_1445.mov",
+      "bytes_downloaded": false,
+      "sha256": null
+    },
+    {
+      "posted": "2026-01-02 5:59 PM",
+      "name": "IMG_1507.mov",
+      "discord_attachment_id": "1456783990924120277",
+      "cdn_path": "https://cdn.discordapp.com/attachments/1063188305514090546/1456783990924120277/IMG_1507.mov",
+      "bytes_downloaded": false,
+      "sha256": null
+    }
+  ],
+  "attachment_limitations": "Unsigned CDN paths identify observed references; not verified permanent downloads. Image metadata incomplete. No media behavior or authenticity claim.",
+  "source_anchors_sha256": "87bd8ecd7d4a3f2d04972056c7f420b94db341cbff412086e83ae67f335a3755",
+  "pre_merge_report_sha256": "de9c8b87ef99febf968db3576f74f3df20553cd5512e2cd938740ee5ca33a84d",
+  "pre_merge_findings_sha256": "d50d47eb06cb251cd3d8d65665d7a7d6db2e2198dfc2f098eb5728a2094d1cbb",
+  "merged_note_snapshot": {
+    "report_path": "notes/DISCORD_REVIEW.md",
+    "report_sha256": "130928e82e4be2e9c5ceaf17913a857b75a8f3f4b02cdd7504a9e57a8efc4cec",
+    "findings_path": "notes/FINDINGS.md",
+    "discord_findings_section_sha256": "d7b1f95f53b49c3895af672348427b21e831ed890d51fa6e63511f8fcc9c1b5e",
+    "merge_date": "2026-10-19"
+  }
+}

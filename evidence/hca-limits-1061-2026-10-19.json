@@ -1,0 +1,237 @@
+{
+  "artifact": {
+    "path": "analysis/1061/mapped-update.bin",
+    "sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+    "load_base": "0x2000",
+    "h1_sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641"
+  },
+  "evidence_type": "direct Ghidra static observations plus analyst arithmetic model",
+  "decoder": {
+    "function": "0x2b530",
+    "input_buffer": "0xfedf9b70",
+    "output": "0xfedfab26",
+    "formula": "(clamp(signed_cNm, -500, 500) * 2621) >> 8",
+    "instructions": "0x2b584..0x2b5a2",
+    "status_constraints": "status >7 produces sentinel 0x7fff"
+  },
+  "scalars": [
+    {
+      "address": "0x5e638",
+      "mapped_file_offset": "0x5c638",
+      "h1_offset": "0x4f638",
+      "bytes": "33 0c",
+      "uint16": 3123,
+      "role": "request magnitude eligibility threshold",
+      "consumer": "0x24e06..0x24e12",
+      "display_value": 3.0498046875,
+      "display_divisor": 1024
+    },
+    {
+      "address": "0x5e63a",
+      "mapped_file_offset": "0x5c63a",
+      "h1_offset": "0x4f63a",
+      "bytes": "cd 0e",
+      "uint16": 3789,
+      "role": "downstream symmetric target bound",
+      "consumer": "0x24694",
+      "display_value": 3.7001953125,
+      "display_divisor": 1024
+    },
+    {
+      "address": "0x5e630",
+      "mapped_file_offset": "0x5c630",
+      "h1_offset": "0x4f630",
+      "bytes": "71 00",
+      "uint16": 113,
+      "role": "request change comparison threshold",
+      "consumer": "0x24dfc..0x24e02",
+      "display_value": 0.1103515625,
+      "display_divisor": 1024
+    },
+    {
+      "address": "0x5e804",
+      "mapped_file_offset": "0x5c804",
+      "h1_offset": "0x4f804",
+      "bytes": "9a 21",
+      "uint16": 8602,
+      "role": "post-interpolation multiplier",
+      "consumer": "0x2553e..0x25546",
+      "display_value": 1.050048828125,
+      "display_divisor": 8192
+    }
+  ],
+  "immediate_output_bounds": {
+    "function": "0x24aec",
+    "instructions": "0x25528..0x25560",
+    "raw": [
+      -6144,
+      6144
+    ],
+    "candidate_Nm": [
+      -6,
+      6
+    ]
+  },
+  "curve_pointer_table": "0x5f738",
+  "curves": [
+    {
+      "address": "0x5fcde",
+      "mapped_file_offset": "0x5dcde",
+      "h1_offset": "0x50cde",
+      "count": 6,
+      "x_raw": [
+        0,
+        1920,
+        3200,
+        6400,
+        9600,
+        12800
+      ],
+      "y_raw": [
+        7118,
+        7118,
+        7406,
+        8060,
+        8623,
+        9094
+      ],
+      "x_units": "unresolved",
+      "y_scale_candidate": "Q13 multiplier"
+    },
+    {
+      "address": "0x5fcfa",
+      "mapped_file_offset": "0x5dcfa",
+      "h1_offset": "0x50cfa",
+      "count": 6,
+      "x_raw": [
+        0,
+        1920,
+        3200,
+        6400,
+        9600,
+        12800
+      ],
+      "y_raw": [
+        7208,
+        7208,
+        7752,
+        8580,
+        8647,
+        7954
+      ],
+      "x_units": "unresolved",
+      "y_scale_candidate": "Q13 multiplier"
+    },
+    {
+      "address": "0x5fd16",
+      "mapped_file_offset": "0x5dd16",
+      "h1_offset": "0x50d16",
+      "count": 6,
+      "x_raw": [
+        0,
+        1920,
+        3200,
+        6400,
+        9600,
+        12800
+      ],
+      "y_raw": [
+        7522,
+        7522,
+        7923,
+        8739,
+        9285,
+        9562
+      ],
+      "x_units": "unresolved",
+      "y_scale_candidate": "Q13 multiplier"
+    }
+  ],
+  "boundary_examples": [
+    {
+      "wire_magnitude_cNm": 299,
+      "positive": {
+        "decoded": 3061,
+        "passes_magnitude_check": true
+      },
+      "negative": {
+        "decoded": -3062,
+        "passes_magnitude_check": true
+      }
+    },
+    {
+      "wire_magnitude_cNm": 300,
+      "positive": {
+        "decoded": 3071,
+        "passes_magnitude_check": true
+      },
+      "negative": {
+        "decoded": -3072,
+        "passes_magnitude_check": true
+      }
+    },
+    {
+      "wire_magnitude_cNm": 304,
+      "positive": {
+        "decoded": 3112,
+        "passes_magnitude_check": true
+      },
+      "negative": {
+        "decoded": -3113,
+        "passes_magnitude_check": true
+      }
+    },
+    {
+      "wire_magnitude_cNm": 305,
+      "positive": {
+        "decoded": 3122,
+        "passes_magnitude_check": true
+      },
+      "negative": {
+        "decoded": -3123,
+        "passes_magnitude_check": true
+      }
+    },
+    {
+      "wire_magnitude_cNm": 306,
+      "positive": {
+        "decoded": 3132,
+        "passes_magnitude_check": false
+      },
+      "negative": {
+        "decoded": -3133,
+        "passes_magnitude_check": false
+      }
+    },
+    {
+      "wire_magnitude_cNm": 500,
+      "positive": {
+        "decoded": 5119,
+        "passes_magnitude_check": false
+      },
+      "negative": {
+        "decoded": -5120,
+        "passes_magnitude_check": false
+      }
+    },
+    {
+      "wire_magnitude_cNm": 511,
+      "positive": {
+        "decoded": 5119,
+        "passes_magnitude_check": false
+      },
+      "negative": {
+        "decoded": -5120,
+        "passes_magnitude_check": false
+      }
+    }
+  ],
+  "limitations": [
+    "No firmware execution or vehicle observation. Arithmetic examples model only decoding and one comparison.",
+    "Nm interpretation combines external DBC centiNm units with observed conversion, approximately 1024 internal units per Nm.",
+    "Eligibility requires additional state, validity, timing and vehicle conditions. Passing magnitude alone does not enable assistance.",
+    "Output bounds are intermediate signal bounds, not measured motor torque or guaranteed steering authority.",
+    "Curve axis units, active profile selection, downstream arbitration and complete override logic remain unresolved.",
+    "No patch, checksum correction, flashing path or modified-firmware validation is provided."
+  ]
+}

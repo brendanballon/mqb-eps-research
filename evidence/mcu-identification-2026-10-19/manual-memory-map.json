@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-19",
+  "document": {
+    "manufacturer": "Renesas",
+    "document_number": "R01UH0098EJ0100",
+    "revision": "1.00",
+    "date": "2012-07-25",
+    "pages_pdf": 2271,
+    "numbered_pages": 2239,
+    "sha256": "f2914aa669635072756bc530485d8bc690dede0e8398b51ee6adcc3b62b3bd22",
+    "official_link_status": "403 in initial pass",
+    "mirror_listing": "https://www.datasheetarchive.com/?q=V850E2",
+    "mirror_landing": "https://www.datasheetarchive.com/datasheet/d86e800893c8bfee?term=V850E2",
+    "direct_pdf": "https://datasheet.datasheetarchive.com/originals/library/Datasheets-ISS15/DSAIH000290215.pdf",
+    "identity_limit": "Manufacturer-authored document recovered from public third-party mirror. Archive rewrapped PDF metadata. No official byte hash available for equality verification."
+  },
+  "memory_ranges": [
+    {
+      "name": "Code flash, 70F3506/3507",
+      "start": "0x0",
+      "end_exclusive": "0x80000",
+      "source_printed_page": 24,
+      "source_pdf_page": 44,
+      "source_table": "1-3"
+    },
+    {
+      "name": "Data flash, 70F3506/3507",
+      "start": "0x02000000",
+      "end_exclusive": "0x02008000",
+      "source_printed_page": 24,
+      "source_pdf_page": 44,
+      "source_table": "1-3"
+    },
+    {
+      "name": "On-chip RAM, 70F3506/3507",
+      "start": "0xfedf6000",
+      "end_exclusive": "0xfee00000",
+      "source_printed_page": 24,
+      "source_pdf_page": 44,
+      "source_table": "1-4"
+    }
+  ],
+  "named_peripheral_windows": [
+    {
+      "name": "Port control",
+      "start": "0xff400000",
+      "end_exclusive": "0xff410000",
+      "source_printed_page": 144,
+      "source_pdf_page": 164,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "Clock/reset",
+      "start": "0xff420000",
+      "end_exclusive": "0xff430000",
+      "source_printed_page": 144,
+      "source_pdf_page": 164,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "Flash/ECC/access control",
+      "start": "0xff430000",
+      "end_exclusive": "0xff440000",
+      "source_printed_page": 144,
+      "source_pdf_page": 164,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "FCN0",
+      "start": "0xff480000",
+      "end_exclusive": "0xff490000",
+      "source_printed_page": 145,
+      "source_pdf_page": 165,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "FCN1",
+      "start": "0xff4a0000",
+      "end_exclusive": "0xff4b0000",
+      "source_printed_page": 145,
+      "source_pdf_page": 165,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "FlexRay",
+      "start": "0xff580000",
+      "end_exclusive": "0xff590000",
+      "source_printed_page": 145,
+      "source_pdf_page": 165,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "OSTM0",
+      "start": "0xff800000",
+      "end_exclusive": "0xff801000",
+      "source_printed_page": 145,
+      "source_pdf_page": 165,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "OSTM1",
+      "start": "0xff801000",
+      "end_exclusive": "0xff802000",
+      "source_printed_page": 145,
+      "source_pdf_page": 165,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "TAUA0",
+      "start": "0xff808000",
+      "end_exclusive": "0xff809000",
+      "source_printed_page": 145,
+      "source_pdf_page": 165,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "TAUA1",
+      "start": "0xff809000",
+      "end_exclusive": "0xff80a000",
+      "source_printed_page": 145,
+      "source_pdf_page": 165,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "TSG20",
+      "start": "0xff82e000",
+      "end_exclusive": "0xff82f000",
+      "source_printed_page": 146,
+      "source_pdf_page": 166,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "TSG21",
+      "start": "0xff82f000",
+      "end_exclusive": "0xff830000",
+      "source_printed_page": 146,
+      "source_pdf_page": 166,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "INTC",
+      "start": "0xffff6000",
+      "end_exclusive": "0xffff6460",
+      "source_printed_page": 144,
+      "source_pdf_page": 164,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "TSU/PPU",
+      "start": "0xffff5000",
+      "end_exclusive": "0xffff5400",
+      "source_printed_page": 144,
+      "source_pdf_page": 164,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    },
+    {
+      "name": "ADCA0 short area",
+      "start": "0xffffdc00",
+      "end_exclusive": "0xffffdd00",
+      "source_printed_page": 147,
+      "source_pdf_page": 167,
+      "source_table": "3-2",
+      "limitation": "Module/protectionwindow, not proof every address populated. Follow detailed register descriptions."
+    }
+  ],
+  "tuning_ram": {
+    "capacity_bytes": 8192,
+    "source_printed_page": 5,
+    "source_pdf_page": 25,
+    "address": "not identified in recovered manual",
+    "search_scope": "Full2271PDFpage text, only Tuning RAM capacity table and TRAM block-diagram occurrence; independent firmwareFA800000 copy not assigned to it"
+  },
+  "public_target_search": {
+    "queries": [
+      "\"5Q0909144\" \"70F3506\"",
+      "\"5Q0909144\" \"D70F\"",
+      "\"5Q0909144R\" \"1061\" \"bin\"",
+      "\"5Q0909144\" \"pflash\"",
+      "\"D70F3506\" \"5Q0\" dump"
+    ],
+    "results": [
+      {
+        "url": "https://mhhauto.com/Thread-Skoda-EPS-RHD-to-LHD",
+        "evidence_type": "Indexed forum claim, page403, not verified hardware evidence",
+        "claim": "Indexed prose associates5Q0909144withD70F3506; no target-specific board binding obtained"
+      },
+      {
+        "url": "https://www.mtx-automotive.com/database/details/skoda-fl-5q0909144r-h1-1061-1683?lang=en",
+        "evidence_type": "Vendor listing only, no payload acquired",
+        "observation": "FRF+convertedBIN listing forH1, does not establish lowflash0..2000"
+      },
+      {
+        "url": "https://www.ziptuning.com/vag-original-files/volkswagen/page/14/",
+        "evidence_type": "Vendor index only, no payload acquired",
+        "observation": "Lists5Q0909144R1061.bin without byte identity or readout provenance"
+      }
+    ],
+    "conclusion": "No freely accessible provenance-bound fullflash or user-rack board binding recovered in bounded search. No accounts, purchases, or messages."
+  }
+}

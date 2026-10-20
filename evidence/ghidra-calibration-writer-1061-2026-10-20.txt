@@ -1,0 +1,490 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+SELECT ram:00007a0e
+REF From: ram:00016a20 To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r21]
+REF From: ram:00016b12 To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:0001fc20 To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r20]
+REF From: ram:0000915c To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r27]
+REF From: ram:000392d8 To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:000093fc To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:0000b3c4 To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:000084e0 To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r24]
+REF From: ram:000084ba To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r22]
+REF From: ram:00039714 To: ram:00007a0e Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+FUNCTION ram:00007a0e body=[[ram:00007a0e, ram:00007ab7] [ram:00007abc, ram:00007ac3]]
+ram:00007a0e prepare { r24,r26,r28,lp },0x0
+ram:00007a12 mov 0xfedf92e4,r28
+ram:00007a18 st.w r0,0x0[r28]
+ram:00007a1c jarl 0x000071b2,lp
+ram:00007a20 mov 0xfedfa400,r6
+ram:00007a26 jarl 0x000070c2,lp
+ram:00007a2a cmp r0,r10
+ram:00007a2c st.w r10,0x0[r28]
+ram:00007a30 mov r10,r6
+ram:00007a32 bne 0x00007abc
+ram:00007a34 movhi -0x120,r0,r26
+ram:00007a38 mov 0x793a,r6
+ram:00007a3e mov 0xfedfa400,r7
+ram:00007a44 jarl 0x000071ae,lp
+ram:00007a48 st.w r10,-0x6d30[r26]
+ram:00007a4c mov 0x7944,r6
+ram:00007a52 mov 0xfedfa400,r7
+ram:00007a58 jarl 0x000071ae,lp
+ram:00007a5c movhi -0x120,r0,r17
+ram:00007a60 st.w r10,-0x6d2c[r17]
+ram:00007a64 mov 0x7980,r6
+ram:00007a6a mov 0xfedfa400,r7
+ram:00007a70 jarl 0x000071ae,lp
+ram:00007a74 movhi -0x120,r0,r17
+ram:00007a78 st.w r10,-0x6d28[r17]
+ram:00007a7c mov 0x79c0,r6
+ram:00007a82 mov 0xfedfa400,r7
+ram:00007a88 jarl 0x000071ae,lp
+ram:00007a8c movhi -0x120,r0,r17
+ram:00007a90 st.w r10,-0x6d24[r17]
+ram:00007a94 mov 0x79ca,r6
+ram:00007a9a mov 0xfedfa400,r7
+ram:00007aa0 jarl 0x000071ae,lp
+ram:00007aa4 ld.w -0x6d30[r26],r24
+ram:00007aa8 movhi -0x120,r0,r17
+ram:00007aac mov 0x7ab8,lp
+ram:00007ab2 st.w r10,-0x6d20[r17]
+ram:00007ab6 jmp [r24]
+ram:00007abc jarl 0x00007a06,lp
+ram:00007ac0 dispose 0x0,{ r24,r26,r28,lp },[lp]
+completed=true error=
+
+void FUN_ram_00007a0e(void)
+
+{
+  DAT_ram_fedf92e4 = 0;
+  FUN_ram_000071b2();
+  DAT_ram_fedf92e4 = FUN_ram_000070c2(&DAT_ram_fedfa400);
+  if (DAT_ram_fedf92e4 == 0) {
+    DAT_ram_fedf92d0 = (code *)thunk_FUN_ram_0000702c(&LAB_ram_0000793a,&DAT_ram_fedfa400);
+    DAT_ram_fedf92d4 = thunk_FUN_ram_0000702c(FUN_ram_00007944,&DAT_ram_fedfa400);
+    DAT_ram_fedf92d8 = thunk_FUN_ram_0000702c(FUN_ram_00007980,&DAT_ram_fedfa400);
+    DAT_ram_fedf92dc = thunk_FUN_ram_0000702c(&LAB_ram_000079c0,&DAT_ram_fedfa400);
+    DAT_ram_fedf92e0 = thunk_FUN_ram_0000702c(FUN_ram_000079ca,&DAT_ram_fedfa400);
+                    /* WARNING: Could not recover jumptable at 0x00007ab6. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*DAT_ram_fedf92d0)();
+    return;
+  }
+  FUN_ram_00007a06(DAT_ram_fedf92e4);
+  return;
+}
+
+
+SELECT ram:00007aec
+REF From: ram:000393b8 To: ram:00007aec Type: COMPUTED_JUMP Op: 0 ANALYSIS instruction=jmp [r26]
+REF From: ram:0000b45a To: ram:00007aec Type: COMPUTED_JUMP Op: 0 ANALYSIS instruction=jmp [r28]
+FUNCTION ram:00007aec body=[[ram:00007aec, ram:00007b27]]
+ram:00007aec prepare { r26,r28,lp },0x0
+ram:00007af0 andi 0xfff,r6,r0
+ram:00007af4 mov 0xfedf92e4,r28
+ram:00007afa mov 0x0,r15
+ram:00007afc bne 0x00007b0a
+ram:00007afe andi 0xfff,r7,r0
+ram:00007b02 bne 0x00007b0a
+ram:00007b04 addi -0x1000,r7,r0
+ram:00007b08 bc 0x00007b0c
+ram:00007b0a mov 0x1,r15
+ram:00007b0c movhi -0x120,r0,r26
+ram:00007b10 ld.w -0x6d2c[r26],r26
+ram:00007b14 shr 0xc,r7
+ram:00007b16 st.w r15,0x0[r28]
+ram:00007b1a shr 0xc,r6
+ram:00007b1c add r6,r7
+ram:00007b1e add -0x1,r7
+ram:00007b20 mov 0x7b28,lp
+ram:00007b26 jmp [r26]
+completed=true error=
+
+void FUN_ram_00007aec(uint param_1,uint param_2)
+
+{
+  DAT_ram_fedf92e4 = 0;
+  if ((((param_1 & 0xfff) != 0) || ((param_2 & 0xfff) != 0)) || (param_2 < 0x1000)) {
+    DAT_ram_fedf92e4 = 1;
+  }
+                    /* WARNING: Could not recover jumptable at 0x00007b26. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*DAT_ram_fedf92d4)(param_1 >> 0xc,(param_2 >> 0xc) + (param_1 >> 0xc) + -1);
+  return;
+}
+
+
+SELECT ram:00007b7c
+REF From: ram:0000b516 To: ram:00007b7c Type: COMPUTED_JUMP Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:0003945c To: ram:00007b7c Type: COMPUTED_JUMP Op: 0 ANALYSIS instruction=jmp [r26]
+REF From: ram:00039526 To: ram:00007b7c Type: COMPUTED_JUMP Op: 0 ANALYSIS instruction=jmp [r26]
+REF From: ram:00002008 To: ram:00007b7c Type: DATA Op: 0 DEFAULT instruction=null
+FUNCTION ram:00007b7c body=[[ram:00007b7c, ram:00007baf]]
+ram:00007b7c prepare { r26,r28,lp },0x0
+ram:00007b80 mov r6,r15
+ram:00007b82 andi 0x7,r7,r0
+ram:00007b86 mov 0xfedf92e4,r28
+ram:00007b8c mov 0x0,r6
+ram:00007b8e bne 0x00007b96
+ram:00007b90 andi 0x7,r8,r0
+ram:00007b94 be 0x00007b98
+ram:00007b96 mov 0x1,r6
+ram:00007b98 movhi -0x120,r0,r26
+ram:00007b9c ld.w -0x6d28[r26],r26
+ram:00007ba0 st.w r6,0x0[r28]
+ram:00007ba4 mov 0x7bb0,lp
+ram:00007baa mov r15,r6
+ram:00007bac shr 0x2,r8
+ram:00007bae jmp [r26]
+completed=true error=
+
+void FUN_ram_00007b7c(undefined4 param_1,uint param_2,uint param_3)
+
+{
+  DAT_ram_fedf92e4 = 0;
+  if (((param_2 & 7) != 0) || ((param_3 & 7) != 0)) {
+    DAT_ram_fedf92e4 = 1;
+  }
+                    /* WARNING: Could not recover jumptable at 0x00007bae. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*DAT_ram_fedf92d8)(param_1,param_2,param_3 >> 2);
+  return;
+}
+
+
+SELECT ram:00007b34
+REF From: ram:0000cb7a To: ram:00007b34 Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r24]
+REF From: ram:00002010 To: ram:00007b34 Type: DATA Op: 0 DEFAULT instruction=null
+FUNCTION ram:00007b34 body=[[ram:00007b34, ram:00007b6f]]
+ram:00007b34 prepare { r26,r28,lp },0x0
+ram:00007b38 andi 0xfff,r6,r0
+ram:00007b3c mov 0xfedf92e4,r28
+ram:00007b42 mov 0x0,r15
+ram:00007b44 bne 0x00007b52
+ram:00007b46 andi 0xfff,r7,r0
+ram:00007b4a bne 0x00007b52
+ram:00007b4c addi -0x1000,r7,r0
+ram:00007b50 bc 0x00007b54
+ram:00007b52 mov 0x1,r15
+ram:00007b54 movhi -0x120,r0,r26
+ram:00007b58 ld.w -0x6d20[r26],r26
+ram:00007b5c shr 0xc,r7
+ram:00007b5e st.w r15,0x0[r28]
+ram:00007b62 shr 0xc,r6
+ram:00007b64 add r6,r7
+ram:00007b66 add -0x1,r7
+ram:00007b68 mov 0x7b70,lp
+ram:00007b6e jmp [r26]
+completed=true error=
+
+void FUN_ram_00007b34(uint param_1,uint param_2)
+
+{
+  DAT_ram_fedf92e4 = 0;
+  if ((((param_1 & 0xfff) != 0) || ((param_2 & 0xfff) != 0)) || (param_2 < 0x1000)) {
+    DAT_ram_fedf92e4 = 1;
+  }
+                    /* WARNING: Could not recover jumptable at 0x00007b6e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*DAT_ram_fedf92e0)(param_1 >> 0xc,(param_2 >> 0xc) + (param_1 >> 0xc) + -1);
+  return;
+}
+
+
+SELECT ram:00007ac4
+REF From: ram:0000200c To: ram:00007ac4 Type: DATA Op: 0 DEFAULT instruction=null
+REF From: ram:0001683c To: ram:00007ac4 Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:000393ec To: ram:00007ac4 Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r29]
+REF From: ram:0000b6ce To: ram:00007ac4 Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r29]
+REF From: ram:0000b3a8 To: ram:00007ac4 Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:00008386 To: ram:00007ac4 Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+REF From: ram:0000c9f8 To: ram:00007ac4 Type: COMPUTED_CALL Op: 0 ANALYSIS instruction=jmp [r28]
+FUNCTION ram:00007ac4 body=[[ram:00007ac4, ram:00007adf]]
+ram:00007ac4 prepare { r26,r28,lp },0x0
+ram:00007ac8 movhi -0x120,r0,r26
+ram:00007acc ld.w -0x6d24[r26],r26
+ram:00007ad0 movhi -0x120,r0,r28
+ram:00007ad4 mov 0x7ae0,lp
+ram:00007ada st.w r0,-0x6d1c[r28]
+ram:00007ade jmp [r26]
+completed=true error=
+
+void FUN_ram_00007ac4(void)
+
+{
+  DAT_ram_fedf92e4 = 0;
+                    /* WARNING: Could not recover jumptable at 0x00007ade. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*DAT_ram_fedf92dc)();
+  return;
+}
+
+
+SELECT ram:00007944
+REF From: ram:00007a4c To: ram:00007944 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x7944,r6
+FUNCTION ram:00007944 body=[[ram:00007944, ram:0000797f]]
+ram:00007944 prepare { r22,r24,lp },0x0
+ram:00007948 mov r6,r24
+ram:0000794a mov r7,r22
+ram:0000794c jarl 0x0000754c,lp
+ram:00007950 jarl 0x000076ee,lp
+ram:00007954 cmp r0,r10
+ram:00007956 bne 0x00007970
+ram:00007958 mov r24,r6
+ram:0000795a mov r22,r7
+ram:0000795c jarl 0x00007646,lp
+ram:00007960 addi -0xff,r10,r0
+ram:00007964 bne 0x00007970
+ram:00007966 jarl 0x000075f4,lp
+ram:0000796a addi -0xff,r10,r0
+ram:0000796e be 0x00007966
+ram:00007970 movhi -0x120,r0,r17
+ram:00007974 st.w r10,-0x6d1c[r17]
+ram:00007978 jarl 0x00007568,lp
+ram:0000797c dispose 0x0,{ r22,r24,lp },[lp]
+completed=true error=
+
+void FUN_ram_00007944(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  
+  FUN_ram_0000754c();
+  iVar1 = FUN_ram_000076ee();
+  if (iVar1 == 0) {
+    iVar1 = FUN_ram_00007646(param_1,param_2);
+    while (iVar1 == 0xff) {
+      iVar1 = FUN_ram_000075f4();
+    }
+  }
+  DAT_ram_fedf92e4 = iVar1;
+  FUN_ram_00007568();
+  return;
+}
+
+
+SELECT ram:00007980
+REF From: ram:00007a64 To: ram:00007980 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x7980,r6
+FUNCTION ram:00007980 body=[[ram:00007980, ram:000079bf]]
+ram:00007980 prepare { r20,r22,r28,lp },0x0
+ram:00007984 mov r6,r22
+ram:00007986 mov r7,r20
+ram:00007988 mov r8,r28
+ram:0000798a jarl 0x0000754c,lp
+ram:0000798e jarl 0x000076ee,lp
+ram:00007992 cmp r0,r10
+ram:00007994 bne 0x000079b0
+ram:00007996 mov r22,r6
+ram:00007998 mov r20,r7
+ram:0000799a mov r28,r8
+ram:0000799c jarl 0x0000765e,lp
+ram:000079a0 addi -0xff,r10,r0
+ram:000079a4 bne 0x000079b0
+ram:000079a6 jarl 0x000075f4,lp
+ram:000079aa addi -0xff,r10,r0
+ram:000079ae be 0x000079a6
+ram:000079b0 movhi -0x120,r0,r17
+ram:000079b4 st.w r10,-0x6d1c[r17]
+ram:000079b8 jarl 0x00007568,lp
+ram:000079bc dispose 0x0,{ r20,r22,r28,lp },[lp]
+completed=true error=
+
+void FUN_ram_00007980(undefined4 param_1,undefined4 param_2,undefined4 param_3)
+
+{
+  int iVar1;
+  
+  FUN_ram_0000754c();
+  iVar1 = FUN_ram_000076ee();
+  if (iVar1 == 0) {
+    iVar1 = FUN_ram_0000765e(param_1,param_2,param_3);
+    while (iVar1 == 0xff) {
+      iVar1 = FUN_ram_000075f4();
+    }
+  }
+  DAT_ram_fedf92e4 = iVar1;
+  FUN_ram_00007568();
+  return;
+}
+
+
+SELECT ram:000079ca
+REF From: ram:00007a94 To: ram:000079ca Type: PARAM Op: 0 ANALYSIS instruction=mov 0x79ca,r6
+FUNCTION ram:000079ca body=[[ram:000079ca, ram:00007a05]]
+ram:000079ca prepare { r22,r24,lp },0x0
+ram:000079ce mov r6,r24
+ram:000079d0 mov r7,r22
+ram:000079d2 jarl 0x0000754c,lp
+ram:000079d6 jarl 0x000076ee,lp
+ram:000079da cmp r0,r10
+ram:000079dc bne 0x000079f6
+ram:000079de mov r24,r6
+ram:000079e0 mov r22,r7
+ram:000079e2 jarl 0x0000767e,lp
+ram:000079e6 addi -0xff,r10,r0
+ram:000079ea bne 0x000079f6
+ram:000079ec jarl 0x000075f4,lp
+ram:000079f0 addi -0xff,r10,r0
+ram:000079f4 be 0x000079ec
+ram:000079f6 movhi -0x120,r0,r17
+ram:000079fa st.w r10,-0x6d1c[r17]
+ram:000079fe jarl 0x00007568,lp
+ram:00007a02 dispose 0x0,{ r22,r24,lp },[lp]
+completed=true error=
+
+void FUN_ram_000079ca(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  
+  FUN_ram_0000754c();
+  iVar1 = FUN_ram_000076ee();
+  if (iVar1 == 0) {
+    iVar1 = FUN_ram_0000767e(param_1,param_2);
+    while (iVar1 == 0xff) {
+      iVar1 = FUN_ram_000075f4();
+    }
+  }
+  DAT_ram_fedf92e4 = iVar1;
+  FUN_ram_00007568();
+  return;
+}
+
+
+SELECT ram:0000baa0
+REF From: ram:000090c8 To: ram:0000baa0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0000baa0,lp
+REF From: ram:00009244 To: ram:0000baa0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0000baa0,lp
+REF From: ram:0000bda2 To: ram:0000baa0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0000baa0,lp
+REF From: ram:0000be60 To: ram:0000baa0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0000baa0,lp
+REF From: ram:0000beca To: ram:0000baa0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0000baa0,lp
+REF From: ram:0000c010 To: ram:0000baa0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0000baa0,lp
+FUNCTION ram:0000baa0 body=[[ram:0000baa0, ram:0000bac3]]
+ram:0000baa0 zxb r6
+ram:0000baa2 movea 0x1000,r0,ep
+ram:0000baa6 mov 0x0,r10
+ram:0000baa8 sld.bu 0x2[ep],r1
+ram:0000baaa cmp r0,r1
+ram:0000baac be 0x0000bac2
+ram:0000baae sld.bu 0x3[ep],r2
+ram:0000bab0 cmp r2,r6
+ram:0000bab2 cmove ep,r10,r10
+ram:0000bab6 add r1,ep
+ram:0000bab8 addi -0x1000,ep,r1
+ram:0000babc addi -0xff0,r1,r0
+ram:0000bac0 bnc 0x0000baa8
+ram:0000bac2 jmp [lp]
+completed=true error=
+
+int FUN_ram_0000baa0(char param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  bool bVar3;
+  
+  iVar2 = 0x1000;
+  iVar1 = 0;
+  do {
+    if (*(byte *)(iVar2 + 2) == 0) {
+      return iVar1;
+    }
+    bVar3 = param_1 == *(char *)(iVar2 + 3);
+    iVar1 = iVar2 * (uint)bVar3 + iVar1 * (uint)!bVar3;
+    iVar2 = iVar2 + (uint)*(byte *)(iVar2 + 2);
+  } while (iVar2 - 0x1000U < 0xff0);
+  return iVar1;
+}
+
+
+SELECT ram:000090e0
+REF From: ram:0000947a To: ram:000090e0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000090e0,lp
+FUNCTION ram:000090e0 body=[[ram:000090e0, ram:000090fb]]
+ram:000090e0 ld.w 0x60000[r0],r1
+ram:000090e6 cmp -0x1,r1
+ram:000090e8 mov 0x0,r10
+ram:000090ea bne 0x000090fa
+ram:000090ec ld.w 0x60ffc[r0],r1
+ram:000090f2 cmp -0x1,r1
+ram:000090f4 bne 0x000090fa
+ram:000090f6 movea 0xa2,r0,r10
+ram:000090fa jmp [lp]
+completed=true error=
+
+undefined4 FUN_ram_000090e0(void)
+
+{
+  undefined4 uVar1;
+  
+  uVar1 = 0;
+  if ((BYTE_ARRAY_ram_00058308._31992_4_ == -1) && (BYTE_ARRAY_ram_00058308._36084_4_ == -1)) {
+    uVar1 = 0xa2;
+  }
+  return uVar1;
+}
+
+
+SELECT ram:000090fc
+REF From: ram:0000912e To: ram:000090fc Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000090fc,lp
+FUNCTION ram:000090fc body=[[ram:000090fc, ram:00009129]]
+ram:000090fc prepare { lp },0x0
+ram:00009100 jarl 0x000090be,lp
+ram:00009104 mov r10,r1
+ram:00009106 cmp r0,r1
+ram:00009108 mov 0x61000,r10
+ram:0000910e be 0x0000911c
+ram:00009110 mulhi 0x6c0,r1,r10
+ram:00009114 mov 0x61000,r11
+ram:0000911a add r11,r10
+ram:0000911c ld.bu 0x6b3[r10],r11
+ram:00009120 cmp r1,r11
+ram:00009122 cmovne 0x0,r10,r10
+ram:00009126 dispose 0x0,{ lp },[lp]
+completed=true error=
+
+int FUN_ram_000090fc(void)
+
+{
+  uint uVar1;
+  int iVar2;
+  
+  uVar1 = FUN_ram_000090be();
+  iVar2 = 0x61000;
+  if (uVar1 != 0) {
+    iVar2 = uVar1 * 0x6c0 + 0x61000;
+  }
+  return iVar2 * (uint)(*(byte *)(iVar2 + 0x6b3) == uVar1);
+}
+
+
+SELECT ram:000090be
+REF From: ram:00009100 To: ram:000090be Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000090be,lp
+FUNCTION ram:000090be body=[[ram:000090be, ram:000090df]]
+ram:000090be prepare { r29,lp },0x0
+ram:000090c2 mov 0x0,r29
+ram:000090c4 movea 0xa8,r0,r6
+ram:000090c8 jarl 0x0000baa0,lp
+ram:000090cc cmp r0,r10
+ram:000090ce mov r10,ep
+ram:000090d0 be 0x000090da
+ram:000090d2 sld.bu 0x7[ep],r29
+ram:000090d4 cmp 0x7,r29
+ram:000090d6 cmovnc 0x0,r29,r29
+ram:000090da mov r29,r10
+ram:000090dc dispose 0x0,{ r29,lp },[lp]
+completed=true error=
+
+char FUN_ram_000090be(void)
+
+{
+  int iVar1;
+  char cVar2;
+  
+  cVar2 = '\0';
+  iVar1 = FUN_ram_0000baa0(0xa8);
+  if (iVar1 != 0) {
+    cVar2 = *(byte *)(iVar1 + 7) * (*(byte *)(iVar1 + 7) < 7);
+  }
+  return cVar2;
+}
+
+

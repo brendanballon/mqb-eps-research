@@ -1,0 +1,902 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+LISTING 10000
+ram:00010000 jr 0x00010084
+ram:0001001e nop
+ram:00010020 mov 0x2,r1
+ram:00010022 jr 0x00013f64
+ram:00010084 di
+ram:00010088 mov 0x10,r12
+ram:0001008e ldsr r12,BSEL
+ram:00010092 movhi 0x1,r0,r12
+ram:00010096 movea 0x0,r12,r12
+ram:0001009a ldsr r12,FEPSW
+ram:0001009e mov 0x1,r12
+ram:000100a0 ldsr r12,EIPSW
+ram:000100a4 ldsr r12,EIPC
+ram:000100a8 mov 0x2000,r12
+ram:000100ae ldsr r12,BSEL
+ram:000100b2 mov 0x20000,r12
+ram:000100b8 ldsr r12,FPSR
+ram:000100bc ldsr r0,BSEL
+ram:000100c0 ori 0x8000,r0,r1
+ram:000100c4 movhi -0x120,r0,gp
+ram:000100c8 movea -0x7000,gp,gp
+ram:000100cc add r1,gp
+ram:000100ce movhi 0x5,r0,tp
+ram:000100d2 movea 0x5800,tp,tp
+ram:000100d6 add r1,tp
+ram:000100d8 movhi -0x120,r0,sp
+ram:000100dc movea -0x1f64,sp,sp
+ram:000100e0 mov -0x4,r1
+ram:000100e2 and r1,sp
+ram:000100e4 jarl 0x00013cd2,lp
+ram:000100e8 jr 0x000141b6
+LISTING 558c0
+ram:00055900 mov r0,r1
+ram:00055902 nop
+ram:00055904 callt 0x10
+ram:00055906 nop
+ram:00055908 mov r0,r2
+ram:0005590a nop
+ram:0005590c or r16,r0
+ram:0005590e nop
+ram:00055910 mov r0,gp
+ram:00055912 nop
+ram:00055914 zxb r16
+ram:00055916 nop
+ram:00055918 mov r0,r8
+ram:0005591a nop
+ram:0005591c switch r16
+DATA_REGION_REFERENCES
+From: ram:0000f20c To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+From: ram:0000f266 To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+From: ram:0000f2c0 To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+From: ram:0000f31a To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+From: ram:000202be To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x000555f0
+From: ram:0004aabe To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x000555f0
+From: ram:000555fc To: ram:00055604 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bne 0x00055604
+From: ram:00055600 To: ram:00055604 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bne 0x00055604
+From: ram:00078318 To: ram:00055900 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005591c To: ram:0005591c Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005591e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005591e Type: DATA Op: 0 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055920 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055922 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055924 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055926 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055928 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005592a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005592e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055932 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055936 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005593a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005593c Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005593e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055942 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055944 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055946 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005595e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055970 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005597e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005599e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559c0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559e6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559e8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559ea Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559ec Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559ee Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559f0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559f2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559f4 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559f6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559f8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559fa Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559fc Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000559fe Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055a00 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055a1e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055a5e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055b1e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00055b7a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00055bb4 To: ram:00055c74 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=blt 0x00055c74
+From: ram:00055bb6 To: ram:00055c78 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x00055c78
+From: ram:00055bb8 To: ram:00055c7c Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnc 0x00055c7c
+From: ram:00055bba To: ram:00055c80 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bne 0x00055c80
+From: ram:00055bbc To: ram:00055c84 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bp 0x00055c84
+From: ram:00055bbe To: ram:00055c88 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bsa 0x00055c88
+From: ram:00055bc0 To: ram:00055c8c Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bge 0x00055c8c
+From: ram:00055bc2 To: ram:00055c90 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bgt 0x00055c90
+From: ram:0005591c To: ram:00055d1e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00055d04 To: ram:00055dd4 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bn 0x00055dd4
+From: ram:00055d06 To: ram:00055dd6 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bne 0x00055dd6
+From: ram:00055d08 To: ram:00055dda Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bc 0x00055dda
+From: ram:00055d0a To: ram:00055ddc Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x00055ddc
+From: ram:00055d0c To: ram:00055dde Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bge 0x00055dde
+From: ram:00055d0e To: ram:00055de2 Type: UNCONDITIONAL_JUMP Op: 0 DEFAULT instruction=br 0x00055de2
+From: ram:00055d1e To: ram:00055df8 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=blt 0x00055df8
+From: ram:00055d20 To: ram:00055dfa Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bp 0x00055dfa
+From: ram:00055d22 To: ram:00055dfe Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bc 0x00055dfe
+From: ram:00055d24 To: ram:00055e00 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=ble 0x00055e00
+From: ram:00055d26 To: ram:00055e02 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bsa 0x00055e02
+From: ram:00055d28 To: ram:00055e06 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=be 0x00055e06
+From: ram:00055d2a To: ram:00055e08 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x00055e08
+From: ram:00055d2c To: ram:00055e0a Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bsa 0x00055e0a
+From: ram:00055e74 To: ram:00055f52 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=blt 0x00055f52
+From: ram:00055e76 To: ram:00055f54 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bc 0x00055f54
+From: ram:00055e78 To: ram:00055f54 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bh 0x00055f54
+From: ram:00055e7a To: ram:00055f56 Type: UNCONDITIONAL_JUMP Op: 0 DEFAULT instruction=br 0x00055f56
+From: ram:00055fdc To: ram:000560aa Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnc 0x000560aa
+From: ram:00055fde To: ram:000560aa Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x000560aa
+From: ram:00055fe0 To: ram:000560aa Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=ble 0x000560aa
+From: ram:00055fe2 To: ram:000560aa Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=blt 0x000560aa
+From: ram:00055fe4 To: ram:000560aa Type: UNCONDITIONAL_JUMP Op: 0 DEFAULT instruction=br 0x000560aa
+From: ram:0005591c To: ram:0005611e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:000560ca To: ram:0005616a Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnc 0x0005616a
+From: ram:000560c8 To: ram:00056170 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bp 0x00056170
+From: ram:00056140 To: ram:000561c4 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=blt 0x000561c4
+From: ram:0005617a To: ram:000561ee Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bv 0x000561ee
+From: ram:000561ec To: ram:0005623c Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=be 0x0005623c
+From: ram:0005591c To: ram:000562e2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:000565a8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00056690 To: ram:00056602 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bne 0x00056602
+From: ram:00056722 To: ram:00056710 Type: UNCONDITIONAL_JUMP Op: 0 DEFAULT instruction=br 0x00056710
+From: ram:0005591c To: ram:0005691e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:00057216 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00057256 To: ram:00057258 Type: READ Op: 0 ANALYSIS instruction=switch r2
+From: ram:00057256 To: ram:000572de Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r2
+From: ram:0005591c To: ram:0005791e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0002cf8e To: ram:00057adc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r22
+From: ram:0002d112 To: ram:00057adc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r22
+From: ram:0002d360 To: ram:00057adc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r27
+From: ram:0002d604 To: ram:00057adc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],ep
+From: ram:0002c872 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r18],r25
+From: ram:0002c9d0 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r23],r9
+From: ram:0002ca26 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r23],r14
+From: ram:0002ca8a To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r23],r7
+From: ram:0002cac2 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r23],r12
+From: ram:0002cb2c To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r27],r16
+From: ram:0002cb8e To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r27],r10
+From: ram:0002cc12 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r27],r14
+From: ram:0002cc4e To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r27],r8
+From: ram:0002c95c To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r22],r14
+From: ram:0002da46 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r9
+From: ram:0002da7e To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r25
+From: ram:0002dc82 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r24],r27
+From: ram:0002dcd8 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r24],r23
+From: ram:0002dd4c To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r24],r22
+From: ram:0002def2 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r22
+From: ram:0002deea To: ram:00057ae4 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57ae4,r8
+From: ram:0002df5e To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r24],r22
+From: ram:0002df56 To: ram:00057ae4 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57ae4,r8
+From: ram:0002dfae To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r24],r10
+From: ram:0002d0f4 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r6
+From: ram:0002d2b4 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r12
+From: ram:0002d30e To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r12
+From: ram:0002d306 To: ram:00057ae4 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57ae4,r6
+From: ram:0002d386 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r20],r14
+From: ram:0002d7d0 To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r8],r6
+From: ram:0002d81c To: ram:00057ae4 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x0[r8],r25
+From: ram:0002c8f2 To: ram:00057b04 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r20
+From: ram:0002cfa8 To: ram:00057b04 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r13
+From: ram:0002cb08 To: ram:00057b08 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r26
+From: ram:0002cb3e To: ram:00057b08 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r18
+From: ram:0002dccc To: ram:00057b0c Type: DATA Op: 2 ANALYSIS instruction=ld.hu 0x0[r29],r8
+From: ram:0002c8fc To: ram:00057b14 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r24
+From: ram:0002d816 To: ram:00057b14 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r16
+From: ram:0002d80e To: ram:00057b14 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57b14,r7
+From: ram:0002cb16 To: ram:00057b18 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r7
+From: ram:0002cb26 To: ram:00057b18 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r18
+From: ram:0002cb0e To: ram:00057b18 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57b18,r9
+From: ram:0002da6c To: ram:00057b18 Type: DATA Op: 2 ANALYSIS instruction=ld.hu 0x0[r8],r12
+From: ram:0002cc00 To: ram:00057b1c Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r18
+From: ram:0002cbf8 To: ram:00057b1c Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57b1c,r8
+From: ram:0002dce6 To: ram:00057b1c Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r15
+From: ram:0002dd46 To: ram:00057b1c Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r16
+From: ram:0002dd3e To: ram:00057b1c Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57b1c,r7
+From: ram:0002c890 To: ram:00057b28 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r7
+From: ram:0002cf04 To: ram:00057b34 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r14
+From: ram:0002d55c To: ram:00057b34 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r22
+From: ram:0002d70e To: ram:00057b34 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r24
+From: ram:0002cde2 To: ram:00057b58 Type: DATA Op: 2 ANALYSIS instruction=ld.hu 0x0[r18],r7
+From: ram:0002cde8 To: ram:00057b5a Type: DATA Op: 2 ANALYSIS instruction=ld.hu 0x2[r28],r8
+From: ram:0002c878 To: ram:00057b60 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r6
+From: ram:0002d890 To: ram:00057b64 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r13
+From: ram:0002d886 To: ram:00057b64 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57b64,r9
+From: ram:0002a100 To: ram:00057b64 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r13
+From: ram:0002d988 To: ram:00057b84 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],ep
+From: ram:0002cd00 To: ram:00057bc4 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r15
+From: ram:0002cd18 To: ram:00057bc6 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x2[ep],r11
+From: ram:0002cd30 To: ram:00057bc8 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r16
+From: ram:0002cd48 To: ram:00057bca Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r12
+From: ram:0002cd60 To: ram:00057bcc Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x8[ep],r7
+From: ram:0002cd78 To: ram:00057bce Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0xa[ep],r13
+From: ram:0002cd90 To: ram:00057bd0 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0xc[ep],r9
+From: ram:0002cda6 To: ram:00057bd2 Type: DATA Op: 2 ANALYSIS instruction=ld.hu 0xe[r29],r16
+From: ram:0002ccee To: ram:00057be4 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r6
+From: ram:0002cd0c To: ram:00057be6 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x2[ep],r13
+From: ram:0002cd24 To: ram:00057be8 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r9
+From: ram:0002cd3c To: ram:00057bea Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r14
+From: ram:0002cd54 To: ram:00057bec Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x8[ep],r10
+From: ram:0002cd6c To: ram:00057bee Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0xa[ep],r15
+From: ram:0002cd84 To: ram:00057bf0 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0xc[ep],r11
+From: ram:0002cd9c To: ram:00057bf2 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0xe[ep],r7
+From: ram:0002ccb2 To: ram:00057c04 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r12
+From: ram:0002cca4 To: ram:00057c24 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r16
+From: ram:0002ce02 To: ram:00057c5c Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r13
+From: ram:0002d476 To: ram:00057c5c Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r8
+From: ram:0002d630 To: ram:00057c5c Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r10
+From: ram:0002ce00 To: ram:00057c60 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r15
+From: ram:0002d46e To: ram:00057c60 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r13
+From: ram:0002d62e To: ram:00057c60 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r13
+From: ram:0002d3f8 To: ram:00057c88 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],ep
+From: ram:0002d40e To: ram:00057ca8 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57ca8,r8
+From: ram:0002cf42 To: ram:00057cc8 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r7
+From: ram:0002d108 To: ram:00057cc8 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r24
+From: ram:0002d42e To: ram:00057de0 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r24
+From: ram:0002d426 To: ram:00057de0 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57de0,r7
+From: ram:00077d4c To: ram:00057e40 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00077dc4 To: ram:00057e40 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005591c To: ram:00057e46 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0002d8de To: ram:00057edc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r15
+From: ram:0002d8d6 To: ram:00057edc Type: PARAM Op: 0 ANALYSIS instruction=mov 0x57edc,r6
+From: ram:00029ff2 To: ram:00057edc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],ep
+From: ram:0002a108 To: ram:00057edc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r6
+From: ram:0002d9e6 To: ram:00057fe0 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r21
+From: ram:0002daf8 To: ram:00057fe0 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r22
+From: ram:0002d258 To: ram:00057ff4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x18[ep],r28
+From: ram:00011904 To: ram:00058544 Type: READ Op: 1 ANALYSIS instruction=sld.w 0x0[ep],r16
+From: ram:00010dbc To: ram:00058598 Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x8[r26],r10
+From: ram:00058590 To: ram:000585ac Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:000584dc To: ram:00058614 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00058568 To: ram:00058614 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005856c To: ram:00058614 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00058570 To: ram:00058650 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00058574 To: ram:00058650 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00058578 To: ram:0005868c Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005857c To: ram:0005868c Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00058580 To: ram:000586c8 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00058584 To: ram:00058704 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00058588 To: ram:00058740 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005858c To: ram:0005877c Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00010832 To: ram:000587bc Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x4[r14],r13
+From: ram:000585ac To: ram:00058934 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005591c To: ram:00058a18 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:00059326 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00059334 To: ram:00059404 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bn 0x00059404
+From: ram:00059336 To: ram:00059406 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bne 0x00059406
+From: ram:00059338 To: ram:0005940a Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bc 0x0005940a
+From: ram:0005933a To: ram:0005940c Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x0005940c
+From: ram:0005933c To: ram:0005940e Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bge 0x0005940e
+From: ram:0005933e To: ram:00059412 Type: UNCONDITIONAL_JUMP Op: 0 DEFAULT instruction=br 0x00059412
+From: ram:0005591c To: ram:00059574 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:000594a4 To: ram:00059582 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=blt 0x00059582
+From: ram:000594a6 To: ram:00059584 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bc 0x00059584
+From: ram:000594a8 To: ram:00059584 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bh 0x00059584
+From: ram:000594aa To: ram:00059586 Type: UNCONDITIONAL_JUMP Op: 0 DEFAULT instruction=br 0x00059586
+From: ram:0005960c To: ram:000596da Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnc 0x000596da
+From: ram:0005960e To: ram:000596da Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x000596da
+From: ram:00059610 To: ram:000596da Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=ble 0x000596da
+From: ram:00059612 To: ram:000596da Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=blt 0x000596da
+From: ram:00059614 To: ram:000596da Type: UNCONDITIONAL_JUMP Op: 0 DEFAULT instruction=br 0x000596da
+From: ram:000596fa To: ram:0005979a Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnc 0x0005979a
+From: ram:000596f8 To: ram:000597a0 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bp 0x000597a0
+From: ram:000597aa To: ram:0005981e Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bv 0x0005981e
+From: ram:0005981c To: ram:0005986c Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=be 0x0005986c
+From: ram:0005591c To: ram:0005991e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005a03a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005a130 To: ram:0005a132 Type: DATA Op: 0 ANALYSIS instruction=switch r26
+From: ram:0004fe16 To: ram:0005a15c Type: READ Op: 1 ANALYSIS instruction=sld.hu 0x0[ep],r7
+From: ram:0004fe0e To: ram:0005a15c Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a15c,r9
+From: ram:0004fe2a To: ram:0005a15e Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x2[ep],r11
+From: ram:0004fe58 To: ram:0005a15e Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x2[r28],r13
+From: ram:0004fe64 To: ram:0005a15f Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x3[r28],r6
+From: ram:0004fe1c To: ram:0005a160 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r16
+From: ram:0004fe8c To: ram:0005a160 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x4[r28],r22
+From: ram:0004fe70 To: ram:0005a164 Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x8[r28],r15
+From: ram:000783e0 To: ram:0005a400 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d094 To: ram:0005a556 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00010d74 To: ram:0005a73c Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a73c,r6
+From: ram:00010dc6 To: ram:0005a73c Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a73c,r6
+From: ram:000107ea To: ram:0005a754 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a754,r6
+From: ram:0001083c To: ram:0005a754 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a754,r6
+From: ram:0001087c To: ram:0005a754 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a754,r6
+From: ram:000112ee To: ram:0005a798 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a798,r6
+From: ram:000114ae To: ram:0005a7a4 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a7a4,r6
+From: ram:0001152c To: ram:0005a7a4 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5a7a4,r6
+From: ram:0001714a To: ram:0005a87a Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:00016868 To: ram:0005a87c Type: DATA Op: 2 ANALYSIS instruction=ld.w -0x5784[r10],r16
+From: ram:0001696a To: ram:0005a87c Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r13
+From: ram:0001714a To: ram:0005a87c Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:000164ba To: ram:0005a87c Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r1
+From: ram:000166fe To: ram:0005a87c Type: DATA Op: 2 ANALYSIS instruction=ld.w -0x5784[r11],r12
+From: ram:00016886 To: ram:0005a884 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r14
+From: ram:000169be To: ram:0005a884 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r11
+From: ram:000164c8 To: ram:0005a884 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r15
+From: ram:00016710 To: ram:0005a884 Type: DATA Op: 2 ANALYSIS instruction=ld.w -0x577c[r10],r15
+From: ram:0001700c To: ram:0005a88c Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:00008412 To: ram:0005a88c Type: DATA Op: 0 ANALYSIS instruction=st.w r15,0x8[r14]
+From: ram:00017028 To: ram:0005a890 Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:0000840c To: ram:0005a890 Type: DATA Op: 0 ANALYSIS instruction=st.w r6,0x4[r14]
+From: ram:00016fec To: ram:0005a898 Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:00017060 To: ram:0005a898 Type: READ Op: 1 ANALYSIS instruction=sld.hu 0x0[ep],r6
+From: ram:00017082 To: ram:0005a898 Type: READ Op: 1 ANALYSIS instruction=sld.hu 0x0[ep],r6
+From: ram:000170cc To: ram:0005a898 Type: READ Op: 1 ANALYSIS instruction=sld.hu 0x0[ep],r6
+From: ram:000170dc To: ram:0005a898 Type: READ Op: 1 ANALYSIS instruction=sld.hu 0x0[ep],r13
+From: ram:0001703e To: ram:0005a898 Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:00017120 To: ram:0005a89a Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:000170fe To: ram:0005a89a Type: DATA Op: 0 ANALYSIS instruction=st.w ep,0x0[r26]
+From: ram:000172bc To: ram:0005a8b8 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r16
+From: ram:00017262 To: ram:0005a8b8 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r6
+From: ram:00017274 To: ram:0005a8b8 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],ep
+From: ram:000172e6 To: ram:0005a8bc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r16
+From: ram:000172f8 To: ram:0005a8c0 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x8[ep],r13
+From: ram:000532b4 To: ram:0005a960 Type: READ Op: 2 ANALYSIS instruction=ld.w -0x56a0[ep],ep
+From: ram:0005329c To: ram:0005a968 Type: READ Op: 2 ANALYSIS instruction=ld.w -0x5698[r28],r28
+From: ram:00053306 To: ram:0005a97c Type: READ Op: 2 ANALYSIS instruction=ld.w -0x5684[r8],r8
+From: ram:0004a822 To: ram:0005a988 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x5678[r6],r6
+From: ram:00053514 To: ram:0005a989 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x5677[r12],r12
+From: ram:0004a9fa To: ram:0005a990 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r10
+From: ram:0004a684 To: ram:0005a990 Type: DATA Op: 2 ANALYSIS instruction=ld.hu -0x5670[r14],r15
+From: ram:0004a6b2 To: ram:0005a990 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x0[ep],r11
+From: ram:0004a698 To: ram:0005a993 Type: DATA Op: 2 ANALYSIS instruction=ld.bu 0x3[r14],r13
+From: ram:0004a6c4 To: ram:0005a993 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x3[ep],r16
+From: ram:0004a72a To: ram:0005a993 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x3[ep],r13
+From: ram:0004a728 To: ram:0005a994 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x4[ep],r14
+From: ram:000532a2 To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r7
+From: ram:000173e6 To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r24
+From: ram:00017550 To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r13
+From: ram:000174e8 To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r7
+From: ram:0003d58c To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r10
+From: ram:0003d0f0 To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r11
+From: ram:0003d1cc To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r8
+From: ram:0003d352 To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r13
+From: ram:00053332 To: ram:0005a996 Type: DATA Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r14
+From: ram:000173e4 To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r27
+From: ram:0001754e To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r15
+From: ram:000174ea To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r6
+From: ram:0003d564 To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r8
+From: ram:0003d586 To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r6
+From: ram:0004a808 To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r28
+From: ram:0003d1d4 To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],ep
+From: ram:0003d35a To: ram:0005a998 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r6
+From: ram:0005d094 To: ram:0005a9a2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005330c To: ram:0005a9a8 Type: DATA Op: 2 ANALYSIS instruction=ld.bu 0x18[r14],r10
+From: ram:00017072 To: ram:0005a9e6 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x6[ep],r7
+From: ram:0001708e To: ram:0005a9e6 Type: READ Op: 2 ANALYSIS instruction=ld.hu 0x6[r11],r9
+From: ram:00017074 To: ram:0005a9e8 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r6
+From: ram:0001708a To: ram:0005a9e8 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x8[r11],r15
+From: ram:00017864 To: ram:0005aa0e Type: READ Op: 2 ANALYSIS instruction=ld.hu 0x6[r21],r26
+From: ram:00017998 To: ram:0005aa10 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x8[r21],r7
+From: ram:00017a08 To: ram:0005aa10 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x8[r21],r7
+From: ram:000179ba To: ram:0005aa10 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x8[r21],r7
+From: ram:00017a0e To: ram:0005aa14 Type: READ Op: 2 ANALYSIS instruction=ld.w 0xc[r21],r6
+From: ram:0005591c To: ram:0005aa50 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0002a0ec To: ram:0005ac38 Type: READ Op: 1 ANALYSIS instruction=sld.w 0x0[ep],r15
+From: ram:0002a0de To: ram:0005ac3c Type: READ Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r12
+From: ram:00039402 To: ram:0005ac50 Type: READ Op: 1 ANALYSIS instruction=sld.w 0x0[ep],r7
+From: ram:00039404 To: ram:0005ac54 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r11
+From: ram:00039406 To: ram:0005ac58 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r8
+From: ram:00039408 To: ram:0005ac5c Type: READ Op: 2 ANALYSIS instruction=sld.w 0xc[ep],r10
+From: ram:0005a9dc To: ram:0005ac60 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa04 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa2c To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa54 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa7c To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aaa4 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aacc To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aaf4 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab1c To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab44 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab6c To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab94 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005abbc To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005abe4 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ac0c To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ac34 To: ram:0005ac68 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005a9d8 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa00 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa28 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa50 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa78 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aaa0 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aac8 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aaf0 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab18 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab40 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab68 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab90 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005abb8 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005abe0 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ac08 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ac30 To: ram:0005ac70 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005a9d4 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005a9fc To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa24 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa4c To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa74 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aa9c To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aac4 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005aaec To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab14 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab3c To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab64 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ab8c To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005abb4 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005abdc To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ac04 To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005ac2c To: ram:0005ac80 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:000323f0 To: ram:0005ac94 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x0[ep],r7
+From: ram:000323c0 To: ram:0005ac9c Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r14
+From: ram:000323d0 To: ram:0005ac9e Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r9
+From: ram:000323e8 To: ram:0005aca0 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r9
+From: ram:000323b6 To: ram:0005aca2 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r9
+From: ram:0005ac94 To: ram:0005aca4 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00032198 To: ram:0005acb8 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5acb8,r7
+From: ram:00053292 To: ram:0005accc Type: READ Op: 2 ANALYSIS instruction=ld.hu -0x5334[r8],r8
+From: ram:0003c7f4 To: ram:0005acd0 Type: READ Op: 1 ANALYSIS instruction=sld.bu 0x0[ep],r12
+From: ram:0003c8b8 To: ram:0005acd0 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r9
+From: ram:0003c7fa To: ram:0005acd4 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r28
+From: ram:0003c8be To: ram:0005acd4 Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r22
+From: ram:0003c806 To: ram:0005acd8 Type: READ Op: 2 ANALYSIS instruction=sld.bu 0x8[ep],r12
+From: ram:0003c8b8 To: ram:0005acd8 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x0[ep],r9
+From: ram:0003c80c To: ram:0005acdc Type: READ Op: 2 ANALYSIS instruction=sld.w 0xc[ep],r26
+From: ram:0003c8be To: ram:0005acdc Type: DATA Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r22
+From: ram:0003c818 To: ram:0005ace0 Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x10[ep],r12
+From: ram:0003c820 To: ram:0005ace4 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x14[ep],r24
+From: ram:0003c82c To: ram:0005ace8 Type: READ Op: 1 ANALYSIS instruction=ld.bu 0x0[r14],r12
+From: ram:0003c834 To: ram:0005acec Type: READ Op: 2 ANALYSIS instruction=sld.w 0x1c[ep],r22
+From: ram:0003c840 To: ram:0005acf0 Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x20[ep],r12
+From: ram:0003c848 To: ram:0005acf4 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x24[ep],r20
+From: ram:0003c854 To: ram:0005acf8 Type: READ Op: 1 ANALYSIS instruction=ld.bu 0x0[r8],r12
+From: ram:0003c7e8 To: ram:0005acf8 Type: PARAM Op: 2 ANALYSIS instruction=addi 0x28,r16,r8
+From: ram:0003c85c To: ram:0005acfc Type: READ Op: 2 ANALYSIS instruction=ld.w 0x4[r8],r28
+From: ram:0003c86a To: ram:0005ad00 Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x30[ep],r12
+From: ram:0003c872 To: ram:0005ad04 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x34[ep],r26
+From: ram:0003c87e To: ram:0005ad08 Type: READ Op: 1 ANALYSIS instruction=ld.bu 0x0[r11],r12
+From: ram:0003c886 To: ram:0005ad0c Type: READ Op: 2 ANALYSIS instruction=ld.w 0x4[r11],r24
+From: ram:0003c7f4 To: ram:0005ad10 Type: READ Op: 1 ANALYSIS instruction=sld.bu 0x0[ep],r12
+From: ram:0003c7fa To: ram:0005ad14 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r28
+From: ram:0003c89c To: ram:0005ad38 Type: PARAM Op: 1 ANALYSIS instruction=addi 0x40,r8,r8
+From: ram:0005591c To: ram:0005b3a0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00011926 To: ram:0005b734 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d094 To: ram:0005b8f0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005bc10 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005c38a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005ca00 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00078314 To: ram:0005ca40 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d094 To: ram:0005cc66 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005cf5e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00013e66 To: ram:0005d00c Type: DATA Op: 0 ANALYSIS instruction=sst.w r6,0x0[ep]
+From: ram:00013eb8 To: ram:0005d00c Type: DATA Op: 0 ANALYSIS instruction=sst.w r15,0x0[ep]
+From: ram:00071020 To: ram:0005d00c Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00013e6c To: ram:0005d00e Type: DATA Op: 0 ANALYSIS instruction=sst.w r15,0x4[ep]
+From: ram:00013eb8 To: ram:0005d00e Type: DATA Op: 0 ANALYSIS instruction=sst.w r15,0x0[ep]
+From: ram:00071024 To: ram:0005d00e Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d02e To: ram:0005d030 Type: DATA Op: 0 ANALYSIS instruction=switch r26
+From: ram:00071218 To: ram:0005d044 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0007121c To: ram:0005d046 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d056 To: ram:0005d058 Type: DATA Op: 0 ANALYSIS instruction=switch r26
+From: ram:000712f8 To: ram:0005d058 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:000712fc To: ram:0005d05a Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d094 To: ram:0005d064 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d096 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d098 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d09a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d09c Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d09e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0a0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0a4 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0a6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0aa Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0ac Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00013e72 To: ram:0005d0b0 Type: DATA Op: 0 ANALYSIS instruction=sst.w r12,0x8[ep]
+From: ram:00071028 To: ram:0005d0b0 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d094 To: ram:0005d0b6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0be Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00071220 To: ram:0005d0d6 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d094 To: ram:0005d0d8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0da Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0de Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0e0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0e4 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00071300 To: ram:0005d0e6 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005d094 To: ram:0005d0e6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0e8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d07e To: ram:0005d0f6 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bp 0x0005d0f6
+From: ram:0005d094 To: ram:0005d0f8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d082 To: ram:0005d0fa Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bp 0x0005d0fa
+From: ram:0005d094 To: ram:0005d0fa Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d0fe Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d108 To: ram:0005d104 Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x0005d104
+From: ram:0005d094 To: ram:0005d108 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d110 To: ram:0005d10c Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x0005d10c
+From: ram:0005d112 To: ram:0005d10e Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bnv 0x0005d10e
+From: ram:0005d094 To: ram:0005d11a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d122 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d130 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d134 To: ram:0005d136 Type: DATA Op: 0 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d136 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d13a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d140 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d154 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d15e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d162 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d178 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d196 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d198 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d19a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d1a4 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d1a6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d1c2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d1cc Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d1d6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d1ea Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d1fe Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d216 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d226 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d22e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d23a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d250 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d274 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d294 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d2ce Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d2ee Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d3c6 To: ram:0005d2fa Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=bge 0x0005d2fa
+From: ram:0005d094 To: ram:0005d302 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d314 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d2ee To: ram:0005d32c Type: CONDITIONAL_JUMP Op: 0 DEFAULT instruction=be 0x0005d32c
+From: ram:0005d094 To: ram:0005d348 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d352 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d356 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d362 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d382 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d396 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d39a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d3ca Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d3d6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d3e2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d3ee To: ram:0005d3f0 Type: DATA Op: 0 ANALYSIS instruction=switch r11
+From: ram:0005d094 To: ram:0005d47e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d4a6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d4bc Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d4d6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d4da Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d516 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d538 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d582 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d5a0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d5d4 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d630 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d688 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d6a8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d6d2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d6d6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d6de Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d708 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d714 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d724 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d768 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d77a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d790 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d79e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d7b0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d7b2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d7cc Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d7d2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d7d6 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d866 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d880 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d896 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d89c Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d89e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d906 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d91c Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d91e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d926 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d92e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d936 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d93c Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d940 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d944 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d948 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005591c To: ram:0005d94a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005d962 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005da8a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005da96 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005daa0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005daaa Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dafa Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dc0e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dc4e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dc94 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dc96 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dcd2 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dce8 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dd7a Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dd96 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dd98 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005dd9c Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005de16 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005def0 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:0005d094 To: ram:0005df96 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:00009072 To: ram:0005dff0 Type: READ Op: 0 ANALYSIS instruction=ld.w 0x5dff0[r0],r1
+From: ram:000082e6 To: ram:0005dff0 Type: READ Op: 0 ANALYSIS instruction=ld.w 0x5dff0[r0],r6
+From: ram:0000867e To: ram:0005dff0 Type: READ Op: 0 ANALYSIS instruction=ld.w 0x5dff0[r0],r6
+From: ram:00021226 To: ram:0005dff1 Type: READ Op: 1 ANALYSIS instruction=ld.bu 0x1[r16],r12
+From: ram:00021240 To: ram:0005dff2 Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x2[r16],r16
+From: ram:00021286 To: ram:0005dff3 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x200d[r15],r15
+From: ram:0000909c To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:000090ac To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:000090b4 To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:0000b7f4 To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:0000b802 To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:0000b80a To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:0000c430 To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r2
+From: ram:0000c43e To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r2
+From: ram:0000c446 To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r2
+From: ram:0000cd48 To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:0000cd56 To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:0000cd5e To: ram:0005dff4 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r1
+From: ram:0000b774 To: ram:0005dffc Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5dffc,r7
+From: ram:0000c3ba To: ram:0005dffc Type: READ Op: 2 ANALYSIS instruction=ld.w -0x2004[r1],r1
+From: ram:0000c344 To: ram:0005dffc Type: READ Op: 2 ANALYSIS instruction=ld.w -0x2004[r1],r1
+From: ram:0000be0c To: ram:0005dffc Type: READ Op: 2 ANALYSIS instruction=ld.w -0x2004[r1],r1
+From: ram:0000cfea To: ram:0005dfff Type: READ Op: 0 ANALYSIS instruction=ld.bu 0x5dfff[r0],r1
+From: ram:00013d0a To: ram:0005e000 Type: READ Op: 1 ANALYSIS instruction=ld.w 0x0[r14],r10
+From: ram:00013d68 To: ram:0005e000 Type: DATA Op: 0 ANALYSIS instruction=sst.w r7,0x0[ep]
+From: ram:0000cff6 To: ram:0005e000 Type: READ Op: 0 ANALYSIS instruction=ld.bu 0x5e000[r0],r1
+From: ram:0000b714 To: ram:0005e000 Type: PARAM Op: 0 ANALYSIS instruction=mov 0x5e000,r6
+From: ram:00065000 To: ram:0005e000 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:0005a87c To: ram:0005e000 Type: DATA Op: 0 DEFAULT instruction=null
+From: ram:00013d10 To: ram:0005e004 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x4[r14],r8
+From: ram:00013d16 To: ram:0005e008 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x8[r14],r6
+From: ram:00013d1c To: ram:0005e00c Type: READ Op: 2 ANALYSIS instruction=ld.w 0xc[r14],r15
+From: ram:00013d0a To: ram:0005e010 Type: READ Op: 1 ANALYSIS instruction=ld.w 0x0[r14],r10
+From: ram:00013d10 To: ram:0005e014 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x4[r14],r8
+From: ram:00013d16 To: ram:0005e018 Type: READ Op: 2 ANALYSIS instruction=ld.w 0x8[r14],r6
+From: ram:00013d1c To: ram:0005e01c Type: READ Op: 2 ANALYSIS instruction=ld.w 0xc[r14],r15
+From: ram:0007686a To: ram:0005e022 Type: READ Op: 2 ANALYSIS instruction=ld.h -0x1fde[r14],r14
+From: ram:00072988 To: ram:0005e02e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x1e[ep],r15
+From: ram:000729b0 To: ram:0005e02e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x1e[ep],r13
+From: ram:000729ac To: ram:0005e030 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x20[ep],r13
+From: ram:0007298c To: ram:0005e030 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x20[ep],r15
+From: ram:0007290e To: ram:0005e032 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x22[ep],r14
+From: ram:00072910 To: ram:0005e032 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x22[ep],r11
+From: ram:00072996 To: ram:0005e034 Type: READ Op: 2 ANALYSIS instruction=ld.hu 0x24[ep],r16
+From: ram:000722dc To: ram:0005e036 Type: READ Op: 2 ANALYSIS instruction=ld.hu -0x1fca[r12],r12
+From: ram:0005d094 To: ram:0005e036 Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:000728fa To: ram:0005e038 Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x28[ep],r10
+From: ram:00075b0e To: ram:0005e03a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x2a[ep],r16
+From: ram:00075bda To: ram:0005e03a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x2a[ep],r13
+From: ram:00075ba6 To: ram:0005e03c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x2c[ep],r13
+From: ram:00075be2 To: ram:0005e03c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x2c[ep],r16
+From: ram:00075b92 To: ram:0005e03e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x2e[ep],r7
+From: ram:00075bae To: ram:0005e03e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x2e[ep],r16
+From: ram:00075b7e To: ram:0005e040 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x30[ep],r13
+From: ram:00075b9a To: ram:0005e040 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x30[ep],r9
+From: ram:00075b6e To: ram:0005e042 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x32[ep],r13
+From: ram:00075b86 To: ram:0005e042 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x32[ep],r16
+From: ram:00075b5a To: ram:0005e044 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x34[ep],r16
+From: ram:00075b76 To: ram:0005e044 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x34[ep],r7
+From: ram:00075b4a To: ram:0005e046 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x36[ep],r16
+From: ram:00075b62 To: ram:0005e046 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x36[ep],r7
+From: ram:00075b3a To: ram:0005e048 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x38[ep],r16
+From: ram:00075b52 To: ram:0005e048 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x38[ep],r9
+From: ram:00075b2a To: ram:0005e04a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x3a[ep],r16
+From: ram:00075b42 To: ram:0005e04a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x3a[ep],r9
+From: ram:00075b32 To: ram:0005e04c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x3c[ep],r9
+From: ram:00075bb8 To: ram:0005e04c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x3c[ep],r16
+From: ram:00075bb6 To: ram:0005e04e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x3e[ep],r9
+From: ram:00075bce To: ram:0005e04e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x3e[ep],r7
+From: ram:00075b20 To: ram:0005e052 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x42[ep],r7
+From: ram:00075cb0 To: ram:0005e052 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x42[ep],r10
+From: ram:00075c7a To: ram:0005e054 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x44[ep],r7
+From: ram:00075cba To: ram:0005e054 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x44[ep],r7
+From: ram:00075c66 To: ram:0005e056 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x46[ep],r16
+From: ram:00075c84 To: ram:0005e056 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x46[ep],r16
+From: ram:00075c52 To: ram:0005e058 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x48[ep],r10
+From: ram:00075c70 To: ram:0005e058 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x48[ep],r10
+From: ram:00075c3e To: ram:0005e05a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x4a[ep],r7
+From: ram:00075c5c To: ram:0005e05a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x4a[ep],r7
+From: ram:00075c2a To: ram:0005e05c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x4c[ep],r16
+From: ram:00075c48 To: ram:0005e05c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x4c[ep],r16
+From: ram:00075c16 To: ram:0005e05e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x4e[ep],r10
+From: ram:00075c34 To: ram:0005e05e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x4e[ep],r10
+From: ram:00075c02 To: ram:0005e060 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x50[ep],r7
+From: ram:00075c20 To: ram:0005e060 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x50[ep],r7
+From: ram:00075bea To: ram:0005e062 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x52[ep],r16
+From: ram:00075c0c To: ram:0005e062 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x52[ep],r16
+From: ram:00075bf8 To: ram:0005e064 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x54[ep],r10
+From: ram:00075c90 To: ram:0005e064 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x54[ep],r7
+From: ram:00075c8e To: ram:0005e066 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x56[ep],r10
+From: ram:00075ca6 To: ram:0005e066 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x56[ep],r16
+From: ram:00075f46 To: ram:0005e06a Type: READ Op: 2 ANALYSIS instruction=ld.h 0x5a[r10],r8
+From: ram:00075f50 To: ram:0005e06c Type: READ Op: 2 ANALYSIS instruction=ld.h 0x5c[r10],r16
+From: ram:00075f64 To: ram:0005e06c Type: READ Op: 2 ANALYSIS instruction=ld.h 0x5c[r10],r13
+From: ram:00075f70 To: ram:0005e06e Type: READ Op: 2 ANALYSIS instruction=ld.h 0x5e[r10],r7
+From: ram:00075f80 To: ram:0005e06e Type: READ Op: 2 ANALYSIS instruction=ld.h 0x5e[r10],r13
+From: ram:00075f8a To: ram:0005e070 Type: READ Op: 2 ANALYSIS instruction=ld.h 0x60[r10],r8
+From: ram:00075f96 To: ram:0005e070 Type: READ Op: 2 ANALYSIS instruction=ld.h 0x60[r10],r10
+From: ram:00075fe4 To: ram:0005e072 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x62[r12],r16
+From: ram:00075ff8 To: ram:0005e072 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x62[r12],r13
+From: ram:00076000 To: ram:0005e073 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x63[r12],r10
+From: ram:0007600e To: ram:0005e073 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x63[r12],r6
+From: ram:00076016 To: ram:0005e074 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x64[r12],r15
+From: ram:00076024 To: ram:0005e074 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x64[r12],r11
+From: ram:0007602c To: ram:0005e075 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x65[r12],r9
+From: ram:0007603a To: ram:0005e075 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x65[r12],r16
+From: ram:00076042 To: ram:0005e076 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x66[r12],r13
+From: ram:00076050 To: ram:0005e076 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x66[r12],r10
+From: ram:00076058 To: ram:0005e077 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x67[r12],r6
+From: ram:00076066 To: ram:0005e077 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x67[r12],r15
+From: ram:0007606e To: ram:0005e078 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x68[r12],r11
+From: ram:0007607c To: ram:0005e078 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x68[r12],r9
+From: ram:00076084 To: ram:0005e079 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x69[r12],r16
+From: ram:00076092 To: ram:0005e079 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x69[r12],r13
+From: ram:0007609a To: ram:0005e07a Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6a[r12],r10
+From: ram:000760a8 To: ram:0005e07a Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6a[r12],r6
+From: ram:000760b0 To: ram:0005e07b Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6b[r12],r15
+From: ram:000760be To: ram:0005e07b Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6b[r12],r11
+From: ram:000760c6 To: ram:0005e07c Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6c[r12],r9
+From: ram:000760d4 To: ram:0005e07c Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6c[r12],r16
+From: ram:000760dc To: ram:0005e07d Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6d[r12],r13
+From: ram:000760ea To: ram:0005e07d Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6d[r12],r10
+From: ram:000760f2 To: ram:0005e07e Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6e[r12],r6
+From: ram:00076100 To: ram:0005e07e Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6e[r12],r15
+From: ram:00076108 To: ram:0005e07f Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6f[r12],r11
+From: ram:00076116 To: ram:0005e07f Type: READ Op: 2 ANALYSIS instruction=ld.b 0x6f[r12],r9
+From: ram:0007611e To: ram:0005e080 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x70[r12],r16
+From: ram:0007612c To: ram:0005e080 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x70[r12],r13
+From: ram:00076134 To: ram:0005e081 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x71[r12],r10
+From: ram:00076142 To: ram:0005e081 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x71[r12],r6
+From: ram:0007614a To: ram:0005e082 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x72[r12],r15
+From: ram:00076158 To: ram:0005e082 Type: READ Op: 2 ANALYSIS instruction=ld.b 0x72[r12],r12
+From: ram:00076262 To: ram:0005e084 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x74[ep],r10
+From: ram:0007631e To: ram:0005e084 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x74[ep],r8
+From: ram:0007621e To: ram:0005e086 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x76[ep],r10
+From: ram:0007626a To: ram:0005e086 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x76[ep],r7
+From: ram:0007620a To: ram:0005e088 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x78[ep],r16
+From: ram:0007622a To: ram:0005e088 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x78[ep],r7
+From: ram:000761f6 To: ram:0005e08a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x7a[ep],r13
+From: ram:00076216 To: ram:0005e08a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x7a[ep],r13
+From: ram:000761e2 To: ram:0005e08c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x7c[ep],r9
+From: ram:00076202 To: ram:0005e08c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x7c[ep],r9
+From: ram:000761d2 To: ram:0005e08e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x7e[ep],r15
+From: ram:000761ee To: ram:0005e08e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x7e[ep],r16
+From: ram:000761be To: ram:0005e090 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x80[ep],r11
+From: ram:000761da To: ram:0005e090 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x80[ep],r11
+From: ram:000761ae To: ram:0005e092 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x82[ep],r7
+From: ram:000761ca To: ram:0005e092 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x82[ep],r9
+From: ram:0007619e To: ram:0005e094 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x84[ep],r13
+From: ram:000761b6 To: ram:0005e094 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x84[ep],r15
+From: ram:000761a6 To: ram:0005e096 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x86[ep],r10
+From: ram:00076252 To: ram:0005e096 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x86[ep],r16
+From: ram:00076234 To: ram:0005e098 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x88[ep],r11
+From: ram:0007625a To: ram:0005e098 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x88[ep],r13
+From: ram:00076232 To: ram:0005e09a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x8a[ep],r15
+From: ram:0007624a To: ram:0005e09a Type: READ Op: 2 ANALYSIS instruction=sld.h 0x8a[ep],r9
+From: ram:000762fc To: ram:0005e09c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x8c[ep],r11
+From: ram:0007632c To: ram:0005e09c Type: READ Op: 2 ANALYSIS instruction=sld.h 0x8c[ep],r12
+From: ram:000762ec To: ram:0005e09e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x8e[ep],r9
+From: ram:00076304 To: ram:0005e09e Type: READ Op: 2 ANALYSIS instruction=sld.h 0x8e[ep],r8
+From: ram:0005d094 To: ram:0005e09e Type: COMPUTED_JUMP Op: -1 ANALYSIS instruction=switch r16
+From: ram:000762dc To: ram:0005e0a0 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x90[ep],r8
+From: ram:000762f4 To: ram:0005e0a0 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x90[ep],r16
+From: ram:000762cc To: ram:0005e0a2 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x92[ep],r16
+From: ram:000762e4 To: ram:0005e0a2 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x92[ep],r12
+From: ram:000762bc To: ram:0005e0a4 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x94[ep],r12
+From: ram:000762d4 To: ram:0005e0a4 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x94[ep],r11
+From: ram:000762ac To: ram:0005e0a6 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x96[ep],r11
+From: ram:000762c4 To: ram:0005e0a6 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x96[ep],r9
+From: ram:0007629c To: ram:0005e0a8 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x98[ep],r8
+From: ram:000762b4 To: ram:0005e0a8 Type: READ Op: 2 ANALYSIS instruction=sld.h 0x98[ep],r8
+From: ram:0007628c To: ram:0005e0aa Type: READ Op: 2 ANALYSIS instruction=sld.h 0x9a[ep],r13
+From: ram:000762a4 To: ram:0005e0aa Type: READ Op: 2 ANALYSIS instruction=sld.h 0x9a[ep],r13
+From: ram:00076294 To: ram:0005e0ac Type: READ Op: 2 ANALYSIS instruction=sld.h 0x9c[ep],r11
+From: ram:0007630c To: ram:0005e0ac Type: READ Op: 2 ANALYSIS instruction=sld.h 0x9c[ep],r12
+From: ram:00076314 To: ram:0005e0ae Type: READ Op: 2 ANALYSIS instruction=sld.h 0x9e[ep],r8
+From: ram:00076334 To: ram:0005e0ae Type: READ Op: 2 ANALYSIS instruction=sld.h 0x9e[ep],r16
+From: ram:0007631c To: ram:0005e0b0 Type: READ Op: 2 ANALYSIS instruction=sld.h 0xa0[ep],r12
+From: ram:0007633c To: ram:0005e0b0 Type: READ Op: 2 ANALYSIS instruction=sld.h 0xa0[ep],r8
+From: ram:00074d3e To: ram:0005e0b4 Type: READ Op: 1 ANALYSIS instruction=sld.h 0x0[ep],r11
+From: ram:00074d4e To: ram:0005e0b4 Type: READ Op: 1 ANALYSIS instruction=sld.h 0x0[ep],r11
+From: ram:00074d5c To: ram:0005e0b4 Type: READ Op: 1 ANALYSIS instruction=sld.h 0x0[ep],r9
+From: ram:00074e12 To: ram:0005e0b4 Type: READ Op: 1 ANALYSIS instruction=sld.h 0x0[ep],r15
+From: ram:00074eaa To: ram:0005e0b4 Type: READ Op: 1 ANALYSIS instruction=sld.h 0x0[ep],r15
+From: ram:00074f36 To: ram:0005e0b4 Type: READ Op: 1 ANALYSIS instruction=sld.h 0x0[ep],r8
+From: ram:00074664 To: ram:0005e0b6 Type: PARAM Op: 2 ANALYSIS instruction=movea 0xa6,r27,r8
+From: ram:00074660 To: ram:0005e0be Type: PARAM Op: 2 ANALYSIS instruction=movea 0xae,r27,r7
+From: ram:00073a40 To: ram:0005e0c6 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xb6[r26],r13
+From: ram:00073bf8 To: ram:0005e0c6 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xb6[r26],r11
+From: ram:00073a2a To: ram:0005e0c8 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xb8[r26],r15
+From: ram:00073bee To: ram:0005e0c8 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xb8[r26],r13
+From: ram:00073a4c To: ram:0005e0ca Type: READ Op: 2 ANALYSIS instruction=ld.h 0xba[r26],r11
+From: ram:00073c08 To: ram:0005e0ca Type: READ Op: 2 ANALYSIS instruction=ld.h 0xba[r26],r7
+From: ram:00073a58 To: ram:0005e0cc Type: READ Op: 2 ANALYSIS instruction=ld.h 0xbc[r26],r9
+From: ram:00073c00 To: ram:0005e0cc Type: READ Op: 2 ANALYSIS instruction=ld.h 0xbc[r26],r9
+From: ram:00073f4c To: ram:0005e0ce Type: READ Op: 2 ANALYSIS instruction=ld.h 0xbe[r26],r13
+From: ram:00074104 To: ram:0005e0ce Type: READ Op: 2 ANALYSIS instruction=ld.h 0xbe[r26],r11
+From: ram:00073f36 To: ram:0005e0d0 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xc0[r26],r15
+From: ram:000740fa To: ram:0005e0d0 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xc0[r26],r13
+From: ram:00073f58 To: ram:0005e0d2 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xc2[r26],r11
+From: ram:00074114 To: ram:0005e0d2 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xc2[r26],r7
+From: ram:00073f64 To: ram:0005e0d4 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xc4[r26],r9
+From: ram:0007410c To: ram:0005e0d4 Type: READ Op: 2 ANALYSIS instruction=ld.h 0xc4[r26],r9
+From: ram:0007390e To: ram:0005e0da Type: READ Op: 2 ANALYSIS instruction=ld.hu -0x1f26[r14],r14
+From: ram:00073544 To: ram:0005e0fc Type: READ Op: 2 ANALYSIS instruction=ld.hu 0xec[r1],r12
+From: ram:00073724 To: ram:0005e0fc Type: READ Op: 2 ANALYSIS instruction=ld.hu 0xec[r1],r6
+FUNCTION ram:00010000 BODY [[ram:00010000, ram:00010003]]
+completed=true error=
+
+/* WARNING: This function may have set the stack pointer */
+
+void thunk_FUN_ram_00010084(void)
+
+{
+  __disable_irq();
+  FUN_ram_00013cd2();
+  FUN_ram_000141b6();
+  return;
+}
+
+
+FUNCTION ram:00010084 BODY [[ram:00010084, ram:000100eb]]
+completed=true error=
+
+/* WARNING: This function may have set the stack pointer */
+
+void FUN_ram_00010084(void)
+
+{
+  __disable_irq();
+  FUN_ram_00013cd2();
+  FUN_ram_000141b6();
+  return;
+}
+
+
+NO_FUNCTION 55900
+FUNCTION ram:00009030 BODY [[ram:00009030, ram:00009061]]
+completed=true error=
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: This function may have set the stack pointer */
+
+void FUN_ram_00009030(void)
+
+{
+  FUN_ram_0000951c();
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+FUNCTION ram:0000951c BODY [[ram:0000951c, ram:00009583]]
+completed=true error=
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_ram_0000951c(void)
+
+{
+  _DAT_ram_ffff6400 = 0xffff;
+  _DAT_ram_ffff6402 = 0xffff;
+  _DAT_ram_ffff6404 = 0xffff;
+  _DAT_ram_ffff6406 = 0xffff;
+  _DAT_ram_ffff6408 = 0xffff;
+  _DAT_ram_ffff640a = 0xffff;
+  _DAT_ram_ffff640c = 0xffff;
+  _DAT_ram_ffff640e = 0xffff;
+  _DAT_ram_ffff6410 = 0xffff;
+  _DAT_ram_ffff6412 = 0xffff;
+  _DAT_ram_ffff6414 = 0xffff;
+  _DAT_ram_ffff6416 = 0xffff;
+  _DAT_ram_ffff6418 = 0xffff;
+  _DAT_ram_ffff641a = 0xffff;
+  _DAT_ram_ffff641c = 0xffff;
+  _DAT_ram_ffff641e = 0xffff;
+  FUN_ram_00009462();
+  return;
+}
+
+

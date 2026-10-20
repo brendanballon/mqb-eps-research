@@ -1,0 +1,541 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+SELECT ram:0002fd2a
+REF From: ram:0002fefa To: ram:0002fd2a Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0002fd2a,lp
+FUNCTION ram:0002fd2a body=[[ram:0002fd2a, ram:0002fd3d]]
+ram:0002fd2a ld.w -0x52a0[gp],r15
+ram:0002fd2e cmp 0x2,r15
+ram:0002fd30 be 0x0002fd3c
+ram:0002fd32 ld.w 0x0[r6],r14
+ram:0002fd36 add r7,r14
+ram:0002fd38 st.w r14,0x0[r6]
+ram:0002fd3c jmp [lp]
+completed=true error=
+
+void FUN_ram_0002fd2a(int *param_1,int param_2)
+
+{
+  int unaff_gp;
+  
+  if (*(int *)(unaff_gp + -0x52a0) != 2) {
+    *param_1 = *param_1 + param_2;
+  }
+  return;
+}
+
+
+SELECT ram:0002fd3e
+REF From: ram:000300f4 To: ram:0002fd3e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0002fd3e,lp
+REF From: ram:0002ff0a To: ram:0002fd3e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0002fd3e,lp
+REF From: ram:0002ff32 To: ram:0002fd3e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0002fd3e,lp
+FUNCTION ram:0002fd3e body=[[ram:0002fd3e, ram:0002fd95]]
+ram:0002fd3e prepare { r26,lp },0x0
+ram:0002fd42 andi 0xff,r6,r26
+ram:0002fd46 mov 0x2,r6
+ram:0002fd48 jarl 0x00016ce2,lp
+ram:0002fd4c cmp 0x2,r10
+ram:0002fd4e be 0x0002fd8a
+ram:0002fd50 movea -0x5294,gp,r6
+ram:0002fd54 jarl 0x0002edc2,lp
+ram:0002fd58 cmp r0,r10
+ram:0002fd5a bne 0x0002fd7c
+ram:0002fd5c cmp r0,r26
+ram:0002fd5e bne 0x0002fd66
+ram:0002fd60 st.b r0,-0x6bc0[gp]
+ram:0002fd64 br 0x0002fd70
+ram:0002fd66 ld.bu -0x6bc0[gp],r8
+ram:0002fd6a add 0x1,r8
+ram:0002fd6c st.b r8,-0x6bc0[gp]
+ram:0002fd70 mov 0x2,r6
+ram:0002fd72 mov 0x0,r7
+ram:0002fd74 jarl 0x000173ce,lp
+ram:0002fd78 mov 0x0,r10
+ram:0002fd7a br 0x0002fd92
+ram:0002fd7c movea -0x5294,gp,r6
+ram:0002fd80 jarl 0x0002ed6a,lp
+ram:0002fd84 movea 0xff,r0,r10
+ram:0002fd88 br 0x0002fd92
+ram:0002fd8a movea -0x5294,gp,r6
+ram:0002fd8e jarl 0x0002ed74,lp
+ram:0002fd92 dispose 0x0,{ r26,lp },[lp]
+completed=true error=
+
+undefined4 FUN_ram_0002fd3e(char param_1)
+
+{
+  int unaff_gp;
+  int iVar1;
+  undefined4 uVar2;
+  
+  iVar1 = FUN_ram_00016ce2(2);
+  if (iVar1 == 2) {
+    uVar2 = FUN_ram_0002ed74(unaff_gp + -0x5294);
+  }
+  else {
+    iVar1 = FUN_ram_0002edc2(unaff_gp + -0x5294);
+    if (iVar1 == 0) {
+      if (param_1 == '\0') {
+        *(undefined1 *)(unaff_gp + -0x6bc0) = 0;
+      }
+      else {
+        *(char *)(unaff_gp + -0x6bc0) = *(char *)(unaff_gp + -0x6bc0) + '\x01';
+      }
+      FUN_ram_000173ce(2,0);
+      uVar2 = 0;
+    }
+    else {
+      FUN_ram_0002ed6a(unaff_gp + -0x5294);
+      uVar2 = 0xff;
+    }
+  }
+  return uVar2;
+}
+
+
+SELECT ram:0002fcf8
+REF From: ram:0002fe68 To: ram:0002fcf8 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0002fcf8,lp
+FUNCTION ram:0002fcf8 body=[[ram:0002fcf8, ram:0002fd29]]
+ram:0002fcf8 ld.hu -0x3b80[r0],r14
+ram:0002fcfc ori 0xffff,r0,r15
+ram:0002fd00 mov 0xf,r13
+ram:0002fd02 subr r15,r14
+ram:0002fd04 xori 0xa3c9,r14,r10
+ram:0002fd08 shl 0x10,r10
+ram:0002fd0a add r14,r10
+ram:0002fd0c mov r10,r6
+ram:0002fd0e divqu r13,r6,r12
+ram:0002fd12 movea 0x1f,r0,r11
+ram:0002fd16 addi 0x1,r12,r9
+ram:0002fd1a shl r9,r10,r6
+ram:0002fd1e sub r12,r11
+ram:0002fd20 shr r11,r10,r8
+ram:0002fd24 add r6,r8
+ram:0002fd26 xor r8,r10
+ram:0002fd28 jmp [lp]
+completed=true error=
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+uint FUN_ram_0002fcf8(void)
+
+{
+  uint uVar1;
+  
+  uVar1 = (0xffff - _DAT_ram_ffffc480 ^ 0xa3c9) * 0x10000 + (0xffff - _DAT_ram_ffffc480);
+  return uVar1 ^ (uVar1 >> (0x1f - uVar1 % 0xf & 0x1f)) + (uVar1 << uVar1 % 0xf + 1);
+}
+
+
+SELECT ram:0002fd96
+REF From: ram:0003001e To: ram:0002fd96 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0002fd96,lp
+FUNCTION ram:0002fd96 body=[[ram:0002fd96, ram:00030005]]
+ram:0002fd96 prepare { r20,r21,r22,r23,r24,r25,r26,r27,r28,r29,lp },0x1
+ram:0002fd9a mov r6,r20
+ram:0002fd9c mov r7,r22
+ram:0002fd9e ld.w -0x529c[gp],r15
+ram:0002fda2 mov 0x2,r28
+ram:0002fda4 cmp 0x2,r15
+ram:0002fda6 mov 0x0,r27
+ram:0002fda8 bnc 0x0002fdb0
+ram:0002fdaa cmp 0x1,r15
+ram:0002fdac bc 0x0002fdc6
+ram:0002fdae be 0x0002fdfc
+ram:0002fdb0 cmp 0x3,r15
+ram:0002fdb2 bc 0x0002fe34
+ram:0002fdb4 be 0x0002fe80
+ram:0002fdb6 cmp 0x4,r15
+ram:0002fdb8 st.w r0,0x0[sp]
+ram:0002fdbc be 0x0002fdc2
+ram:0002fdbe jr 0x0002ffaa
+ram:0002fdc2 jr 0x0002ff7a
+ram:0002fdc6 ld.w -0x52a8[gp],r10
+ram:0002fdca mov 0x1,r6
+ram:0002fdcc st.w r6,-0x52a4[gp]
+ram:0002fdd0 cmp r0,r10
+ram:0002fdd2 st.w r0,0x0[sp]
+ram:0002fdd6 be 0x0002fde0
+ram:0002fdd8 ld.w -0x5298[gp],r14
+ram:0002fddc jr 0x0002ffb6
+ram:0002fde0 ld.w -0x5298[gp],r15
+ram:0002fde4 movea 0x37,r0,r28
+ram:0002fde8 cmp 0x6,r15
+ram:0002fdea st.h r0,0x0[r22]
+ram:0002fdee bne 0x0002fdf4
+ram:0002fdf0 movea 0x24,r0,r28
+ram:0002fdf4 st.w r6,-0x5298[gp]
+ram:0002fdf8 jr 0x00030000
+ram:0002fdfc ld.w -0x52a8[gp],r8
+ram:0002fe00 st.w r0,0x0[sp]
+ram:0002fe04 cmp 0x1,r8
+ram:0002fe06 bne 0x0002fe16
+ram:0002fe08 mov 0x1,r11
+ram:0002fe0a st.w r11,-0x52a4[gp]
+ram:0002fe0e ld.w -0x5298[gp],r14
+ram:0002fe12 jr 0x0002ffb6
+ram:0002fe16 ld.w -0x5298[gp],r9
+ram:0002fe1a movea 0x37,r0,r28
+ram:0002fe1e cmp 0x6,r9
+ram:0002fe20 st.h r0,0x0[r22]
+ram:0002fe24 bne 0x0002fe2a
+ram:0002fe26 movea 0x24,r0,r28
+ram:0002fe2a mov 0x2,r7
+ram:0002fe2c st.w r7,-0x5298[gp]
+ram:0002fe30 jr 0x00030000
+ram:0002fe34 ld.bu -0x6bc0[gp],r16
+ram:0002fe38 st.w r0,0x0[sp]
+ram:0002fe3c cmp 0x3,r16
+ram:0002fe3e bc 0x0002fe4e
+ram:0002fe40 jarl 0x0002fcec,lp
+ram:0002fe44 mov 0x1,r14
+ram:0002fe46 st.w r14,-0x5298[gp]
+ram:0002fe4a jr 0x00030000
+ram:0002fe4e ld.w -0x5298[gp],r14
+ram:0002fe52 cmp 0x3,r14
+ram:0002fe54 be 0x0002fe5a
+ram:0002fe56 jr 0x0002ff98
+ram:0002fe5a ld.w -0x52a4[gp],r12
+ram:0002fe5e cmp 0x1,r12
+ram:0002fe60 be 0x0002fe68
+ram:0002fe62 ld.w -0x5284[gp],r6
+ram:0002fe66 br 0x0002fe76
+ram:0002fe68 jarl 0x0002fcf8,lp
+ram:0002fe6c st.w r10,-0x5284[gp]
+ram:0002fe70 mov r10,r6
+ram:0002fe72 st.w r0,-0x52a4[gp]
+ram:0002fe76 mov 0x4,r10
+ram:0002fe78 st.w r10,-0x5298[gp]
+ram:0002fe7c jr 0x0002ffbe
+ram:0002fe80 ld.w -0x5298[gp],r14
+ram:0002fe84 cmp 0x3,r14
+ram:0002fe86 be 0x0002fe9c
+ram:0002fe88 cmp 0x6,r14
+ram:0002fe8a be 0x0002fea4
+ram:0002fe8c cmp 0x7,r14
+ram:0002fe8e st.w r0,0x0[sp]
+ram:0002fe92 be 0x0002fe98
+ram:0002fe94 jr 0x0002ffb6
+ram:0002fe98 jr 0x0002ffa0
+ram:0002fe9c st.w r0,0x0[sp]
+ram:0002fea0 jr 0x0002ff86
+ram:0002fea4 ld.hu 0x0[r7],r8
+ram:0002fea8 cmp 0x5,r8
+ram:0002feaa bne 0x0002fecc
+ram:0002feac mov r6,ep
+ram:0002feae sld.bu 0x1[ep],r12
+ram:0002feb0 sld.bu 0x2[ep],r9
+ram:0002feb2 sld.bu 0x4[ep],r29
+ram:0002feb4 mov 0x0,r24
+ram:0002feb6 sld.bu 0x3[ep],r7
+ram:0002feb8 mov 0x1,r23
+ram:0002feba shl 0x18,r12
+ram:0002febc mov 0xb,r21
+ram:0002febe mov 0x9,r25
+ram:0002fec0 shl 0x10,r9
+ram:0002fec2 add r12,r9
+ram:0002fec4 shl 0x8,r7
+ram:0002fec6 add r9,r7
+ram:0002fec8 add r7,r29
+ram:0002feca br 0x0002fee2
+ram:0002fecc st.w r0,0x0[sp]
+ram:0002fed0 movea 0x13,r0,r28
+ram:0002fed4 st.h r0,0x0[r22]
+ram:0002fed8 mov 0xa,r6
+ram:0002feda st.w r6,-0x5298[gp]
+ram:0002fede jr 0x00030000
+ram:0002fee2 ld.w -0x5284[gp],r10
+ram:0002fee6 mov r24,r26
+ram:0002fee8 shl 0x3,r26
+ram:0002feea movea -0x5de0,tp,r8
+ram:0002feee add r8,r26
+ram:0002fef0 ld.w 0x0[r26],r7
+ram:0002fef4 st.w r10,0x0[sp]
+ram:0002fef8 mov sp,r6
+ram:0002fefa jarl 0x0002fd2a,lp
+ram:0002fefe ld.w 0x0[sp],r6
+ram:0002ff02 cmp r6,r29
+ram:0002ff04 bne 0x0002ff2c
+ram:0002ff06 mov 0x1,r27
+ram:0002ff08 mov 0x0,r6
+ram:0002ff0a jarl 0x0002fd3e,lp
+ram:0002ff0e mov r10,r28
+ram:0002ff10 addi -0xff,r28,r0
+ram:0002ff14 bne 0x0002ff62
+ram:0002ff16 ld.bu 0x4[r26],r15
+ram:0002ff1a st.w r23,-0x52d0[gp]
+ram:0002ff1e st.w r21,-0x5298[gp]
+ram:0002ff22 st.b r15,-0x607b[gp]
+ram:0002ff26 st.h r27,0x0[r22]
+ram:0002ff2a br 0x0002ff62
+ram:0002ff2c cmp 0x4,r24
+ram:0002ff2e bne 0x0002ff62
+ram:0002ff30 mov 0x1,r6
+ram:0002ff32 jarl 0x0002fd3e,lp
+ram:0002ff36 mov r10,r28
+ram:0002ff38 addi -0xff,r28,r0
+ram:0002ff3c bne 0x0002ff62
+ram:0002ff3e ld.bu -0x6bc0[gp],r11
+ram:0002ff42 st.w r0,-0x52d0[gp]
+ram:0002ff46 st.b r0,-0x607b[gp]
+ram:0002ff4a cmp 0x3,r11
+ram:0002ff4c st.w r25,-0x5298[gp]
+ram:0002ff50 bc 0x0002ff5a
+ram:0002ff52 jarl 0x0002fcec,lp
+ram:0002ff56 st.w r23,-0x5298[gp]
+ram:0002ff5a st.h r0,0x0[r22]
+ram:0002ff5e movea 0x35,r0,r28
+ram:0002ff62 add 0x1,r24
+ram:0002ff64 zxb r24
+ram:0002ff66 cmp 0x5,r24
+ram:0002ff68 bc 0x0002ff70
+ram:0002ff6a ld.w -0x5298[gp],r14
+ram:0002ff6e br 0x0002ffb6
+ram:0002ff70 cmp r0,r27
+ram:0002ff72 be 0x0002fee2
+ram:0002ff74 ld.w -0x5298[gp],r14
+ram:0002ff78 br 0x0002ffb6
+ram:0002ff7a ld.w -0x5298[gp],r14
+ram:0002ff7e st.w r0,-0x5284[gp]
+ram:0002ff82 cmp 0x3,r14
+ram:0002ff84 bne 0x0002ff98
+ram:0002ff86 ld.w -0x52a4[gp],r15
+ram:0002ff8a cmp 0x1,r15
+ram:0002ff8c mov 0x4,r14
+ram:0002ff8e cmove 0x3,r14,r14
+ram:0002ff92 st.w r14,-0x5298[gp]
+ram:0002ff96 br 0x0002ffb6
+ram:0002ff98 cmp 0x6,r14
+ram:0002ff9a be 0x0002ffa0
+ram:0002ff9c cmp 0x7,r14
+ram:0002ff9e bne 0x0002ffb6
+ram:0002ffa0 st.h r0,0x0[r22]
+ram:0002ffa4 movea 0x24,r0,r28
+ram:0002ffa8 br 0x0002ffb6
+ram:0002ffaa st.h r0,0x0[r22]
+ram:0002ffae movea 0x22,r0,r28
+ram:0002ffb2 ld.w -0x5298[gp],r14
+ram:0002ffb6 cmp 0x4,r14
+ram:0002ffb8 bne 0x00030000
+ram:0002ffba ld.w -0x5284[gp],r6
+ram:0002ffbe addi 0x1,r20,r7
+ram:0002ffc2 mov 0x3,r8
+ram:0002ffc4 jarl 0x0002f1dc,lp
+ram:0002ffc8 ld.w -0x5284[gp],r6
+ram:0002ffcc addi 0x2,r20,r7
+ram:0002ffd0 mov 0x2,r8
+ram:0002ffd2 jarl 0x0002f1dc,lp
+ram:0002ffd6 ld.w -0x5284[gp],r6
+ram:0002ffda addi 0x3,r20,r7
+ram:0002ffde mov 0x1,r8
+ram:0002ffe0 jarl 0x0002f1dc,lp
+ram:0002ffe4 ld.w -0x5284[gp],r6
+ram:0002ffe8 addi 0x4,r20,r7
+ram:0002ffec mov 0x0,r8
+ram:0002ffee jarl 0x0002f1dc,lp
+ram:0002fff2 mov 0x5,r12
+ram:0002fff4 st.w r12,-0x5298[gp]
+ram:0002fff8 movea 0xff,r0,r28
+ram:0002fffc st.h r12,0x0[r22]
+ram:00030000 mov r28,r10
+ram:00030002 dispose 0x1,{ r20,r21,r22,r23,r24,r25,r26,r27,r28,r29,lp },[lp]
+completed=true error=
+
+int FUN_ram_0002fd96(int param_1,short *param_2)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  int unaff_gp;
+  int unaff_tp;
+  undefined4 uVar6;
+  int iVar7;
+  uint uVar8;
+  undefined4 *puVar9;
+  int iVar10;
+  bool bVar11;
+  int local_30;
+  
+  uVar8 = *(uint *)(unaff_gp + -0x529c);
+  iVar10 = 2;
+  bVar11 = false;
+  if (uVar8 < 2) {
+    if (uVar8 == 0) {
+      *(undefined4 *)(unaff_gp + -0x52a4) = 1;
+      local_30 = 0;
+      if (*(int *)(unaff_gp + -0x52a8) == 0) {
+        iVar10 = *(int *)(unaff_gp + -0x5298);
+        iVar7 = 0x37;
+        *param_2 = 0;
+        if (iVar10 == 6) {
+          iVar7 = 0x24;
+        }
+        *(undefined4 *)(unaff_gp + -0x5298) = 1;
+        return iVar7;
+      }
+      iVar7 = *(int *)(unaff_gp + -0x5298);
+    }
+    else {
+      if (uVar8 != 1) goto LAB_ram_0002fdb0;
+      local_30 = 0;
+      if (*(int *)(unaff_gp + -0x52a8) != 1) {
+        iVar10 = *(int *)(unaff_gp + -0x5298);
+        iVar7 = 0x37;
+        *param_2 = 0;
+        if (iVar10 == 6) {
+          iVar7 = 0x24;
+        }
+        *(undefined4 *)(unaff_gp + -0x5298) = 2;
+        return iVar7;
+      }
+      *(undefined4 *)(unaff_gp + -0x52a4) = 1;
+      iVar7 = *(int *)(unaff_gp + -0x5298);
+    }
+  }
+  else {
+LAB_ram_0002fdb0:
+    if (uVar8 < 3) {
+      local_30 = 0;
+      if (2 < *(byte *)(unaff_gp + -0x6bc0)) {
+        FUN_ram_0002fcec();
+        *(undefined4 *)(unaff_gp + -0x5298) = 1;
+        return 2;
+      }
+      iVar7 = *(int *)(unaff_gp + -0x5298);
+      if (iVar7 == 3) {
+        if (*(int *)(unaff_gp + -0x52a4) == 1) {
+          uVar6 = FUN_ram_0002fcf8();
+          *(undefined4 *)(unaff_gp + -0x5284) = uVar6;
+          *(undefined4 *)(unaff_gp + -0x52a4) = 0;
+        }
+        else {
+          uVar6 = *(undefined4 *)(unaff_gp + -0x5284);
+        }
+        *(undefined4 *)(unaff_gp + -0x5298) = 4;
+        goto LAB_ram_0002ffbe;
+      }
+LAB_ram_0002ff98:
+      if (iVar7 != 6) {
+joined_r0x0002fe92:
+        local_30 = 0;
+        if (iVar7 != 7) goto LAB_ram_0002ffb6;
+      }
+      local_30 = 0;
+      *param_2 = 0;
+      iVar10 = 0x24;
+    }
+    else if (uVar8 == 3) {
+      iVar7 = *(int *)(unaff_gp + -0x5298);
+      if (iVar7 == 3) goto LAB_ram_0002ff86;
+      if (iVar7 != 6) goto joined_r0x0002fe92;
+      if (*param_2 != 5) {
+        *param_2 = 0;
+        *(undefined4 *)(unaff_gp + -0x5298) = 10;
+        return 0x13;
+      }
+      bVar2 = *(byte *)(param_1 + 1);
+      bVar3 = *(byte *)(param_1 + 2);
+      bVar4 = *(byte *)(param_1 + 4);
+      uVar8 = 0;
+      bVar5 = *(byte *)(param_1 + 3);
+      do {
+        local_30 = *(int *)(unaff_gp + -0x5284);
+        puVar9 = (undefined4 *)(uVar8 * 8 + unaff_tp + -0x5de0);
+        FUN_ram_0002fd2a(&local_30,*puVar9);
+        if ((uint)bVar4 + (uint)bVar5 * 0x100 + (uint)bVar3 * 0x10000 + (uint)bVar2 * 0x1000000 ==
+            local_30) {
+          bVar11 = true;
+          iVar10 = FUN_ram_0002fd3e(0);
+          if (iVar10 == 0xff) {
+            uVar1 = *(undefined1 *)(puVar9 + 1);
+            *(undefined4 *)(unaff_gp + -0x52d0) = 1;
+            *(undefined4 *)(unaff_gp + -0x5298) = 0xb;
+            *(undefined1 *)(unaff_gp + -0x607b) = uVar1;
+            *param_2 = 1;
+          }
+        }
+        else if ((uVar8 == 4) && (iVar10 = FUN_ram_0002fd3e(1), iVar10 == 0xff)) {
+          *(undefined4 *)(unaff_gp + -0x52d0) = 0;
+          *(undefined1 *)(unaff_gp + -0x607b) = 0;
+          *(undefined4 *)(unaff_gp + -0x5298) = 9;
+          if (2 < *(byte *)(unaff_gp + -0x6bc0)) {
+            FUN_ram_0002fcec();
+            *(undefined4 *)(unaff_gp + -0x5298) = 1;
+          }
+          *param_2 = 0;
+          iVar10 = 0x35;
+        }
+        uVar8 = uVar8 + 1 & 0xff;
+        if (4 < uVar8) {
+          iVar7 = *(int *)(unaff_gp + -0x5298);
+          goto LAB_ram_0002ffb6;
+        }
+      } while (!bVar11);
+      iVar7 = *(int *)(unaff_gp + -0x5298);
+    }
+    else {
+      local_30 = 0;
+      if (uVar8 == 4) {
+        iVar7 = *(int *)(unaff_gp + -0x5298);
+        *(undefined4 *)(unaff_gp + -0x5284) = 0;
+        if (iVar7 != 3) goto LAB_ram_0002ff98;
+LAB_ram_0002ff86:
+        local_30 = 0;
+        bVar11 = *(int *)(unaff_gp + -0x52a4) == 1;
+        iVar7 = (uint)bVar11 * 3 + (uint)!bVar11 * 4;
+        *(int *)(unaff_gp + -0x5298) = iVar7;
+      }
+      else {
+        *param_2 = 0;
+        iVar10 = 0x22;
+        iVar7 = *(int *)(unaff_gp + -0x5298);
+      }
+    }
+  }
+LAB_ram_0002ffb6:
+  if (iVar7 != 4) {
+    return iVar10;
+  }
+  uVar6 = *(undefined4 *)(unaff_gp + -0x5284);
+LAB_ram_0002ffbe:
+  FUN_ram_0002f1dc(uVar6,param_1 + 1,3);
+  FUN_ram_0002f1dc(*(undefined4 *)(unaff_gp + -0x5284),param_1 + 2,2);
+  FUN_ram_0002f1dc(*(undefined4 *)(unaff_gp + -0x5284),param_1 + 3,1);
+  FUN_ram_0002f1dc(*(undefined4 *)(unaff_gp + -0x5284),param_1 + 4,0);
+  *(undefined4 *)(unaff_gp + -0x5298) = 5;
+  *param_2 = 5;
+  return 0xff;
+}
+
+
+SELECT ram:000555f0
+REF From: ram:0000f20c To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+REF From: ram:0000f266 To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+REF From: ram:0000f2c0 To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+REF From: ram:0000f31a To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000555f0,lp
+REF From: ram:000202be To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x000555f0
+REF From: ram:0004aabe To: ram:000555f0 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x000555f0
+FUNCTION ram:000555f0 body=[[ram:000555f0, ram:00055605]]
+ram:000555f0 zxb r7
+ram:000555f2 mov 0xfedfc6b0,ep
+ram:000555f8 sld.bu 0x0[ep],r15
+ram:000555fa cmp r0,r15
+ram:000555fc bne 0x00055604
+ram:000555fe cmp 0x1,r7
+ram:00055600 bne 0x00055604
+ram:00055602 sst.b r6,0x0[ep]
+ram:00055604 jmp [lp]
+completed=true error=
+
+void FUN_ram_000555f0(char param_1,char param_2)
+
+{
+  if ((DAT_ram_fedfc6b0 == '\0') && (param_2 == '\x01')) {
+    DAT_ram_fedfc6b0 = param_1;
+  }
+  return;
+}
+
+
+SELECT ram:00078318
+NO_FUNCTION

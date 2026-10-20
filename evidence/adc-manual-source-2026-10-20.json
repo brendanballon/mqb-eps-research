@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-20",
+  "scope": "selected manufacturer ADC manual source, static firmware correspondence only",
+  "manual": {
+    "path": "evidence/mcu-identification-2026-10-19/renesas-px4-hardware-R01UH0098EJ0100.pdf",
+    "sha256": "f2914aa669635072756bc530485d8bc690dede0e8398b51ee6adcc3b62b3bd22",
+    "document": "R01UH0098EJ0100 Rev.1.00, July 25, 2012",
+    "provenance_limit": "Manufacturer-authored manual obtained through public mirror; no official byte comparison."
+  },
+  "page_number_method": "Existing extracted text explicitly marks one-based PDF page boundaries. Printed pages are PDF page minus20 in these sections. Selected page headers checked individually.",
+  "pages": {
+    "1753": {
+      "printed_page": 1733,
+      "page_header": [
+        "R01UH0098EJ0100 Rev.1.00 Page 1733 of 2239",
+        "Jul 25, 2012"
+      ],
+      "excerpt": "of analog input pins (represented by m) 18 (m = 1 to 18) 22 (m = 1 to 22) 22 (m = 1 to 22)\nNumber of channel groups (represented by i) 3 (i = 0 to 2)\nRegister base address <ADCAn_base0> *1 FF81 D000H\n<ADCAn_base1>*1 FFFF DC00H\nResolution 10 or 12 bits*2\nConversion result check Available\nDischarge Available\nHardware trigger expansion Available\nChannel sample and hold (represented by x) 6 (x = 1 to 6)\nCorresponds to m = 1 to 6\nSupplied clock PCLK\nTable 25-1 ADCA0 In terrupt Requests\nSignal Name Function\nConnected to\nUnit Signal\nINTADCA0Ti A/D conversion end interrupt for CGi Interrupt controller, \nDMA, DTS\nINTADCA0Ii\nINTADCA0TLLT Latest conversion latch and ti ming signal Interrupt controller INTADCA0LLT\nINTADCA0TERR Error interrupt Interrupt controller, \nDMA, DTS\nINTADCA0ERR"
+    },
+    "1776": {
+      "printed_page": 1756,
+      "page_header": [
+        "R01UH0098EJ0100 Rev.1.00 Page 1756 of 2239",
+        "Jul 25, 2012"
+      ],
+      "excerpt": "ng Conversion Result\nThe ADCAnCTL1.ADCAnRCL bit can specify whether the A/D conversion \nresult ADCAnCmCR is retained or cleared after being read out.\n(3) Relationship between Analog Input Voltage and A/D Conversion Result\nThere is a relationship between the analog input voltages that are input to the \nanalog input pin (ADCAnIm) and the A/D conversion result values (values of \nthe ADCAnLCR[15:00] bits, ADCAnCmCR[15:00] bits and \nADCAnDBiCR[15:00] bits), as shown in the following equations.\nor\nINT( ): A function which retu rns the integer part of the \nvalue in parentheses\nVIAN: Analog input voltage\nAVREFnP:A VREFnP pin voltage\nAVREFnM:A VREFnM pin voltage\nA/D conversion results: Values of the ADCAnLCR[15:00] bits, \nADCAnCmCR[15:00] bits and ADCAnDBiCR[15:00] \nbits\nk: Resolution\nA/D conversion result value = INT (                               \uf0b4\uf0202k + 0.5)  \u00e7\u00e7VIAN - AVREFnM\nAVREFnP - AVREFnM\n AVREFnP - AVREFnM \n2k \n AVREFnP - AVREFnM \n2k \n(A/D conversion result value - 0.5)  \uf0b4 \uf0a3\uf020VIAN - AVREFnM < (A/D conversion result value + 0.5) \uf0b4"
+    },
+    "1800": {
+      "printed_page": 1780,
+      "page_header": [
+        "R01UH0098EJ0100 Rev.1.00 Page 1780 of 2239",
+        "Jul 25, 2012"
+      ],
+      "excerpt": "i.\nADCAn\nTiETS1\nADCAn\nTiETS0\nValid Edge\n0 0 No edge detection (trigger is not accepted)\n0 1 Rising edge\n1 0 Falling edge\n1 1 Rising and falling edges\n24 ADCAn\nCRAC\nSpecifies the alignment of the results of A/D conversion and diagnosis \nconversion:\n0: Right-aligned\n1: Left-aligned\n21 ADCAn\nMD1\nSpecifies the A/D conversion start trigger for CG0\n0: Software trigger\n1: Hardware and software triggers\nThis setting is applied to the A/D conversion of CG0 only. CG1 and CG2 always \naccept both hardware and software triggers.\nThe A/D converter detects triggers only when the A/D converter is enabled.\nFor details, refer to section 25.3.5, Starting A/D Conversion (Start Triggers).\n20 ADCAn\nMD0\nSpecifies the A/D conversion mode for CG0:\n0: One-shot conversion mode\nThe number of repetitions is set in ADCAnCTL0.ADCAnSCTi[1:0] for each \nCG.\n1: Continuous conversion mode\nThis setting applies to the A/D conversion of CG0 only.\nCG1 and CG2 always operate in one-shot conversion mode.\nFor details, refer to section 25.3.4, A/D Conversion Modes."
+    },
+    "1801": {
+      "printed_page": 1781,
+      "page_header": [
+        "R01UH0098EJ0100 Rev.1.00 Page 1781 of 2239",
+        "Jul 25, 2012"
+      ],
+      "excerpt": "A/D conversion result is retained until it is overwritten by the next A/D \nconversion result\n1: The A/D conversion result is cleared after being read\n15 ADCAn\nCTYP\nSpecifies the resolution mode\n0: 12-bit resolution\n1: 10-bit resolution\n12 ADCAn\nSTL\nSpecifies the level of the ADCAnCNVi signal\n0: When ADCAnCNVi = low, CGi is not currently performing conversion\nWhen ADCAnCNVi = high, CGi is currently performing conversion\n1: When ADCAnCNVi = high, CGi is not currently performing conversion\nWhen ADCAnCNVi = low, CGi is currently performing conversion\n11 to 8 ADCAn\nFR[3:0]\nSpecifies the ADCAn system clock ADCAnTCLK\nFor setting values, refer to section 25.3.7, Resolution, Sampling Time and \nConversion Time.\nADCAnFR[3:0] ADCAn Clock\n0000 PCLK/2\n0001 PCLK/3\n0010 PCLK/4\n0011 PCLK/5\n0100 PCLK/6\n0110 PCLK/8\n1000 PCLK/10\n1010 PCLK/12\n1100 PCLK/14\n1110 PCLK/16\nOther than above Setting prohibited\n5 to 4 ADCAn\nTRM[1:0]\nSpecifies the interrupt behavior when the A/D conversion of a higher-priority CG \nis triggered. The settings in ADCAnTRM1 and ADCAnTRM0 apply to CG1 and \nCG0, respectively. The setting of CG2 is always 0.\n0: Halts the current A/D conversion of CGi immediately, and starts the A/D \nconversion of the higher-priority CG (immediately halts the A/D conversion \ndue to a higher-priority trigger, holds the current conversion status so that \nthe conversion can be resumed later, and releases the hold state upon \ncompletion of the higher-priority A/D conversion).\n1: Halts the A/D conversion of CGi after the conversion of the current channel is \ncompleted, and starts the A/D conversion of the higher-priority CG (even if a \nhigher-prior"
+    },
+    "1803": {
+      "printed_page": 1783,
+      "page_header": [
+        "R01UH0098EJ0100 Rev.1.00 Page 1783 of 2239",
+        "Jul 25, 2012"
+      ],
+      "excerpt": " trigger bit of CGi (ADCAnSPi bi t) is set after the value is written to \nthis register, the value is transferred when the A/D conversion is stopped.\nAddress <ADCAn_base1> + i \uf0b4 4\nH\nInitial value 0000 0000H\nThis register is initialized by any reset.\n31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16\nADCAn\nDIAG 0 0 0 0 0 0 0 ADCAnCGiS[23:16]\nR/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W\n1 5 1 4 1 3 1 2 1 1 1 0 9876543210\nADCAnCGiS[15:00]\nR/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W R/W\nTable 25-10 ADCAn Register Contents\nBit Position Bit Name Function\n31 ADCAn\nDIAG\nEnables or disables the diagnostic A/D conversion of the reference voltage \nsignal ADDIAGOUT at the end of the A/D conversion of CG0:\n0: Disables A/D conversion of ADDIAGOUT\n1: Converts ADDIAGOUT\nThis bit only applies to ADCAnCG0. This bit should be set to 0 in ADCAnCG1 \nand ADCAnCG2.\n23 to 00 ADCAn\nCGiS[23:00]\nSpecifies the analog inputs to be converted for CGi:\n0: Does not convert analog input ADCAnIm\n1: Converts analog input ADCAnIm\nNote: The bits corresponding to the channels that are not implemented in this \nproduct should be cleared to 0 (for the applicable bits, refer to the \nNumber of analog input pins fields in the table in section 25.1, ADCA \nFeatures)."
+    },
+    "1815": {
+      "printed_page": 1795,
+      "page_header": [
+        "R01UH0098EJ0100 Rev.1.00 Page 1795 of 2239",
+        "Jul 25, 2012"
+      ],
+      "excerpt": "R01UH0098EJ0100 Rev.1.00 Page 1795 of 2239\nJul 25, 2012\nV850E2/Px4 Section 25\u3000A/D Converter\n(2) ADCAnCmCR \u2013 A/D Converter Conversion Result Register for Channel m\nThis register stores the result and the status of the latest A/D conversion of \nchannel m.\nIt allows you to read the A/D conversion result of the specified channel (m).\nAccess This register can be read in 32-bit units.\n\u2022 The upper 16 bits store the A/D conversion result status.\n\u2022 The lower 16 bits store the A/D conversion result.\nAddress <ADCAn_base1> + 3CH + m \uf0b4 4H\nInitial value 0300 0000H + m \uf0b4 0001 0000H\nThis register is initialized by any reset.\nNote 1. The functions of the individual bits are identical to those of the corresponding \nbits in ADCAnLCR, except that this register indicates the latest A/D conversion \nresult of a specified channel rather than the latest results of all the channels \n(refer to table 25-20, ADCAnLCR Register Contents). \nNote 2. After reset, ADCAnCmCG[1:0] are set to 11 B. \nNote 3. When ADCAnCTL1.ADCAnRCL = 0, the A/D conversion result in \nADCAnCmCR[15:00] is kept until it is overwritten by the next A/D conversion \nresult.\nWhen ADCAnCTL1.ADCAnRCL = 1, the A/D conversion result in \nADCAnCmCR[15:00] is cleared after being read.\n31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16\n000000 ADCAn\nCmCG[1:0]\nADCAn\nCmER1\nADCAn\nCmER0\nADCAn\nCmUR ADCAnCmCN[4:0]\nRRRRRRRRRRRRRRRR\n1 5 1 4 1 3 1 2 1 1 1 0 9876543210\nADCAnCmCR[15:00]\nRRRRRRRRRRRRRRRR"
+    },
+    "1816": {
+      "printed_page": 1796,
+      "page_header": [
+        "R01UH0098EJ0100 Rev.1.00 Page 1796 of 2239",
+        "Jul 25, 2012"
+      ],
+      "excerpt": "t is read.\n20 to 16 ADCAn\nCmCN[4:0]\nIndicates the number of the channel to which the conversion result in ADCAnCmCR \n[15:00] belongs:\n00001 \uf0b4 m = CHm\n15 to 0 ADCAn\nCmCR\n[15:00]\nIndicates the result of the A/D conversion.\nThe resolution and alignment depend on ADCAnCTL1.ADCAnCTYP and \nADCAnCTL1.ADCAnCRAC as follows:\nADCAn\nCTL1.\nADCAn\nCTYP\nADCAn\nCTL1.\nADCAn\nCRAC\nResolution and \nAlignment\nBit Position of A/D \nConversion Result Value\n0 0 12-bit resolution, right-\naligned\nADCAnCmCR[11:00]\n0 1 12-bit resolution, left-\naligned\nADCAnCmCR[15:04]\n1 0 10-bit resolution, right-\naligned\nADCAnCmCR[09:00]\n1 1 10-bit resolution, left-\naligned\nADCAnCmCR[15:06]"
+    }
+  },
+  "address_derivation": {
+    "ADCAn_base0": "0xff81d000",
+    "ADCAn_base1": "0xffffdc00",
+    "per_channel_formula": "base1 + 0x3c + m*4",
+    "channel1": "0xffffdc40",
+    "channel2": "0xffffdc44",
+    "mode_control_ADCAnCTL1": "0xff81d104",
+    "ffffdc08": "ADCA0CG2 channel-group selection register, not the resolution setting"
+  },
+  "firmware_correspondence": {
+    "function": "0x3e958",
+    "mode_register_write": "0x3e990 st.w r6,-0x2efc[r17], r6=0x50308001, r17=0xff820000",
+    "raw_mode_value": "0x50308001",
+    "CTYP": {
+      "bit": 15,
+      "mask": "0x8000",
+      "result": 1,
+      "meaning": "10-bit resolution"
+    },
+    "CRAC": {
+      "bit": 24,
+      "mask": "0x1000000",
+      "result": 0,
+      "meaning": "right-aligned"
+    },
+    "matching_software_mask": "0x3ff in0x1c47e is consistent with10-bit right-aligned ADC codes"
+  },
+  "conversion_formula": "ADC code = INT(((VIAN - AVREFnM) / (AVREFnP - AVREFnM)) * 2^k + 0.5)",
+  "limitations": [
+    "Manual defines ADC voltage-to-code behavior, not the board current-to-voltage transfer.",
+    "Physical AVREF, shunt resistance or sensor transfer, analog gain, active board variant and per-unit calibration are not established.",
+    "Identifying CH1 and CH2 ADC register reads does not alone identify physical phase labels or prove code execution.",
+    "Firmware register write and static initialization imply configured format only if this path executes and no later reconfiguration changes it."
+  ]
+}

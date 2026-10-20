@@ -1,0 +1,385 @@
+{
+  "method": "Contiguous static map inferred from independent V850 address relationships",
+  "mapping_confidence": "Corroborated static working map, not hardware-read verification",
+  "output": {
+    "path": "analysis/1061/mapped-update.bin",
+    "bytes": 516096,
+    "sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d"
+  },
+  "load_base": "0x2000",
+  "end_exclusive": "0x80000",
+  "missing_ranges": [
+    {
+      "start": "0x0",
+      "end_exclusive": "0x2000",
+      "status": "not supplied, not filled"
+    }
+  ],
+  "segments": [
+    {
+      "component": "H2",
+      "path": "analysis/1061/blocks/FL_5Q0909144R_H2_1061_FD_0DATA.bin",
+      "sha256": "6da9a40580a2bd49b5097f6c7363a2080a76575e230b7cf8fe54a3f7a61ce5f7",
+      "source_start": 0,
+      "source_end_exclusive": 53248,
+      "address_start": "0x2000",
+      "address_end_exclusive": "0xf000",
+      "output_offset": 0,
+      "role": "contiguous source bytes"
+    },
+    {
+      "component": "H1",
+      "path": "analysis/1061/blocks/FL_5Q0909144R_H1_1061_FD_0DATA.bin",
+      "sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641",
+      "source_start": 0,
+      "source_end_exclusive": 462848,
+      "address_start": "0xf000",
+      "address_end_exclusive": "0x80000",
+      "output_offset": 53248,
+      "role": "contiguous source bytes"
+    },
+    {
+      "component": "H7",
+      "path": "analysis/1061/blocks/FL_5Q0909144R_H7_1061_FD_0DATA.bin",
+      "sha256": "10c11c159565aeff7750a8c4ebe67b2ef25e44e1ce599dbec54c42a85bbbf64a",
+      "source_start": 0,
+      "source_end_exclusive": 24576,
+      "address_start": "0x9000",
+      "address_end_exclusive": "0xf000",
+      "output_offset": 28672,
+      "role": "overlapping H2 suffix"
+    }
+  ],
+  "corroboration": [
+    {
+      "input": "H7",
+      "file_offset": "0x156",
+      "observation": "Decoded mov 0x915e,lp immediately precedes jmp [r27] at file offset 0x15c; next instruction is file offset 0x15e",
+      "inference": "Software return address matches H7 base 0x9000"
+    },
+    {
+      "observation": "H7 exactly equals H2 byte range [0x7000,0xd000)",
+      "inference": "H2 base 0x2000 aligns shared bytes at 0x9000"
+    },
+    {
+      "input": "H7",
+      "file_offset": "0x14c",
+      "observation": "mov 0x2000,r29; ld.w 0x0[r29],r27; jmp [r27]",
+      "inference": "H2 leading word table at address 0x2000 supplies code targets"
+    },
+    {
+      "input": "H1",
+      "file_offset": "0x7c",
+      "observation": "Function uses absolute 0xfb48 plus eight-byte index; H1 offset 0xb48 contains eight-byte pointer/flag records",
+      "inference": "H1 base 0xf000 aligns these records and ends at 0x80000"
+    }
+  ],
+  "h2_leading_code_pointer_candidates": [
+    {
+      "table_file_offset": "0x0",
+      "target_address": "0x7a0e",
+      "target_h2_file_offset": "0x5a0e",
+      "target_first_8_bytes": "8007a1a03c06e492"
+    },
+    {
+      "table_file_offset": "0x4",
+      "target_address": "0x7aec",
+      "target_h2_file_offset": "0x5aec",
+      "target_first_8_bytes": "8007a120c606ff0f"
+    },
+    {
+      "table_file_offset": "0x8",
+      "target_address": "0x7b7c",
+      "target_h2_file_offset": "0x5b7c",
+      "target_first_8_bytes": "8007a1200678c706"
+    },
+    {
+      "table_file_offset": "0xc",
+      "target_address": "0x7ac4",
+      "target_h2_file_offset": "0x5ac4",
+      "target_first_8_bytes": "8007a12040d6e0fe"
+    },
+    {
+      "table_file_offset": "0x10",
+      "target_address": "0x7b34",
+      "target_h2_file_offset": "0x5b34",
+      "target_first_8_bytes": "8007a120c606ff0f"
+    },
+    {
+      "table_file_offset": "0x14",
+      "target_address": "0x4c8c",
+      "target_h2_file_offset": "0x2c8c",
+      "target_first_8_bytes": "8007a1fd06a807c8"
+    },
+    {
+      "table_file_offset": "0x18",
+      "target_address": "0x4dc4",
+      "target_h2_file_offset": "0x2dc4",
+      "target_first_8_bytes": "800721003e067c92"
+    },
+    {
+      "table_file_offset": "0x1c",
+      "target_address": "0x4c0e",
+      "target_h2_file_offset": "0x2c0e",
+      "target_first_8_bytes": "8007a120bfff62fd"
+    },
+    {
+      "table_file_offset": "0x20",
+      "target_address": "0x4e4c",
+      "target_h2_file_offset": "0x2e4c",
+      "target_first_8_bytes": "820721a006c020d6"
+    },
+    {
+      "table_file_offset": "0x24",
+      "target_address": "0x4dfe",
+      "target_h2_file_offset": "0x2dfe",
+      "target_first_8_bytes": "8007a1003c064890"
+    },
+    {
+      "table_file_offset": "0x28",
+      "target_address": "0x4992",
+      "target_h2_file_offset": "0x2992",
+      "target_first_8_bytes": "8007a12206b020d6"
+    },
+    {
+      "table_file_offset": "0x2c",
+      "target_address": "0x4a6a",
+      "target_h2_file_offset": "0x2a6a",
+      "target_first_8_bytes": "8607e1b506c000aa"
+    },
+    {
+      "table_file_offset": "0x30",
+      "target_address": "0x4e9a",
+      "target_h2_file_offset": "0x2e9a",
+      "target_first_8_bytes": "8007a10020e62300"
+    },
+    {
+      "table_file_offset": "0x34",
+      "target_address": "0x4ee0",
+      "target_h2_file_offset": "0x2ee0",
+      "target_first_8_bytes": "8007a10020e62300"
+    },
+    {
+      "table_file_offset": "0x38",
+      "target_address": "0x4f20",
+      "target_h2_file_offset": "0x2f20",
+      "target_first_8_bytes": "8007a18006c020e6"
+    },
+    {
+      "table_file_offset": "0x3c",
+      "target_address": "0x4f5a",
+      "target_h2_file_offset": "0x2f5a",
+      "target_first_8_bytes": "2a06345000007f00"
+    },
+    {
+      "table_file_offset": "0x40",
+      "target_address": "0x5d2c",
+      "target_h2_file_offset": "0x3d2c",
+      "target_first_8_bytes": "8607a12000e2bfff"
+    },
+    {
+      "table_file_offset": "0x44",
+      "target_address": "0x5b0c",
+      "target_h2_file_offset": "0x3b0c",
+      "target_first_8_bytes": "8007210026060c73"
+    },
+    {
+      "table_file_offset": "0x48",
+      "target_address": "0x5b4e",
+      "target_h2_file_offset": "0x3b4e",
+      "target_first_8_bytes": "8007210008788447"
+    },
+    {
+      "table_file_offset": "0x4c",
+      "target_address": "0x5c80",
+      "target_h2_file_offset": "0x3c80",
+      "target_first_8_bytes": "245745837f008207"
+    },
+    {
+      "table_file_offset": "0x50",
+      "target_address": "0x5baa",
+      "target_h2_file_offset": "0x3baa",
+      "target_first_8_bytes": "8407a10ac60007a0"
+    },
+    {
+      "table_file_offset": "0x54",
+      "target_address": "0x5c4e",
+      "target_h2_file_offset": "0x3c4e",
+      "target_first_8_bytes": "8607a10003e20330"
+    },
+    {
+      "table_file_offset": "0x58",
+      "target_address": "0x5b4c",
+      "target_h2_file_offset": "0x3b4c",
+      "target_first_8_bytes": "7f00800721000878"
+    },
+    {
+      "table_file_offset": "0x5c",
+      "target_address": "0x5d1a",
+      "target_h2_file_offset": "0x3d1a",
+      "target_first_8_bytes": "8447498368420052"
+    },
+    {
+      "table_file_offset": "0x60",
+      "target_address": "0x5c86",
+      "target_h2_file_offset": "0x3c86",
+      "target_first_8_bytes": "8207a180c60000e2"
+    },
+    {
+      "table_file_offset": "0x64",
+      "target_address": "0x5c38",
+      "target_h2_file_offset": "0x3c38",
+      "target_first_8_bytes": "847749836872f205"
+    },
+    {
+      "table_file_offset": "0x68",
+      "target_address": "0x5d00",
+      "target_h2_file_offset": "0x3d00",
+      "target_first_8_bytes": "207e170006f0807c"
+    },
+    {
+      "table_file_offset": "0x6c",
+      "target_address": "0x7c72",
+      "target_h2_file_offset": "0x5c72",
+      "target_first_8_bytes": "86006432d105e039"
+    },
+    {
+      "table_file_offset": "0x70",
+      "target_address": "0x7ca0",
+      "target_h2_file_offset": "0x5ca0",
+      "target_first_8_bytes": "0072eef60c004172"
+    },
+    {
+      "table_file_offset": "0x74",
+      "target_address": "0x71b2",
+      "target_h2_file_offset": "0x51b2",
+      "target_first_8_bytes": "203eff00014a4076"
+    },
+    {
+      "table_file_offset": "0x78",
+      "target_address": "0x7bf4",
+      "target_h2_file_offset": "0x5bf4",
+      "target_first_8_bytes": "80072100bfffe8ff"
+    },
+    {
+      "table_file_offset": "0x7c",
+      "target_address": "0x75c0",
+      "target_h2_file_offset": "0x55c0",
+      "target_first_8_bytes": "8007a1004046e0fe"
+    },
+    {
+      "table_file_offset": "0x80",
+      "target_address": "0x75f4",
+      "target_h2_file_offset": "0x55f4",
+      "target_first_8_bytes": "8207210001326307"
+    },
+    {
+      "table_file_offset": "0x84",
+      "target_address": "0x7696",
+      "target_h2_file_offset": "0x5696",
+      "target_first_8_bytes": "8207a15007d808c8"
+    },
+    {
+      "table_file_offset": "0x88",
+      "target_address": "0x7646",
+      "target_h2_file_offset": "0x5646",
+      "target_first_8_bytes": "8207210007406307"
+    },
+    {
+      "table_file_offset": "0x8c",
+      "target_address": "0x765e",
+      "target_h2_file_offset": "0x565e",
+      "target_first_8_bytes": "8207611007e808d8"
+    },
+    {
+      "table_file_offset": "0x90",
+      "target_address": "0x767e",
+      "target_h2_file_offset": "0x567e",
+      "target_first_8_bytes": "8207210007406307"
+    },
+    {
+      "table_file_offset": "0x94",
+      "target_address": "0x762e",
+      "target_h2_file_offset": "0x562e",
+      "target_first_8_bytes": "8207210007406307"
+    },
+    {
+      "table_file_offset": "0x98",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0x9c",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xa0",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xa4",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xa8",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xac",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xb0",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xb4",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xb8",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xbc",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xc0",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    },
+    {
+      "table_file_offset": "0xc4",
+      "target_address": "0x7c48",
+      "target_h2_file_offset": "0x5c48",
+      "target_first_8_bytes": "00527f008477e982"
+    }
+  ],
+  "limitations": [
+    "No hardware dump or runtime execution. Exact MCU and RAM/peripheral map remain unverified.",
+    "H7 overlaps H2 and is not concatenated a second time.",
+    "Only the supplied update ranges are mapped. No claim of a complete flash image.",
+    "A function return-address convention supports the H7 base inference; it is not an observed execution."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "method": "Direct Ghidra 12.1.4 BinaryLoader, no automatic analysis, bounded PseudoDisassembler samples; one manually seeded function decompilation",
+  "input_sha256": "75fd1641e3826e71bdc09a45a0e1581f0e43b01352e23c441b87f01f7d965641",
+  "input_path": "analysis/1061/blocks/FL_5Q0909144R_H1_1061_FD_0DATA.bin",
+  "sample_file_offsets": [
+    "0x82",
+    "0x100",
+    "0x200",
+    "0x400",
+    "0x1000"
+  ],
+  "load_base": "0x0",
+  "mapping_status": "Offset coordinates only, not a verified runtime mapping",
+  "function_probe_file_offset": "0x78",
+  "function_probe_end_inclusive": "0x99",
+  "function_decompile_completed": true,
+  "rea_evidence_id": null,
+  "limitations": [
+    "Direct engine evidence, not an REA native analysis record.",
+    "V850 family strongly supported in sampled code; exact MCU and V850 generation unconfirmed.",
+    "No CPU entry point, full memory map, or table code references established.",
+    "Decode success counts alone cannot establish architecture; instruction semantics and coherent control flow matter."
+  ],
+  "identities": [
+    {
+      "path": "scripts/ghidra/ProbeInstructions.java",
+      "bytes": 1691,
+      "sha256": "24d5b8b6d10f7bb0f8c69f213b02c501f0863314d6101e38ba2087f2581af0cf"
+    },
+    {
+      "path": "scripts/ghidra/ProbeFunction.java",
+      "bytes": 2012,
+      "sha256": "7c6ce6db9fa23a8253cec90981f7c938fff286fe071d5bf679728b62d0d91687"
+    },
+    {
+      "path": "evidence/ghidra-v850-probe-2026-10-19.txt",
+      "bytes": 3155,
+      "sha256": "2ecd56f130ab942f59667019708a88c12ec6f5f4fc98c252853e00478029b983"
+    },
+    {
+      "path": "evidence/ghidra-tricore-probe-2026-10-19.txt",
+      "bytes": 707,
+      "sha256": "ac4ed627643f8bafc87d04db05cd0c430bf025cc01d13991e8a893395fa495aa"
+    },
+    {
+      "path": "evidence/ghidra-v850-function-probe-2026-10-19.txt",
+      "bytes": 972,
+      "sha256": "cd34fca26cac4c155eb526b3fc37feefc89c49a518c49f91a305cdfca1b99221"
+    },
+    {
+      "path": "analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/V850/data/languages/V850.ldefs",
+      "bytes": 1182,
+      "sha256": "7ab21015123fd3ce68046148ff796fdf711f261417b680ab47a6511568bb5f90"
+    },
+    {
+      "path": "analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/V850/data/languages/V850.sla",
+      "bytes": 26855,
+      "sha256": "56609ad2858f5690fba25a40f07ac2f2a180d085597d1b0c3b0caf1b03f66df7"
+    },
+    {
+      "path": "analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/TriCore/data/languages/tricore.ldefs",
+      "bytes": 2210,
+      "sha256": "5637f598a525d2a3cc08f22dce16cb42525cff1cb49f59b6d25d2a64fdde2cad"
+    },
+    {
+      "path": "analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Processors/TriCore/data/languages/tricore.sla",
+      "bytes": 149024,
+      "sha256": "0a4b927112c6862cad83b061baf05a23c5369067cd479fe09484f4c5d8cb76af"
+    },
+    {
+      "path": "scripts/build_1061_map.py",
+      "bytes": 4227,
+      "sha256": "c4a162a23b24c08fdebe40a8be011bf38efa6a910fbe8348da2fb3f99685d8ef"
+    },
+    {
+      "path": "scripts/inspect_1061_odx.py",
+      "bytes": 4911,
+      "sha256": "183d04855621cb6ec51c7ce8057842c522400bb10c8cf5fd3c8456e10e381bb5"
+    },
+    {
+      "path": "scripts/ghidra/SeedMapped1061.java",
+      "bytes": 700,
+      "sha256": "c72e46ff3f6c226c0b43ff4ac28e5d03c25a2f7b53855bd80db80ccb74da6289"
+    },
+    {
+      "path": "scripts/ghidra/ReportMapped1061.java",
+      "bytes": 2867,
+      "sha256": "a1012b7564b7647079476d38cc688f5c6c011cd481cf874a8988a0ccd69a2f06"
+    },
+    {
+      "path": "evidence/ghidra-h7-v850-probe-2026-10-19.txt",
+      "bytes": 3390,
+      "sha256": "a7f3c88e1088ff79dc9d93b010db5b48a215a2ccf716d534837718df2f542bba"
+    },
+    {
+      "path": "evidence/ghidra-mapped-1061-2026-10-19.txt",
+      "bytes": 1045,
+      "sha256": "996f4969a722f572bfd2d8a3f876f1680c921099f041848cb45af5ca339bd26e"
+    },
+    {
+      "path": "evidence/static-map-1061-2026-10-19.json",
+      "bytes": 11718,
+      "sha256": "d7e3238480f0c3f68dd263ad4fa83a35afb49182efaf893cd27725c132182e5c"
+    }
+  ],
+  "v850_probe": {
+    "decoded_instructions": 113,
+    "invalid_stops": 2
+  },
+  "tricore_probe": {
+    "decoded_instructions": 18,
+    "invalid_stops": 5
+  },
+  "mapped_followup": {
+    "input_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+    "processor": "V850:LE:32:default",
+    "loader_base_address": "0x2000",
+    "program_image_base_property": "0x0",
+    "observed_memory_block_start": "0x2000",
+    "observed_memory_block_end_inclusive": "0x7ffff",
+    "seed_script": "scripts/ghidra/SeedMapped1061.java",
+    "analysis_completed": true,
+    "analysis_timeout_seconds": 120,
+    "candidate_function_count": 1907,
+    "inventory_verified": false,
+    "limitations": [
+      "Decode warnings and broad candidate 0x55900 entering likely data; refine boundaries before relying on automatic graph coverage.",
+      "No direct references recovered to bytes 0x57a00..0x57a60 inclusive; indirect or missed references remain unknown.",
+      "See static-map report for exact overlapping component lineage."
+    ],
+    "warning_count": 56,
+    "warning_samples": [
+      "WARNING: A terminally deprecated method in sun.misc.Unsafe has been called",
+      "WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)",
+      "WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction",
+      "WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release",
+      "WARN  Decompiling ram:00009030, pcode error at ram:00000014: Could not follow disassembly flow into non-existing memory at ram:00000014 (DecompileCallback)  "
+    ]
+  }
+}

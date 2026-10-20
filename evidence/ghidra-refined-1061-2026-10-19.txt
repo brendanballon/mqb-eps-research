@@ -1,0 +1,56 @@
+language=V850:LE:32:default
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+program_image_base=ram:00000000
+Corroborated static working map. No hardware execution or complete flash dump.
+BLOCK ram:00002000 ram:00055605 bytes=341510
+BLOCK ram:00055606 ram:0007ffff bytes=174586
+BLOCK ram:fedf6000 ram:fedfffff bytes=40960
+functions=1757
+BYTES ram:0000fb48 0881ffff000000000c81ffff000000001881ffff000000001c81ffff000000000c81ffff08000000
+REFS ram:0000fb48 count=1
+From: ram:0000f088 To: ram:0000fb48 Type: DATA Op: 2 ANALYSIS function=ram:0000f078
+BYTES ram:00057a20 176e00000100000033ae000002000000314b000004000000af7a00000800000052ee000010000000
+REFS ram:00057a20 count=2
+From: ram:0002fef0 To: ram:00057a20 Type: READ Op: 1 ANALYSIS function=ram:0002fd96
+From: ram:0002feea To: ram:00057a20 Type: PARAM Op: 2 ANALYSIS function=ram:0002fd96
+NEAR_TABLE_REFS inclusive=0x57a00..0x57a60
+From: ram:0002fc44 To: ram:00057a00 Type: READ Op: 1 ANALYSIS instruction=sld.w 0x0[ep],r13 function=ram:0002fc3a
+From: ram:0002fc48 To: ram:00057a04 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r11 function=ram:0002fc3a
+From: ram:0002fc46 To: ram:00057a08 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r9 function=ram:0002fc3a
+From: ram:0002fc42 To: ram:00057a0c Type: READ Op: 2 ANALYSIS instruction=sld.w 0xc[ep],r12 function=ram:0002fc3a
+From: ram:0002fc58 To: ram:00057a10 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x10[ep],r10 function=ram:0002fc3a
+From: ram:0002fc50 To: ram:00057a14 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x14[ep],r16 function=ram:0002fc3a
+From: ram:0002fc5a To: ram:00057a18 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x18[ep],r12 function=ram:0002fc3a
+From: ram:0002fc56 To: ram:00057a1c Type: READ Op: 2 ANALYSIS instruction=sld.w 0x1c[ep],r9 function=ram:0002fc3a
+From: ram:0002fef0 To: ram:00057a20 Type: READ Op: 1 ANALYSIS instruction=ld.w 0x0[r26],r7 function=ram:0002fd96
+From: ram:0002feea To: ram:00057a20 Type: PARAM Op: 2 ANALYSIS instruction=movea -0x5de0,tp,r8 function=ram:0002fd96
+From: ram:0002ff16 To: ram:00057a24 Type: READ Op: 2 ANALYSIS instruction=ld.bu 0x4[r26],r15 function=ram:0002fd96
+From: ram:00030b1a To: ram:00057a48 Type: READ Op: 1 ANALYSIS instruction=sld.w 0x0[ep],r11 function=ram:0003011e
+From: ram:00030b1c To: ram:00057a4c Type: READ Op: 2 ANALYSIS instruction=sld.w 0x4[ep],r9 function=ram:0003011e
+From: ram:00030b20 To: ram:00057a50 Type: READ Op: 2 ANALYSIS instruction=sld.w 0x8[ep],r7 function=ram:0003011e
+From: ram:00030136 To: ram:00057a54 Type: DATA Op: 2 ANALYSIS instruction=ld.bu 0x0[r28],r6 function=ram:0003011e
+From: ram:000301ea To: ram:00057a55 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x1[ep],r6 function=ram:0003019a
+From: ram:00030222 To: ram:00057a55 Type: DATA Op: 2 ANALYSIS instruction=sld.bu 0x1[ep],r15 function=ram:0003019a
+From: ram:000301dc To: ram:00057a58 Type: READ Op: 2 ANALYSIS instruction=sld.hu 0x4[ep],r8 function=ram:0003019a
+From: ram:00030142 To: ram:00057a5a Type: DATA Op: 2 ANALYSIS instruction=ld.bu 0x6[r28],r6 function=ram:0003011e
+From: ram:0003015a To: ram:00057a5c Type: DATA Op: 2 ANALYSIS instruction=ld.w 0x8[r28],r24 function=ram:0003011e
+DECOMPILE ram:0000f078 completed=true
+error=
+
+undefined2 FUN_ram_0000f078(uint param_1)
+
+{
+  undefined2 uVar1;
+  int iVar2;
+  
+  iVar2 = (param_1 & 0xff) * 8;
+  if ((&LAB_ram_0000fb4c)[iVar2] == '\x01') {
+    uVar1 = *(undefined2 *)(*(int *)(&DAT_ram_0000fb48 + iVar2) + 0x10);
+  }
+  else {
+    uVar1 = *(undefined2 *)(*(int *)(&DAT_ram_0000fb48 + iVar2) + 0x100);
+  }
+  return uVar1;
+}
+
+

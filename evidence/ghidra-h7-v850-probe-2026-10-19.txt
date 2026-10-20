@@ -1,0 +1,119 @@
+language=V850:LE:32:default
+base=ram:00000000
+Mapping is an offset coordinate system. CPU and load addresses remain hypotheses.
+SAMPLE file-offset=0x30
+ram:00000030 ori 0x8000,r0,r1
+ram:00000034 movhi -0x120,r0,gp
+ram:00000038 movea -0x7000,gp,gp
+ram:0000003c add r1,gp
+ram:0000003e movhi 0x1,r0,tp
+ram:00000042 movea -0x14fc,tp,tp
+ram:00000046 add r1,tp
+ram:00000048 movhi -0x120,r0,sp
+ram:0000004c movea -0x3494,sp,sp
+ram:00000050 mov -0x4,r1
+ram:00000052 and r1,sp
+ram:00000054 jarl 0x0000051c,lp
+ram:00000058 movhi 0x0,r0,r11
+ram:0000005c movea 0x14,r11,r11
+ram:00000060 jmp [r11]
+ram:00000062 INVALID
+SAMPLE file-offset=0x70
+ram:00000070 be 0x00000094
+ram:00000072 ld.w 0x5dff0[r0],r1
+ram:00000078 cmp -0x1,r1
+ram:0000007a be 0x00000094
+ram:0000007c ld.w 0x70000[r0],r1
+ram:00000082 cmp -0x1,r1
+ram:00000084 be 0x00000094
+ram:00000086 ld.w 0x7fffc[r0],r1
+ram:0000008c cmp -0x1,r1
+ram:0000008e be 0x00000094
+ram:00000090 movea 0x35,r0,r10
+ram:00000094 jmp [lp]
+ram:00000096 mov 0x5dff0,ep
+ram:0000009c sld.hu 0x4[ep],r1
+ram:0000009e movhi 0x1,r0,r11
+ram:000000a2 ld.hu -0x100c[r11],r11
+ram:000000a6 cmp r1,r11
+ram:000000a8 mov 0x0,r10
+ram:000000aa bne 0x000000bc
+ram:000000ac sld.hu 0x4[ep],r1
+ram:000000ae xori 0xffff,r1,r0
+ram:000000b2 be 0x000000bc
+ram:000000b4 sld.hu 0x4[ep],r1
+ram:000000b6 cmp r0,r1
+ram:000000b8 cmovne 0x1,r10,r10
+ram:000000bc jmp [lp]
+ram:000000be prepare { r29,lp },0x0
+ram:000000c2 mov 0x0,r29
+ram:000000c4 movea 0xa8,r0,r6
+ram:000000c8 jarl 0x00002aa0,lp
+ram:000000cc cmp r0,r10
+ram:000000ce mov r10,ep
+SAMPLE file-offset=0x100
+ram:00000100 jarl 0x000000be,lp
+ram:00000104 mov r10,r1
+ram:00000106 cmp r0,r1
+ram:00000108 mov 0x61000,r10
+ram:0000010e be 0x0000011c
+ram:00000110 mulhi 0x6c0,r1,r10
+ram:00000114 mov 0x61000,r11
+ram:0000011a add r11,r10
+ram:0000011c ld.bu 0x6b3[r10],r11
+ram:00000120 cmp r1,r11
+ram:00000122 cmovne 0x0,r10,r10
+ram:00000126 dispose 0x0,{ lp },[lp]
+ram:0000012a prepare { r26,r27,r28,r29,lp },0x0
+ram:0000012e jarl 0x000000fc,lp
+ram:00000132 cmp r0,r10
+ram:00000134 mov r10,r28
+ram:00000136 be 0x0000022c
+ram:00000138 movea 0x80,r0,r1
+ram:0000013c movhi -0x7c,r0,r14
+ram:00000140 st.b r1,-0x6000[r14]
+ram:00000144 jarl 0x0000528a,lp
+ram:00000148 jarl 0x0000520e,lp
+ram:0000014c mov 0x2000,r29
+ram:00000152 ld.w 0x0[r29],r27
+ram:00000156 mov 0x915e,lp
+ram:0000015c jmp [r27]
+ram:0000015e cmp r0,r10
+ram:00000160 mov r10,r9
+ram:00000162 bne 0x0000017a
+ram:00000164 ld.w 0x4[r29],r27
+ram:00000168 mov 0x9178,lp
+ram:0000016e movea 0x1000,r0,r7
+SAMPLE file-offset=0x1000
+ram:00001000 mov r20,r0
+ram:00001002 br 0x00001044
+ram:00001004 shr 0x10,ep
+ram:00001006 add r1,ep
+ram:00001008 sld.b 0x0[ep],r1
+ram:0000100a addi 0x10,r1,r29
+ram:0000100e br 0x00001044
+ram:00001010 andi 0xff00,ep,r0
+ram:00001014 be 0x00001030
+ram:00001016 andi 0xf000,ep,r0
+ram:0000101a be 0x00001026
+ram:0000101c shr 0xc,ep
+ram:0000101e add r1,ep
+ram:00001020 sld.b 0x0[ep],r29
+ram:00001022 add 0xc,r29
+ram:00001024 br 0x00001044
+ram:00001026 shr 0x8,ep
+ram:00001028 add r1,ep
+ram:0000102a sld.b 0x0[ep],r29
+ram:0000102c add 0x8,r29
+ram:0000102e br 0x00001044
+ram:00001030 andi 0xf0,ep,r0
+ram:00001034 be 0x00001040
+ram:00001036 shr 0x4,ep
+ram:00001038 add r1,ep
+ram:0000103a sld.b 0x0[ep],r29
+ram:0000103c add 0x4,r29
+ram:0000103e br 0x00001044
+ram:00001040 add r1,ep
+ram:00001042 sld.b 0x0[ep],r29
+ram:00001044 movhi 0x1,r0,r1
+ram:00001048 ld.bu -0x19e0[r1],r1

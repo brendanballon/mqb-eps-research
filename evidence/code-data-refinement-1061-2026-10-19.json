@@ -1,0 +1,235 @@
+{
+  "input_sha256": "a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d",
+  "false_code_source": {
+    "pointer_like_word_address": "0x78318",
+    "value": "0x55900",
+    "actually_exact_square": "592 * 592",
+    "neighbor_rows": [
+      {
+        "address": "0x78300",
+        "u32_le": 541696,
+        "integer_root": 736,
+        "exact_square": true
+      },
+      {
+        "address": "0x78304",
+        "u32_le": 506944,
+        "integer_root": 712,
+        "exact_square": true
+      },
+      {
+        "address": "0x78308",
+        "u32_le": 473344,
+        "integer_root": 688,
+        "exact_square": true
+      },
+      {
+        "address": "0x7830c",
+        "u32_le": 440896,
+        "integer_root": 664,
+        "exact_square": true
+      },
+      {
+        "address": "0x78310",
+        "u32_le": 409600,
+        "integer_root": 640,
+        "exact_square": true
+      },
+      {
+        "address": "0x78314",
+        "u32_le": 379456,
+        "integer_root": 616,
+        "exact_square": true
+      },
+      {
+        "address": "0x78318",
+        "u32_le": 350464,
+        "integer_root": 592,
+        "exact_square": true
+      },
+      {
+        "address": "0x7831c",
+        "u32_le": 322624,
+        "integer_root": 568,
+        "exact_square": true
+      },
+      {
+        "address": "0x78320",
+        "u32_le": 295936,
+        "integer_root": 544,
+        "exact_square": true
+      },
+      {
+        "address": "0x78324",
+        "u32_le": 270400,
+        "integer_root": 520,
+        "exact_square": true
+      },
+      {
+        "address": "0x78328",
+        "u32_le": 246016,
+        "integer_root": 496,
+        "exact_square": true
+      },
+      {
+        "address": "0x7832c",
+        "u32_le": 222784,
+        "integer_root": 472,
+        "exact_square": true
+      },
+      {
+        "address": "0x78330",
+        "u32_le": 200704,
+        "integer_root": 448,
+        "exact_square": true
+      },
+      {
+        "address": "0x78334",
+        "u32_le": 179776,
+        "integer_root": 424,
+        "exact_square": true
+      },
+      {
+        "address": "0x78338",
+        "u32_le": 160000,
+        "integer_root": 400,
+        "exact_square": true
+      },
+      {
+        "address": "0x7833c",
+        "u32_le": 141376,
+        "integer_root": 376,
+        "exact_square": true
+      },
+      {
+        "address": "0x78340",
+        "u32_le": 123904,
+        "integer_root": 352,
+        "exact_square": true
+      },
+      {
+        "address": "0x78344",
+        "u32_le": 107584,
+        "integer_root": 328,
+        "exact_square": true
+      },
+      {
+        "address": "0x78348",
+        "u32_le": 92416,
+        "integer_root": 304,
+        "exact_square": true
+      },
+      {
+        "address": "0x7834c",
+        "u32_le": 78400,
+        "integer_root": 280,
+        "exact_square": true
+      },
+      {
+        "address": "0x78350",
+        "u32_le": 65536,
+        "integer_root": 256,
+        "exact_square": true
+      },
+      {
+        "address": "0x78354",
+        "u32_le": 53824,
+        "integer_root": 232,
+        "exact_square": true
+      },
+      {
+        "address": "0x78358",
+        "u32_le": 43264,
+        "integer_root": 208,
+        "exact_square": true
+      },
+      {
+        "address": "0x7835c",
+        "u32_le": 33856,
+        "integer_root": 184,
+        "exact_square": true
+      },
+      {
+        "address": "0x78360",
+        "u32_le": 25600,
+        "integer_root": 160,
+        "exact_square": true
+      },
+      {
+        "address": "0x78364",
+        "u32_le": 18496,
+        "integer_root": 136,
+        "exact_square": true
+      },
+      {
+        "address": "0x78368",
+        "u32_le": 12544,
+        "integer_root": 112,
+        "exact_square": true
+      },
+      {
+        "address": "0x7836c",
+        "u32_le": 7744,
+        "integer_root": 88,
+        "exact_square": true
+      },
+      {
+        "address": "0x78370",
+        "u32_le": 4096,
+        "integer_root": 64,
+        "exact_square": true
+      },
+      {
+        "address": "0x78374",
+        "u32_le": 1600,
+        "integer_root": 40,
+        "exact_square": true
+      }
+    ]
+  },
+  "code_tail": {
+    "function_start": "0x555f0",
+    "return_address": "0x55604",
+    "function_end_exclusive": "0x55606",
+    "ff_padding_start": "0x55606",
+    "ff_padding_end_exclusive": "0x55800",
+    "padding_all_ff": true
+  },
+  "policy": {
+    "candidate_constant_region": "[0x55606,0x80000)",
+    "typed_as_data_and_non_executable_in_refined_project": true,
+    "limitation": "This is a supported analysis partition, not proof every byte has a known semantic type. Original mixed-code baseline retained."
+  },
+  "register_context": {
+    "application_tp": "0x5d800",
+    "application_gp": "0xfee01000",
+    "sources": [
+      "0x100c0..0x100d6"
+    ],
+    "ranges": [
+      "0xf078..0xf900",
+      "0x10000..0x55605"
+    ],
+    "limitation": "Startup-derived application defaults. Not applied to boot code; register state is static analysis context, not runtime capture."
+  },
+  "table": {
+    "h1_offset": "0x48a20",
+    "address": "0x57a20",
+    "formula": "0x5d800 - 0x5de0",
+    "consumer_function": "0x2fd96",
+    "address_instruction": "0x2feea",
+    "load_instruction": "0x2fef0",
+    "record_stride": 8,
+    "row_count": 5,
+    "role": "Constants used by diagnostic service 0x27 state machine; access-mask byte follows the 32-bit constant"
+  },
+  "service_descriptor": {
+    "address": "0x582fc",
+    "raw_bytes": "2700000006000300002e0000",
+    "service_id": 39,
+    "handler_address": "0x30006",
+    "flags": "0x2e00"
+  },
+  "access_mask_ram": "0xfedfaf85",
+  "runtime_verified": false
+}

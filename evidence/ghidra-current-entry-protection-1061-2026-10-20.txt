@@ -1,0 +1,352 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+SELECT ram:0001c43a
+REF From: ram:000140d8 To: ram:0001c43a Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001c43a,lp
+FUNCTION ram:0001c43a body=[[ram:0001c43a, ram:0001c47d]]
+ram:0001c43a prepare { lp },0x0
+ram:0001c43e ld.hu -0x37a4[r0],r14
+ram:0001c442 ld.bu -0x6128[gp],r12
+ram:0001c446 andi 0xf8ff,r14,r14
+ram:0001c44a st.h r14,-0x37a4[r0]
+ram:0001c44e cmp r0,r12
+ram:0001c450 st.h r0,-0x33f8[r0]
+ram:0001c454 bne 0x0001c46e
+ram:0001c456 jarl 0x0001c47e,lp
+ram:0001c45a jarl 0x0001c3d2,lp
+ram:0001c45e jarl 0x0001cc92,lp
+ram:0001c462 jarl 0x0001da5a,lp
+ram:0001c466 mov 0x1,r10
+ram:0001c468 st.w r10,-0x5964[gp]
+ram:0001c46c br 0x0001c472
+ram:0001c46e jarl 0x0001c928,lp
+ram:0001c472 movhi -0x1,r0,r18
+ram:0001c476 set1 0x0,0x640b[r18]
+ram:0001c47a dispose 0x0,{ lp },[lp]
+completed=true error=
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_ram_0001c43a(void)
+
+{
+  _DAT_ram_ffffc85c = _DAT_ram_ffffc85c & 0xf8ff;
+  _DAT_ram_ffffcc08 = 0;
+  if (DAT_ram_fedfaed8 == '\0') {
+    FUN_ram_0001c47e();
+    FUN_ram_0001c3d2();
+    FUN_ram_0001cc92();
+    FUN_ram_0001da5a();
+    DAT_ram_fedfb69c = 1;
+  }
+  else {
+    FUN_ram_0001c928();
+  }
+  DAT_ram_ffff640b = DAT_ram_ffff640b | 1;
+  return;
+}
+
+
+SELECT ram:0001535e
+REF From: ram:00014408 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00014448 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001446e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018b86 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018b8e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018bde To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018be6 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018c18 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018c22 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017346 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00016d52 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00016d88 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00016f9a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017a8a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017ab8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017b1a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017b28 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018484 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003e3b4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003e3da To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003e400 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018af2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001a9e8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000143d0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00016c4a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00016c56 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017fa2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017fbe To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017fda To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017ff0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018436 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018836 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018846 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00017568 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000213a4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000213e2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000213f0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000213fe To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002140c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00021436 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002125e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00021266 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00021338 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00014364 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00014382 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000176f4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000183c6 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000186e6 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001871e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018800 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018812 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018de4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00018dfc To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000194cc To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001967e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001a60a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001a64c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001a69c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001a6e2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001abb0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001b116 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001b12c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001b418 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001b9b2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001bdbe To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001bddc To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001bdea To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001be10 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001be2c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001c16a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001c366 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001c3c6 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0001d682 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002ed42 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00035734 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003830c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00038332 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003bf5c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000401b0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00040e0e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00040e3e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00043920 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004482a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00044842 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000449d8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00045694 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000456a8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000456b4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000456c0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000452f4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00045304 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004531e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004532e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00045356 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004536a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004537c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004538a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004539a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00045de8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004949c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000494a8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000494e8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00049fde To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004a48c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004abca To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004b720 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004b872 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00029d6c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a05e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a0a8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a26e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a2d6 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a324 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a402 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a430 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002a71a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00038572 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003ed34 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ac7c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ac8a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ac9c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004acaa To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004acb8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004acc6 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004acd4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ace2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004acf2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ad00 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ad0e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ad1c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ad2a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ad38 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004ad94 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004bb62 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004bafc To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002501e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00027e3c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004328a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000432a2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000432ba To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000432d0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000432e8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00043300 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00043314 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004332c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00043356 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004336e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00043376 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004338a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000433a2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000433ba To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000426d2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000426ea To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00042702 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00042646 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004265e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00042676 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00043a1c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004600a To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004601c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00049e26 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004a114 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004a1e4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0004a21e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00025d12 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00025f40 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002f230 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002f246 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002f25c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000498ac To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000498c0 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002b6b4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002b6c8 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002b6ec To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002b736 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002e7ec To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0002e808 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00030a98 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:00031360 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003d236 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:0003ede4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001535e,lp
+REF From: ram:000528a2 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:00018582 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:0003829c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:0002e92c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:0001cc8c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:0003bda6 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:00045bda To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:000385b4 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:0001cc1c To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:00019852 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:0002a528 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:00031498 To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+REF From: ram:0001cb7e To: ram:0001535e Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x0001535e
+FUNCTION ram:0001535e body=[[ram:0001535e, ram:00015427]]
+ram:0001535e prepare { r22,r23,r24,r26,r28,lp },0x0
+ram:00015362 andi 0xffff,r6,r28
+ram:00015366 zxh r7
+ram:00015368 andi 0xff,r8,r26
+ram:0001536c andi 0xff,r9,r23
+ram:00015370 cmp r0,r26
+ram:00015372 bne 0x00015396
+ram:00015374 mov r28,r10
+ram:00015376 shl 0x1,r10
+ram:00015378 movea -0x7b80,gp,r8
+ram:0001537c add r10,r8
+ram:0001537e ld.hu -0x2[r8],r14
+ram:00015382 cmp r0,r14
+ram:00015384 bne 0x00015396
+ram:00015386 movea -0x7aa4,gp,r12
+ram:0001538a add r12,r10
+ram:0001538c tst1 0x3,-0x2[r10]
+ram:00015390 cmove 0x0,r24,r24
+ram:00015394 be 0x00015422
+ram:00015396 mov r28,r6
+ram:00015398 mov r26,r8
+ram:0001539a mov r23,r9
+ram:0001539c jarl 0x00015218,lp
+ram:000153a0 mov r10,r24
+ram:000153a2 jarl 0x0003977a,lp
+ram:000153a6 ld.bu -0x60f4[gp],r14
+ram:000153aa cmp 0x8,r14
+ram:000153ac mov r10,r22
+ram:000153ae be 0x000153e2
+ram:000153b0 cmp 0x6,r14
+ram:000153b2 be 0x000153e2
+ram:000153b4 mov r28,r12
+ram:000153b6 mul 0x18,r12,r0
+ram:000153ba movea -0x7014,tp,r8
+ram:000153be add r8,r12
+ram:000153c0 ld.hu -0x18[r12],r14
+ram:000153c4 addi -0x18,r12,ep
+ram:000153c8 andi 0xf,r14,r6
+ram:000153cc and r22,r6
+ram:000153ce be 0x000153e2
+ram:000153d0 tst1 0x0,0x8[ep]
+ram:000153d4 be 0x000153e2
+ram:000153d6 mov r28,r6
+ram:000153d8 mov r26,r7
+ram:000153da mov r23,r8
+ram:000153dc mov 0x0,r9
+ram:000153de jarl 0x00016326,lp
+ram:000153e2 ld.bu -0x612c[gp],r12
+ram:000153e6 cmp 0x1,r12
+ram:000153e8 bne 0x000153f8
+ram:000153ea mov r28,r7
+ram:000153ec movea 0x3a,r0,r6
+ram:000153f0 mov 0x1,r8
+ram:000153f2 mov 0x1,r9
+ram:000153f4 jarl 0x00015218,lp
+ram:000153f8 cmp r0,r22
+ram:000153fa bne 0x00015422
+ram:000153fc ld.bu -0x60f4[gp],r14
+ram:00015400 cmp r0,r14
+ram:00015402 be 0x00015422
+ram:00015404 cmp 0x1,r14
+ram:00015406 be 0x00015422
+ram:00015408 cmp 0x8,r14
+ram:0001540a be 0x00015422
+ram:0001540c cmp 0x6,r14
+ram:0001540e be 0x00015422
+ram:00015410 mov 0x1,r8
+ram:00015412 st.b r8,-0x612c[gp]
+ram:00015416 movea 0x3a,r0,r6
+ram:0001541a mov 0x0,r7
+ram:0001541c mov 0x1,r9
+ram:0001541e jarl 0x00015218,lp
+ram:00015422 mov r24,r10
+ram:00015424 dispose 0x0,{ r22,r23,r24,r26,r28,lp },[lp]
+completed=true error=
+
+int FUN_ram_0001535e(uint param_1,undefined2 param_2,char param_3,undefined1 param_4)
+
+{
+  int iVar1;
+  uint uVar2;
+  int unaff_r24;
+  bool bVar3;
+  
+  param_1 = param_1 & 0xffff;
+  if (((param_3 != '\0') || (*(short *)(&DAT_ram_fedf947e + param_1 * 2) != 0)) ||
+     (bVar3 = (*(byte *)((int)&DAT_ram_fedf9558 + param_1 * 2 + 2) & 8) != 0,
+     iVar1 = unaff_r24 * (uint)bVar3, bVar3)) {
+    iVar1 = FUN_ram_00015218(param_1,param_2,param_3,param_4);
+    uVar2 = FUN_ram_0003977a();
+    if (((DAT_ram_fedfaf0c != '\b') && (DAT_ram_fedfaf0c != '\x06')) &&
+       (((*(ushort *)(BYTE_ARRAY_ram_00055606 + param_1 * 0x18 + 0x11ce) & 0xf & uVar2) != 0 &&
+        ((BYTE_ARRAY_ram_00055606[param_1 * 0x18 + 0x11d6] & 1) != 0)))) {
+      FUN_ram_00016326(param_1,param_3,param_4,0);
+    }
+    if (DAT_ram_fedfaed4 == '\x01') {
+      FUN_ram_00015218(0x3a,param_1,1,1);
+    }
+    if (((uVar2 == 0) && (DAT_ram_fedfaf0c != '\0')) &&
+       ((DAT_ram_fedfaf0c != '\x01' && ((DAT_ram_fedfaf0c != '\b' && (DAT_ram_fedfaf0c != '\x06'))))
+       )) {
+      DAT_ram_fedfaed4 = '\x01';
+      FUN_ram_00015218(0x3a,0,1,1);
+    }
+  }
+  return iVar1;
+}
+
+

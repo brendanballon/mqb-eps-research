@@ -1,0 +1,562 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+TP_WRITE ram:0000903e movhi 0x1,r0,tp
+TP_WRITE ram:00009042 movea -0x14fc,tp,tp
+TP_WRITE ram:00009046 add r1,tp
+REF ram:000090e0 From: ram:000090e0 To: ram:00060000 Type: READ Op: 0 ANALYSIS ld.w 0x60000[r0],r1
+REF ram:000090ec From: ram:000090ec To: ram:00060ffc Type: READ Op: 0 ANALYSIS ld.w 0x60ffc[r0],r1
+TP_WRITE ram:000100ce movhi 0x5,r0,tp
+TP_WRITE ram:000100d2 movea 0x5800,tp,tp
+TP_WRITE ram:000100d6 add r1,tp
+REF ram:00013d00 From: ram:00013d00 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r9,0x0[r16]
+REF ram:00013d68 From: ram:00013d68 To: ram:fa001300 Type: WRITE Op: 2 ANALYSIS sst.w r7,0x0[ep]
+REF ram:00013d70 From: ram:00013d70 To: ram:fa001304 Type: WRITE Op: 2 ANALYSIS sst.w r11,0x0[ep]
+REF ram:00013d78 From: ram:00013d78 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x0[r16]
+REF ram:000164da From: ram:000164da To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r13,0x12c4[r17]
+REF ram:00016596 From: ram:00016596 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x12c4[r17]
+REF ram:000166b2 From: ram:000166b2 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r7,0x0[r8]
+REF ram:000166bc From: ram:000166bc To: ram:fa0012cc Type: WRITE Op: 2 ANALYSIS sst.w r0,0x0[ep]
+REF ram:000166ca From: ram:000166ca To: ram:fa0012d0 Type: READ Op: 1 ANALYSIS sld.w 0x0[ep],r14
+REF ram:000166e4 From: ram:000166e4 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r7,0x0[r8]
+REF ram:0001670c From: ram:0001670c To: ram:fa001300 Type: WRITE Op: 2 ANALYSIS sst.w r12,0x0[ep]
+REF ram:0001671c From: ram:0001671c To: ram:fa001304 Type: WRITE Op: 2 ANALYSIS sst.w r15,0x0[ep]
+REF ram:00016732 From: ram:00016732 To: ram:fa0012cc Type: WRITE Op: 2 ANALYSIS sst.w r11,0x0[ep]
+REF ram:00016740 From: ram:00016740 To: ram:fa0012d0 Type: READ Op: 1 ANALYSIS sld.w 0x0[ep],r12
+REF ram:0001674c From: ram:0001674c To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x0[r8]
+REF ram:00016952 From: ram:00016952 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r10,0x0[r20]
+REF ram:0001695c From: ram:0001695c To: ram:fa0012cc Type: WRITE Op: 2 ANALYSIS st.w r0,0x0[r25]
+REF ram:00016a0c From: ram:00016a0c To: ram:fa0012cc Type: WRITE Op: 2 ANALYSIS st.w r0,0x0[r25]
+REF ram:00016b5a From: ram:00016b5a To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r11,0x12c4[r17]
+REF ram:00016b6c From: ram:00016b6c To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x12c4[r17]
+REF ram:00016bb8 From: ram:00016bb8 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r12,0x12c4[r17]
+REF ram:00016bf6 From: ram:00016bf6 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x12c4[r17]
+REF ram:0001ccde From: ram:0001ccde To: ram:0006012a Type: READ Op: 2 ANALYSIS ld.bu 0x292a[tp],r16
+REF ram:0001cd26 From: ram:0001cd26 To: ram:00060018 Type: READ Op: 2 ANALYSIS ld.w 0x2818[tp],r13
+REF ram:0001cd3a From: ram:0001cd3a To: ram:00060020 Type: READ Op: 2 ANALYSIS ld.w 0x2820[tp],r12
+REF ram:0001cd52 From: ram:0001cd52 To: ram:00060028 Type: READ Op: 2 ANALYSIS ld.w 0x2828[tp],r24
+REF ram:0001cd6a From: ram:0001cd6a To: ram:00060000 Type: READ Op: 2 ANALYSIS ld.w 0x2800[tp],r8
+REF ram:0001cd86 From: ram:0001cd86 To: ram:00060008 Type: READ Op: 2 ANALYSIS ld.w 0x2808[tp],r7
+REF ram:0001cd92 From: ram:0001cd92 To: ram:00060010 Type: READ Op: 2 ANALYSIS ld.w 0x2810[tp],r13
+REF ram:0001cda8 From: ram:0001cda8 To: ram:0006001c Type: READ Op: 2 ANALYSIS ld.w 0x281c[tp],r11
+REF ram:0001cdbc From: ram:0001cdbc To: ram:00060024 Type: READ Op: 2 ANALYSIS ld.w 0x2824[tp],r9
+REF ram:0001cdd4 From: ram:0001cdd4 To: ram:0006002c Type: READ Op: 2 ANALYSIS ld.w 0x282c[tp],r24
+REF ram:0001cdf4 From: ram:0001cdf4 To: ram:00060004 Type: READ Op: 2 ANALYSIS ld.w 0x2804[tp],r11
+REF ram:0001ce08 From: ram:0001ce08 To: ram:0006000c Type: READ Op: 2 ANALYSIS ld.w 0x280c[tp],r9
+REF ram:0001ce14 From: ram:0001ce14 To: ram:00060014 Type: READ Op: 2 ANALYSIS ld.w 0x2814[tp],r13
+REF ram:0001d194 From: ram:0001d194 To: ram:000600a0 Type: READ Op: 2 ANALYSIS ld.w 0x28a0[tp],r14
+REF ram:0001d198 From: ram:0001d198 To: ram:0006009c Type: READ Op: 2 ANALYSIS ld.w 0x289c[tp],r12
+REF ram:0001d1aa From: ram:0001d1aa To: ram:000600a0 Type: READ Op: 2 ANALYSIS ld.w 0x28a0[tp],r8
+REF ram:0001d1b2 From: ram:0001d1b2 To: ram:0006009c Type: READ Op: 2 ANALYSIS ld.w 0x289c[tp],r12
+REF ram:0001da5e From: ram:0001da5e To: ram:0006041e Type: READ Op: 2 ANALYSIS ld.h 0x2c1e[tp],r28
+REF ram:0001da62 From: ram:0001da62 To: ram:00060124 Type: READ Op: 2 ANALYSIS ld.bu 0x2924[tp],r8
+REF ram:0001da66 From: ram:0001da66 To: ram:00060126 Type: READ Op: 2 ANALYSIS ld.bu 0x2926[tp],r6
+REF ram:0001da7e From: ram:0001da7e To: ram:000600e4 Type: READ Op: 2 ANALYSIS ld.hu 0x28e4[tp],r13
+REF ram:0001dac6 From: ram:0001dac6 To: ram:00060430 Type: READ Op: 2 ANALYSIS ld.hu 0x2c30[tp],r9
+REF ram:0001db3a From: ram:0001db3a To: ram:00060110 Type: READ Op: 2 ANALYSIS ld.h 0x2910[tp],r10
+REF ram:0001db44 From: ram:0001db44 To: ram:000600f2 Type: READ Op: 2 ANALYSIS ld.h 0x28f2[tp],r8
+REF ram:0001db5c From: ram:0001db5c To: ram:000600fe Type: READ Op: 2 ANALYSIS ld.h 0x28fe[tp],r6
+REF ram:0001dbb2 From: ram:0001dbb2 To: ram:000600e2 Type: READ Op: 2 ANALYSIS ld.hu 0x28e2[tp],r6
+REF ram:0001dc78 From: ram:0001dc78 To: ram:000600f4 Type: READ Op: 2 ANALYSIS ld.h 0x28f4[tp],r15
+REF ram:0001dc80 From: ram:0001dc80 To: ram:000604f2 Type: READ Op: 2 ANALYSIS sld.h 0xfa[ep],r18
+REF ram:0001dc82 From: ram:0001dc82 To: ram:000604f4 Type: READ Op: 2 ANALYSIS sld.h 0xfc[ep],r25
+REF ram:0001dc88 From: ram:0001dc88 To: ram:000604f6 Type: READ Op: 2 ANALYSIS sld.h 0xfe[ep],r18
+REF ram:0001dc8e From: ram:0001dc8e To: ram:000604f8 Type: READ Op: 2 ANALYSIS ld.hu 0x2cf8[tp],r18
+REF ram:0001dc96 From: ram:0001dc96 To: ram:000604fa Type: READ Op: 2 ANALYSIS ld.hu 0x2cfa[tp],r18
+REF ram:0001dc9a From: ram:0001dc9a To: ram:000604fc Type: READ Op: 2 ANALYSIS ld.h 0x2cfc[tp],r27
+REF ram:0001dc9e From: ram:0001dc9e To: ram:000604fe Type: READ Op: 2 ANALYSIS ld.hu 0x2cfe[tp],r24
+REF ram:0001dca2 From: ram:0001dca2 To: ram:00060500 Type: READ Op: 2 ANALYSIS ld.hu 0x2d00[tp],r23
+REF ram:0001dcaa From: ram:0001dcaa To: ram:00060504 Type: READ Op: 2 ANALYSIS ld.hu 0x2d04[tp],r18
+REF ram:0001dcb2 From: ram:0001dcb2 To: ram:000604f0 Type: READ Op: 2 ANALYSIS sld.h 0xf8[ep],r18
+REF ram:0001dcbc From: ram:0001dcbc To: ram:00060502 Type: READ Op: 2 ANALYSIS ld.h 0x2d02[tp],r18
+REF ram:0001dd4a From: ram:0001dd4a To: ram:000603fa Type: READ Op: 2 ANALYSIS sld.hu 0x2[ep],r13
+REF ram:0001dd4c From: ram:0001dd4c To: ram:000603fc Type: READ Op: 2 ANALYSIS sld.hu 0x4[ep],r16
+REF ram:0001dd4e From: ram:0001dd4e To: ram:000603fe Type: READ Op: 2 ANALYSIS sld.h 0x6[ep],r8
+REF ram:0001dd50 From: ram:0001dd50 To: ram:00060400 Type: READ Op: 2 ANALYSIS sld.h 0x8[ep],r14
+REF ram:0001dd52 From: ram:0001dd52 To: ram:00060402 Type: READ Op: 2 ANALYSIS sld.hu 0xa[ep],r1
+REF ram:0001ddb2 From: ram:0001ddb2 To: ram:00060404 Type: READ Op: 2 ANALYSIS ld.h 0x2c04[tp],r16
+REF ram:0001ddec From: ram:0001ddec To: ram:00060404 Type: READ Op: 2 ANALYSIS ld.h 0x2c04[tp],r14
+REF ram:0001e46a From: ram:0001e46a To: ram:0006046a Type: READ Op: 2 ANALYSIS ld.h 0x2c6a[tp],ep
+REF ram:0001e46e From: ram:0001e46e To: ram:00060470 Type: READ Op: 2 ANALYSIS ld.h 0x2c70[tp],r18
+REF ram:0001e474 From: ram:0001e474 To: ram:0006046e Type: READ Op: 2 ANALYSIS ld.hu 0x2c6e[tp],r6
+REF ram:0001ea30 From: ram:0001ea30 To: ram:0006041a Type: READ Op: 2 ANALYSIS sld.h 0x22[ep],r14
+REF ram:0001ea32 From: ram:0001ea32 To: ram:0006041c Type: READ Op: 2 ANALYSIS sld.h 0x24[ep],r6
+REF ram:0001ea34 From: ram:0001ea34 To: ram:0006041e Type: READ Op: 2 ANALYSIS sld.h 0x26[ep],r29
+REF ram:0001ea36 From: ram:0001ea36 To: ram:00060420 Type: READ Op: 2 ANALYSIS ld.hu 0x2c20[tp],r17
+REF ram:0001ea3a From: ram:0001ea3a To: ram:00060422 Type: READ Op: 2 ANALYSIS ld.hu 0x2c22[tp],r18
+REF ram:0001ea3e From: ram:0001ea3e To: ram:00060424 Type: READ Op: 2 ANALYSIS ld.hu 0x2c24[tp],r7
+REF ram:0001ea46 From: ram:0001ea46 To: ram:00060426 Type: READ Op: 2 ANALYSIS ld.hu 0x2c26[tp],r18
+REF ram:0001ea4a From: ram:0001ea4a To: ram:00060428 Type: READ Op: 2 ANALYSIS ld.hu 0x2c28[tp],r15
+REF ram:0001ea4e From: ram:0001ea4e To: ram:0006042a Type: READ Op: 2 ANALYSIS ld.hu 0x2c2a[tp],r8
+REF ram:0001ec2e From: ram:0001ec2e To: ram:00060430 Type: READ Op: 2 ANALYSIS ld.hu 0x2c30[tp],r7
+REF ram:0001ed86 From: ram:0001ed86 To: ram:0006041a Type: READ Op: 2 ANALYSIS sld.h 0x22[ep],r1
+REF ram:0001ed88 From: ram:0001ed88 To: ram:0006041c Type: READ Op: 2 ANALYSIS sld.h 0x24[ep],r29
+REF ram:0001ed8a From: ram:0001ed8a To: ram:0006041e Type: READ Op: 2 ANALYSIS sld.h 0x26[ep],r27
+REF ram:0001ed8c From: ram:0001ed8c To: ram:00060420 Type: READ Op: 2 ANALYSIS ld.hu 0x2c20[tp],r17
+REF ram:0001ed90 From: ram:0001ed90 To: ram:00060422 Type: READ Op: 2 ANALYSIS ld.hu 0x2c22[tp],r18
+REF ram:0001ed94 From: ram:0001ed94 To: ram:00060424 Type: READ Op: 2 ANALYSIS ld.hu 0x2c24[tp],r9
+REF ram:0001ed9c From: ram:0001ed9c To: ram:00060426 Type: READ Op: 2 ANALYSIS ld.hu 0x2c26[tp],r18
+REF ram:0001eda0 From: ram:0001eda0 To: ram:00060428 Type: READ Op: 2 ANALYSIS ld.hu 0x2c28[tp],r7
+REF ram:0001eda4 From: ram:0001eda4 To: ram:0006042a Type: READ Op: 2 ANALYSIS ld.hu 0x2c2a[tp],r6
+REF ram:0001ef80 From: ram:0001ef80 To: ram:00060430 Type: READ Op: 2 ANALYSIS ld.hu 0x2c30[tp],r7
+REF ram:0001f0ec From: ram:0001f0ec To: ram:000604c2 Type: READ Op: 2 ANALYSIS ld.hu 0x2cc2[tp],r12
+REF ram:0001f0f0 From: ram:0001f0f0 To: ram:000604c0 Type: READ Op: 2 ANALYSIS ld.h 0x2cc0[tp],r10
+REF ram:0001f0fa From: ram:0001f0fa To: ram:000604ca Type: READ Op: 2 ANALYSIS ld.hu 0x2cca[tp],r8
+REF ram:0001f106 From: ram:0001f106 To: ram:000604c8 Type: READ Op: 2 ANALYSIS ld.h 0x2cc8[tp],r6
+REF ram:0001fa3c From: ram:0001fa3c To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r24,0x0[r6]
+REF ram:0001fa46 From: ram:0001fa46 To: ram:fa0012cc Type: WRITE Op: 2 ANALYSIS sst.w r0,0x0[ep]
+REF ram:0001fa52 From: ram:0001fa52 To: ram:fa0012d0 Type: READ Op: 1 ANALYSIS sld.w 0x0[ep],r12
+REF ram:0001fa7a From: ram:0001fa7a To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x0[r6]
+REF ram:0001faac From: ram:0001faac To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r14,0x12c4[r17]
+REF ram:0001fb1e From: ram:0001fb1e To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x12c4[r17]
+REF ram:0001fb42 From: ram:0001fb42 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r15,0x12c4[r17]
+REF ram:0001fbcc From: ram:0001fbcc To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r0,0x12c4[r17]
+REF ram:0001fc04 From: ram:0001fc04 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r13,0x0[r22]
+REF ram:0001fc12 From: ram:0001fc12 To: ram:fa0012cc Type: WRITE Op: 2 ANALYSIS sst.w r0,0x0[ep]
+REF ram:00035f02 From: ram:00035f02 To: ram:0006008c Type: READ Op: 2 ANALYSIS ld.w 0x288c[tp],r11
+REF ram:00035f06 From: ram:00035f06 To: ram:00060090 Type: READ Op: 2 ANALYSIS ld.w 0x2890[tp],r9
+REF ram:00035f1a From: ram:00035f1a To: ram:00060098 Type: READ Op: 2 ANALYSIS ld.w 0x2898[tp],r12
+REF ram:00035f4e From: ram:00035f4e To: ram:00060084 Type: READ Op: 2 ANALYSIS ld.w 0x2884[tp],r16
+REF ram:00035f52 From: ram:00035f52 To: ram:00060088 Type: READ Op: 2 ANALYSIS ld.w 0x2888[tp],r13
+REF ram:00035f56 From: ram:00035f56 To: ram:00060094 Type: READ Op: 2 ANALYSIS ld.w 0x2894[tp],r10
+REF ram:00039316 From: ram:00039316 To: ram:fa0012c4 Type: WRITE Op: 2 ANALYSIS st.w r9,0x12c4[r14]
+REF ram:000448a6 From: ram:000448a6 To: ram:000600d0 Type: READ Op: 2 ANALYSIS ld.w 0x28d0[tp],r11
+REF ram:000448ac From: ram:000448ac To: ram:000600d4 Type: READ Op: 2 ANALYSIS ld.w 0x28d4[tp],r8
+REF ram:000448ca From: ram:000448ca To: ram:000600b0 Type: READ Op: 2 ANALYSIS ld.w 0x28b0[tp],r12
+REF ram:000448ce From: ram:000448ce To: ram:000600b4 Type: READ Op: 2 ANALYSIS ld.w 0x28b4[tp],r10
+REF ram:000448da From: ram:000448da To: ram:000600b8 Type: READ Op: 2 ANALYSIS ld.w 0x28b8[tp],r12
+REF ram:000448de From: ram:000448de To: ram:000600c8 Type: READ Op: 2 ANALYSIS ld.w 0x28c8[tp],r15
+REF ram:000448e6 From: ram:000448e6 To: ram:000600cc Type: READ Op: 2 ANALYSIS ld.w 0x28cc[tp],r10
+REF ram:000448f2 From: ram:000448f2 To: ram:000600a4 Type: READ Op: 2 ANALYSIS ld.w 0x28a4[tp],r15
+REF ram:000448fe From: ram:000448fe To: ram:000600a8 Type: READ Op: 2 ANALYSIS ld.w 0x28a8[tp],r10
+REF ram:0004490a From: ram:0004490a To: ram:000600ac Type: READ Op: 2 ANALYSIS ld.w 0x28ac[tp],r10
+REF ram:0004490e From: ram:0004490e To: ram:000600d8 Type: READ Op: 2 ANALYSIS ld.w 0x28d8[tp],r15
+REF ram:00044916 From: ram:00044916 To: ram:000600dc Type: READ Op: 2 ANALYSIS ld.w 0x28dc[tp],r8
+REF ram:00044922 From: ram:00044922 To: ram:000600bc Type: READ Op: 2 ANALYSIS ld.w 0x28bc[tp],r15
+REF ram:0004492e From: ram:0004492e To: ram:000600c0 Type: READ Op: 2 ANALYSIS ld.w 0x28c0[tp],r11
+REF ram:00044936 From: ram:00044936 To: ram:000600c4 Type: READ Op: 2 ANALYSIS ld.w 0x28c4[tp],r14
+REF ram:000460d2 From: ram:000460d2 To: ram:00060068 Type: READ Op: 2 ANALYSIS ld.w 0x2868[tp],r11
+REF ram:000460d6 From: ram:000460d6 To: ram:00060068 Type: READ Op: 2 ANALYSIS ld.w 0x2868[tp],r9
+REF ram:00046140 From: ram:00046140 To: ram:00060074 Type: READ Op: 2 ANALYSIS ld.w 0x2874[tp],r12
+REF ram:00046160 From: ram:00046160 To: ram:00060078 Type: READ Op: 2 ANALYSIS ld.w 0x2878[tp],r8
+REF ram:000461c6 From: ram:000461c6 To: ram:00060070 Type: READ Op: 2 ANALYSIS ld.w 0x2870[tp],r12
+REF ram:000461f6 From: ram:000461f6 To: ram:0006006c Type: READ Op: 2 ANALYSIS ld.w 0x286c[tp],r8
+REF ram:00046204 From: ram:00046204 To: ram:00060060 Type: READ Op: 2 ANALYSIS ld.w 0x2860[tp],r6
+REF ram:0004620a From: ram:0004620a To: ram:00060064 Type: READ Op: 2 ANALYSIS ld.w 0x2864[tp],r6
+REF ram:0004622a From: ram:0004622a To: ram:00060068 Type: READ Op: 2 ANALYSIS ld.w 0x2868[tp],r16
+REF ram:000462fe From: ram:000462fe To: ram:00060068 Type: READ Op: 2 ANALYSIS ld.w 0x2868[tp],r9
+REF ram:000463e6 From: ram:000463e6 To: ram:00060125 Type: READ Op: 2 ANALYSIS ld.bu 0x2925[tp],r14
+REF ram:000463ea From: ram:000463ea To: ram:00060127 Type: READ Op: 2 ANALYSIS ld.bu 0x2927[tp],r9
+REF ram:000463ee From: ram:000463ee To: ram:00060129 Type: READ Op: 2 ANALYSIS ld.bu 0x2929[tp],r12
+REF ram:00046402 From: ram:00046402 To: ram:00060128 Type: READ Op: 2 ANALYSIS ld.bu 0x2928[tp],r10
+REF ram:00046406 From: ram:00046406 To: ram:000600e0 Type: READ Op: 2 ANALYSIS ld.hu 0x28e0[tp],r6
+REF ram:00046444 From: ram:00046444 To: ram:000602e0 Type: PARAM Op: 2 ANALYSIS movea 0x2ae0,tp,r6
+REF ram:000465a0 From: ram:000465a0 To: ram:00060100 Type: READ Op: 2 ANALYSIS ld.h 0x2900[tp],r13
+REF ram:000465ba From: ram:000465ba To: ram:00060102 Type: READ Op: 2 ANALYSIS ld.h 0x2902[tp],r14
+REF ram:0004662e From: ram:0004662e To: ram:00060464 Type: READ Op: 2 ANALYSIS ld.h 0x2c64[tp],r11
+REF ram:0004667a From: ram:0004667a To: ram:00060460 Type: READ Op: 2 ANALYSIS ld.h 0x2c60[tp],r18
+REF ram:00046680 From: ram:00046680 To: ram:00060462 Type: READ Op: 2 ANALYSIS ld.hu 0x2c62[tp],r18
+REF ram:000466a8 From: ram:000466a8 To: ram:0006041a Type: READ Op: 2 ANALYSIS sld.h 0x22[ep],r9
+REF ram:000466aa From: ram:000466aa To: ram:0006041c Type: READ Op: 2 ANALYSIS sld.h 0x24[ep],lp
+REF ram:000466ac From: ram:000466ac To: ram:0006041e Type: READ Op: 2 ANALYSIS sld.h 0x26[ep],r28
+REF ram:000466ae From: ram:000466ae To: ram:00060420 Type: READ Op: 2 ANALYSIS ld.hu 0x2c20[tp],r26
+REF ram:000466b2 From: ram:000466b2 To: ram:00060422 Type: READ Op: 2 ANALYSIS ld.hu 0x2c22[tp],r24
+REF ram:000466b6 From: ram:000466b6 To: ram:00060424 Type: READ Op: 2 ANALYSIS ld.hu 0x2c24[tp],r14
+REF ram:000466ba From: ram:000466ba To: ram:00060426 Type: READ Op: 2 ANALYSIS ld.hu 0x2c26[tp],r22
+REF ram:000466be From: ram:000466be To: ram:00060428 Type: READ Op: 2 ANALYSIS ld.hu 0x2c28[tp],r7
+REF ram:000466c2 From: ram:000466c2 To: ram:0006042a Type: READ Op: 2 ANALYSIS ld.hu 0x2c2a[tp],r10
+REF ram:000469f8 From: ram:000469f8 To: ram:0006045c Type: READ Op: 2 ANALYSIS ld.h 0x2c5c[tp],r6
+REF ram:00046a06 From: ram:00046a06 To: ram:0006045e Type: READ Op: 2 ANALYSIS ld.hu 0x2c5e[tp],r9
+REF ram:00046a9c From: ram:00046a9c To: ram:0006045c Type: READ Op: 2 ANALYSIS ld.h 0x2c5c[tp],r6
+REF ram:00046aa6 From: ram:00046aa6 To: ram:0006045e Type: READ Op: 2 ANALYSIS ld.hu 0x2c5e[tp],r13
+REF ram:00047096 From: ram:00047096 To: ram:0006050e Type: READ Op: 2 ANALYSIS ld.h 0x2d0e[tp],r13
+REF ram:0004709c From: ram:0004709c To: ram:00060510 Type: READ Op: 2 ANALYSIS ld.h 0x2d10[tp],r7
+REF ram:00047140 From: ram:00047140 To: ram:00060506 Type: READ Op: 2 ANALYSIS ld.h 0x2d06[tp],r15
+REF ram:00047144 From: ram:00047144 To: ram:00060508 Type: READ Op: 2 ANALYSIS ld.hu 0x2d08[tp],r23
+REF ram:0004714c From: ram:0004714c To: ram:0006050a Type: READ Op: 2 ANALYSIS ld.hu 0x2d0a[tp],ep
+REF ram:00047150 From: ram:00047150 To: ram:000604ee Type: READ Op: 2 ANALYSIS ld.hu 0x2cee[tp],r18
+REF ram:00047154 From: ram:00047154 To: ram:0006050c Type: READ Op: 2 ANALYSIS ld.hu 0x2d0c[tp],r12
+REF ram:000477ce From: ram:000477ce To: ram:000604c8 Type: READ Op: 2 ANALYSIS ld.h 0x2cc8[tp],r9
+REF ram:000477d6 From: ram:000477d6 To: ram:000604ca Type: READ Op: 2 ANALYSIS ld.hu 0x2cca[tp],r16
+REF ram:000477e0 From: ram:000477e0 To: ram:000604cc Type: READ Op: 2 ANALYSIS ld.h 0x2ccc[tp],r11
+REF ram:000477ec From: ram:000477ec To: ram:000604ce Type: READ Op: 2 ANALYSIS ld.hu 0x2cce[tp],r8
+REF ram:0004784c From: ram:0004784c To: ram:00060154 Type: PARAM Op: 2 ANALYSIS movea 0x2954,tp,r6
+REF ram:00047860 From: ram:00047860 To: ram:0006013c Type: PARAM Op: 2 ANALYSIS movea 0x293c,tp,r6
+REF ram:00047870 From: ram:00047870 To: ram:000603e4 Type: PARAM Op: 2 ANALYSIS movea 0x2be4,tp,r6
+REF ram:00047884 From: ram:00047884 To: ram:00060104 Type: READ Op: 2 ANALYSIS ld.h 0x2904[tp],r14
+REF ram:0004789a From: ram:0004789a To: ram:00060112 Type: READ Op: 2 ANALYSIS ld.h 0x2912[tp],r12
+REF ram:000478a4 From: ram:000478a4 To: ram:0006010e Type: READ Op: 2 ANALYSIS ld.h 0x290e[tp],r9
+REF ram:000478aa From: ram:000478aa To: ram:0006010a Type: READ Op: 2 ANALYSIS ld.h 0x290a[tp],r7
+REF ram:000478b0 From: ram:000478b0 To: ram:000600e6 Type: READ Op: 2 ANALYSIS ld.h 0x28e6[tp],r16
+REF ram:000478c0 From: ram:000478c0 To: ram:000602e0 Type: PARAM Op: 2 ANALYSIS movea 0x2ae0,tp,r6
+REF ram:000478dc From: ram:000478dc To: ram:000602c8 Type: DATA Op: 0 ANALYSIS sst.w r12,0x34[ep]
+REF ram:000478e6 From: ram:000478e6 To: ram:0006010c Type: READ Op: 2 ANALYSIS ld.hu 0x290c[tp],r6
+REF ram:00047930 From: ram:00047930 To: ram:00060344 Type: DATA Op: 0 ANALYSIS sst.w r12,0x18[ep]
+REF ram:00047930 From: ram:00047930 To: ram:00060358 Type: DATA Op: 0 ANALYSIS sst.w r12,0x18[ep]
+REF ram:00047932 From: ram:00047932 To: ram:00060394 Type: DATA Op: 0 ANALYSIS sst.w r14,0x24[ep]
+REF ram:00047932 From: ram:00047932 To: ram:000603a8 Type: DATA Op: 0 ANALYSIS sst.w r14,0x24[ep]
+REF ram:00047938 From: ram:00047938 To: ram:000603bc Type: DATA Op: 0 ANALYSIS sst.w r6,0x1c[ep]
+REF ram:00047938 From: ram:00047938 To: ram:000603d0 Type: DATA Op: 0 ANALYSIS sst.w r6,0x1c[ep]
+REF ram:0004793a From: ram:0004793a To: ram:0006036c Type: DATA Op: 0 ANALYSIS sst.w r8,0x2c[ep]
+REF ram:0004793a From: ram:0004793a To: ram:00060380 Type: DATA Op: 0 ANALYSIS sst.w r8,0x2c[ep]
+REF ram:00047940 From: ram:00047940 To: ram:000602f4 Type: DATA Op: 0 ANALYSIS sst.w r10,0x28[ep]
+REF ram:00047940 From: ram:00047940 To: ram:00060308 Type: DATA Op: 0 ANALYSIS sst.w r10,0x28[ep]
+REF ram:00047950 From: ram:00047950 To: ram:0006031c Type: DATA Op: 0 ANALYSIS sst.w r16,0x20[ep]
+REF ram:00047950 From: ram:00047950 To: ram:00060330 Type: DATA Op: 0 ANALYSIS sst.w r16,0x20[ep]
+REF ram:00047956 From: ram:00047956 To: ram:00060100 Type: READ Op: 2 ANALYSIS ld.h 0x2900[tp],r11
+REF ram:00047962 From: ram:00047962 To: ram:00060102 Type: READ Op: 2 ANALYSIS ld.h 0x2902[tp],r16
+REF ram:0004797a From: ram:0004797a To: ram:00060116 Type: READ Op: 2 ANALYSIS ld.h 0x2916[tp],r14
+REF ram:0004797e From: ram:0004797e To: ram:00060118 Type: READ Op: 2 ANALYSIS ld.h 0x2918[tp],r12
+REF ram:00047982 From: ram:00047982 To: ram:00060108 Type: READ Op: 2 ANALYSIS ld.h 0x2908[tp],r10
+REF ram:00047994 From: ram:00047994 To: ram:0006011e Type: READ Op: 2 ANALYSIS ld.h 0x291e[tp],r8
+REF ram:0004799a From: ram:0004799a To: ram:0006011a Type: READ Op: 2 ANALYSIS ld.h 0x291a[tp],r6
+REF ram:0004799e From: ram:0004799e To: ram:0006011c Type: READ Op: 2 ANALYSIS ld.h 0x291c[tp],r15
+REF ram:000479a2 From: ram:000479a2 To: ram:00060114 Type: READ Op: 2 ANALYSIS ld.h 0x2914[tp],r13
+REF ram:000479ae From: ram:000479ae To: ram:00060106 Type: READ Op: 2 ANALYSIS ld.h 0x2906[tp],r11
+REF ram:000479c6 From: ram:000479c6 To: ram:00060558 Type: PARAM Op: 2 ANALYSIS movea 0x2d58,tp,r9
+REF ram:000479ca From: ram:000479ca To: ram:00060558 Type: DATA Op: 0 ANALYSIS sst.w r9,0x4c[ep]
+REF ram:000479cc From: ram:000479cc To: ram:00060576 Type: PARAM Op: 2 ANALYSIS movea 0x2d76,tp,r7
+REF ram:000479d0 From: ram:000479d0 To: ram:00060576 Type: DATA Op: 0 ANALYSIS sst.w r7,0x50[ep]
+REF ram:000479d8 From: ram:000479d8 To: ram:000604d6 Type: READ Op: 2 ANALYSIS sld.h 0xde[ep],r29
+REF ram:000479da From: ram:000479da To: ram:000604da Type: READ Op: 2 ANALYSIS ld.hu 0x2cda[tp],r25
+REF ram:000479de From: ram:000479de To: ram:000604d8 Type: READ Op: 2 ANALYSIS ld.hu 0x2cd8[tp],r20
+REF ram:000479e2 From: ram:000479e2 To: ram:000604d0 Type: READ Op: 2 ANALYSIS ld.hu 0x2cd0[tp],r27
+REF ram:000479e6 From: ram:000479e6 To: ram:000604d2 Type: READ Op: 2 ANALYSIS sld.h 0xda[ep],r26
+REF ram:000479ec From: ram:000479ec To: ram:000604d4 Type: READ Op: 2 ANALYSIS sld.h 0xdc[ep],r23
+REF ram:00047a16 From: ram:00047a16 To: ram:00060452 Type: READ Op: 2 ANALYSIS sld.h 0x5a[ep],r13
+REF ram:00047a18 From: ram:00047a18 To: ram:00060450 Type: READ Op: 2 ANALYSIS sld.h 0x58[ep],r11
+REF ram:00047a1a From: ram:00047a1a To: ram:00060454 Type: READ Op: 2 ANALYSIS sld.h 0x5c[ep],r16
+REF ram:00047a22 From: ram:00047a22 To: ram:0006044e Type: READ Op: 2 ANALYSIS sld.h 0x56[ep],r12
+REF ram:00047a5a From: ram:00047a5a To: ram:00060458 Type: READ Op: 2 ANALYSIS ld.h 0x2c58[tp],r9
+REF ram:00047a5e From: ram:00047a5e To: ram:0006045a Type: READ Op: 2 ANALYSIS ld.hu 0x2c5a[tp],r6
+REF ram:00047aa4 From: ram:00047aa4 To: ram:0006031c Type: READ Op: 1 ANALYSIS ld.h 0x0[r10],r8
+REF ram:00047aae From: ram:00047aae To: ram:0006031c Type: READ Op: 1 ANALYSIS ld.h 0x0[r10],r8
+REF ram:00047ad0 From: ram:00047ad0 To: ram:0006031c Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047aee From: ram:00047aee To: ram:0006031a Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00047aee From: ram:00047aee To: ram:00060318 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00047aee From: ram:00047aee To: ram:0006031c Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00047b02 From: ram:00047b02 To: ram:00060318 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r7
+REF ram:00047b06 From: ram:00047b06 To: ram:0006031e Type: READ Op: 2 ANALYSIS ld.h 0x2[r10],r8
+REF ram:00047b0e From: ram:00047b0e To: ram:0006031c Type: READ Op: 1 ANALYSIS ld.h 0x0[r9],r7
+REF ram:00047b22 From: ram:00047b22 To: ram:0006031a Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r6
+REF ram:00047b28 From: ram:00047b28 To: ram:00060318 Type: READ Op: 1 ANALYSIS ld.h 0x0[r8],r16
+REF ram:00047b30 From: ram:00047b30 To: ram:0006031a Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r16
+REF ram:00047b34 From: ram:00047b34 To: ram:0006031c Type: READ Op: 2 ANALYSIS ld.h 0x2[r15],r7
+REF ram:00047b38 From: ram:00047b38 To: ram:0006031a Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r11
+REF ram:00047b66 From: ram:00047b66 To: ram:00060318 Type: READ Op: 1 ANALYSIS ld.h 0x0[r12],r7
+REF ram:00047b70 From: ram:00047b70 To: ram:00060394 Type: READ Op: 1 ANALYSIS ld.h 0x0[r8],r6
+REF ram:00047b7a From: ram:00047b7a To: ram:00060394 Type: READ Op: 1 ANALYSIS ld.h 0x0[r8],r6
+REF ram:00047b9c From: ram:00047b9c To: ram:00060394 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r14
+REF ram:00047bba From: ram:00047bba To: ram:00060392 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r12
+REF ram:00047bba From: ram:00047bba To: ram:00060390 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r12
+REF ram:00047bba From: ram:00047bba To: ram:00060394 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r12
+REF ram:00047bce From: ram:00047bce To: ram:00060390 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r13
+REF ram:00047bd2 From: ram:00047bd2 To: ram:00060396 Type: READ Op: 2 ANALYSIS ld.h 0x2[r8],r6
+REF ram:00047bda From: ram:00047bda To: ram:00060394 Type: READ Op: 1 ANALYSIS ld.h 0x0[r16],r13
+REF ram:00047bec From: ram:00047bec To: ram:00060392 Type: READ Op: 1 ANALYSIS ld.h 0x0[r13],r13
+REF ram:00047bf2 From: ram:00047bf2 To: ram:00060390 Type: READ Op: 1 ANALYSIS ld.h 0x0[r6],r14
+REF ram:00047bfa From: ram:00047bfa To: ram:00060392 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r14
+REF ram:00047bfe From: ram:00047bfe To: ram:00060394 Type: READ Op: 2 ANALYSIS ld.h 0x2[r11],r15
+REF ram:00047c02 From: ram:00047c02 To: ram:00060392 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r7
+REF ram:00047c30 From: ram:00047c30 To: ram:00060390 Type: READ Op: 1 ANALYSIS ld.h 0x0[r10],r13
+REF ram:00047c3a From: ram:00047c3a To: ram:000602f4 Type: READ Op: 1 ANALYSIS ld.h 0x0[r6],r14
+REF ram:00047c44 From: ram:00047c44 To: ram:000602f4 Type: READ Op: 1 ANALYSIS ld.h 0x0[r6],r14
+REF ram:00047c68 From: ram:00047c68 To: ram:000602f4 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r11
+REF ram:00047c86 From: ram:00047c86 To: ram:000602f2 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r16
+REF ram:00047c86 From: ram:00047c86 To: ram:000602f0 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r16
+REF ram:00047c86 From: ram:00047c86 To: ram:000602f4 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r16
+REF ram:00047c9a From: ram:00047c9a To: ram:000602f0 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r7
+REF ram:00047c9e From: ram:00047c9e To: ram:000602f6 Type: READ Op: 2 ANALYSIS ld.h 0x2[r6],r13
+REF ram:00047ca6 From: ram:00047ca6 To: ram:000602f4 Type: READ Op: 1 ANALYSIS ld.h 0x0[r10],r7
+REF ram:00047cb8 From: ram:00047cb8 To: ram:000602f2 Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r11
+REF ram:00047cbe From: ram:00047cbe To: ram:000602f0 Type: READ Op: 1 ANALYSIS ld.h 0x0[r14],r7
+REF ram:00047cc4 From: ram:00047cc4 To: ram:000602f2 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r12
+REF ram:00047cca From: ram:00047cca To: ram:000602f4 Type: READ Op: 2 ANALYSIS ld.h 0x2[r9],r13
+REF ram:00047cd4 From: ram:00047cd4 To: ram:000602f2 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r11
+REF ram:00047cfc From: ram:00047cfc To: ram:000602f0 Type: READ Op: 1 ANALYSIS ld.h 0x0[r8],r7
+REF ram:00047d06 From: ram:00047d06 To: ram:0006036c Type: READ Op: 1 ANALYSIS ld.h 0x0[r15],r12
+REF ram:00047d10 From: ram:00047d10 To: ram:0006036c Type: READ Op: 1 ANALYSIS ld.h 0x0[r15],r12
+REF ram:00047d32 From: ram:00047d32 To: ram:0006036c Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r10
+REF ram:00047d50 From: ram:00047d50 To: ram:0006036a Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r8
+REF ram:00047d50 From: ram:00047d50 To: ram:00060368 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r8
+REF ram:00047d50 From: ram:00047d50 To: ram:0006036c Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r8
+REF ram:00047d64 From: ram:00047d64 To: ram:00060368 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r12
+REF ram:00047d68 From: ram:00047d68 To: ram:0006036e Type: READ Op: 2 ANALYSIS ld.h 0x2[r15],r12
+REF ram:00047d70 From: ram:00047d70 To: ram:0006036c Type: READ Op: 1 ANALYSIS ld.h 0x0[r14],r12
+REF ram:00047d84 From: ram:00047d84 To: ram:0006036a Type: READ Op: 1 ANALYSIS ld.h 0x0[r12],r7
+REF ram:00047d8a From: ram:00047d8a To: ram:00060368 Type: READ Op: 1 ANALYSIS ld.h 0x0[r11],r10
+REF ram:00047d92 From: ram:00047d92 To: ram:0006036a Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r10
+REF ram:00047d96 From: ram:00047d96 To: ram:0006036c Type: READ Op: 2 ANALYSIS ld.h 0x2[r9],r11
+REF ram:00047d9a From: ram:00047d9a To: ram:0006036a Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r13
+REF ram:00047dc8 From: ram:00047dc8 To: ram:00060368 Type: READ Op: 1 ANALYSIS ld.h 0x0[r6],r12
+REF ram:00047dd2 From: ram:00047dd2 To: ram:00060344 Type: READ Op: 1 ANALYSIS ld.h 0x0[r13],r10
+REF ram:00047dd6 From: ram:00047dd6 To: ram:00060344 Type: READ Op: 1 ANALYSIS ld.h 0x0[r13],r9
+REF ram:00047dfe From: ram:00047dfe To: ram:00060344 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r8
+REF ram:00047e1c From: ram:00047e1c To: ram:00060342 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047e1c From: ram:00047e1c To: ram:00060340 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047e1c From: ram:00047e1c To: ram:00060344 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047e30 From: ram:00047e30 To: ram:00060340 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r7
+REF ram:00047e34 From: ram:00047e34 To: ram:00060346 Type: READ Op: 2 ANALYSIS ld.h 0x2[r13],r11
+REF ram:00047e3c From: ram:00047e3c To: ram:00060344 Type: READ Op: 1 ANALYSIS ld.h 0x0[r10],r7
+REF ram:00047e4e From: ram:00047e4e To: ram:00060342 Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r7
+REF ram:00047e54 From: ram:00047e54 To: ram:00060340 Type: READ Op: 1 ANALYSIS ld.h 0x0[r11],r8
+REF ram:00047e5a From: ram:00047e5a To: ram:00060342 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r8
+REF ram:00047e66 From: ram:00047e66 To: ram:00060344 Type: READ Op: 2 ANALYSIS ld.h 0x2[r16],r7
+REF ram:00047e6a From: ram:00047e6a To: ram:00060342 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r12
+REF ram:00047e92 From: ram:00047e92 To: ram:00060340 Type: READ Op: 1 ANALYSIS ld.h 0x0[r15],r7
+REF ram:00047ea0 From: ram:00047ea0 To: ram:000603bc Type: READ Op: 1 ANALYSIS ld.h 0x0[r11],r8
+REF ram:00047ea4 From: ram:00047ea4 To: ram:000603bc Type: READ Op: 1 ANALYSIS ld.h 0x0[r11],r7
+REF ram:00047ec8 From: ram:00047ec8 To: ram:000603bc Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r8
+REF ram:00047ee6 From: ram:00047ee6 To: ram:000603ba Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047ee6 From: ram:00047ee6 To: ram:000603b8 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047ee6 From: ram:00047ee6 To: ram:000603bc Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047efa From: ram:00047efa To: ram:000603b8 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r12
+REF ram:00047efe From: ram:00047efe To: ram:000603be Type: READ Op: 2 ANALYSIS ld.h 0x2[r11],r12
+REF ram:00047f06 From: ram:00047f06 To: ram:000603bc Type: READ Op: 1 ANALYSIS ld.h 0x0[r15],r12
+REF ram:00047f1a From: ram:00047f1a To: ram:000603ba Type: READ Op: 1 ANALYSIS ld.h 0x0[r12],r16
+REF ram:00047f20 From: ram:00047f20 To: ram:000603b8 Type: READ Op: 1 ANALYSIS ld.h 0x0[r8],r8
+REF ram:00047f26 From: ram:00047f26 To: ram:000603ba Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r6
+REF ram:00047f2c From: ram:00047f2c To: ram:000603bc Type: READ Op: 2 ANALYSIS ld.h 0x2[r9],r14
+REF ram:00047f36 From: ram:00047f36 To: ram:000603ba Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r16
+REF ram:00047f5e From: ram:00047f5e To: ram:000603b8 Type: READ Op: 1 ANALYSIS ld.h 0x0[r13],r12
+REF ram:00047f64 From: ram:00047f64 To: ram:00060416 Type: READ Op: 2 ANALYSIS ld.hu 0x2c16[tp],r8
+REF ram:00047f68 From: ram:00047f68 To: ram:00060418 Type: READ Op: 2 ANALYSIS ld.h 0x2c18[tp],r6
+REF ram:0004805e From: ram:0004805e To: ram:000603f8 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r11
+REF ram:00048060 From: ram:00048060 To: ram:00060406 Type: READ Op: 2 ANALYSIS sld.hu 0xe[ep],r13
+REF ram:00048068 From: ram:00048068 To: ram:00060408 Type: READ Op: 2 ANALYSIS sld.hu 0x10[ep],r7
+REF ram:000481e0 From: ram:000481e0 To: ram:00060558 Type: READ Op: 1 ANALYSIS ld.h 0x0[r9],r6
+REF ram:000481e4 From: ram:000481e4 To: ram:00060558 Type: READ Op: 1 ANALYSIS ld.h 0x0[r9],r7
+REF ram:00048204 From: ram:00048204 To: ram:00060558 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00048222 From: ram:00048222 To: ram:00060556 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r10
+REF ram:00048222 From: ram:00048222 To: ram:00060554 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r10
+REF ram:00048222 From: ram:00048222 To: ram:00060558 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r10
+REF ram:00048236 From: ram:00048236 To: ram:00060554 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r6
+REF ram:0004823a From: ram:0004823a To: ram:0006055a Type: READ Op: 2 ANALYSIS ld.h 0x2[r9],r6
+REF ram:00048242 From: ram:00048242 To: ram:00060558 Type: READ Op: 1 ANALYSIS ld.h 0x0[r8],r6
+REF ram:00048256 From: ram:00048256 To: ram:00060556 Type: READ Op: 1 ANALYSIS ld.h 0x0[r6],r12
+REF ram:0004825c From: ram:0004825c To: ram:00060554 Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r10
+REF ram:00048262 From: ram:00048262 To: ram:00060556 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00048266 From: ram:00048266 To: ram:00060558 Type: READ Op: 2 ANALYSIS ld.h 0x2[r14],r14
+REF ram:0004826c From: ram:0004826c To: ram:00060556 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r10
+REF ram:0004829a From: ram:0004829a To: ram:00060554 Type: READ Op: 1 ANALYSIS ld.h 0x0[r11],r6
+REF ram:000482a4 From: ram:000482a4 To: ram:00060576 Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r14
+REF ram:000482ae From: ram:000482ae To: ram:00060576 Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r14
+REF ram:000482cc From: ram:000482cc To: ram:00060576 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r11
+REF ram:000482ea From: ram:000482ea To: ram:00060574 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r14
+REF ram:000482ea From: ram:000482ea To: ram:00060572 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r14
+REF ram:000482ea From: ram:000482ea To: ram:00060576 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r14
+REF ram:000482fe From: ram:000482fe To: ram:00060572 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r12
+REF ram:00048302 From: ram:00048302 To: ram:00060578 Type: READ Op: 2 ANALYSIS ld.h 0x2[r7],r12
+REF ram:0004830a From: ram:0004830a To: ram:00060576 Type: READ Op: 1 ANALYSIS ld.h 0x0[r15],r12
+REF ram:0004831c From: ram:0004831c To: ram:00060574 Type: READ Op: 1 ANALYSIS ld.h 0x0[r12],r12
+REF ram:00048322 From: ram:00048322 To: ram:00060572 Type: READ Op: 1 ANALYSIS ld.h 0x0[r6],r6
+REF ram:00048328 From: ram:00048328 To: ram:00060574 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r13
+REF ram:0004832e From: ram:0004832e To: ram:00060576 Type: READ Op: 2 ANALYSIS ld.h 0x2[r10],r11
+REF ram:00048338 From: ram:00048338 To: ram:00060574 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r12
+REF ram:00048360 From: ram:00048360 To: ram:00060572 Type: READ Op: 1 ANALYSIS ld.h 0x0[r9],r12
+REF ram:00048366 From: ram:00048366 To: ram:00060552 Type: READ Op: 2 ANALYSIS ld.hu 0x2d52[tp],r6
+REF ram:0004836a From: ram:0004836a To: ram:00060512 Type: READ Op: 2 ANALYSIS ld.h 0x2d12[tp],r15
+REF ram:0004836e From: ram:0004836e To: ram:00060514 Type: READ Op: 2 ANALYSIS ld.hu 0x2d14[tp],r16
+REF ram:00048372 From: ram:00048372 To: ram:00060554 Type: READ Op: 2 ANALYSIS ld.h 0x2d54[tp],r10
+REF ram:00048376 From: ram:00048376 To: ram:00060556 Type: READ Op: 2 ANALYSIS ld.h 0x2d56[tp],r14
+REF ram:00048404 From: ram:00048404 To: ram:00060468 Type: READ Op: 2 ANALYSIS ld.hu 0x2c68[tp],r8
+REF ram:00048408 From: ram:00048408 To: ram:00060466 Type: READ Op: 2 ANALYSIS ld.h 0x2c66[tp],r11
+REF ram:00048706 From: ram:00048706 To: ram:00060594 Type: READ Op: 2 ANALYSIS ld.h 0x2d94[tp],r7
+REF ram:0004870a From: ram:0004870a To: ram:00060596 Type: READ Op: 2 ANALYSIS ld.h 0x2d96[tp],r11
+REF ram:0004878a From: ram:0004878a To: ram:000604a6 Type: READ Op: 2 ANALYSIS ld.h 0x2ca6[tp],r18
+REF ram:00048790 From: ram:00048790 To: ram:000604a8 Type: READ Op: 2 ANALYSIS ld.w 0x2ca8[tp],r18
+REF ram:00048794 From: ram:00048794 To: ram:00060488 Type: READ Op: 2 ANALYSIS ld.w 0x2c88[tp],r25
+REF ram:00048798 From: ram:00048798 To: ram:00060490 Type: READ Op: 2 ANALYSIS ld.w 0x2c90[tp],r26
+REF ram:0004879e From: ram:0004879e To: ram:00060494 Type: READ Op: 2 ANALYSIS ld.w 0x2c94[tp],r18
+REF ram:000487a4 From: ram:000487a4 To: ram:00060498 Type: READ Op: 2 ANALYSIS ld.w 0x2c98[tp],r18
+REF ram:000487aa From: ram:000487aa To: ram:0006049c Type: READ Op: 2 ANALYSIS ld.w 0x2c9c[tp],r18
+REF ram:000487b0 From: ram:000487b0 To: ram:000604a0 Type: READ Op: 2 ANALYSIS ld.w 0x2ca0[tp],r18
+REF ram:000487ba From: ram:000487ba To: ram:000604b4 Type: READ Op: 2 ANALYSIS ld.h 0x2cb4[tp],r18
+REF ram:000487c0 From: ram:000487c0 To: ram:000604ac Type: READ Op: 2 ANALYSIS ld.w 0x2cac[tp],r8
+REF ram:000487ce From: ram:000487ce To: ram:000604b0 Type: READ Op: 2 ANALYSIS sld.w 0xb8[ep],r18
+REF ram:000487d4 From: ram:000487d4 To: ram:000604bc Type: READ Op: 2 ANALYSIS sld.w 0xc4[ep],r9
+REF ram:000487d6 From: ram:000487d6 To: ram:000604a4 Type: READ Op: 2 ANALYSIS sld.h 0xac[ep],r18
+REF ram:000487dc From: ram:000487dc To: ram:0006047a Type: READ Op: 2 ANALYSIS sld.h 0x82[ep],r13
+REF ram:000487de From: ram:000487de To: ram:00060480 Type: READ Op: 2 ANALYSIS sld.h 0x88[ep],r7
+REF ram:000487e4 From: ram:000487e4 To: ram:0006048c Type: READ Op: 2 ANALYSIS sld.h 0x94[ep],r20
+REF ram:00048c26 From: ram:00048c26 To: ram:00060472 Type: READ Op: 2 ANALYSIS ld.hu 0x2c72[tp],r1
+REF ram:00048c30 From: ram:00048c30 To: ram:000602c8 Type: READ Op: 1 ANALYSIS ld.h 0x0[r16],r14
+REF ram:00048c36 From: ram:00048c36 To: ram:000602c8 Type: READ Op: 1 ANALYSIS ld.h 0x0[r16],r11
+REF ram:00048c66 From: ram:00048c66 To: ram:000602c8 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r11
+REF ram:00048c84 From: ram:00048c84 To: ram:000602c6 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00048c84 From: ram:00048c84 To: ram:000602c4 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00048c84 From: ram:00048c84 To: ram:000602c8 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00048c98 From: ram:00048c98 To: ram:000602c4 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r12
+REF ram:00048c9c From: ram:00048c9c To: ram:000602ca Type: READ Op: 2 ANALYSIS ld.h 0x2[r16],r11
+REF ram:00048ca4 From: ram:00048ca4 To: ram:000602c8 Type: READ Op: 1 ANALYSIS ld.h 0x0[r14],r12
+REF ram:00048cb8 From: ram:00048cb8 To: ram:000602c6 Type: READ Op: 1 ANALYSIS ld.h 0x0[r9],r11
+REF ram:00048cbe From: ram:00048cbe To: ram:000602c4 Type: READ Op: 1 ANALYSIS ld.h 0x0[r10],r10
+REF ram:00048cc4 From: ram:00048cc4 To: ram:000602c6 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r9
+REF ram:00048cca From: ram:00048cca To: ram:000602c8 Type: READ Op: 2 ANALYSIS ld.h 0x2[r15],r16
+REF ram:00048cd4 From: ram:00048cd4 To: ram:000602c6 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r11
+REF ram:00048cfc From: ram:00048cfc To: ram:000602c4 Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r12
+REF ram:00048de6 From: ram:00048de6 To: ram:000604c2 Type: READ Op: 2 ANALYSIS ld.hu 0x2cc2[tp],r13
+REF ram:00048dea From: ram:00048dea To: ram:000604c0 Type: READ Op: 2 ANALYSIS ld.h 0x2cc0[tp],r10
+REF ram:00048dee From: ram:00048dee To: ram:000604c4 Type: READ Op: 2 ANALYSIS ld.h 0x2cc4[tp],r6
+REF ram:00048df2 From: ram:00048df2 To: ram:000604c6 Type: READ Op: 2 ANALYSIS ld.hu 0x2cc6[tp],r14
+REF ram:00048e56 From: ram:00048e56 To: ram:00060436 Type: READ Op: 2 ANALYSIS ld.h 0x2c36[tp],r10
+REF ram:00048e6c From: ram:00048e6c To: ram:00060446 Type: READ Op: 2 ANALYSIS ld.h 0x2c46[tp],r6
+REF ram:00048e72 From: ram:00048e72 To: ram:00060448 Type: READ Op: 2 ANALYSIS ld.hu 0x2c48[tp],r15
+REF ram:00048f12 From: ram:00048f12 To: ram:00060436 Type: READ Op: 2 ANALYSIS ld.h 0x2c36[tp],r9
+REF ram:00048f1a From: ram:00048f1a To: ram:000600f6 Type: READ Op: 2 ANALYSIS ld.hu 0x28f6[tp],r6
+REF ram:00048f26 From: ram:00048f26 To: ram:000600f8 Type: READ Op: 2 ANALYSIS ld.hu 0x28f8[tp],r6
+REF ram:00048f32 From: ram:00048f32 To: ram:000600fa Type: READ Op: 2 ANALYSIS ld.hu 0x28fa[tp],r6
+REF ram:00048f46 From: ram:00048f46 To: ram:000600f0 Type: READ Op: 2 ANALYSIS ld.h 0x28f0[tp],r24
+REF ram:00048f50 From: ram:00048f50 To: ram:00060120 Type: READ Op: 2 ANALYSIS ld.hu 0x2920[tp],r26
+REF ram:00048f6e From: ram:00048f6e To: ram:0006044a Type: READ Op: 2 ANALYSIS ld.hu 0x2c4a[tp],r15
+REF ram:00048f74 From: ram:00048f74 To: ram:0006044c Type: READ Op: 2 ANALYSIS ld.h 0x2c4c[tp],r7
+REF ram:00049012 From: ram:00049012 To: ram:00060164 Type: READ Op: 2 ANALYSIS ld.h 0x2964[tp],r7
+REF ram:0004901c From: ram:0004901c To: ram:00060166 Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00049036 From: ram:00049036 To: ram:00060164 Type: READ Op: 1 ANALYSIS ld.h 0x0[r16],r8
+REF ram:00049044 From: ram:00049044 To: ram:00060162 Type: READ Op: 1 ANALYSIS ld.h 0x0[r7],r13
+REF ram:0004904e From: ram:0004904e To: ram:00060160 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r8
+REF ram:00049056 From: ram:00049056 To: ram:00060168 Type: READ Op: 2 ANALYSIS ld.h 0x2[r6],r10
+REF ram:00049064 From: ram:00049064 To: ram:0006016a Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00049064 From: ram:00049064 To: ram:0006016c Type: READ Op: 2 ANALYSIS sld.h 0x2[ep],r15
+REF ram:00049086 From: ram:00049086 To: ram:00060164 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r11
+REF ram:00049086 From: ram:00049086 To: ram:00060166 Type: DATA Op: 2 ANALYSIS sld.h 0x0[ep],r11
+REF ram:000490b2 From: ram:000490b2 To: ram:00060166 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r6
+REF ram:000490ba From: ram:000490ba To: ram:00060030 Type: READ Op: 1 ANALYSIS sld.h 0x0[ep],r11
+REF ram:000490de From: ram:000490de To: ram:00060164 Type: READ Op: 1 ANALYSIS ld.h 0x0[r12],r6
+REF ram:000494f4 From: ram:000494f4 To: ram:0006012b Type: READ Op: 2 ANALYSIS ld.bu 0x292b[tp],r11
+REF ram:00049504 From: ram:00049504 To: ram:000600fc Type: READ Op: 2 ANALYSIS ld.hu 0x28fc[tp],r9
+REF ram:00049510 From: ram:00049510 To: ram:0006012c Type: READ Op: 2 ANALYSIS ld.bu 0x292c[tp],r16
+REF ram:00049514 From: ram:00049514 To: ram:0006012d Type: READ Op: 2 ANALYSIS ld.bu 0x292d[tp],r14
+REF ram:00049518 From: ram:00049518 To: ram:000600e8 Type: READ Op: 2 ANALYSIS ld.hu 0x28e8[tp],r12
+REF ram:00049530 From: ram:00049530 To: ram:000601dc Type: PARAM Op: 2 ANALYSIS movea 0x29dc,tp,r6
+REF ram:00049540 From: ram:00049540 To: ram:0006023c Type: PARAM Op: 2 ANALYSIS movea 0x2a3c,tp,r6
+REF ram:0004954e From: ram:0004954e To: ram:000600ec Type: READ Op: 2 ANALYSIS ld.hu 0x28ec[tp],r10
+REF ram:00049556 From: ram:00049556 To: ram:0006021c Type: PARAM Op: 2 ANALYSIS movea 0x2a1c,tp,r6
+REF ram:00049566 From: ram:00049566 To: ram:0006027c Type: PARAM Op: 2 ANALYSIS movea 0x2a7c,tp,r6
+REF ram:00049572 From: ram:00049572 To: ram:000600ea Type: READ Op: 2 ANALYSIS ld.hu 0x28ea[tp],r6
+REF ram:0004957a From: ram:0004957a To: ram:0006025c Type: PARAM Op: 2 ANALYSIS movea 0x2a5c,tp,r6
+REF ram:00049586 From: ram:00049586 To: ram:0006027c Type: PARAM Op: 2 ANALYSIS movea 0x2a7c,tp,r6
+REF ram:00049594 From: ram:00049594 To: ram:000601fc Type: PARAM Op: 2 ANALYSIS movea 0x29fc,tp,r6
+REF ram:000495a2 From: ram:000495a2 To: ram:0006021c Type: PARAM Op: 2 ANALYSIS movea 0x2a1c,tp,r6
+REF ram:000495ac From: ram:000495ac To: ram:000600ea Type: READ Op: 2 ANALYSIS ld.hu 0x28ea[tp],r16
+REF ram:000495b0 From: ram:000495b0 To: ram:00060082 Type: READ Op: 2 ANALYSIS ld.hu 0x2882[tp],r8
+REF ram:000495b6 From: ram:000495b6 To: ram:0006023c Type: PARAM Op: 2 ANALYSIS movea 0x2a3c,tp,r6
+REF ram:000495c2 From: ram:000495c2 To: ram:0006025c Type: PARAM Op: 2 ANALYSIS movea 0x2a5c,tp,r6
+REF ram:000495d0 From: ram:000495d0 To: ram:000601dc Type: PARAM Op: 2 ANALYSIS movea 0x29dc,tp,r6
+REF ram:000495de From: ram:000495de To: ram:000601fc Type: PARAM Op: 2 ANALYSIS movea 0x29fc,tp,r6
+REF ram:000495e8 From: ram:000495e8 To: ram:000600e8 Type: READ Op: 2 ANALYSIS ld.hu 0x28e8[tp],r16
+REF ram:000495ec From: ram:000495ec To: ram:00060080 Type: READ Op: 2 ANALYSIS ld.hu 0x2880[tp],r8
+CONTEXT ram:000100c0 tp=382976
+CONTEXT ram:00020bf4 tp=382976
+CONTEXT ram:000463e2 tp=382976
+CONTEXT ram:000479d4 tp=382976
+CONTEXT ram:000479de tp=382976
+CONTEXT ram:0004805a tp=382976
+CONTEXT ram:0001dc7c tp=382976
+BOUNDED_DECODE ram:0000912a end=ram:00009230
+ram:0000912a prepare { r26,r27,r28,r29,lp },0x0
+ram:0000912e jarl 0x000090fc,lp
+ram:00009132 cmp r0,r10
+ram:00009134 mov r10,r28
+ram:00009136 be 0x0000922c
+ram:00009138 movea 0x80,r0,r1
+ram:0000913c movhi -0x7c,r0,r14
+ram:00009140 st.b r1,-0x6000[r14]
+ram:00009144 jarl 0x0000e28a,lp
+ram:00009148 jarl 0x0000e20e,lp
+ram:0000914c mov 0x2000,r29
+ram:00009152 ld.w 0x0[r29],r27
+ram:00009156 mov 0x915e,lp
+ram:0000915c jmp [r27]
+ram:0000915e cmp r0,r10
+ram:00009160 mov r10,r9
+ram:00009162 bne 0x0000917a
+ram:00009164 ld.w 0x4[r29],r27
+ram:00009168 mov 0x9178,lp
+ram:0000916e movea 0x1000,r0,r7
+ram:00009172 movhi 0x6,r0,r6
+ram:00009176 jmp [r27]
+ram:00009178 mov r10,r9
+ram:0000917a mov 0x0,r1
+ram:0000917c mov 0xfedf6000,r27
+ram:00009182 mov r27,ep
+ram:00009184 mov -0x1,r11
+ram:00009186 sst.w r11,0x0[ep]
+ram:00009188 add 0x4,ep
+ram:0000918a add 0x1,r1
+ram:0000918c addi -0x1b0,r1,r0
+ram:00009190 cmovc 0x0,r1,r1
+ram:00009194 cmovnc -0x1,r28,r11
+ram:00009198 cmovc r27,ep,ep
+ram:0000919c bnc 0x00009184
+ram:0000919e ld.w 0x0[r11],r10
+ram:000091a2 add 0x4,r11
+ram:000091a4 add 0x1,r1
+ram:000091a6 sst.w r10,0x0[ep]
+ram:000091a8 add 0x4,ep
+ram:000091aa addi -0x1ac,r1,r0
+ram:000091ae bnc 0x0000919e
+ram:000091b0 cmp r0,r9
+ram:000091b2 bne 0x000091d0
+ram:000091b4 ld.w 0x8[r29],r26
+ram:000091b8 mov 0x91ce,lp
+ram:000091be movea 0x6b0,r0,r8
+ram:000091c2 movhi 0x6,r0,r7
+ram:000091c6 mov 0xfedf6000,r6
+ram:000091cc jmp [r26]
+ram:000091ce mov r10,r9
+ram:000091d0 mov 0x0,r1
+ram:000091d2 addi 0x6b0,r28,ep
+ram:000091d6 mov r27,r11
+ram:000091d8 sld.w 0x0[ep],r10
+ram:000091da add 0x4,ep
+ram:000091dc add 0x1,r1
+ram:000091de st.w r10,0x0[r11]
+ram:000091e2 add 0x4,r11
+ram:000091e4 cmp 0x4,r1
+ram:000091e6 bc 0x000091d8
+ram:000091e8 cmp r0,r9
+ram:000091ea bne 0x00009208
+ram:000091ec ld.w 0x8[r29],r28
+ram:000091f0 mov 0x9208,lp
+ram:000091f6 movea 0x10,r0,r8
+ram:000091fa mov 0x60ff0,r7
+ram:00009200 mov 0xfedf6000,r6
+ram:00009206 jmp [r28]
+ram:00009208 ld.w 0x10[r29],r28
+ram:0000920c mov 0x921c,lp
+ram:00009212 movea 0x1000,r0,r7
+ram:00009216 movhi 0x6,r0,r6
+ram:0000921a jmp [r28]
+ram:0000921c ld.w 0xc[r29],r29
+ram:00009220 mov 0x9228,lp
+ram:00009226 jmp [r29]
+ram:00009228 jarl 0x0000b2e2,lp
+ram:0000922c dispose 0x0,{ r26,r27,r28,r29,lp },[lp]
+BOUNDED_DECODE ram:00048040 end=ram:00048088
+ram:00048040 mov r1,r16
+ram:00048042 br 0x00048050
+ram:00048044 addi -0x7fff,r11,r0
+ram:00048048 movea 0x7fff,r0,r12
+ram:0004804c cmovlt r11,r12,r12
+ram:00048050 movea -0x7098,gp,ep
+ram:00048054 sld.hu 0x2[ep],r9
+ram:00048056 sld.hu 0x4[ep],r6
+ram:00048058 sld.h 0x6[ep],r14
+ram:0004805a movea 0x2bf8,tp,ep
+ram:0004805e sld.h 0x0[ep],r11
+ram:00048060 sld.hu 0xe[ep],r13
+ram:00048062 st.h r12,0x16[sp]
+ram:00048066 mov r29,r15
+ram:00048068 sld.hu 0x10[ep],r7
+ram:0004806a mov r11,r8
+ram:0004806c subr r0,r8
+ram:0004806e cmp r11,r1
+ram:00048070 sxh r8
+ram:00048072 bgt 0x0004807a
+ram:00048074 cmp r8,r1
+ram:00048076 bge 0x00048084
+ram:00048078 mov r8,r11
+ram:0004807a mov r11,r1
+ram:0004807c movhi -0x120,r0,r18
+ram:00048080 set1 0x3,-0x60b6[r18]
+ram:00048084 mulh r14,r1
+ram:00048086 sar r25,r1,r16

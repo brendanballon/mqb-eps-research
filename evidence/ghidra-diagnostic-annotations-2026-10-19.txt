@@ -1,0 +1,15 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+Manual names describe verified static roles, not observed execution.
+TABLE DiagnosticAccessConstantRow[5]
+SERVICE DiagnosticServiceDescriptor 
+From: ram:0002ff22 To: ram:fedfaf85 Type: WRITE Op: 2 ANALYSIS instruction=st.b r15,-0x607b[gp] function=ram:0002fd96
+From: ram:0002ff46 To: ram:fedfaf85 Type: WRITE Op: 2 ANALYSIS instruction=st.b r0,-0x607b[gp] function=ram:0002fd96
+From: ram:0003014a To: ram:fedfaf85 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x607b[gp],r8 function=ram:0003011e
+From: ram:00030110 To: ram:fedfaf85 Type: WRITE Op: 2 ANALYSIS instruction=st.b r0,-0x607b[gp] function=ram:00030108
+From: ram:0005036e To: ram:fedfaf85 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x607b[gp],r9 function=ram:00050334
+From: ram:0004d638 To: ram:fedfaf85 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x607b[gp],r7 function=ram:0004d366
+From: ram:0004d3d4 To: ram:fedfaf85 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x607b[gp],r13 function=ram:0004d366
+From: ram:0004c65e To: ram:fedfaf85 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x607b[gp],r13 function=ram:0004c648
+From: ram:0004fe78 To: ram:fedfaf85 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x607b[gp],r6 function=ram:0004fde4
+From: ram:00050576 To: ram:fedfaf85 Type: READ Op: 2 ANALYSIS instruction=ld.bu -0x607b[gp],r9 function=ram:000504e2
+MASK_OWNER_FUNCTIONS [ram:0002fd96, ram:00030108, ram:0003011e, ram:0004c648, ram:0004d366, ram:0004fde4, ram:00050334, ram:000504e2]

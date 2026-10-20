@@ -1,0 +1,124 @@
+{
+  "checked": "2026-10-19",
+  "ghidra": {
+    "status": "available",
+    "code": null,
+    "reason": null,
+    "diagnostics": {
+      "install_dir": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC",
+      "analyze_headless_path": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC/support/analyzeHeadless",
+      "native_decompiler_path": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/os/mac_arm_64/decompile",
+      "application_properties_path": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/application.properties",
+      "provider_version": "12.1.4",
+      "java_command": "/Users/brendanballon/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home/bin/java",
+      "java_home": "/Users/brendanballon/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home",
+      "java_version": "25.0.2",
+      "java_vm_name": "OpenJDK 64-Bit Server VM",
+      "java_os_arch": "aarch64",
+      "java_os_name": "Mac OS X",
+      "platform": "darwin",
+      "architecture": "arm64",
+      "checks": [
+        {
+          "name": "configuration",
+          "ok": true,
+          "code": null,
+          "detail": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC"
+        },
+        {
+          "name": "platform",
+          "ok": true,
+          "code": null,
+          "detail": "darwin"
+        },
+        {
+          "name": "architecture",
+          "ok": true,
+          "code": null,
+          "detail": "arm64"
+        },
+        {
+          "name": "installation",
+          "ok": true,
+          "code": null,
+          "detail": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/application.properties"
+        },
+        {
+          "name": "version",
+          "ok": true,
+          "code": null,
+          "detail": "12.1.4"
+        },
+        {
+          "name": "headless",
+          "ok": true,
+          "code": null,
+          "detail": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC/support/analyzeHeadless"
+        },
+        {
+          "name": "native_decompiler",
+          "ok": true,
+          "code": null,
+          "detail": "/Users/brendanballon/Projects/mqb-steering-rack-re/analysis/tools/ghidra_12.1.4_PUBLIC/Ghidra/Features/Decompiler/os/mac_arm_64/decompile reports mach-o arm64, which matches darwin/arm64"
+        },
+        {
+          "name": "java",
+          "ok": true,
+          "code": null,
+          "detail": "25.0.2; 64-bit; JDK; /Users/brendanballon/Library/Java/JavaVirtualMachines/openjdk-25.0.2/Contents/Home; accepted a 64-bit full JDK 21 or newer"
+        }
+      ]
+    }
+  },
+  "identity": {
+    "package": {
+      "name": "rea-agents",
+      "version": "6.7.0",
+      "root_path": "/Users/brendanballon/.npm/_npx/a1722018f28f9df2/node_modules/rea-agents",
+      "build_commit": null
+    },
+    "server": {
+      "name": "rea",
+      "version": "6.7.0",
+      "started_at": "2026-10-19T16:51:31.067Z",
+      "command_path": "/Users/brendanballon/.npm/_npx/a1722018f28f9df2/node_modules/.bin/rea"
+    },
+    "sdk": {
+      "server": "2.3.1",
+      "client_test": "2.3.1",
+      "core": "2.3.1"
+    },
+    "negotiated_protocol_version": "2025-06-18",
+    "client": {
+      "name": "codex-mcp-client",
+      "version": "0.163.0-alpha.10.2"
+    },
+    "skill": {
+      "name": "reverse-engineer-anything",
+      "expected_version": "42"
+    },
+    "catalog": {
+      "counts": {
+        "cli_commands": 153,
+        "mcp_tools": 207,
+        "mcp_prompts": 6
+      },
+      "digests": {
+        "tools_sha256": "af39310c9591bb981893ec0d2188b1bcf6e9cc8ba3ac513d5bbefc8ddcb85639",
+        "prompts_sha256": "7152916ab48bd2a9677a5ad9cdbde0a51dc53c113934952ad096e93f5f18aa7e",
+        "combined_sha256": "96d8f6e6ea1b1ba13557216624a3461c738729d53c79b4b0100d1f3a3a32441c"
+      }
+    },
+    "protocol_features": {
+      "progress": true,
+      "cancellation": true,
+      "elicitation": false
+    },
+    "alignment": {
+      "state": "aligned",
+      "reasons": [],
+      "remediation": null
+    }
+  },
+  "open": false
+}

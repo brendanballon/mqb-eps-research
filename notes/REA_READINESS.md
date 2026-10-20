@@ -69,3 +69,19 @@ Outstanding firmware route: confirm CPU and memory mapping, then establish suppo
 - The existing MCP server retains its launch environment. Restart/reconnect Codex's REA server before expecting the in-chat MCP provider to see Ghidra. The project CLI launcher works immediately.
 
 Use `scripts/rea-ghidra doctor --provider ghidra --json` to recheck the engine. The project-local Ghidra software is ignored by Git and must remain at the configured path. Its archive and build log are also under `analysis/tools/`.
+
+## Restart follow-up: live provider and direct firmware probe
+
+After the user's Codex restart, `binary_session(expected_package_version="6.7.0")` reports aligned REA and an available Ghidra 12.1.4 provider, with all eight checks passing. The restart gate is resolved. Selected live response retained in `evidence/rea-restart-verification-2026-10-19.json`.
+
+V850/TriCore raw admission remains absent in the actual connected schema and installed 6.7.0 source. We did not change REA or pretend these bytes were ARM. A direct Ghidra BinaryLoader workflow was tested instead: bounded competing V850/TriCore decoding, followed by successful native decompilation of one manually seeded V850 candidate function. It uses base zero as offset coordinates only, with automatic analysis disabled. This resolves engine feasibility while preserving the CPU/mapping gate for substantive analysis.
+
+See [OFFLINE_ANALYSIS.md](OFFLINE_ANALYSIS.md) for exact commands, hashes, competing results, and limits. Direct Ghidra exports are not REA Evidence records. REA has no native target open; the private direct Ghidra projects are saved under `analysis/1061/ghidra/`.
+
+The same-session continuation established a corroborated static component map and successfully imported H2 + H1 directly with BinaryLoader at 0x2000. H7 is an exact overlapping H2 suffix. A mapped H1 function decompiles and resolves its expected data reference. The saved direct project and mapping provenance are documented in OFFLINE_ANALYSIS.md and F020. REA raw admission remains unchanged; full hardware mapping and executable/data boundaries are not established.
+
+## Current consolidated route
+
+The firmware preparation route is now reproduced end to end by `scripts/run_1061_analysis.sh`: exact FRF lineage, supported V850E2M/PJ4 working profile, startup register context, data partition and typed service27 analysis in a saved direct Ghidra project. REA6.7.0 V850 raw admission remains unchanged. That API restriction is handled by the documented direct route and is not a reason to relabel the image or repeat setup.
+
+The separate public ALC host ARM64 ELF was admitted through REA's ordinary ELF route, statically inspected, exported to `evidence/public-alc-rea-bundle-2026-10-19.json`, and closed with a snapshot under analysis/public-alc. No native target remains open. Its supported ARM64 route does not imply support for the V850 update. See OFFLINE_ANALYSIS.md and ACTION_ITEMS.md for current completion/dependency status. Earlier sections above preserve historical setup states.

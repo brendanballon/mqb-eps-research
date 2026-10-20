@@ -1,0 +1,361 @@
+input_sha256=a785ba137aa8b6e8a5d0d54cbb3f26108a273f23acdf6ca4f808b1e46186ff9d
+SELECT ram:000090be
+REF From: ram:00009100 To: ram:000090be Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000090be,lp
+FUNCTION ram:000090be body=[[ram:000090be, ram:000090df]]
+ram:000090be prepare { r29,lp },0x0
+ram:000090c2 mov 0x0,r29
+ram:000090c4 movea 0xa8,r0,r6
+ram:000090c8 jarl 0x0000baa0,lp
+ram:000090cc cmp r0,r10
+ram:000090ce mov r10,ep
+ram:000090d0 be 0x000090da
+ram:000090d2 sld.bu 0x7[ep],r29
+ram:000090d4 cmp 0x7,r29
+ram:000090d6 cmovnc 0x0,r29,r29
+ram:000090da mov r29,r10
+ram:000090dc dispose 0x0,{ r29,lp },[lp]
+completed=true error=
+
+char FUN_ram_000090be(void)
+
+{
+  int iVar1;
+  char cVar2;
+  
+  cVar2 = '\0';
+  iVar1 = FUN_ram_0000baa0(0xa8);
+  if (iVar1 != 0) {
+    cVar2 = *(byte *)(iVar1 + 7) * (*(byte *)(iVar1 + 7) < 7);
+  }
+  return cVar2;
+}
+
+
+SELECT ram:000090fc
+REF From: ram:0000912e To: ram:000090fc Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x000090fc,lp
+FUNCTION ram:000090fc body=[[ram:000090fc, ram:00009129]]
+ram:000090fc prepare { lp },0x0
+ram:00009100 jarl 0x000090be,lp
+ram:00009104 mov r10,r1
+ram:00009106 cmp r0,r1
+ram:00009108 mov 0x61000,r10
+ram:0000910e be 0x0000911c
+ram:00009110 mulhi 0x6c0,r1,r10
+ram:00009114 mov 0x61000,r11
+ram:0000911a add r11,r10
+ram:0000911c ld.bu 0x6b3[r10],r11
+ram:00009120 cmp r1,r11
+ram:00009122 cmovne 0x0,r10,r10
+ram:00009126 dispose 0x0,{ lp },[lp]
+completed=true error=
+
+int FUN_ram_000090fc(void)
+
+{
+  uint uVar1;
+  int iVar2;
+  
+  uVar1 = FUN_ram_000090be();
+  iVar2 = 0x61000;
+  if (uVar1 != 0) {
+    iVar2 = uVar1 * 0x6c0 + 0x61000;
+  }
+  return iVar2 * (uint)(*(byte *)(iVar2 + 0x6b3) == uVar1);
+}
+
+
+SELECT ram:0000912a
+REF From: ram:00009484 To: ram:0000912a Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0000912a,lp
+FUNCTION ram:0000912a body=[[ram:0000912a, ram:0000915d] [ram:0000922c, ram:0000922f]]
+ram:0000912a prepare { r26,r27,r28,r29,lp },0x0
+ram:0000912e jarl 0x000090fc,lp
+ram:00009132 cmp r0,r10
+ram:00009134 mov r10,r28
+ram:00009136 be 0x0000922c
+ram:00009138 movea 0x80,r0,r1
+ram:0000913c movhi -0x7c,r0,r14
+ram:00009140 st.b r1,-0x6000[r14]
+ram:00009144 jarl 0x0000e28a,lp
+ram:00009148 jarl 0x0000e20e,lp
+ram:0000914c mov 0x2000,r29
+ram:00009152 ld.w 0x0[r29],r27
+ram:00009156 mov 0x915e,lp
+ram:0000915c jmp [r27]
+ram:0000922c dispose 0x0,{ r26,r27,r28,r29,lp },[lp]
+completed=true error=
+
+void FUN_ram_0000912a(void)
+
+{
+  int iVar1;
+  
+  iVar1 = FUN_ram_000090fc();
+  if (iVar1 != 0) {
+    DAT_ram_ff83a000 = 0x80;
+    FUN_ram_0000e28a();
+    FUN_ram_0000e20e();
+    (*DAT_ram_00002000)();
+    return;
+  }
+  return;
+}
+
+
+SELECT ram:00009462
+REF From: ram:00009580 To: ram:00009462 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jr 0x00009462
+FUNCTION ram:00009462 body=[[ram:00009462, ram:000094e9] [ram:000094ec, ram:0000951b]]
+ram:00009462 prepare { lp },0x0
+ram:00009466 mov 0xfedfa000,ep
+ram:0000946c mov 0xfedfffff,r1
+ram:00009472 sst.w r0,0x0[ep]
+ram:00009474 add 0x4,ep
+ram:00009476 cmp r1,ep
+ram:00009478 bnh 0x00009472
+ram:0000947a jarl 0x000090e0,lp
+ram:0000947e addi -0xa2,r10,r0
+ram:00009482 bne 0x00009488
+ram:00009484 jarl 0x0000912a,lp
+ram:00009488 jarl 0x00009306,lp
+ram:0000948c jarl 0x0000dcac,lp
+ram:00009490 addi -0x33,r10,r0
+ram:00009494 bne 0x000094d2
+ram:00009496 jarl 0x0000e036,lp
+ram:0000949a cmp 0x1,r10
+ram:0000949c be 0x000094ae
+ram:0000949e jarl 0x00009064,lp
+ram:000094a2 cmp r0,r10
+ram:000094a4 be 0x000094ae
+ram:000094a6 jarl 0x00009096,lp
+ram:000094aa cmp r0,r10
+ram:000094ac bne 0x000094c4
+ram:000094ae movea 0x100,r0,r6
+ram:000094b2 jarl 0x0000de44,lp
+ram:000094b6 mov 0x0,r6
+ram:000094b8 jarl 0x0000df2c,lp
+ram:000094bc di
+ram:000094c0 jarl 0x0000b818,lp
+ram:000094c4 di
+ram:000094c8 movhi 0x1,r0,r11
+ram:000094cc movea 0x0,r11,r11
+ram:000094d0 jmp [r11]
+ram:000094d2 jarl 0x00009064,lp
+ram:000094d6 addi -0x35,r10,r0
+ram:000094da bne 0x000094ec
+ram:000094dc di
+ram:000094e0 movhi 0x1,r0,r11
+ram:000094e4 movea 0x0,r11,r11
+ram:000094e8 jmp [r11]
+ram:000094ec mov 0xeb04,r1
+ram:000094f2 mov 0xecf4,r10
+ram:000094f8 cmp r10,r1
+ram:000094fa mov 0xfedfb490,ep
+ram:00009500 bnc 0x00009510
+ram:00009502 ld.w 0x0[r1],r11
+ram:00009506 add 0x4,r1
+ram:00009508 sst.w r11,0x0[ep]
+ram:0000950a add 0x4,ep
+ram:0000950c cmp r10,r1
+ram:0000950e bc 0x00009502
+ram:00009510 di
+ram:00009514 jarl 0x0000b818,lp
+ram:00009518 dispose 0x0,{ lp },[lp]
+completed=true error=
+
+/* WARNING: This function may have set the stack pointer */
+
+void FUN_ram_00009462(void)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  undefined4 *puVar3;
+  undefined4 *puVar4;
+  
+  puVar3 = &DAT_ram_fedfa000;
+  do {
+    *puVar3 = 0;
+    puVar3 = puVar3 + 1;
+  } while (puVar3 < (undefined4 *)0xfee00000);
+  iVar1 = FUN_ram_000090e0();
+  if (iVar1 == 0xa2) {
+    FUN_ram_0000912a();
+  }
+  FUN_ram_00009306();
+  iVar1 = FUN_ram_0000dcac();
+  if (iVar1 == 0x33) {
+    iVar1 = FUN_ram_0000e036();
+    if (((iVar1 == 1) || (iVar1 = FUN_ram_00009064(), iVar1 == 0)) ||
+       (iVar1 = FUN_ram_00009096(), iVar1 == 0)) {
+      FUN_ram_0000de44(0x100);
+      FUN_ram_0000df2c(0);
+      __disable_irq();
+      FUN_ram_0000b818();
+    }
+    __disable_irq();
+  }
+  else {
+    iVar1 = FUN_ram_00009064();
+    if (iVar1 != 0x35) {
+      puVar3 = &DAT_ram_0000eb04;
+      puVar4 = &DAT_ram_fedfb490;
+      do {
+        uVar2 = *puVar3;
+        puVar3 = puVar3 + 1;
+        *puVar4 = uVar2;
+        puVar4 = puVar4 + 1;
+      } while (puVar3 < &UNK_ram_0000ecf4);
+      __disable_irq();
+      FUN_ram_0000b818();
+      return;
+    }
+    __disable_irq();
+  }
+  __disable_irq();
+  startup_initialize_memory();
+  FUN_ram_000141b6();
+  return;
+}
+
+
+SELECT ram:0001659c
+REF From: ram:00053632 To: ram:0001659c Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001659c,lp
+FUNCTION ram:0001659c body=[[ram:0001659c, ram:000165e9]]
+ram:0001659c prepare { r28,lp },0x0
+ram:000165a0 mov 0xfedfb1c4,r28
+ram:000165a6 st.b r0,-0x6091[gp]
+ram:000165ac mov 0x0,r6
+ram:000165ae mov 0x2,r7
+ram:000165b0 jarl 0x00031c4a,lp
+ram:000165b4 movhi 0x6,r0,r12
+ram:000165b8 ld.bu -0x100c[r12],r12
+ram:000165bc st.b r0,0x1[r28]
+ram:000165c0 st.b r0,-0x656a[gp]
+ram:000165c6 cmp r0,r12
+ram:000165c8 st.b r0,0x0[r28]
+ram:000165cc be 0x000165d2
+ram:000165ce set1 0x0,-0x4[r28]
+ram:000165d2 movhi 0x6,r0,r10
+ram:000165d6 ld.bu -0xc[r10],r10
+ram:000165da cmp r0,r10
+ram:000165dc be 0x000165e2
+ram:000165de set1 0x1,-0x4[r28]
+ram:000165e2 st.h r0,-0x2[r28]
+ram:000165e6 dispose 0x0,{ r28,lp },[lp]
+completed=true error=
+
+void FUN_ram_0001659c(void)
+
+{
+  DAT_ram_fedfaf6f = 0;
+  FUN_ram_00031c4a(0,2);
+  DAT_ram_fedfb1c5 = 0;
+  DAT_ram_fedfaa96 = 0;
+  DAT_ram_fedfb1c4 = 0;
+  if (BYTE_ARRAY_ram_00058308[0x6cec] != 0) {
+    DAT_ram_fedfb1c0 = DAT_ram_fedfb1c0 | 1;
+  }
+  if (BYTE_ARRAY_ram_00058308[0x7cec] != 0) {
+    DAT_ram_fedfb1c0 = DAT_ram_fedfb1c0 | 2;
+  }
+  DAT_ram_fedfb1c2 = 0;
+  return;
+}
+
+
+SELECT ram:00016760
+REF From: ram:0003225c To: ram:00016760 Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x00016760,lp
+FUNCTION ram:00016760 body=[[ram:00016760, ram:0001679b]]
+ram:00016760 prepare { r26,lp },0x0
+ram:00016764 andi 0xff,r7,r26
+ram:00016768 mov 0x0,r6
+ram:0001676a mov 0x0,r7
+ram:0001676c jarl 0x000165fa,lp
+ram:00016770 st.b r10,-0x6090[gp]
+ram:00016776 mov r26,r14
+ram:00016778 sar 0x4,r14
+ram:0001677a movhi -0x120,r0,r17
+ram:0001677e st.b r14,-0x4e3c[r17]
+ram:00016782 andi 0xf0,r26,r7
+ram:00016786 mov 0x3,r8
+ram:00016788 jarl 0x00016602,lp
+ram:0001678c movea 0x2000,r0,r16
+ram:00016790 st.w r16,-0x6594[gp]
+ram:00016796 mov 0x2,r10
+ram:00016798 dispose 0x0,{ r26,lp },[lp]
+completed=true error=
+
+undefined4 FUN_ram_00016760(undefined4 param_1,uint param_2)
+
+{
+  DAT_ram_fedfaf70 = FUN_ram_000165fa(0,0);
+  DAT_ram_fedfb1c4 = (undefined1)((int)(param_2 & 0xff) >> 4);
+  FUN_ram_00016602();
+  DAT_ram_fedfaa6c._0_2_ = 0x2000;
+  return 2;
+}
+
+
+SELECT ram:0001679c
+REF From: ram:00016c64 To: ram:0001679c Type: UNCONDITIONAL_CALL Op: 0 DEFAULT instruction=jarl 0x0001679c,lp
+FUNCTION ram:0001679c body=[[ram:0001679c, ram:00016813]]
+ram:0001679c prepare { r28,lp },0x1
+ram:000167a0 mov 0xfedfb1c4,r28
+ram:000167a6 ld.w -0x6594[gp],r15
+ram:000167ac cmp r0,r15
+ram:000167ae be 0x00016810
+ram:000167b0 movea 0x2000,r0,r6
+ram:000167b4 sub r15,r6
+ram:000167b6 di
+ram:000167ba addi -0x100,r15,r15
+ram:000167be st.w r15,-0x6594[gp]
+ram:000167c4 movea 0x100,r0,r7
+ram:000167c8 jarl 0x0001649e,lp
+ram:000167cc ei
+ram:000167d0 ld.w -0x6594[gp],r9
+ram:000167d6 cmp r0,r9
+ram:000167d8 bne 0x00016810
+ram:000167da ld.bu 0x0[r28],r7
+ram:000167de ld.bu -0x6090[gp],r6
+ram:000167e4 mov 0x3,r8
+ram:000167e6 st.b r7,0x1[r28]
+ram:000167ea shl 0x4,r7
+ram:000167ec or r6,r7
+ram:000167ee zxb r7
+ram:000167f0 mov 0x0,r6
+ram:000167f2 jarl 0x00016602,lp
+ram:000167f6 ld.bu 0x0[r28],r16
+ram:000167fa mov sp,r6
+ram:000167fc st.b r16,0x1[r28]
+ram:00016800 jarl 0x0003274c,lp
+ram:00016804 ld.w 0x0[sp],ep
+ram:00016808 mov 0x1,r14
+ram:0001680a sst.b r14,0x8[ep]
+ram:0001680c jarl 0x00031778,lp
+ram:00016810 dispose 0x1,{ r28,lp },[lp]
+completed=true error=
+
+void FUN_ram_0001679c(void)
+
+{
+  int iVar1;
+  int local_c;
+  
+  if (DAT_ram_fedfaa6c != 0) {
+    iVar1 = 0x2000 - DAT_ram_fedfaa6c;
+    __disable_irq();
+    DAT_ram_fedfaa6c = CONCAT22(DAT_ram_fedfaa6c._2_2_,(short)DAT_ram_fedfaa6c + -0x100);
+    FUN_ram_0001649e(iVar1,0x100);
+    __enable_irq();
+    if (DAT_ram_fedfaa6c == 0) {
+      DAT_ram_fedfb1c5 = DAT_ram_fedfb1c4;
+      FUN_ram_00016602(0,DAT_ram_fedfb1c4 << 4 | DAT_ram_fedfaf70,3);
+      DAT_ram_fedfb1c5 = DAT_ram_fedfb1c4;
+      FUN_ram_0003274c(&local_c);
+      *(undefined1 *)(local_c + 8) = 1;
+      FUN_ram_00031778();
+    }
+  }
+  return;
+}
+
+

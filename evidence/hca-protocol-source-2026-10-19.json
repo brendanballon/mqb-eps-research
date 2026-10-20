@@ -1,0 +1,105 @@
+{
+  "repository": "https://github.com/commaai/opendbc",
+  "commit": "48c7f06c6f27c41e7169242acb03ef9775658deb",
+  "path": "opendbc/dbc/vw_mqb.dbc",
+  "url": "https://github.com/commaai/opendbc/blob/48c7f06c6f27c41e7169242acb03ef9775658deb/opendbc/dbc/vw_mqb.dbc",
+  "sha256": "863f8e4b1bd26b4006f43f186e42f398bc7537fbfadf0b55d0edbe5ab50c2f67",
+  "excerpts": [
+    {
+      "line": 1294,
+      "text": "BO_ 294 HCA_01: 8 Frontsensorik"
+    },
+    {
+      "line": 1295,
+      "text": " SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] \"\" Vector__XXX"
+    },
+    {
+      "line": 1296,
+      "text": " SG_ COUNTER : 8|4@1+ (1,0) [0|15] \"\" Vector__XXX"
+    },
+    {
+      "line": 1297,
+      "text": " SG_ HCA_01_Vib_Freq : 12|4@1+ (1,15) [15|30] \"Unit_Hertz\" Vector__XXX"
+    },
+    {
+      "line": 1298,
+      "text": " SG_ HCA_01_LM_Offset : 16|9@1+ (1,0) [0|511] \"Unit_centiNewtoMeter\" Vector__XXX"
+    },
+    {
+      "line": 1299,
+      "text": " SG_ EA_ACC_Sollstatus : 25|2@1+ (1,0) [0|3] \"\"  Frontradar"
+    },
+    {
+      "line": 1300,
+      "text": " SG_ EA_Ruckprofil : 27|3@1+ (1,0) [0|7] \"\" Vector__XXX"
+    },
+    {
+      "line": 1301,
+      "text": " SG_ HCA_01_Sendestatus : 30|1@1+ (1,0) [0|1] \"\" Vector__XXX"
+    },
+    {
+      "line": 1302,
+      "text": " SG_ HCA_01_LM_OffSign : 31|1@1+ (1,0) [0|1] \"\" Vector__XXX"
+    },
+    {
+      "line": 1303,
+      "text": " SG_ HCA_01_Status_HCA : 32|4@1+ (1,0) [0|15] \"\" Vector__XXX"
+    },
+    {
+      "line": 1304,
+      "text": " SG_ HCA_01_Vib_Amp : 36|4@1+ (0.2,0) [0|3] \"Unit_NewtoMeter\" Vector__XXX"
+    },
+    {
+      "line": 1305,
+      "text": " SG_ EA_Ruckfreigabe : 40|1@1+ (1,0) [0|1] \"\" Vector__XXX"
+    },
+    {
+      "line": 1306,
+      "text": " SG_ EA_ACC_Wunschgeschwindigkeit : 41|10@1+ (0.32,0) [0|327.04] \"Unit_KiloMeterPerHour\"  Frontradar"
+    },
+    {
+      "line": 1621,
+      "text": "CM_ SG_ 294 HCA_01_LM_Offset \"Von HCA angefordertes Lenkmoment (Betrag)\";"
+    },
+    {
+      "line": 1622,
+      "text": "CM_ SG_ 294 EA_ACC_Sollstatus \"Status-Anforderung ACC von Emergency Alert. Statuswechsel bei Flanke. Solange Wert=1, wird EA_ACC_Wunschgeschwindigkeit \u00fcbernommen. Wert=2 f\u00fchrt zu Zustand \u00bfACC_GRA_passiv\u00bf\";"
+    },
+    {
+      "line": 1623,
+      "text": "CM_ SG_ 294 EA_Ruckprofil \"Emergency Alert Anforderung an ESP, welcher Ruck verwendet werden soll. Eine Umsetzung der Ruckanforderung im ESP erfolgt nur mit gesetztem Bit 'EA_Ruckfreigabe'.\";"
+    },
+    {
+      "line": 1624,
+      "text": "CM_ SG_ 294 HCA_01_Sendestatus \"Gibt den Sendestatus der HCA_01 an (notwendig f\u00fcr IL-Unterst\u00fctzung)\";"
+    },
+    {
+      "line": 1625,
+      "text": "CM_ SG_ 294 HCA_01_LM_OffSign \"Vorzeichen des HCA-Lenkmoments\";"
+    },
+    {
+      "line": 1626,
+      "text": "CM_ SG_ 294 HCA_01_Status_HCA \"Statusinformation vom HCA und Manoevrierassistent f\u00fcr Handshakemechanismus mit der Lenkung\";"
+    },
+    {
+      "line": 1627,
+      "text": "CM_ SG_ 294 HCA_01_Vib_Amp \"Momentenamplitude der Lenkradvibration\";"
+    },
+    {
+      "line": 1628,
+      "text": "CM_ SG_ 294 EA_Ruckfreigabe \"Emergency Alert Freigabit f\u00fcr die Warnruck-Anforderung an das ESP\";"
+    },
+    {
+      "line": 1695,
+      "text": "VAL_ 294 HCA_01_LM_OffSign 0 \"positives_Vorzeichen\" 1 \"negatives_Vorzeichen\" ;"
+    },
+    {
+      "line": 1696,
+      "text": "VAL_ 294 HCA_01_Status_HCA 0 \"deaktiviert\" 1 \"reserviert\" 2 \"reserviert\" 3 \"funktionsbereit\" 4 \"reserviert\" 5 \"HCA_Momenteneingriff_1\" 6 \"MA_Aktiv\" 7 \"HCA_Momenteneingriff_2\" 8 \"reserviert\" 9 \"reserviert\" 10 \"reserviert\" 11 \"reserviert\" 12 \"reserviert\" 13 \"reserviert\" 14 \"reserviert\" 15 \"reserviert\" ;"
+    }
+  ],
+  "limitations": [
+    "External decoder definitions, not a manufacturer calibration or proof of 1061 runtime acceptance.",
+    "Only MQB definition used. MQBevo and PQ definitions are not transferred."
+  ]
+}

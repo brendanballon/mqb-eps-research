@@ -1,0 +1,42 @@
+{
+  "verified_at_utc": "2026-10-19T19:26:38.222317+00:00",
+  "archive_files_checked": 694,
+  "archive_mismatches": [],
+  "reader_output_byte_identical": true,
+  "boundary_checks": "305 passes and 306 fails in decoder/comparison model only",
+  "selected_decompilations_completed": true,
+  "artifacts": [
+    {
+      "path": "evidence/ghidra-hca-limits-1061-2026-10-19.txt",
+      "sha256": "d9fea2cb8116a382e51e76e599d51de9bb6505c9cdf0d0219385978d77ec658b"
+    },
+    {
+      "path": "evidence/ghidra-hca-message-tables-1061-2026-10-19.txt",
+      "sha256": "6783d282d9ce42c2c336ed9e7914c576b80a130a75a2d6c2f8ff70548137ac76"
+    },
+    {
+      "path": "evidence/hca-limits-1061-2026-10-19.json",
+      "sha256": "75ca21313365597baac87a8e8976ea3b71c0947b28dc690086485d0db26bf2d0"
+    },
+    {
+      "path": "evidence/hca-message-linkage-1061-2026-10-19.json",
+      "sha256": "e166f64f0c7fe38dcb6bac3ac946c4f8a74d927ddfe1de7c2063db5bd9597088"
+    },
+    {
+      "path": "evidence/hca-protocol-source-2026-10-19.json",
+      "sha256": "1b236f965ac534aefbe7a52db0c5613f1c12f6cbd961333de2f25574537b08be"
+    },
+    {
+      "path": "scripts/inspect_hca_limits_1061.py",
+      "sha256": "fee4a1270e3b854624c335907c712fdac29d63c82ecfabedddb7bb268d9ed69f"
+    },
+    {
+      "path": "scripts/ghidra/ExportTorqueSurvey1061.java",
+      "sha256": "4a2cffafc76a5c3ed94f3c1a16ded5af77d17bc2919ff65d14ac4c1b19b5c98d"
+    }
+  ],
+  "limitations": [
+    "No ECU execution or motor-torque validation.",
+    "Direct Ghidra exports, not REA Evidence IDs."
+  ]
+}
