@@ -1,5 +1,11 @@
 # Current status
 
+## Project direction
+
+October 20, 2026: improve openpilot steering authority, response and consistency on VW MQB vehicles, starting with the existing HCA torque-request interface. Firmware changes are a candidate solution to demonstrated restrictions; PLA angle control remains an alternative. Direct Torque and Angle Hybrid labels are not implementation requirements. Success means better path tracking and fewer steering-limit interventions while preserving driver override and bounded steering response.
+
+Next concrete action: synthesize the retained HCA limits and compare them with driving-data evidence of saturation, tracking error, delay or rack rejection. Separate controller tuning from EPS restrictions before choosing a modification. Installed calibration and physical torque conversion remain unresolved. This documentation update does not resume firmware analysis or hardware work.
+
 Updated: October 20, 2026, after tracing ADC phase feedback and a separate phase protection threshold.
 
 ## Target and result

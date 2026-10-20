@@ -153,3 +153,19 @@ Saved focused assembly/pseudocode, manufacturer page excerpts and source hash, s
 User requested bringing Git up to date. Reviewed pending notes, scripts and durable evidence from offline preparation through phase-feedback findings F036-F037. Parsed new JSON and Python files, checked whitespace and scanned pending text for credential-like values with no matches. Included the retained manufacturer documentation and research evidence. The analysis and private directories remain ignored. Saved the research as a local Git checkpoint; no remote is configured, and no remote, push or publication was added.
 
 Staging exposed exporter whitespace and Git CRLF normalization in retained HTML sources. Added a scoped evidence attribute disabling text normalization and whitespace linting for captured evidence, preserving its exact hashed bytes. Source scripts and authored notes retain ordinary whitespace checks. Verified every staged evidence blob against its working-file bytes before committing.
+
+
+## October 20, 2026: simplify the project introduction
+
+User requested a short, approachable README centered on improving openpilot on VW MQB vehicles. Replaced the workspace-oriented introduction with the project goal, a small key-term table, research coverage, remaining steps and selected reading links. Used current mission and session-closeout reports as the source. Retained the specific 5Q0/1061 target and distinction between offline findings and unverified physical behavior.
+
+Checked README local links and whitespace in the three edited documents. No firmware analysis or implementation resumed. Outstanding research and external dependencies are unchanged; the next research action remains a concise HCA-versus-PLA limits synthesis if separately requested.
+
+
+## October 20, 2026: recalibrate the openpilot steering goal
+
+User approved the researched direction and requested a local commit. Updated the README and leading status direction to focus on steering authority, response and consistency, starting with existing HCA torque control. PLA remains an alternative; Direct Torque and Angle Hybrid are no longer promised features. Identify the dominant limitation from retained firmware findings and driving data before choosing tuning or targeted firmware changes.
+
+Sources reviewed in the preceding read-only research: commaai/opendbc Volkswagen controller/interface and safety mode, Hyundai interface, torque_data/params.toml, commaai/comma-steering-control, and sunnypilot's Hyundai angle-steering development overview. These establish existing torque requests, separate command limits and modeling options; they do not establish a working MQB modification. See https://github.com/commaai/opendbc/tree/master/opendbc/car/volkswagen and https://github.com/commaai/comma-steering-control.
+
+Validation: checked README links against the staged Git tree and checked staged whitespace. Commit scope is the README plus this documentation session's status/log entries; earlier pending research remains outside the commit. No firmware/archive/database changes, hardware work or push. Next action is the limits-versus-driving-data comparison, if requested.

@@ -1,23 +1,46 @@
-# MQB steering rack reverse engineering
+# Better openpilot steering on VW MQB
 
-Local research workspace to resume the MQB steering rack investigation. Initialized October 19, 2026.
+The goal is to improve **openpilot steering authority, response, and consistency on VW MQB vehicles**.
 
-## Start here
+Start with the existing **HCA torque-control interface**. Investigate firmware changes where they could address a demonstrated limit. Keep PLA angle control as an alternative research path.
 
-1. [Current status and next steps](notes/STATUS.md)
-   [Preparation checklist and external dependencies](notes/ACTION_ITEMS.md)
-2. [Discord history review and prior-work recovery](notes/DISCORD_REVIEW.md)
-3. [Findings and unresolved questions](notes/FINDINGS.md)
-4. [REA readiness](notes/REA_READINESS.md)
-5. [Session log](notes/SESSION_LOG.md)
-6. [1061 offline analysis and reproduction](notes/OFFLINE_ANALYSIS.md)
-7. [MCU identification and memory documentation](notes/MCU_IDENTIFICATION.md)
-8. [Historical source recovery](notes/SOURCE_RECOVERY.md)
+**Current stage: offline research. No working firmware modification or vehicle-tested improvement yet.**
 
-`EPS_research/` is the imported historical archive. It includes multiple rack families, firmware containers, extracted binaries, CAN recordings, PQ reference work, and legacy tools. Original files are preserved, including outdated claims. New notes do not silently rewrite that history.
+## Key terms
 
-`inventory/archive-manifest.json` records every imported regular file by path, byte length, and SHA-256. Regenerate with `python3 scripts/inventory_archive.py`. A hash establishes local byte identity, not authenticity or successful extraction.
+| Term | Meaning here |
+| --- | --- |
+| **MQB** | VW Group vehicle platform. Research currently focuses on one rack and firmware version. |
+| **EPS** | Electric power steering, including the rack's motor and controller. |
+| **Firmware** | Software running inside the steering controller. |
+| **HCA** | The torque-request steering interface used for lane assistance. |
+| **PLA** | The angle-request steering interface used for parking assistance. |
+| **DSR** | Steering requests associated with stability assistance. These can interact with other steering modes. |
 
-Use `analysis/` for disposable analysis databases and derived files. Export durable REA evidence to `evidence/` and link it from the finding ledger. Git is local, with no remote configured.
+## Covered so far
 
-The expanded review includes 67 dated source anchors and covers the Discord thread's accessible message text from January 2023 through August 2026. Images, videos, external repositories, and attachment contents have not been exhaustively reviewed. Firmware changes, HCA/DSR mixing, and the later ALC CAN module are separate research paths.
+- **Research foundation:** preserved the original archive, reproduced firmware extraction, and built an annotated code-analysis project.
+- **Torque control:** traced HCA request checks, speed-dependent curves, driver-input effects, and interactions with other steering modes.
+- **Angle control:** identified PLA speed and driver-release conditions. Angle-controller analysis is still partial.
+- **Motor output:** followed the command path into motor control. Converting software values into physical steering torque remains unresolved.
+- **Prior work:** reviewed historical community research and separated reported results from verified local findings.
+
+Initial target: **5Q0 909 144 R**, firmware **EPS_MQB_ZFLS 126 1061**. Findings do not automatically apply to other MQB racks.
+
+## Still to do
+
+1. Summarize known HCA limits and use driving data to distinguish insufficient authority from tuning, delay, or rack rejection.
+2. Resolve firmware restrictions and missing calibration evidence that could change the answer.
+3. Compare better HCA modeling/tuning with targeted firmware changes. Evaluate PLA if HCA cannot meet the goal.
+4. Validate a chosen approach with matching openpilot integration and independent command limits in a separately scoped hardware phase.
+
+Success means **better path tracking and fewer steering-limit interventions**, while preserving driver override and bounded steering response. Increased torque is a possible means; a working improvement remains unproved.
+
+## Explore the research
+
+- [Current status and next steps](notes/STATUS.md)
+- [Firmware extraction and analysis foundation](notes/OFFLINE_ANALYSIS.md)
+- [Evidence-backed findings](notes/FINDINGS.md)
+- [Historical community discussion](notes/DISCORD_REVIEW.md)
+
+Original files live in `EPS_research/`, derived analysis in `analysis/`, and retained evidence in `evidence/`.
